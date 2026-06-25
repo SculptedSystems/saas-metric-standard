@@ -1,0 +1,7 @@
+# Raw filing HTML — large, re-fetchable from EDGAR; not part of the committed dataset.
+filings/
+
+# Defensive: never commit secrets into this directory.
+.env
+*.key
+secrets*

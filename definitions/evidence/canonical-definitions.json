@@ -1,0 +1,114 @@
+{
+  "note": "Canonical (single-source-of-authority) metric definitions: the SaaS Metrics Standards Board codified consensus, and origin-author definitions for coined metrics. Unlike the SEC layer (which measures divergence across many filers), each entry here is ONE authoritative definition. canonical-pull.js freezes each source (snapshot + content hash + retrieval date) and verifies that verify_phrase still appears verbatim, so link rot or a silent edit is detected rather than silently trusted.",
+  "definitions": [
+    {
+      "metric": "Gross Revenue Retention",
+      "authority": "standards-board",
+      "source_url": "https://www.saasmetricsboard.com/gross-revenue-retention",
+      "definition": "Cohort method (preferred): Adjusted MRR from the cohort of customers at the end of the period / MRR at the beginning of the measurement period.",
+      "verify_phrase": "MRR at the beginning of the measurement period"
+    },
+    {
+      "metric": "Logo Retention",
+      "authority": "standards-board",
+      "source_url": "https://www.saasmetricsboard.com/logo-retention",
+      "definition": "# of customers at the end of the period who were customers at the beginning of the period / # of active customers at the beginning of the measurement period.",
+      "verify_phrase": "active customers at the beginning of the measurement period"
+    },
+    {
+      "metric": "Blended CAC Ratio",
+      "authority": "standards-board",
+      "source_url": "https://www.saasmetricsboard.com/blended-cac-ratio",
+      "definition": "Fully Loaded Sales and Marketing Expenses (CQ-1) / New CARR + Expansion CARR.",
+      "verify_phrase": "Fully Loaded Sales and Marketing Expenses"
+    },
+    {
+      "metric": "New CAC Ratio",
+      "authority": "standards-board",
+      "source_url": "https://www.saasmetricsboard.com/new-cac-ratio",
+      "definition": "Fully Loaded Sales and Marketing Expenses allocated to Customer Acquisition / New Name ARR.",
+      "verify_phrase": "New Name ARR"
+    },
+    {
+      "metric": "Expansion CAC Ratio",
+      "authority": "standards-board",
+      "source_url": "https://www.saasmetricsboard.com/expansion-cac-ratio",
+      "definition": "Fully Loaded Sales and Marketing Expenses allocated to Expansion / Expansion CARR.",
+      "verify_phrase": "Expansion CARR"
+    },
+    {
+      "metric": "CAC Payback Period",
+      "authority": "standards-board",
+      "source_url": "https://www.saasmetricsboard.com/cac-payback-period",
+      "definition": "The number of months it takes for the gross profits from new customer ARR to pay back the sales and marketing expenses. Fully Loaded S&M Expenses / (CARR x Gross Margin %) x 12.",
+      "verify_phrase": "number of months it takes for the gross profits"
+    },
+    {
+      "metric": "Rule of 40",
+      "authority": "standards-board",
+      "source_url": "https://www.saasmetricsboard.com/rule-of-40",
+      "definition": "Annual ARR Growth Rate + Annual Free Cash Flow Margin (FCF margin = (Cash from Operations - Capex) / Average ARR).",
+      "verify_phrase": "Annual ARR Growth Rate"
+    },
+    {
+      "metric": "SaaS Magic Number",
+      "authority": "origin",
+      "coiner": "Scale Venture Partners",
+      "source_url": "https://www.scalevp.com/insights/magic-number-math/",
+      "definition": "Take the change in subscription revenue between two quarters, annualize it (multiply by four), and divide the result by the sales and marketing spend for the earlier of the two quarters.",
+      "verify_phrase": "annualize it (multiply by four)",
+      "attribution": "Verified: widely credited to Scale Venture Partners (Lars Leckie). A coined convention, not a standard."
+    },
+    {
+      "metric": "Burn Multiple",
+      "authority": "origin",
+      "coiner": "David Sacks / Craft Ventures",
+      "source_url": "https://medium.com/craft-ventures/the-burn-multiple-51a7e43cb200",
+      "definition": "Burn Multiple = Net Burn / Net New ARR (lower is better; the inverse of Bessemer's Efficiency Score).",
+      "verify_phrase": "Net Burn / Net New ARR",
+      "attribution": "Verified: David Sacks explicitly coined the term (Craft Ventures, 2020)."
+    },
+    {
+      "metric": "LTV and LTV:CAC",
+      "authority": "origin",
+      "coiner": "David Skok (popularizer)",
+      "source_url": "https://www.forentrepreneurs.com/saas-metrics-2/",
+      "definition": "LTV = (ARPA x gross margin) / monthly churn; the LTV:CAC > 3x rule of thumb (sometimes 7-8x). Treat the 3x as a convention, not a standard.",
+      "verify_phrase": "LTV to CAC ratio that is higher than 3",
+      "attribution": "Popularizer, not originator: LTV/CAC predates Skok; he popularized the gross-margin-adjusted SaaS form and the >3x rule of thumb. Already labeled as popularizer."
+    },
+    {
+      "metric": "Rule of 40",
+      "authority": "origin",
+      "coiner": "Brad Feld",
+      "source_url": "https://feld.com/archives/2015/02/rule-40-healthy-saas-company/",
+      "definition": "Your growth rate + your profit should add up to 40%. Feld preferred EBITDA as the profit baseline and flagged the profit measure as ambiguous.",
+      "verify_phrase": "40%",
+      "attribution": "CONTESTED origin: Feld popularized it (2015) but his own post credits others; the true originator is unattributed. Treat Feld as popularizer, not coiner."
+    },
+    {
+      "metric": "Annual Recurring Revenue",
+      "authority": "standards-board",
+      "source_url": "https://www.saasmetricsboard.com/annual-recurring-revenue",
+      "definition": "Annual Recurring Revenue (ARR) is recurring revenue, as defined by your revenue recognition policy, calculated on an annualized basis.",
+      "verify_phrase": "calculated on an annualized basis",
+      "note": "Codified-consensus ARR. The SEC layer measures how filers actually define ARR in practice; this is the Standards Board ideal."
+    },
+    {
+      "metric": "Contracted Annual Recurring Revenue",
+      "authority": "standards-board",
+      "source_url": "https://www.saasmetricsboard.com/contracted-annual-recurring-revenue",
+      "definition": "Contracted Annual Recurring Revenue (CARR) is defined as contracted annual recurring revenue, whether in production or not yet in production.",
+      "verify_phrase": "whether in production or not yet in production"
+    },
+    {
+      "metric": "Net Revenue Retention",
+      "authority": "standards-board",
+      "source_url": "https://www.saasmetricsboard.com/net-revenue-retention",
+      "definition": "Net Revenue Retention (NRR), also known as Net Dollar Retention (NDR), measures the percentage of recurring revenue retained over a specific period.",
+      "verify_phrase": "percentage of recurring revenue retained",
+      "note": "Codified-consensus NRR. The SEC layer is the empirical divergence evidence; this is the Standards Board ideal."
+    }
+  ],
+  "coverage_note": "Standards Board publishes 10 live metric pages (full sitemap enumerated 2026-06-17); all 10 are now captured here. Their homepage also links /customer-acquisition-cost, which 404s (a dead link on their own site), so there is no standalone CAC definition to capture."
+}
