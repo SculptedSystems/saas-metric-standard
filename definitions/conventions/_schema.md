@@ -31,6 +31,10 @@ authority: cheatsheet | standards-board | origin-author | working-consensus
 - **Citations (REFERENCE, not recall)**: verbatim filer quotes and SEC URLs, standards-board formula. All pointers into the cheatsheet and canonical definitions.
 - **Card-derivation notes**: which fields become RECALL cards, which stay REFERENCE, and any contrast or rework cards needed.
 
+## Operational layer scope (the gear field)
+
+The three operational sections (Canonical formula, Reconciliation note, Aggressive-vs-defect test) are provided for **Gear-1** conventions, the raise-critical floor set reconciled in a pre-raise review. **Gear-2** (build-phase) conventions carry the teaching sections (One-liner through The defensible read, plus Classic errors and Citations) and gain the operational layer when a real engagement pulls them through. This is a deliberate scope, not an omission: operational depth is added on demand, not pre-built for metrics no one is reconciling yet.
+
 ## Discipline
 
 - RECALL only if you would be caught flat-footed needing it live with no time to look it up: the lens you bring to every founder. If it changes per founder or per filing, it is REFERENCE.
