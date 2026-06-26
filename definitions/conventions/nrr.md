@@ -69,7 +69,7 @@ The predicate for classifying an NRR spread (DR-0046):
 
 - **Defensible basis:** a recurring-revenue (ARR or MRR) cohort on the standards-board method, exemplified by MariaDB. This is the number to lead with.
 - **Convention gap (aggressive but legitimate):** the spread reproduces only under a basis or timing an authority-traceable filer actually uses in its own filing, a GAAP-revenue basis (Autodesk, Asana) or an ACV / annualized basis (Okta, Cloudflare), or a monthly-average timing (EverCommerce), or a segment-restricted cohort (Brightcove). Legitimate, but not the defensible read, so it is the labeled risk, never the headline.
-- **Defect gap:** no legitimate convention reproduces it. For example, there is no retained point-in-time state to rebuild the as-of cohort, so the cohort cannot be reconstructed at all, or new-logo revenue is folded into the cohort (the one error the market has largely settled against). No authority-traceable filer's convention recovers the number.
+- **Defect gap:** no legitimate convention reproduces it. The timing-axis case is the shared point-in-time / timing test (see the [Point-in-time / timing test](../divergence/cheatsheet.md#point-in-time--timing-test) in the cheatsheet): here, the as-of BoP cohort cannot be reconstructed because no retained point-in-time state or history exists to rebuild it. Or new-logo revenue is folded into the cohort (the one error the market has largely settled against). No authority-traceable filer's convention recovers the number.
 
 ## Classic errors touching NRR
 

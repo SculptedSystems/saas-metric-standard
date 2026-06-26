@@ -93,6 +93,16 @@ $$\text{NRR}=\frac{\text{BOP value}+\text{Expansion}-\text{Contraction}-\text{Ch
 
 Most likely to mismatch an investor: the founder's basis and method (often MRR- or revenue-based, point-in-time) vs the ARR-basis, sometimes-averaged, sometimes-thresholded convention the specific investor recomputes on. Same business, materially different number. It is demonstrable from primary filings.
 
+### Point-in-time / timing test
+
+A shared discriminator on the timing axis, applied by any cohort or as-of metric (NRR, GRR, and any other point-in-time or as-of measure). It sorts a timing-axis spread into a convention gap (legitimate, the labeled risk) versus a defect gap (a source defect, not a convention choice).
+
+The test is the **as-of reconstruction requirement**: can the metric's state be rebuilt as of a past date from retained history? A cohort or as-of metric is anchored to a point in the past (the beginning-of-period cohort, the as-of-period-end value). Computing it correctly requires that the source systems retained enough point-in-time state, or an append-only history from which that state is reconstructable, to rebuild the cohort and its values as they stood on the anchor date.
+
+The **defect criterion**: no retained point-in-time state, and no history from which it can be reconstructed, means the metric cannot be reconstructed as-of. That is a `defect_gap`, a source defect, not a convention choice. It is not that the founder picked an aggressive but legitimate timing; it is that no legitimate timing convention can recover the number, because the underlying state to compute any of them was never retained. Contrast a convention gap, where the state exists and a different but authority-traceable timing convention (a monthly average, a year-over-year framing) reproduces the spread.
+
+This is the load-bearing line between an aggressive-but-legitimate timing choice and a source defect. The conventions reference this test from their aggressive-vs-defect sections; the gap-report deliverable's `defect_gap` status and the Engine's reconstruction apply the same rule.
+
 ---
 
 ## GRR / GDR (Gross Revenue / Dollar Retention)
