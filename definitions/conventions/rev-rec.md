@@ -6,9 +6,14 @@ contested: false
 gear: 1
 authority: standards-board
 diverges_on: []
+filer_evidence: []
 ---
 
 # Revenue recognition
+
+## One-liner
+
+Where a reported number sits among the money-states, which ASC 606 issue is in play, and why the reconstruction is deferred to raw source systems.
 
 Where a reported number sits among the money-states, which ASC 606 issue is in play, and why the actual reconstruction is deferred to raw source systems. Revenue recognition is the one item in the library backed by an enforced standard (US GAAP, FASB Topic 606; Subtopic 340-40 for contract costs), not a convention. The model is extracted in [rev-rec-substrate.md](../evidence/rev-rec-substrate.md) from the KPMG Big-4 handbook.
 

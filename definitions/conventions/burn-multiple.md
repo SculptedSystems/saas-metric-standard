@@ -6,6 +6,7 @@ contested: true
 gear: 2
 authority: origin-author
 diverges_on: [composition]
+filer_evidence: []
 ---
 
 # Burn Multiple

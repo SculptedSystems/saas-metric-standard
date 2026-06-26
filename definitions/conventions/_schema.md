@@ -11,6 +11,7 @@ aka: [<alias>, ...]
 contested: true | false        # is the core definition itself contested?
 gear: 1 | 2                    # Gear-1 floor metric, or build-phase
 authority: standards-board | origin-author | working-consensus
+filer_evidence: [<filer>, ...]   # named public-company filers with verbatim 10-K quotes in Citations; empty list if none
 ```
 
 `working-consensus` is the uncodified tier: no SEC, standards-board, or origin authority. Entries at this tier never receive a defensible-number verdict.

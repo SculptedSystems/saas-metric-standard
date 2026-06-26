@@ -6,6 +6,7 @@ contested: true
 gear: 2
 authority: origin-author
 diverges_on: [basis]
+filer_evidence: []
 ---
 
 # Lifetime Value (LTV) and LTV:CAC

@@ -1,85 +1,85 @@
 {
   "version": "0.1.0",
-  "library_sha256": "3f4f07de7a253d8896eea5921261f159da1fc70cd0fbf3032953f135a46b69d7",
+  "library_sha256": "5eb9ff3569ce8a975d465feec07137a8d9161ecc72f6b4b050b49a7f4978e80b",
   "count": 13,
   "conventions": [
     {
       "id": "arr",
       "metric": "Annual Recurring Revenue",
       "file": "conventions/arr.md",
-      "content_sha256": "5fe210a6e16db9e050c9a00c8590c33ee57594ed06b84a657b16d6dcd25b5900"
+      "content_sha256": "1627adcb84ef992e9b7955b0df486f9b232e6c9fe06d3f01f0b81334f87a5a68"
     },
     {
       "id": "burn-multiple",
       "metric": "Burn Multiple",
       "file": "conventions/burn-multiple.md",
-      "content_sha256": "1674116ace00345c68a00079baedc190c04376f2402d5faf963823c8092db741"
+      "content_sha256": "91611168109ef3adfeabce37f7902bcc2293f5881682246698ceec0b2a1cbd7d"
     },
     {
       "id": "cac",
       "metric": "Customer Acquisition Cost",
       "file": "conventions/cac.md",
-      "content_sha256": "a256924193b3a040bde5d4902d803420522b3ae566fc5abf8863934049a56e36"
+      "content_sha256": "6cf04dfe56f39428aba2489aee0f1b93f75002698c745d58b12e3811a810ecf6"
     },
     {
       "id": "churn",
       "metric": "Churn and retention",
       "file": "conventions/churn.md",
-      "content_sha256": "874df02e87138a4dbfa4b877043de96327f3fec48062883730a89fd5a338456d"
+      "content_sha256": "8319c9e0e229db4b26e79b45d749a286541c99e1f65d61b3ff52cf3cabe250a4"
     },
     {
       "id": "gross-margin",
       "metric": "Gross Margin",
       "file": "conventions/gross-margin.md",
-      "content_sha256": "874ac343b5efd1b470cf3aaf514588689d525b7d8e216f4d16449fd92e27c671"
+      "content_sha256": "1830c290a7a02696a0847fa49e3d4f578e95c1a32c4544567fa88509afd3b21a"
     },
     {
       "id": "grr",
       "metric": "Gross Revenue Retention",
       "file": "conventions/grr.md",
-      "content_sha256": "2b8dfaaacd9160b95eb6270559d51af26fda582505e6984b366b330d54270a76"
+      "content_sha256": "73400d66ec60debad6645aaa624dbde903a7c853bf894eccddd3f3a45d76fa0a"
     },
     {
       "id": "ltv",
       "metric": "Lifetime Value",
       "file": "conventions/ltv.md",
-      "content_sha256": "7917cf566bf4375f930b058df9e8135e89c7106b5d8db1fa5537c4813cd966cd"
+      "content_sha256": "b43a5bfadebcba1bbab29583ec0ca943a22b0f271864139e13d8b0655ce2cac3"
     },
     {
       "id": "magic-number",
       "metric": "SaaS Magic Number",
       "file": "conventions/magic-number.md",
-      "content_sha256": "f79dfc492d659d55799494e38836a7b55d05211d2ce033d1ac9d70e43f3706d5"
+      "content_sha256": "55dfe604798ca9a5a37c2ce121baf1c26b4e80e8fd6352a0daee5aa251aaa4e4"
     },
     {
       "id": "mrr-movement",
       "metric": "MRR / ARR movement bridge",
       "file": "conventions/mrr-movement.md",
-      "content_sha256": "2b5a251546a43ee17bb2cb18321232838f0b5829ca8f608a02914feec805d0d4"
+      "content_sha256": "3f722c22c7914efce219531dc2ca84f8d04898e266ca6675211da5299acb6bef"
     },
     {
       "id": "nrr",
       "metric": "Net Revenue Retention",
       "file": "conventions/nrr.md",
-      "content_sha256": "075cc4e1ed63520b64fadfbb4f3a010d28e1da5268d8b05d9d94ebff421ae154"
+      "content_sha256": "1d24eb919d9a3e7f8d0094b0a9d5d9d1d087ea67649d3683f19c68181497e13c"
     },
     {
       "id": "quick-ratio",
       "metric": "SaaS Quick Ratio",
       "file": "conventions/quick-ratio.md",
-      "content_sha256": "df0d936c206e2a24923a0fd70088e8908acf664b5f9054a5669087c3fad70d70"
+      "content_sha256": "1c4841c69c8f14736aba7256b6cc5522db2c1994a6dcf557cbf3c8595a4dae85"
     },
     {
       "id": "rev-rec",
       "metric": "Revenue recognition",
       "file": "conventions/rev-rec.md",
-      "content_sha256": "04b31ad47a224a10f7492d32082fe9d0c4f9002fa56c03f19f315b525e7f3bc8"
+      "content_sha256": "14a681da2d3a13eb3e12f2ec8a11b3b47bc55285122e4f753426785caa4c2622"
     },
     {
       "id": "rule-of-40",
       "metric": "Rule of 40",
       "file": "conventions/rule-of-40.md",
-      "content_sha256": "01cd1d2508f8ee5c95a2be1eb0076185f68e93595c9a4db9b8059732df083e3a"
+      "content_sha256": "beb947a024209a771bd4cc992754769559fd9ff6e61cc87036c36e837acb406b"
     }
   ]
 }

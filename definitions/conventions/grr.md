@@ -6,6 +6,7 @@ contested: true
 gear: 2
 authority: standards-board
 diverges_on: [composition, basis, timing]
+filer_evidence: []
 ---
 
 # Gross Revenue Retention (GRR)
