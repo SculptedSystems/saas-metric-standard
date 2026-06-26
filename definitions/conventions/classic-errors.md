@@ -9,7 +9,7 @@ authority: cheatsheet
 
 # The five classic errors
 
-Cross-metric, not a single-metric entry. These are the named, recognizable ways a founder's recurring-revenue number goes wrong. Each is RECALL: name, what it is, and the direction it moves the number. On a call, you recognize the pattern from the founder's stated method, not from their raw data.
+Cross-metric, not a single-metric entry. These are the named, recognizable ways a recurring-revenue number goes wrong: each names what it is and the direction it moves the number. The pattern is recognized from a stated method, not from raw data.
 
 Unlike the divergence axes (where multiple conventions are legitimate), these are genuine errors: one side is defensible and the other is not.
 
@@ -31,8 +31,3 @@ Unlike the divergence axes (where multiple conventions are legitimate), these ar
 ## The scope line for these
 
 The first two (annual-as-monthly, one-time-in-MRR) and gross-vs-net are largely composition: visible from the founder's stated method and the aggregates, so they are in scope as findings. The last two (off-processor, billing-layer double-count) are source-system facts that can be named but not resolved from the aggregates; reconciling them needs the per-axis reconstruction from raw source systems, which is out of scope for this standard. This is the "that is a sources question, not a definitions question" deflection in concrete form.
-
-## Card-derivation notes
-
-- RECALL: each error by name, what it is, and the direction it moves the number. Direction cards are call-critical and atomic.
-- REFERENCE: the per-founder magnitude (for example how many annual contracts, the dollar size of the off-processor component).

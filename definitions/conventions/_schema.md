@@ -1,6 +1,6 @@
 # Conventions library: per-metric schema
 
-Every metric file uses this fixed shape so the Anki decks can derive from it one-way. Frontmatter, then a single H1 (the metric name), then the sections below in order.
+Every metric file uses this fixed shape: frontmatter, then a single H1 (the metric name), then the sections below in order.
 
 ## Frontmatter fields
 
@@ -13,7 +13,7 @@ gear: 1 | 2                    # Gear-1 floor metric, or build-phase
 authority: cheatsheet | standards-board | origin-author | working-consensus
 ```
 
-`working-consensus` is the uncodified tier: no SEC, standards-board, or origin authority. Entries at this tier are REFERENCE-only, never receive a defensible-number verdict, and stay out of the Anki RECALL set.
+`working-consensus` is the uncodified tier: no SEC, standards-board, or origin authority. Entries at this tier never receive a defensible-number verdict.
 
 ## Sections (in order)
 
@@ -21,21 +21,19 @@ authority: cheatsheet | standards-board | origin-author | working-consensus
 - **Why it diverges**: which of the three axes (composition, basis, timing) drive divergence for this metric, and why the divergence is legitimate, not error.
 - **The three axes (per this metric)**: composition (what is or is not in the number; the free-computable axis), basis (ARR vs revenue vs implied-MRR vs contracted), timing (point-in-time vs cohort vs average vs year-over-year).
 - **Legitimate convention families**: a table of family name, axis, short method, representative filer (cited to the evidence doc), direction vs the defensible read.
-- **What the investor likely recomputes on**: the peer-set convention, stated as a hypothesis (public filers are a proxy for the early-stage investor, not direct evidence).
-- **The defensible read**: which convention to lead with and why; the aggressive one to footnote as the labeled risk.
+- **What the investor likely recomputes on**: the convention read off the public record. Name the basis, timing, and cohort the public filers settle on, and state plainly that the standard treats those late-stage filers as a proxy for the convention an early-stage investor carries. This is read off the filings, not asserted, and described, not predicted.
+- **The defensible read**: the two-tier read. Tier one is the standard's default, the convention to lead with when no specific investor convention is known. Tier two is the investor's own convention, which governs and leads when it is known. State the aggressive convention to footnote as the labeled risk under either anchor.
 - **Canonical formula**: the formula in LaTeX with a named-input table. The table has one row per input and the columns: input, source-system class (the kind of system the value comes from, e.g. billing, GL, CRM, data warehouse), and timing-offset (the period-offset or timing-lag rule, e.g. as-of period end, 12 months prior, trailing-twelve-month). Cite the PRIMARY source for the formula (the standards-board codified method or the origin author recorded in `../evidence/canonical-verified.json`), not the cheatsheet; the cheatsheet is the downstream divergence digest and may be named as a rendering convenience but is not the authority. Do not invent one.
 - **Reconciliation note**: the composition-closed, basis/timing-bounded statement. Only the composition axis closes to a zero residual (the axis computable from aggregates); basis and timing interact non-additively and need raw data, so they are reconciled as bounded and qualitative (name the convention used vs the defensible one, bound direction and magnitude). The per-axis reconstruction from the client's raw source systems is out of scope for this standard.
 - **Aggressive-vs-defect test**: the predicate that classifies a spread. Reproduces only under an aggressive but legitimate convention (an authority-traceable filer uses it) is a convention gap; no legitimate convention reproduces it is a defect gap. State the metric-specific defensible basis, the aggressive-but-legitimate alternatives, and the no-legitimate-convention case.
 - **Classic errors touching this metric**: named errors from `classic-errors.md` and how they distort this metric.
 - **Scope boundary**: what is computable from the aggregates (composition) vs named-but-not-computed (basis, timing). The in-scope side is recognition from the reported aggregates; the named-but-not-computed reconstruction from the client's raw source systems is out of scope for this standard.
-- **Citations (REFERENCE, not recall)**: verbatim filer quotes and SEC URLs, standards-board formula. All pointers into the cheatsheet and canonical definitions.
-- **Card-derivation notes**: which fields become RECALL cards, which stay REFERENCE, and any contrast or rework cards needed.
+- **Citations**: verbatim filer quotes and SEC URLs, standards-board formula. All pointers into the cheatsheet and canonical definitions.
 
 ## Operational layer scope
 
-The three operational sections (Canonical formula, Reconciliation note, Aggressive-vs-defect test) are provided for the **raise-critical reconcilable set** the standard's reconciliation method covers: ARR, NRR, GRR, CAC (ratio and payback), logo retention/churn, magic number, and gross margin. The remaining conventions carry the teaching sections (One-liner through The defensible read, plus Classic errors and Citations) and gain the operational layer when a real engagement pulls them through. This is a deliberate scope, not an omission: operational depth is added on demand, not pre-built for metrics no one is reconciling yet. (The `gear` field is a separate axis, what an operator holds cold versus fields on demand; rev-rec, for example, is gear-1 foundational context but not a formula-reconcilable metric, so it carries the teaching layer.)
+The three operational sections (Canonical formula, Reconciliation note, Aggressive-vs-defect test) are provided for the **raise-critical reconcilable set** the standard's reconciliation method covers: ARR, NRR, GRR, CAC (ratio and payback), logo retention/churn, magic number, and gross margin. The remaining conventions carry the reference sections (One-liner through The defensible read, plus Classic errors and Citations) and gain the operational layer when a reconciliation needs them. This is a deliberate scope, not an omission: operational depth is added on demand, not pre-built for metrics no one is reconciling yet. (The `gear` field is a separate axis, gear-1 foundational versus gear-2 build-phase; rev-rec, for example, is gear-1 foundational context but not a formula-reconcilable metric, so it carries the reference layer.)
 
 ## Discipline
 
-- RECALL only if you would be caught flat-footed needing it live with no time to look it up: the lens you bring to every founder. If it changes per founder or per filing, it is REFERENCE.
-- Never write a card that asserts a contested convention as settled. Verbatim quotes stay REFERENCE; cards teach that the metric is contested and which axis diverges, not a memorized number.
+- Never assert a contested convention as settled. Verbatim filer quotes stay in the Citations section; the prose teaches that the metric is contested and which axis diverges, not a settled number.

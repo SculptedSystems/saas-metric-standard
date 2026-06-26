@@ -34,7 +34,7 @@ The 40% threshold and the growth-plus-profit shape are the settled part. The div
 
 ## What the investor likely recomputes on
 
-Hypothesis, not direct evidence: most investors land near the standards-board FCF-margin form, but a meaningful set still use EBITDA margin (Feld's preference and a common growth-equity convention). The robust move is to assume the profitability basis is unsettled and ask which, rather than to assert FCF. Validate per founder via the debrief loop.
+Most readers land near the standards-board FCF-margin form, but a meaningful set still use EBITDA margin (Feld's preference and a common growth-equity convention). The growth-plus-profit shape is settled; the profitability basis is bounded by these two conventions, not fixed by them. The robust move is to treat the profitability basis as unsettled and name which, rather than assert FCF. Name the basis against real numbers rather than assume one.
 
 ## The defensible read
 
@@ -48,13 +48,6 @@ No entry in `classic-errors.md` maps cleanly here; the live error is presenting 
 
 IN SCOPE (from the reported aggregates and the stated method): naming which profitability basis the founder used and flagging an unstated one. OUT OF SCOPE (named but not computed): reconstructing FCF margin (cash from operations minus capex over average ARR) or EBITDA margin from source financials. Stating this boundary out loud is the authority move.
 
-## Citations (REFERENCE, not recall)
+## Citations
 
 - Standards-board calc #1 (ARR growth + FCF margin) and calc #2 (GAAP revenue growth + FCF margin), and Feld's 2015 post (he popularized the rule; the true originator is unattributed) with its EBITDA preference and explicit ambiguity flag: see the Rule of 40 section of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md) and the Rule of 40 entries in [`../evidence/canonical-definitions.json`](../evidence/canonical-definitions.json).
-
-## Card-derivation notes
-
-- RECALL: the contested flag, the growth-plus-profit shape and 40% threshold (settled), the profitability basis as the contested axis, FCF margin (standards board) vs EBITDA margin (Feld, popularizer), and that the profit term must be named when quoting.
-- CONTRAST card needed: FCF-margin Rule of 40 vs EBITDA-margin Rule of 40 (standards-board codification vs origin-author preference).
-- REWORK card needed: "Rule of 40 uses FCF margin" must be reworked (FCF is the standards-board codification; Feld, the popularizer, preferred EBITDA and left it ambiguous; do not present FCF as the only legitimate basis).
-- REFERENCE only: the exact standards-board and Feld wording, per-founder margin figures.

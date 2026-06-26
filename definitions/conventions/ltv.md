@@ -33,7 +33,7 @@ There is no codified LTV or LTV:CAC definition; Skok popularized the gross-margi
 
 ## What the investor likely recomputes on
 
-Hypothesis, not direct evidence: an investor treats LTV:CAC as a directional sanity check (roughly 3x as "healthy," well below as a flag), is skeptical of an LTV built on an optimistic churn input or no discount, and cares that the churn basis and gross margin are stated. The 3x is a yardstick, not a target to optimize to. Validate per founder via the debrief loop.
+A reader takes LTV:CAC as a directional sanity check (roughly 3x as "healthy," well below as a flag), is skeptical of an LTV built on an optimistic churn input or no discount, and cares that the churn basis and gross margin are stated. The 3x is a yardstick, not a target to optimize to. The gross-margin-adjusted shape is settled; the churn input and the discount choice are bounded by the popularized form, not fixed by it. Name the churn basis and the discount treatment against real numbers rather than assume them.
 
 ## The defensible read
 
@@ -49,14 +49,7 @@ Name LTV and LTV:CAC as conventions (popularizer, Skok), state the churn input a
 
 IN SCOPE (from the reported aggregates and the stated method): naming LTV and the 3x rule as conventions, confirming the gross-margin adjustment, and surfacing the churn and discount assumptions in the stated method. OUT OF SCOPE (named but not computed): reconstructing ARPA, the churn input, and a discounted lifetime from customer-level data. Stating this boundary out loud is the authority move.
 
-## Citations (REFERENCE, not recall)
+## Citations
 
 - Popularized LTV formula, the "greater than 3x" rule of thumb, the no-SEC/no-standards-board status, and the baked-in assumptions (gross-margin-adjusted, one-over-churn lifetime, no discount): see the LTV and LTV:CAC section of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md) and the LTV and LTV:CAC entry in [`../evidence/canonical-definitions.json`](../evidence/canonical-definitions.json), including the note that Skok is the popularizer, not the originator.
 - The CAC side of the ratio and the term-collision warning: see `cac.md`.
-
-## Card-derivation notes
-
-- RECALL: the contested flag, that LTV and LTV:CAC are conventions, not standards (popularizer, Skok), the gross-margin-adjusted LTV form, the assumptions baked in (one-over-churn lifetime, no discount), the 3x as a heuristic not a threshold, and the CAC-ratio term collision.
-- CONTRAST card needed: undiscounted popularized LTV vs discounted LTV; LTV:CAC (this ratio) vs the codified CAC ratio (opposite direction).
-- REWORK card needed: "LTV:CAC of 3x is the standard" must be reworked (it is a popularizer heuristic, with no SEC or standards-board definition).
-- REFERENCE only: the exact Skok wording, the 7-8x upper band, per-founder churn and ARPA inputs.

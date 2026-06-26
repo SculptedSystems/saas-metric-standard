@@ -31,20 +31,20 @@ GRR diverges on the same basis and timing axes as NRR (it is the same cohort mea
 | Formula method | composition | (beginning value - churned - down-sell) / beginning value | standards board (GRR) | equivalent when terms are clean; sensitive to the contraction/churn split |
 | GRR on the NRR basis | basis | whatever basis the filer used for NRR, with the expansion term zeroed | SEC filers disclosing GRR alongside NRR | matches the paired NRR; inherits its basis risk |
 
-## What the investor likely recomputes on (the documented SOURCE for the target)
+## What the investor likely recomputes on
 
-This is the standard-level SOURCE for the engagement `target`: a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
+The named filers below are late-stage and large. The standard treats them as a proxy for the convention an early-stage investor carries, on the reasoning that a seed or Series A investor judges a raise against the basis the public market has settled on. So the convention named here is read off the public record, not asserted, and it is where a founder's number gets measured when no specific investor convention is on the table.
 
-Hypothesis, not direct evidence: the same basis and period as NRR, read as the floor underneath it. An investor who recomputes NRR on an ARR-basis cohort will recompute GRR the same way and compare the gap; a wide NRR-minus-GRR spread says expansion is carrying a leaky base. Validate per founder via the debrief loop.
+The record reads GRR on the same basis and period as NRR, as the floor underneath it. A reader who recomputes NRR on an ARR-basis cohort recomputes GRR the same way and compares the gap; a wide NRR-minus-GRR spread says expansion is carrying a leaky base. The basis is bounded by the paired NRR, not fixed by it. Name the convention against real numbers rather than assume one.
 
-## The defensible read (fallback default; anchor on the target when known)
+## The defensible read
 
-"Defensible" is investor-relative: it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
+"Defensible" is relative to the investor. It is the convention the raise gets judged against, which is not always the standard's default. So the read has two tiers.
 
-- **Fallback (the generic-defensible default, anchor when the target is unknown):** lead with GRR on the same basis you led with for NRR, so the pair is comparable, and state the no-expansion ceiling out loud. This is the codified default, the number to lead on when no investor or peer-set target is set.
-- **Target (anchor when known):** when the engagement's target convention is known (the investor's stated convention, or the peer-set-inferred one), anchor and lead GRR on the *same basis* as that target, and footnote the rest, including the generic fallback. The target is what the raise is judged against.
+- **The standard's default (use when no specific investor convention is known):** lead with GRR on the same basis you led with for NRR, so the pair is comparable, and state the no-expansion ceiling out loud. This is the codified read, the number to lead on by default.
+- **The investor's convention (use it when you know it):** when a specific investor's convention is known, lead GRR on the *same basis* as that convention and footnote the rest, including the default above. That convention is what the raise is measured against.
 
-Under either anchor, the aggressive move to avoid is reporting only NRR and omitting GRR, which lets expansion mask attrition; volunteering GRR is the credibility signal. Principle: defensibility, not optimization. `defect_gap` is absolute and does not move with the target.
+Under either anchor, the aggressive move to avoid is reporting only NRR and omitting GRR, which lets expansion mask attrition; volunteering GRR is the credibility signal. Principle: defensibility, not optimization. `defect_gap` is absolute and does not move with the convention you anchor on.
 
 ## Canonical formula
 
@@ -84,14 +84,7 @@ The predicate for classifying a GRR spread:
 
 IN SCOPE (from the reported aggregates): the composition axis, confirm expansion is excluded and the ceiling holds, and flag a missing GRR alongside a reported NRR. OUT OF SCOPE (named but not computed): the basis and timing, and the contraction-vs-churn split, which need customer-level data. Stating this boundary out loud is the authority move.
 
-## Citations (REFERENCE, not recall)
+## Citations
 
 - Standards-board cohort method (preferred) and formula method, and the no-expansion ceiling: the codified, snapshot-verified Gross Revenue Retention entry in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json), rendered alongside in the GRR / GDR section of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md).
 - Filers disclosing GRR on their chosen NRR basis: see the GRR / GDR section of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md).
-
-## Card-derivation notes
-
-- RECALL: the contested flag, the no-expansion ceiling (GRR at most 100%), the three axes, the cohort-vs-formula families, the contraction-vs-churn sub-question, the gross-vs-net error, the scope boundary.
-- CONTRAST card needed: GRR vs NRR (same cohort, expansion in vs out; the NRR-minus-GRR gap as the expansion-dependence read).
-- REWORK card needed: "GRR can exceed 100%" must be reworked (it is bounded at 100% when expansion is correctly excluded; a higher value signals expansion leakage or an FX artifact).
-- REFERENCE only: the exact standards-board wording, per-founder basis and split.

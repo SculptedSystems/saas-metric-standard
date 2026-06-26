@@ -9,7 +9,7 @@ authority: standards-board
 
 # Revenue recognition
 
-The revenue-recognition fluency to place a founder's number among the money-states, recognize which ASC 606 issue is in play, and defer the actual reconstruction to raw source systems. Revenue recognition is the one item in the library backed by an enforced standard (US GAAP, FASB Topic 606; Subtopic 340-40 for contract costs), not a convention. The operator-relevant model is extracted in [rev-rec-substrate.md](../evidence/rev-rec-substrate.md) from the KPMG Big-4 handbook; this entry is the teaching layer.
+Where a reported number sits among the money-states, which ASC 606 issue is in play, and why the actual reconstruction is deferred to raw source systems. Revenue recognition is the one item in the library backed by an enforced standard (US GAAP, FASB Topic 606; Subtopic 340-40 for contract costs), not a convention. The model is extracted in [rev-rec-substrate.md](../evidence/rev-rec-substrate.md) from the KPMG Big-4 handbook.
 
 ## The four money-states
 
@@ -56,8 +56,3 @@ Name the issue, then defer the computation. "That is a sources question, not a d
 ## Scope boundary
 
 IN SCOPE: placing the number among the four states, naming the GAAP vs non-GAAP boundary, and naming which ASC 606 issue is in play. OUT OF SCOPE (named but not computed): the actual recognition-schedule or deferred-revenue reconstruction from raw data.
-
-## Card-derivation notes
-
-- RECALL: the four money-states (after contracted, no fixed order); deferred revenue as billed-or-collected-not-yet-recognized, and its mirror the contract asset (recognized-not-yet-billed); the GAAP line (recognized only) vs the non-GAAP operating metrics; license = point-in-time vs SaaS = ratable; setup fees recognize over the term; SaaS usage = variable consideration (not the royalty exception), constrained to no-significant-reversal; principal vs agent = gross vs net revenue (the control test, the marketplace/payments/resale trap); RPO / cRPO as the GAAP-backed forward number vs non-GAAP ARR; renewals not before the renewal period; the deflection line near-verbatim.
-- REFERENCE: the five-step mechanics and per-issue depth in rev-rec-substrate.md; the KPMG handbook chapters; any per-founder recognition schedule.

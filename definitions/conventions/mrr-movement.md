@@ -34,7 +34,7 @@ The individual movement components are Board-defined (New Name ARR, Expansion CA
 
 ## What the investor likely recomputes on
 
-Hypothesis, not direct evidence: an investor recomputes the four-term revenue bridge on the same recurring-revenue basis they use for NRR and GRR, reads NRR off (Beginning + Expansion - Contraction - Churn) / Beginning and GRR off (Beginning - Contraction - Churn) / Beginning, and is skeptical of a bridge that nets reactivation into Expansion or that cannot separate contraction from churn. Validate per founder via the debrief loop.
+A reader recomputes the four-term revenue bridge on the same recurring-revenue basis used for NRR and GRR, reads NRR off (Beginning + Expansion - Contraction - Churn) / Beginning and GRR off (Beginning - Contraction - Churn) / Beginning, and is skeptical of a bridge that nets reactivation into Expansion or that cannot separate contraction from churn. The four-term identity is settled; the contraction-vs-churn split and the reactivation treatment are bounded by the bridge, not fixed by it. Name the terms and the split against real numbers rather than assume them.
 
 ## The defensible read
 
@@ -50,15 +50,8 @@ Lead with the four-term bridge on the same basis as the paired NRR and GRR, and 
 
 IN SCOPE (from the founder's stated movement aggregates): naming the bridge terms, confirming the four-term identity reconciles, and reading NRR and GRR off the stated New, Expansion, Contraction, and Churn figures. The bridge is computable from the founder's stated movement aggregates. OUT OF SCOPE (named but not computed): the true contraction-vs-churn split, the reactivation classification, and logo-vs-revenue movement, all of which need customer-level deltas, not the aggregates (the recognize-vs-reconstruct line per the README). Stating this boundary out loud is the authority move.
 
-## Citations (REFERENCE, not recall)
+## Citations
 
 - The Board-defined components (New Name ARR, Expansion CARR, Contraction / Down-Sell MRR, Churned MRR) and the NRR and GRR formula methods that sum them: see the New CAC Ratio (New Name ARR), Expansion CAC Ratio (Expansion CARR), and Gross Revenue Retention entries in [`../evidence/canonical-definitions.json`](../evidence/canonical-definitions.json), and the NRR and GRR formula methods in [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md).
 - The bridge identity itself is consensus arithmetic, not a codified standard: no authority publishes the summed "Beginning + New + Expansion - Contraction - Churn = Ending" formula; it is the accounting the Board components assume.
 - The retention metrics that decompose from the bridge: see `nrr.md`, `grr.md`, and `churn.md`.
-
-## Card-derivation notes
-
-- RECALL: the contested flag, the four-term identity (Beginning + New + Expansion - Contraction - Churn = Ending), that the components are Board-defined but the summed bridge is consensus arithmetic, that NRR and GRR read off the same bridge (NRR keeps Expansion, GRR drops it), the contraction-vs-churn boundary as the live divergence, reactivation as the open fifth-term question, logo-vs-revenue as two bridges, the scope boundary.
-- CONTRAST card needed: NRR vs GRR as two reads off one bridge (expansion in vs out); revenue bridge vs logo bridge.
-- REWORK card needed: "the movement bridge is a standards-board formula" must be reworked (the components are Board-defined; the summed identity is consensus arithmetic).
-- REFERENCE only: the exact Board component wording, the per-founder bucket figures and split.

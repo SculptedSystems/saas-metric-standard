@@ -34,20 +34,20 @@ NRR is the highest-divergence metric. Named public filers split materially on al
 | implied-monthly basis | basis | implied monthly subscription revenue end vs one year prior | BlackLine | similar to MRR; depends on revenue smoothing |
 | segment-restricted cohort | composition | only a healthy segment (for example "premium") in the cohort | Brightcove | restricting to a healthy segment usually raises it |
 
-## What the investor likely recomputes on (the documented SOURCE for the target)
+## What the investor likely recomputes on
 
-This is the standard-level SOURCE for the engagement `target`: a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
+The named filers below are late-stage and large. The standard treats them as a proxy for the convention an early-stage investor carries, on the reasoning that a seed or Series A investor judges a raise against the basis the public market has settled on. So the convention named here is read off the public record, not asserted, and it is where a founder's number gets measured when no specific investor convention is on the table.
 
-Hypothesis, not direct evidence: an ARR-basis, sometimes-averaged, sometimes-thresholded cohort convention. The SEC filers are large and late-stage, a proxy for the seed or Series A investor, not the investor themselves. The specific basis, timing, and cohort sophistication is to be validated against real call data (the debrief loop), not asserted.
+The record points to an ARR-basis cohort, sometimes averaged across the period, sometimes thresholded to a cohort segment. The specific basis, timing, and cohort sophistication vary by filer, so the direction is settled but the exact read is not. Name the convention against real numbers rather than assume one.
 
-## The defensible read (fallback default; anchor on the target when known)
+## The defensible read
 
-"Defensible" is investor-relative: it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
+"Defensible" is relative to the investor. It is the convention the raise gets judged against, which is not always the standard's default. So the read has two tiers.
 
-- **Fallback (the generic-defensible default, anchor when the target is unknown):** lead with the ARR-basis twelve-month cohort number (the standards-board cohort method, exemplified by MariaDB). Footnote the range. This is the codified default, the number to lead on when no investor or peer-set target is set.
-- **Target (anchor when known):** when the engagement's target convention is known (the investor's stated convention, or the peer-set-inferred one), anchor and lead on *that* number, and footnote the rest, including the generic fallback. The target is what the raise is judged against.
+- **The standard's default (use when no specific investor convention is known):** lead with the ARR-basis twelve-month cohort number (the standards-board cohort method, exemplified by MariaDB). Footnote the range. This is the codified read, the number to lead on by default.
+- **The investor's convention (use it when you know it):** when a specific investor's convention is known, lead on *that* number and footnote the rest, including the default above. That convention is what the raise is measured against.
 
-Under either anchor, the aggressive convention to avoid leading with is whichever inflates via composition (segment-restricting the cohort) or a flattering timing choice; that is always the labeled risk, never the headline. Principle: defensibility, not optimization, the number that survives an investor's recompute. `defect_gap` is absolute and does not move with the target.
+Under either anchor, the aggressive convention to avoid leading with is whichever inflates via composition (segment-restricting the cohort) or a flattering timing choice; that is always the labeled risk, never the headline. Principle: defensibility, not optimization, the number that survives an investor's recompute. `defect_gap` is absolute and does not move with the convention you anchor on.
 
 ## Canonical formula
 
@@ -87,13 +87,7 @@ The predicate for classifying an NRR spread:
 
 IN SCOPE (from the ~12 reported aggregates), the recognition side: the composition axis, confirm new logos are excluded and expansion and contraction are handled. OUT OF SCOPE (named but not computed): basis and timing, because they require raw customer-level data. The per-axis reconstruction from the client's raw source systems is out of scope for this standard. Stating this boundary out loud is the authority move.
 
-## Citations (REFERENCE, not recall)
+## Citations
 
 - Standards-board cohort method and the MariaDB, SEMrush, Q2, BlackLine, EverCommerce, Brightcove verbatim quotes (each with its SEC URL): see the NRR section of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md).
 - The divergence is evidenced by the named filers themselves: MariaDB reports on a recurring-revenue (ARR) basis, SEMrush on trailing GAAP revenue, Q2 on calendar revenue excluding acquired customers, BlackLine on implied-monthly, EverCommerce on a monthly average, Brightcove on a segment-restricted cohort. The robust claim is the divergence itself plus these verbatim examples.
-
-## Card-derivation notes
-
-- RECALL: the contested flag, the three axes, the convention-family names and which axis each sits on, the new-logo settled point, the gross-vs-net error, the scope boundary, the defensible default.
-- CONTRAST / REWORK card needed: "NRR is MRR-basis" must be reworked (it is one convention among several named filers).
-- REFERENCE only: the specific filer quotes, the per-founder spread arithmetic.

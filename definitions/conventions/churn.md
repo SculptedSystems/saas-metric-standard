@@ -33,20 +33,20 @@ Churn is really a small family of metrics, and the first failure is not picking 
 | Compounded annualization | timing | annual = 1 - (1 - monthly)^12 | standards-board convention | the correct derivation |
 | Linear annualization (monthly x 12) | timing | monthly churn times twelve | common founder shortcut | overstates annual churn; the annualization trap |
 
-## What the investor likely recomputes on (the documented SOURCE for the target)
+## What the investor likely recomputes on
 
-This is the standard-level SOURCE for the engagement `target`: a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
+The named filers below are late-stage and large. The standard treats them as a proxy for the convention an early-stage investor carries, on the reasoning that a seed or Series A investor judges a raise against the basis the public market has settled on. So the convention named here is read off the public record, not asserted, and it is where a founder's number gets measured when no specific investor convention is on the table.
 
-Hypothesis, not direct evidence: an investor reads logo churn and gross revenue churn underneath any net retention number, on the same basis as the paired retention metric, and is skeptical of a single headline "churn" figure that does not say logo-or-revenue and gross-or-net. Validate per founder via the debrief loop.
+The record reads logo churn and gross revenue churn underneath any net retention number, on the same basis as the paired retention metric. A single headline "churn" figure that does not say logo-or-revenue and gross-or-net gets discounted. The family is settled; the basis is bounded by the paired retention metric, not fixed by it. Name the family, basis, and churn moment against real numbers rather than assume one.
 
-## The defensible read (fallback default; anchor on the target when known)
+## The defensible read
 
-"Defensible" is investor-relative: it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
+"Defensible" is relative to the investor. It is the convention the raise gets judged against, which is not always the standard's default. So the read has two tiers.
 
-- **Fallback (the generic-defensible default, anchor when the target is unknown):** state which churn you mean (logo or revenue, gross or net) before quoting a number, and annualize monthly churn by compounding, not by multiplying by twelve. This is the codified default, the read to lead on when no investor or peer-set target is set.
-- **Target (anchor when known):** when the engagement's target convention is known (the investor's stated convention, or the peer-set-inferred one), anchor and lead on the *same basis* as that target's paired retention metric, and footnote the rest, including the generic fallback. The target is what the raise is judged against.
+- **The standard's default (use when no specific investor convention is known):** state which churn you mean (logo or revenue, gross or net) before quoting a number, and annualize monthly churn by compounding, not by multiplying by twelve. This is the codified read, the number to lead on by default.
+- **The investor's convention (use it when you know it):** when a specific investor's convention is known, lead on the *same basis* as that convention's paired retention metric and footnote the rest, including the default above. That convention is what the raise is measured against.
 
-Under either anchor, the aggressive move to avoid is leading with net revenue churn alone, which expansion can drive near zero or negative while gross attrition is real. Define the churn moment explicitly, since no authority does. Principle: defensibility, not optimization. `defect_gap` is absolute and does not move with the target.
+Under either anchor, the aggressive move to avoid is leading with net revenue churn alone, which expansion can drive near zero or negative while gross attrition is real. Define the churn moment explicitly, since no authority does. Principle: defensibility, not optimization. `defect_gap` is absolute and does not move with the convention you anchor on.
 
 ## Canonical formula
 
@@ -60,7 +60,7 @@ Standards-board logo-retention method (the defensible count-based default): the 
 |---|---|---|
 | Active customer count at start (the denominator) | CRM / billing | as of the beginning of the measurement period |
 | Retained customer count (start cohort still active at end) | CRM / billing | start cohort, evaluated as of period end |
-| Churn moment (cancel, access-ends, renewal date, or failed payment) | billing events | uncodified; must be defined per founder |
+| Churn moment (cancel, access-ends, renewal date, or failed payment) | billing events | uncodified; must be defined per company |
 | Period and annualization basis | data warehouse | monthly base compounded to annual; not linearly scaled |
 
 ## Reconciliation note
@@ -85,14 +85,7 @@ The predicate for classifying a churn spread:
 
 IN SCOPE (from the reported aggregates and the stated method): naming which churn family the founder is in, catching a net-only report, and catching the linear-annualization trap from the stated method. OUT OF SCOPE (named but not computed): the churn moment resolved against billing events, and the per-cohort revenue churn from customer-level data. Stating this boundary out loud is the authority move.
 
-## Citations (REFERENCE, not recall)
+## Citations
 
 - Standards-board logo retention (churn = 1 - retention) and the compounded annualization, the gross/net revenue churn inverses, and the uncodified churn moment: the codified, snapshot-verified Logo Retention entry in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json), rendered alongside in the Logo / Customer Retention and Revenue churn sections of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md).
 - GRR and NRR as the retention metrics churn inverts: see `grr.md` and `nrr.md`.
-
-## Card-derivation notes
-
-- RECALL: the contested flag, churn = 1 - retention, logo vs revenue and gross vs net as distinct metrics, gross churn at least zero vs net churn possibly negative, the compounded annualization formula, the uncodified churn moment, the gross-vs-net error, the annualization trap, the scope boundary.
-- CONTRAST card needed: logo churn vs revenue churn (count vs dollar weighting); gross vs net revenue churn (expansion out vs in).
-- REWORK card needed: "annual churn = monthly churn x 12" must be reworked (compound it).
-- REFERENCE only: the exact standards-board wording, per-founder churn moment and cohort figures.

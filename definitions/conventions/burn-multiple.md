@@ -15,7 +15,7 @@ A capital-efficiency ratio, net burn divided by net new ARR (lower is better), w
 
 ## Why it diverges
 
-The burn multiple has no SEC-disclosed or standards-board definition; the only authority is the origin post, so it should be named as a convention on a call. The ratio shape is fixed by the origin (net burn over net new ARR, deliberately inverted from Bessemer's Efficiency Score, which is net new ARR over net burn). The real divergence is on the composition axis: "net burn" itself is under-specified in the origin, so it must be defined explicitly on the call (what cash outflows are netted against what inflows, and whether one-time items are in).
+The burn multiple has no SEC-disclosed or standards-board definition; the only authority is the origin post, so it should be named as a convention. The ratio shape is fixed by the origin (net burn over net new ARR, deliberately inverted from Bessemer's Efficiency Score, which is net new ARR over net burn). The real divergence is on the composition axis: "net burn" itself is under-specified in the origin, so it must be defined explicitly (what cash outflows are netted against what inflows, and whether one-time items are in).
 
 ## The three axes (per Burn Multiple)
 
@@ -29,11 +29,11 @@ The burn multiple has no SEC-disclosed or standards-board definition; the only a
 |---|---|---|---|---|
 | Burn multiple (origin) | composition | net burn / net new ARR; lower is better | origin, David Sacks / Craft Ventures | the origin-author default |
 | Bessemer Efficiency Score (inverse) | composition | net new ARR / net burn; higher is better | Bessemer (named in the origin) | the reciprocal; same information, inverted direction |
-| Net-burn definition variants | composition | differ in what cash flows net into "net burn" | under-specified by the origin | must be defined explicitly on the call |
+| Net-burn definition variants | composition | differ in what cash flows net into "net burn" | under-specified by the origin | must be defined explicitly |
 
 ## What the investor likely recomputes on
 
-Hypothesis, not direct evidence: an investor reads the burn multiple as a capital-efficiency tier (the origin post gives a five-tier benchmark, lower being better) and cares most that net burn is defined consistently. A bare ratio with an undefined net-burn numerator gets discounted. Validate per founder via the debrief loop.
+A reader takes the burn multiple as a capital-efficiency tier (the origin post gives a five-tier benchmark, lower being better) and cares most that net burn is defined consistently. A bare ratio with an undefined net-burn numerator gets discounted. The ratio shape is settled; the net-burn definition is bounded by the origin, not fixed by it, since the origin under-specifies it. Name the net-burn definition against real numbers rather than assume one.
 
 ## The defensible read
 
@@ -47,13 +47,6 @@ No entry in `classic-errors.md` maps directly. The live errors are treating an u
 
 IN SCOPE (from the reported aggregates and the stated method): flagging that the metric is a convention, naming the net-burn definition the founder used, and catching the direction confusion with the Efficiency Score. OUT OF SCOPE (named but not computed): reconstructing net burn and net new ARR from source financials. Stating this boundary out loud is the authority move.
 
-## Citations (REFERENCE, not recall)
+## Citations
 
 - Origin definition (net burn / net new ARR), the Bessemer inverse, the under-specified net burn, and the five-tier benchmark: see the Burn Multiple section of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md) and the Burn Multiple entry in [`../evidence/canonical-definitions.json`](../evidence/canonical-definitions.json). Benchmark thresholds live in the origin post.
-
-## Card-derivation notes
-
-- RECALL: the contested flag, that it has no codified definition (origin-author only, Sacks / Craft), the ratio (net burn / net new ARR, lower better), the Bessemer Efficiency Score inverse, that net burn is under-specified and must be defined, and that it must be named as a convention on a call.
-- CONTRAST card needed: burn multiple vs Bessemer Efficiency Score (inverse ratios, opposite "good" direction).
-- REWORK card needed: "the burn multiple is a standard metric" must be reworked (it is an origin-author convention with an under-specified numerator).
-- REFERENCE only: the exact Craft Ventures wording, the five-tier thresholds, per-founder figures.
