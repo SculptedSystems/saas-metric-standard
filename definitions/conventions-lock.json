@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "library_sha256": "54ad5c91bc503da67c43df93068cf0be18971fdd7f634760fd4c0555e9e843e0",
+  "library_sha256": "0eca8620ec69516805211424e481a52d36a4a80d586e9a45f602a4b52ae374a0",
   "count": 13,
   "conventions": [
     {
@@ -19,7 +19,7 @@
       "id": "cac",
       "metric": "Customer Acquisition Cost",
       "file": "conventions/cac.md",
-      "content_sha256": "32758babb173ad421d03b3e4a4bf660695ec87ecb595dbc321c24d5e974d622b"
+      "content_sha256": "867374a6f0a8afc2bc1080fd1bfb737f443d56c0cbf4ebf91854a6feb95f17ff"
     },
     {
       "id": "churn",

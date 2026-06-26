@@ -2,7 +2,7 @@
 
 The neutral, single-source definitions at the core of The SaaS Metric Standard. This is the standard's substance (the definitions), not implementation.
 
-**Substantiation principle:** every definition ships with its cited primary authority and a public methodology. The taxonomy names one defensible answer per metric, the divergence map shows where the authorities differ, and the evidence layer carries the proof (each convention cites its primary authority in `evidence/canonical-verified.json`). Nothing rests on assertion.
+**Substantiation principle:** every definition ships with its cited primary authority and a public methodology. The codified `evidence/` layer carries the proof (each convention cites its primary authority in `evidence/canonical-verified.json`), the divergence map shows where the authorities differ along the three axes, and the conventions name one defensible read per metric against that authority. Nothing rests on assertion.
 
 This standard codifies the cited authorities (the SaaS Metrics Standards Board and the originators of coined metrics), like a working group maintaining a spec. It does not issue the definitions itself; it records, cites, and reconciles them.
 
@@ -10,18 +10,17 @@ This standard codifies the cited authorities (the SaaS Metrics Standards Board a
 
 | Layer | Dir | Role |
 |---|---|---|
-| **Taxonomy** | [`taxonomy/`](taxonomy/) | One opinionated, vendor-neutral answer per metric: how the standard defines it. The canonical record. |
-| **Divergence** | [`divergence/`](divergence/) | Where the authorities legitimately differ: the three axes and the point-in-time test. A map across external conventions. |
-| **Evidence** | [`evidence/`](evidence/) | The primary proof: the Standards Board and origin-author canonical definitions (snapshotted, hashed, verbatim-verified). |
+| **Evidence** | [`evidence/`](evidence/) | The canonical source of truth: the Standards Board and origin-author codified definitions (snapshotted, hashed, verbatim-verified). |
+| **Divergence** | [`divergence/`](divergence/) | Where the authorities legitimately differ: the three axes (composition, basis, timing) the divergence is mapped along. |
 | **Conventions** | [`conventions/`](conventions/) | The operational, per-metric layer: the canonical formula with named inputs, the composition-closed / basis-timing-bounded reconciliation, and the defensible / aggressive-vs-defect classification test. Schema in `_schema.md`. |
 
-Citation is one-way and fixed: the **taxonomy stands alone**; **divergence cites taxonomy** and **evidence**; **conventions cite divergence**. Never the reverse, so "which is canonical" is never ambiguous.
+Citation is one-way and fixed: the codified **`evidence/` definitions are canonical**; **conventions cite the evidence** and the **divergence axes**. Never the reverse, so "which is canonical" is never ambiguous.
 
 ## Drift contract: one definition, referenced not copied
 
 Every metric has exactly one canonical definition. Downstream consumers cite it; they never restate it. This extends the no-duplication discipline (cite, do not copy) to the definitions.
 
-Consumers reference the taxonomy rather than copying it, and each documents which taxonomy *version* it implements; nothing imports these files as a build artifact.
+Consumers reference the codified definition rather than copying it, and each documents which standard *version* it implements; nothing imports these files as a build artifact.
 
 ## Versioning
 
