@@ -17,12 +17,6 @@ The period-over-period bridge that reconciles beginning recurring revenue to end
 
 The individual movement components are Board-defined (New Name ARR, Expansion CARR, Contraction or Down-Sell MRR, Churned MRR are the standards-board terms NRR and GRR are built on). What is consensus arithmetic, not a codified standard, is the bridge identity that sums them: no authority publishes "Beginning + New + Expansion - Contraction - Churn = Ending" as a named formula, but it is the accounting that every retention metric assumes. The divergence is therefore not in the spine but at its joints. It diverges on composition, the one free-computable axis: where the line falls between a contraction (a retained account that shrank) and a churn (a lost account), whether reactivation or resurrection is a fifth category or folded into New, and whether the bridge is run on revenue (dollar movement) or on logos (count movement), which are different waterfalls over the same book.
 
-## The three axes (per the movement bridge)
-
-The movement bridge diverges mainly on composition: the five-or-six movement buckets and what falls in each. New (new-logo recurring revenue), Expansion (upsell or cross-sell within retained accounts), Contraction or Down-Sell (a downgrade within a retained account), Churn (a fully lost account). The unsettled sub-questions: the contraction-vs-churn boundary (when a downgrade becomes a loss); whether reactivation (a previously churned account returning) is a distinct term or counted as New; and logo movement vs revenue movement, which are separate bridges. The settled part is that New, Expansion, Contraction, and Churn are the four Board-defined terms and that they sum to the net change. Basis is ARR vs MRR vs implied-monthly, the same recurring-vs-other question as NRR and GRR, inherited by whichever retention metric reads off the bridge. Timing is the period of the bridge (monthly walk vs quarterly vs annual cohort) and whether the terms are point-in-time deltas or averaged, again inherited by the retention metric built on it.
-
-See [the three axes](../divergence/axes.md) for the shared model.
-
 ## Legitimate convention families
 
 | Family | Axis | Method (short) | Representative source | Direction vs defensible |
@@ -39,6 +33,12 @@ A reader recomputes the four-term revenue bridge on the same recurring-revenue b
 ## The defensible read
 
 Lead with the four-term bridge on the same basis as the paired NRR and GRR, and state the contraction-vs-churn rule and the reactivation treatment out loud rather than letting them sit inside an aggregate. The aggressive move to avoid is a bridge that folds reactivation or one-time revenue into Expansion, or that books a deep downgrade as contraction rather than churn, both of which flatter retention read off the bridge. Principle: defensibility, not optimization.
+
+## The three axes (per the movement bridge)
+
+The movement bridge diverges mainly on composition: the five-or-six movement buckets and what falls in each. New (new-logo recurring revenue), Expansion (upsell or cross-sell within retained accounts), Contraction or Down-Sell (a downgrade within a retained account), Churn (a fully lost account). The unsettled sub-questions: the contraction-vs-churn boundary (when a downgrade becomes a loss); whether reactivation (a previously churned account returning) is a distinct term or counted as New; and logo movement vs revenue movement, which are separate bridges. The settled part is that New, Expansion, Contraction, and Churn are the four Board-defined terms and that they sum to the net change. Basis is ARR vs MRR vs implied-monthly, the same recurring-vs-other question as NRR and GRR, inherited by whichever retention metric reads off the bridge. Timing is the period of the bridge (monthly walk vs quarterly vs annual cohort) and whether the terms are point-in-time deltas or averaged, again inherited by the retention metric built on it.
+
+See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Classic errors touching the movement bridge
 

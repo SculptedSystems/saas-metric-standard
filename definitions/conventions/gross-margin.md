@@ -17,12 +17,6 @@ The share of revenue left after the cost of delivering the product (revenue minu
 
 Gross margin enters this library as a codified dependency, not a free-standing headline: the standards-board CAC Payback Period formula divides new CARR by "Subscription Gross Margin Percentage" to express payback in gross profit, so the payback number is only as defensible as the margin fed into it. The divergence is almost entirely on the composition axis: what counts as cost of revenue (COGS) versus operating expense. The standards board itself punts the boundary, telling companies to "refer to how Customer Success is allocated to Operating Expenses versus Cost of Goods Sold in your company," so the same revenue yields a different margin depending on where hosting, support, customer success, and professional services land. A second divergence, subscription gross margin versus a blended company-wide gross margin, runs through real SEC filers and materially changes the payback denominator (named-filer citations below).
 
-## The three axes (per gross margin)
-
-Gross margin diverges mostly on composition, with a secondary basis split. Composition is the contested axis: what is in COGS. Hosting and infrastructure, customer support, customer success, and professional-services delivery cost are each in-or-out by judgment, and the standards board explicitly defers the COGS-versus-OpEx line to the company. Basis is the subscription gross margin (recurring product only, the codified payback input) vs a blended gross margin (all revenue, including lower-margin services); the codified CAC-payback dependency is the subscription margin, not the blended one. Timing matches the margin period (trailing month, quarter, or twelve months) to the new CARR being repaid.
-
-See [the three axes](../divergence/axes.md) for the shared model.
-
 ## Legitimate convention families
 
 | Family | Axis | Method (short) | Representative source | Direction vs defensible |
@@ -47,6 +41,14 @@ A reader checking CAC payback recomputes on a subscription gross margin (recurri
 
 Under either anchor, the aggressive move to avoid is feeding a blended company margin, or a margin with hosting, support, or customer-success cost pushed into OpEx, into the payback denominator, which understates the months. Principle: defensibility, not optimization. A defect classification is absolute and does not move with the convention anchored on.
 
+## Aggressive-vs-defect test
+
+The predicate for classifying a gross-margin spread:
+
+- **Defensible basis:** a subscription gross margin, recurring product revenue over its own COGS (hosting and support in), with the customer-success allocation named, on the standards-board payback dependency. This is the defensible read and the number that feeds CAC payback.
+- **Convention gap (aggressive but legitimate):** the spread reproduces only under a margin basis or COGS boundary an authority-traceable source actually uses, a customer-success cost included in COGS per the board's deferred allocation, or a blended company gross margin an SEC filer discloses (see the named-filer citations). Legitimate when named, but not the subscription margin the payback intends, so it is the labeled risk, not the defensible read.
+- **Defect gap:** no legitimate convention reproduces it. For example, hosting, support, or customer-success delivery cost pushed entirely into OpEx to inflate the margin and shorten payback, or a blended margin presented as a subscription margin without disclosure. No authority-traceable convention recovers the number.
+
 ## Canonical formula
 
 $$\text{Gross Margin \%}=\frac{\text{Revenue}-\text{COGS}}{\text{Revenue}}\quad(\text{for CAC payback, the ``Subscription Gross Margin \%'': recurring subscription revenue and its COGS only})$$
@@ -66,13 +68,11 @@ Standards-board dependency method (the defensible default): recurring subscripti
 
 Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm whether the margin is subscription or blended and which broad cost lines sit in COGS versus OpEx, and that closes from the aggregates. Basis and timing do not close. The subscription-versus-blended basis and the COGS-versus-OpEx allocation of hosting, support, and customer-success cost interact non-additively (reclassifying customer-success cost and stripping services margin are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the margin basis and COGS composition the founder used against the defensible subscription gross margin, and bound the direction and magnitude of the spread and its knock-on effect on CAC-payback months. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
 
-## Aggressive-vs-defect test
+## The three axes (per gross margin)
 
-The predicate for classifying a gross-margin spread:
+Gross margin diverges mostly on composition, with a secondary basis split. Composition is the contested axis: what is in COGS. Hosting and infrastructure, customer support, customer success, and professional-services delivery cost are each in-or-out by judgment, and the standards board explicitly defers the COGS-versus-OpEx line to the company. Basis is the subscription gross margin (recurring product only, the codified payback input) vs a blended gross margin (all revenue, including lower-margin services); the codified CAC-payback dependency is the subscription margin, not the blended one. Timing matches the margin period (trailing month, quarter, or twelve months) to the new CARR being repaid.
 
-- **Defensible basis:** a subscription gross margin, recurring product revenue over its own COGS (hosting and support in), with the customer-success allocation named, on the standards-board payback dependency. This is the defensible read and the number that feeds CAC payback.
-- **Convention gap (aggressive but legitimate):** the spread reproduces only under a margin basis or COGS boundary an authority-traceable source actually uses, a customer-success cost included in COGS per the board's deferred allocation, or a blended company gross margin an SEC filer discloses (see the named-filer citations). Legitimate when named, but not the subscription margin the payback intends, so it is the labeled risk, not the defensible read.
-- **Defect gap:** no legitimate convention reproduces it. For example, hosting, support, or customer-success delivery cost pushed entirely into OpEx to inflate the margin and shorten payback, or a blended margin presented as a subscription margin without disclosure. No authority-traceable convention recovers the number.
+See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Classic errors touching gross margin
 

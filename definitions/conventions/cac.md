@@ -17,12 +17,6 @@ The sales-and-marketing cost to win new business, expressed either as a per-cust
 
 What is actually codified is the CAC ratio (S&M to win one dollar of new ARR), not a single "cost per customer." The divergence runs through three composition questions: what goes in the S&M numerator (blended vs paid-only, fully-loaded vs ad-spend-only, whether customer-success cost is in), what counts in the denominator (new customers vs expansion vs both), and, for per-customer CAC, the new-customer count with its acquisition time-lag. Both the standards board and the KBCM survey split the ratio three ways (blended, new-customer, expansion) and agree on "fully-loaded." A separate term-collision: some sources use "CAC ratio" to mean LTV/CAC, which runs the opposite direction, so always state which.
 
-## The three axes (per CAC)
-
-CAC diverges on all three axes. Composition covers the S&M numerator (blended vs new-customer-allocated vs expansion-allocated; fully-loaded vs ad-spend-only; customer-success cost in or out) and the denominator (new-customer ARR vs expansion ARR vs both); the standards-board and KBCM consensus is fully-loaded S&M. Basis is per-customer cost vs the per-dollar-of-new-ARR ratio vs gross-margin-adjusted payback, and CAC payback is codified as gross-margin-adjusted: divide by gross-margin-adjusted new ARR or MRR, not raw revenue. Timing reflects the acquisition lag: the S&M period leads the ARR it acquired (the standards board uses prior-period, CQ-1, S&M against current new CARR).
-
-See [the three axes](../divergence/axes.md) for the shared model.
-
 ## Legitimate convention families
 
 | Family | Axis | Method (short) | Representative source | Direction vs defensible |
@@ -48,6 +42,14 @@ The record points to a fully-loaded, blended-or-new CAC ratio on new ARR, and CA
 
 Under either anchor, the aggressive moves to avoid: a paid-only or ad-spend-only numerator that understates true CAC, an expansion-inclusive denominator presented as new-customer efficiency, and a raw-revenue payback (divide it by gross margin: at ~75% GM, a "9 month" payback is really about 12). Principle: defensibility, not optimization. A defect classification is absolute and does not move with the convention anchored on.
 
+## Aggressive-vs-defect test
+
+The predicate for classifying a CAC-ratio or CAC-payback spread:
+
+- **Defensible basis:** a fully-loaded CAC ratio with the denominator named (blended, new, or expansion) on the standards-board method, and CAC payback on gross-margin-adjusted new CARR in months. This is the defensible read.
+- **Convention gap (aggressive but legitimate):** the spread reproduces only under a denominator or split an authority-traceable source actually uses, an expansion-inclusive blended ratio presented where new-customer efficiency was implied, or the standards-board nuance of including customer-success cost only where it is allocated to acquisition, or the KBCM survey's split definitions. Legitimate when named, but not the read implied, so it is the labeled risk, not the defensible read.
+- **Defect gap:** no legitimate convention reproduces it. For example, a paid-only or ad-spend-only numerator against the fully-loaded consensus, a raw-revenue payback that omits the gross-margin adjustment (at ~75% GM a "9 month" payback is really about 12), or the CAC-ratio / LTV:CAC term collision running the opposite direction. No authority-traceable source's convention recovers the number.
+
 ## Canonical formula
 
 Two codified forms share one S&M numerator: the CAC ratio (spend per dollar of new CARR) and CAC payback (months, gross-margin-adjusted).
@@ -72,13 +74,11 @@ Standards-board method (the defensible default): fully-loaded S&M, lagged by the
 
 Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates and the stated method we can confirm which numerator and denominator the founder used (blended versus new versus expansion, fully-loaded versus paid-only, ratio versus gross-margin-adjusted payback), and that closes from the aggregates. Basis and timing do not close. The fully-loaded S&M reconstruction, the new-versus-expansion spend allocation, the sales-cycle lag, and (for payback) the gross-margin adjustment interact non-additively (re-burdening commissions, reallocating customer-success cost, and applying a gross margin are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the numerator, denominator, lag, and margin the founder used against the defensible fully-loaded standards-board method, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
 
-## Aggressive-vs-defect test
+## The three axes (per CAC)
 
-The predicate for classifying a CAC-ratio or CAC-payback spread:
+CAC diverges on all three axes. Composition covers the S&M numerator (blended vs new-customer-allocated vs expansion-allocated; fully-loaded vs ad-spend-only; customer-success cost in or out) and the denominator (new-customer ARR vs expansion ARR vs both); the standards-board and KBCM consensus is fully-loaded S&M. Basis is per-customer cost vs the per-dollar-of-new-ARR ratio vs gross-margin-adjusted payback, and CAC payback is codified as gross-margin-adjusted: divide by gross-margin-adjusted new ARR or MRR, not raw revenue. Timing reflects the acquisition lag: the S&M period leads the ARR it acquired (the standards board uses prior-period, CQ-1, S&M against current new CARR).
 
-- **Defensible basis:** a fully-loaded CAC ratio with the denominator named (blended, new, or expansion) on the standards-board method, and CAC payback on gross-margin-adjusted new CARR in months. This is the defensible read.
-- **Convention gap (aggressive but legitimate):** the spread reproduces only under a denominator or split an authority-traceable source actually uses, an expansion-inclusive blended ratio presented where new-customer efficiency was implied, or the standards-board nuance of including customer-success cost only where it is allocated to acquisition, or the KBCM survey's split definitions. Legitimate when named, but not the read implied, so it is the labeled risk, not the defensible read.
-- **Defect gap:** no legitimate convention reproduces it. For example, a paid-only or ad-spend-only numerator against the fully-loaded consensus, a raw-revenue payback that omits the gross-margin adjustment (at ~75% GM a "9 month" payback is really about 12), or the CAC-ratio / LTV:CAC term collision running the opposite direction. No authority-traceable source's convention recovers the number.
+See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Classic errors touching CAC
 

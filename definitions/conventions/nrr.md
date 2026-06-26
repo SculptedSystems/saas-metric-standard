@@ -17,12 +17,6 @@ The share of recurring revenue retained from an existing-customer cohort over tw
 
 NRR is the highest-divergence metric. Named public filers split materially on all three axes: a recurring-revenue basis is one legitimate convention among several, and the divergence runs through recognizable peers (Autodesk, Asana on GAAP revenue; Okta, Cloudflare on ACV or annualized; MariaDB on ARR), not just obscure filers. The same customer book reports a different retention rate under each, and an investor recomputes against whichever the relevant peer set uses. The new-logo exclusion is the one near-settled point.
 
-## The three axes (per NRR)
-
-NRR diverges on all three axes, the only metric in the library to do so materially. Composition is the settled part: existing-customer cohort only, expansion and contraction in, new logos out, with the new-logo exclusion consistent across the named filers. Basis splits widest, recurring (ARR or MRR) vs GAAP-revenue (trailing-twelve-month or calendar) vs ACV or contracted vs implied-monthly. Timing is disclosed so inconsistently across filers that two independent readings often cannot classify it the same way.
-
-See [the three axes](../divergence/axes.md) for the shared model.
-
 ## Legitimate convention families
 
 | Family | Axis | Method (short) | Representative filer | Direction vs defensible |
@@ -49,6 +43,14 @@ The record points to an ARR-basis cohort, sometimes averaged across the period, 
 
 Under either anchor, the aggressive convention is whichever inflates via composition (segment-restricting the cohort) or a flattering timing choice; that is always the labeled risk, not the defensible read. Principle: defensibility, not optimization, the number that survives an investor's recompute. A defect classification is absolute and does not move with the convention anchored on.
 
+## Aggressive-vs-defect test
+
+The predicate for classifying an NRR spread:
+
+- **Defensible basis:** a recurring-revenue (ARR or MRR) cohort on the standards-board method, exemplified by MariaDB. This is the defensible read.
+- **Convention gap (aggressive but legitimate):** the spread reproduces only under a basis or timing an authority-traceable filer actually uses in its own filing, a GAAP-revenue basis (Autodesk, Asana) or an ACV / annualized basis (Okta, Cloudflare), or a monthly-average timing (EverCommerce), or a segment-restricted cohort (Brightcove). Legitimate, but not the defensible read, so it is the labeled risk, not the lead number.
+- **Defect gap:** no legitimate convention reproduces it. The timing-axis case is the shared point-in-time / timing test (see the [Point-in-time / timing test](../divergence/cheatsheet.md#point-in-time--timing-test) in the cheatsheet): here, the as-of BoP cohort cannot be reconstructed because no retained point-in-time state or history exists to rebuild it. Or new-logo revenue is folded into the cohort (the one error the market has largely settled against). No authority-traceable filer's convention recovers the number.
+
 ## Canonical formula
 
 $$\text{NRR}=\frac{\text{BOP value}+\text{Expansion}-\text{Contraction}-\text{Churn}}{\text{BOP value}}\quad(\text{existing customers only; ``value'' = ARR, revenue, or implied-MRR depending on the filer})$$
@@ -70,13 +72,11 @@ Standards-board cohort method (the defensible default): current value of the coh
 
 Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm the cohort is existing-customers-only with new logos out and expansion and contraction handled, and that closes from the aggregates. Basis and timing do not close. They interact non-additively (an ARR basis read point-in-time and a GAAP-revenue basis read as a trailing-twelve average are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the convention the founder used against the defensible ARR-basis cohort, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
 
-## Aggressive-vs-defect test
+## The three axes (per NRR)
 
-The predicate for classifying an NRR spread:
+NRR diverges on all three axes, the only metric in the library to do so materially. Composition is the settled part: existing-customer cohort only, expansion and contraction in, new logos out, with the new-logo exclusion consistent across the named filers. Basis splits widest, recurring (ARR or MRR) vs GAAP-revenue (trailing-twelve-month or calendar) vs ACV or contracted vs implied-monthly. Timing is disclosed so inconsistently across filers that two independent readings often cannot classify it the same way.
 
-- **Defensible basis:** a recurring-revenue (ARR or MRR) cohort on the standards-board method, exemplified by MariaDB. This is the defensible read.
-- **Convention gap (aggressive but legitimate):** the spread reproduces only under a basis or timing an authority-traceable filer actually uses in its own filing, a GAAP-revenue basis (Autodesk, Asana) or an ACV / annualized basis (Okta, Cloudflare), or a monthly-average timing (EverCommerce), or a segment-restricted cohort (Brightcove). Legitimate, but not the defensible read, so it is the labeled risk, not the lead number.
-- **Defect gap:** no legitimate convention reproduces it. The timing-axis case is the shared point-in-time / timing test (see the [Point-in-time / timing test](../divergence/cheatsheet.md#point-in-time--timing-test) in the cheatsheet): here, the as-of BoP cohort cannot be reconstructed because no retained point-in-time state or history exists to rebuild it. Or new-logo revenue is folded into the cohort (the one error the market has largely settled against). No authority-traceable filer's convention recovers the number.
+See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Classic errors touching NRR
 

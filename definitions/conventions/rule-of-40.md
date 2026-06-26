@@ -17,12 +17,6 @@ A health heuristic that a SaaS company's growth rate plus its profit margin shou
 
 The 40% threshold and the growth-plus-profit shape are the settled part. The divergence is on the profitability-basis axis: which profit margin goes in the second term. The standards board codifies free-cash-flow margin. But Brad Feld, who popularized the rule (2015), left the profitability term ambiguous, preferred EBITDA margin, and explicitly flagged EBITDA vs operating income vs net income vs FCF as unresolved (his own post credits others; the true originator is unattributed, so treat Feld as popularizer, not coiner). So this is a case where the standards-board convention and the popularizer's own preference differ, and a founder quoting "Rule of 40" may mean either. Treating FCF margin as the only legitimate basis is the rework-sensitive error.
 
-## The three axes (per Rule of 40)
-
-Rule of 40 diverges on basis. Composition is settled: the two-term sum (growth plus profit margin) and the 40% threshold. Basis is the contested axis, the profitability measure, FCF margin (standards board) vs EBITDA margin (Feld's preference) vs operating income vs net income (Feld flagged all as candidates); the growth basis (ARR growth vs GAAP revenue growth) is a secondary, lesser divergence. Timing is annual growth and annual margin over a trailing or current period, with FCF margin normalized over average ARR in the standards-board calc.
-
-See [the three axes](../divergence/axes.md) for the shared model.
-
 ## Legitimate convention families
 
 | Family | Axis | Method (short) | Representative source | Direction vs defensible |
@@ -39,6 +33,12 @@ Most readers land near the standards-board FCF-margin form, but a meaningful set
 ## The defensible read
 
 The profitability basis is stated with the number: "Rule of 40 on FCF margin" or "on EBITDA margin," never a bare "Rule of 40." FCF margin is the codified default; the EBITDA reading is the footnote. The aggressive move to avoid is silently picking whichever profit measure is most flattering for the company. Principle: defensibility, not optimization.
+
+## The three axes (per Rule of 40)
+
+Rule of 40 diverges on basis. Composition is settled: the two-term sum (growth plus profit margin) and the 40% threshold. Basis is the contested axis, the profitability measure, FCF margin (standards board) vs EBITDA margin (Feld's preference) vs operating income vs net income (Feld flagged all as candidates); the growth basis (ARR growth vs GAAP revenue growth) is a secondary, lesser divergence. Timing is annual growth and annual margin over a trailing or current period, with FCF margin normalized over average ARR in the standards-board calc.
+
+See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Classic errors touching Rule of 40
 

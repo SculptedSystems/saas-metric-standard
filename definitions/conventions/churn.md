@@ -17,12 +17,6 @@ The rate at which customers (logo churn) or recurring revenue (revenue churn) is
 
 Churn is really a small family of metrics, and the first failure is not picking the right member. Logo (customer-count) churn and revenue churn measure different things; gross and net revenue churn differ by whether expansion is netted in. The standards board frames the count-based metric as retention, not churn, with churn defined as one minus retention. Two conventions drive most of the legitimate divergence: the period and the annualization method, and the choice of churn moment, which no authority codifies and so must be stated explicitly.
 
-## The three axes (per churn)
-
-Churn diverges on composition and timing. Composition is logo vs revenue, and gross vs net: logo churn counts lost accounts regardless of size; revenue churn weights by dollars. Gross revenue churn (= 1 - GRR) excludes expansion and is at least zero; net revenue churn (= 1 - NRR) nets expansion in and can go below zero ("negative churn"). These are distinct metrics, not variants of one. Basis, for revenue churn, is the same ARR vs MRR vs revenue choice as NRR and GRR, inherited from the retention metric it inverts. Timing is the period (monthly vs annual) and the monthly-to-annual derivation, plus the churn moment, when a customer is counted as churned (cancellation, access-ends, renewal date, or failed payment); the moment is uncodified and must be defined.
-
-See [the three axes](../divergence/axes.md) for the shared model.
-
 ## Legitimate convention families
 
 | Family | Axis | Method (short) | Representative source | Direction vs defensible |
@@ -48,6 +42,14 @@ The record reads logo churn and gross revenue churn underneath any net retention
 
 Under either anchor, the aggressive move to avoid is leading with net revenue churn alone, which expansion can drive near zero or negative while gross attrition is real. The churn moment must be defined explicitly, since no authority does. Principle: defensibility, not optimization. A defect classification is absolute and does not move with the convention anchored on.
 
+## Aggressive-vs-defect test
+
+The predicate for classifying a churn spread:
+
+- **Defensible basis:** the standards-board logo-retention method (churn = 1 - retention) with monthly churn compounded to annual, and revenue churn read as 1 - GRR underneath any net figure. This is the defensible read.
+- **Convention gap (aggressive but legitimate):** the spread reproduces only under net revenue churn (1 - NRR), which an authority-traceable retention basis legitimately nets expansion into and which can read near zero or negative, or under a revenue basis or churn moment the paired retention metric legitimately adopts. Legitimate, but net-only hides gross and logo attrition, so it is the labeled risk, not the defensible read.
+- **Defect gap:** no legitimate convention reproduces it. For example, annual churn derived as monthly times twelve rather than compounded (the annualization trap), or one-time revenue inflating the base so the apparent revenue churn understates. No authority-traceable convention recovers the number.
+
 ## Canonical formula
 
 $$\text{Logo retention}=\frac{\text{customers at end who were customers at start}}{\text{active customers at start}}\qquad \text{logo churn}=1-\text{retention}\qquad \text{annual}=1-(1-\text{monthly})^{12}$$
@@ -67,13 +69,11 @@ Standards-board logo-retention method (the defensible count-based default): the 
 
 Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm which churn family the number is in (logo versus revenue, gross versus net) and that churn equals one minus the paired retention, and that closes from the aggregates. Basis and timing do not close. The revenue basis (ARR versus MRR versus revenue, inherited from the retention metric), the period and the monthly-to-annual derivation, and the uncodified churn moment interact non-additively (a basis reclassification and a churn-moment change are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the family, basis, and churn moment the founder used against the defensible logo-retention method with compounded annualization, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
 
-## Aggressive-vs-defect test
+## The three axes (per churn)
 
-The predicate for classifying a churn spread:
+Churn diverges on composition and timing. Composition is logo vs revenue, and gross vs net: logo churn counts lost accounts regardless of size; revenue churn weights by dollars. Gross revenue churn (= 1 - GRR) excludes expansion and is at least zero; net revenue churn (= 1 - NRR) nets expansion in and can go below zero ("negative churn"). These are distinct metrics, not variants of one. Basis, for revenue churn, is the same ARR vs MRR vs revenue choice as NRR and GRR, inherited from the retention metric it inverts. Timing is the period (monthly vs annual) and the monthly-to-annual derivation, plus the churn moment, when a customer is counted as churned (cancellation, access-ends, renewal date, or failed payment); the moment is uncodified and must be defined.
 
-- **Defensible basis:** the standards-board logo-retention method (churn = 1 - retention) with monthly churn compounded to annual, and revenue churn read as 1 - GRR underneath any net figure. This is the defensible read.
-- **Convention gap (aggressive but legitimate):** the spread reproduces only under net revenue churn (1 - NRR), which an authority-traceable retention basis legitimately nets expansion into and which can read near zero or negative, or under a revenue basis or churn moment the paired retention metric legitimately adopts. Legitimate, but net-only hides gross and logo attrition, so it is the labeled risk, not the defensible read.
-- **Defect gap:** no legitimate convention reproduces it. For example, annual churn derived as monthly times twelve rather than compounded (the annualization trap), or one-time revenue inflating the base so the apparent revenue churn understates. No authority-traceable convention recovers the number.
+See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Classic errors touching churn
 

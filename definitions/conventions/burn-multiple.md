@@ -17,12 +17,6 @@ A capital-efficiency ratio, net burn divided by net new ARR (lower is better), w
 
 The burn multiple has no SEC-disclosed or standards-board definition; the only authority is the origin post, so it should be named as a convention. The ratio shape is fixed by the origin (net burn over net new ARR, deliberately inverted from Bessemer's Efficiency Score, which is net new ARR over net burn). The real divergence is on the composition axis: "net burn" itself is under-specified in the origin, so it must be defined explicitly (what cash outflows are netted against what inflows, and whether one-time items are in).
 
-## The three axes (per Burn Multiple)
-
-Burn Multiple diverges on composition, specifically the definition of net burn. The ratio shape (net burn over net new ARR, lower better) is settled, but net burn is not, and that is the live divergence. On basis, the denominator is net new ARR (the origin uses ARR, not GAAP revenue) while the numerator is a cash measure, so the metric mixes a cash basis over an ARR basis by design. Timing is per-period (typically quarterly or annual) net burn against the net new ARR added in the same period.
-
-See [the three axes](../divergence/axes.md) for the shared model.
-
 ## Legitimate convention families
 
 | Family | Axis | Method (short) | Representative source | Direction vs defensible |
@@ -38,6 +32,12 @@ A reader takes the burn multiple as a capital-efficiency tier (the origin post g
 ## The defensible read
 
 Name it as a convention with a Craft Ventures origin, define net burn explicitly before quoting the ratio, and state that lower is better and that it is the inverse of Bessemer's Efficiency Score (so the direction is not confused). The aggressive move to avoid is a flattering, undefined net-burn numerator. Principle: defensibility, not optimization.
+
+## The three axes (per Burn Multiple)
+
+Burn Multiple diverges on composition, specifically the definition of net burn. The ratio shape (net burn over net new ARR, lower better) is settled, but net burn is not, and that is the live divergence. On basis, the denominator is net new ARR (the origin uses ARR, not GAAP revenue) while the numerator is a cash measure, so the metric mixes a cash basis over an ARR basis by design. Timing is per-period (typically quarterly or annual) net burn against the net new ARR added in the same period.
+
+See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Classic errors touching Burn Multiple
 

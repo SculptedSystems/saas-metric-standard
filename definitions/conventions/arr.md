@@ -17,12 +17,6 @@ Recurring revenue expressed on an annualized basis, excluding one-time and servi
 
 ARR is contested mainly on the basis axis: an annualized run-rate (MRR times 12) and committed or contracted ARR (CARR) are both legitimate and produce different numbers for the same business. Composition is more settled than NRR: filers consistently strip one-time and services revenue. The divergence bites hardest for companies with annual contracts, invoiced enterprise deals, or a billing layer over the processor.
 
-## The three axes (per ARR)
-
-ARR diverges mainly on basis. Composition is comparatively settled: recurring only, with one-time fees, setup, services, and overage excluded (more settled than for NRR). Basis is the live axis, annualized run-rate (current MRR times 12) vs committed or contracted (CARR, whether or not yet in production), and the standards board codifies CARR as a distinct metric. Timing follows from basis: a point-in-time run-rate as of period end vs a contracted view that includes signed-not-yet-live revenue.
-
-See [the three axes](../divergence/axes.md) for the shared model.
-
 ## Legitimate convention families
 
 | Family | Axis | Method (short) | Representative source | Direction vs defensible |
@@ -46,6 +40,14 @@ The record points to an annualized run-rate on clean recurring revenue, with com
 
 Under either anchor, the aggressive move to avoid is blending one-time, services, or signed-not-live revenue into the reported number. A defect classification is absolute and does not move with the convention anchored on.
 
+## Aggressive-vs-defect test
+
+The predicate for classifying an ARR spread:
+
+- **Defensible basis:** an annualized run-rate on clean recurring revenue, the standards-board MRR x 12 method. This is the defensible read.
+- **Convention gap (aggressive but legitimate):** the spread reproduces only under the committed or contracted sense an authority-traceable source actually uses, the standards-board CARR ("whether in production or not yet in production") or the KBCM survey's committed run-rate basis. Legitimate, but it is CARR, not ARR, so it is the labeled risk, not the defensible read.
+- **Defect gap:** no legitimate convention reproduces it. For example, one-time or services revenue folded into the recurring base, an off-processor invoiced book double-counted through a billing layer over the processor, or an annual deal booked as a full month of MRR. No authority-traceable source's convention recovers the number.
+
 ## Canonical formula
 
 $$\text{ARR}=\text{MRR}\times 12\quad(\text{MRR}=\text{the most recent month's recurring revenue; one-time and services excluded})$$
@@ -64,13 +66,11 @@ Standards-board run-rate method (the defensible default): the most recent month'
 
 Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm one-time and services are stripped and the base is recurring only, and that closes from the aggregates. Basis and timing do not close. Run-rate versus committed (CARR) and the off-processor or billing-layer corrections interact non-additively (an off-processor reconciliation and a run-rate-vs-committed reclassification are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the sense the founder used against the defensible clean run-rate, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
 
-## Aggressive-vs-defect test
+## The three axes (per ARR)
 
-The predicate for classifying an ARR spread:
+ARR diverges mainly on basis. Composition is comparatively settled: recurring only, with one-time fees, setup, services, and overage excluded (more settled than for NRR). Basis is the live axis, annualized run-rate (current MRR times 12) vs committed or contracted (CARR, whether or not yet in production), and the standards board codifies CARR as a distinct metric. Timing follows from basis: a point-in-time run-rate as of period end vs a contracted view that includes signed-not-yet-live revenue.
 
-- **Defensible basis:** an annualized run-rate on clean recurring revenue, the standards-board MRR x 12 method. This is the defensible read.
-- **Convention gap (aggressive but legitimate):** the spread reproduces only under the committed or contracted sense an authority-traceable source actually uses, the standards-board CARR ("whether in production or not yet in production") or the KBCM survey's committed run-rate basis. Legitimate, but it is CARR, not ARR, so it is the labeled risk, not the defensible read.
-- **Defect gap:** no legitimate convention reproduces it. For example, one-time or services revenue folded into the recurring base, an off-processor invoiced book double-counted through a billing layer over the processor, or an annual deal booked as a full month of MRR. No authority-traceable source's convention recovers the number.
+See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Classic errors touching ARR
 

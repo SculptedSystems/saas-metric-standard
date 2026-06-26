@@ -17,12 +17,6 @@ The gross-profit value of a customer over their expected lifetime (LTV), and the
 
 There is no codified LTV or LTV:CAC definition; Skok popularized the gross-margin-adjusted LTV and the "greater than 3x, sometimes 7-8x" ratio, so both must be named as conventions, not standards. The "3x rule" in particular is a heuristic, not a settled threshold. LTV itself diverges on the basis axis through the assumptions baked into the popularized formula: a gross-margin-adjusted ARPA, a simple lifetime of one over churn, and no discount rate. Change the churn input or add a discount rate and the same customer book yields a materially different LTV, which then moves the ratio.
 
-## The three axes (per LTV / LTV:CAC)
-
-LTV diverges mainly on basis. Composition is comparatively settled: the gross-margin adjustment (LTV is gross-profit, not revenue, based), and the ratio comparing LTV to CAC, with the popularized form folding gross margin in. Basis is the live axis, the churn rate used (which churn, on which basis) and whether a discount rate is applied; the popularized formula uses monthly churn and a simple one-over-churn lifetime with no discounting, both contestable inputs and the main source of divergence. Timing is the lifetime horizon implied by one over churn (an infinite-geometric expected life) vs a finite-horizon or discounted-cash-flow view.
-
-See [the three axes](../divergence/axes.md) for the shared model.
-
 ## Legitimate convention families
 
 | Family | Axis | Method (short) | Representative source | Direction vs defensible |
@@ -38,6 +32,12 @@ A reader takes LTV:CAC as a directional sanity check (roughly 3x as "healthy," w
 ## The defensible read
 
 Name LTV and LTV:CAC as conventions (popularizer, Skok), state the churn input and whether the LTV is discounted, and treat 3x as a heuristic, not a pass/fail line. The aggressive moves to avoid: an LTV inflated by an understated churn rate or a revenue (not gross-profit) base, and presenting "3x" as a standard. Principle: defensibility, not optimization.
+
+## The three axes (per LTV / LTV:CAC)
+
+LTV diverges mainly on basis. Composition is comparatively settled: the gross-margin adjustment (LTV is gross-profit, not revenue, based), and the ratio comparing LTV to CAC, with the popularized form folding gross margin in. Basis is the live axis, the churn rate used (which churn, on which basis) and whether a discount rate is applied; the popularized formula uses monthly churn and a simple one-over-churn lifetime with no discounting, both contestable inputs and the main source of divergence. Timing is the lifetime horizon implied by one over churn (an infinite-geometric expected life) vs a finite-horizon or discounted-cash-flow view.
+
+See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Classic errors touching LTV
 

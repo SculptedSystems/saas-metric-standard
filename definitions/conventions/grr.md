@@ -17,12 +17,6 @@ The share of recurring revenue retained from an existing-customer cohort over tw
 
 GRR diverges on the same basis and timing axes as NRR (it is the same cohort measured without the expansion term), plus one composition question of its own: where the line falls between contraction and churn. The no-expansion ceiling is the settled, defining contrast with NRR: any GRR above 100% signals expansion leaked into the number (or, rarely, an FX or measurement artifact), not a strong result. Because it strips expansion, GRR exposes the churn and contraction that a healthy NRR can hide, which is exactly why an investor reads it underneath NRR.
 
-## The three axes (per GRR)
-
-GRR diverges on the same axes as NRR, inheriting its basis and timing choice. Composition is existing-customer cohort only, contraction and churn in, all expansion out; the expansion exclusion is the settled part, and the unsettled sub-question is what counts as contraction (a downgrade within a retained account) versus churn (a lost account), which moves the two terms but not the total. Basis is recurring (ARR or MRR) vs GAAP-revenue vs ACV or contracted vs implied-monthly, and filers that disclose GRR almost always use the same basis they chose for NRR. Timing is point-in-time "as of period end" vs an average across the twelve months vs a year-over-year cohort, again inherited from the NRR choice.
-
-See [the three axes](../divergence/axes.md) for the shared model.
-
 ## Legitimate convention families
 
 | Family | Axis | Method (short) | Representative source | Direction vs defensible |
@@ -46,6 +40,14 @@ The record reads GRR on the same basis and period as NRR, as the floor underneat
 
 Under either anchor, the aggressive move to avoid is reporting only NRR and omitting GRR, which lets expansion mask attrition; volunteering GRR is the credibility signal. Principle: defensibility, not optimization. A defect classification is absolute and does not move with the convention anchored on.
 
+## Aggressive-vs-defect test
+
+The predicate for classifying a GRR spread:
+
+- **Defensible basis:** the standards-board cohort method on the same basis the founder used for NRR, so the pair is comparable. This is the defensible read.
+- **Convention gap (aggressive but legitimate):** the spread reproduces only under a basis or timing an authority-traceable filer actually uses for its paired retention, a GAAP-revenue or ACV basis, a monthly-average timing, or a contraction-versus-churn split that an SEC filer disclosing GRR alongside NRR adopts. Legitimate, but it inherits the NRR basis risk, so it is the labeled risk, not the defensible read.
+- **Defect gap:** no legitimate convention reproduces it. The timing-axis case is the shared point-in-time / timing test (see the [Point-in-time / timing test](../divergence/cheatsheet.md#point-in-time--timing-test) in the cheatsheet): here, the as-of cohort cannot be reconstructed because no retained point-in-time state or history exists to rebuild it. Or a GRR reported above 100% (expansion leaked into the number, the one error the no-expansion ceiling settles against), or one-time revenue inflating the cohort base so the apparent churn understates. No authority-traceable filer's convention recovers the number.
+
 ## Canonical formula
 
 $$\text{GRR}=\frac{\text{BOP value}-\text{Contraction}-\text{Churn}}{\text{BOP value}}\le 100\%\quad(\text{existing customers only; no expansion term; ``value'' = ARR, revenue, or implied-MRR depending on the filer})$$
@@ -66,13 +68,11 @@ Standards-board cohort method (the defensible default): the period-end value of 
 
 Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm expansion is excluded and the 100% ceiling holds, and that closes from the aggregates. Basis and timing do not close. They interact non-additively (an ARR-basis cohort read point-in-time and a GAAP-revenue basis read as a trailing-twelve average are not a sum of separable adjustments), and the contraction-versus-churn split moves the two terms within a fixed total, so they are reconciled bounded and qualitative: name the convention the founder used against the defensible cohort method on the NRR basis, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
 
-## Aggressive-vs-defect test
+## The three axes (per GRR)
 
-The predicate for classifying a GRR spread:
+GRR diverges on the same axes as NRR, inheriting its basis and timing choice. Composition is existing-customer cohort only, contraction and churn in, all expansion out; the expansion exclusion is the settled part, and the unsettled sub-question is what counts as contraction (a downgrade within a retained account) versus churn (a lost account), which moves the two terms but not the total. Basis is recurring (ARR or MRR) vs GAAP-revenue vs ACV or contracted vs implied-monthly, and filers that disclose GRR almost always use the same basis they chose for NRR. Timing is point-in-time "as of period end" vs an average across the twelve months vs a year-over-year cohort, again inherited from the NRR choice.
 
-- **Defensible basis:** the standards-board cohort method on the same basis the founder used for NRR, so the pair is comparable. This is the defensible read.
-- **Convention gap (aggressive but legitimate):** the spread reproduces only under a basis or timing an authority-traceable filer actually uses for its paired retention, a GAAP-revenue or ACV basis, a monthly-average timing, or a contraction-versus-churn split that an SEC filer disclosing GRR alongside NRR adopts. Legitimate, but it inherits the NRR basis risk, so it is the labeled risk, not the defensible read.
-- **Defect gap:** no legitimate convention reproduces it. The timing-axis case is the shared point-in-time / timing test (see the [Point-in-time / timing test](../divergence/cheatsheet.md#point-in-time--timing-test) in the cheatsheet): here, the as-of cohort cannot be reconstructed because no retained point-in-time state or history exists to rebuild it. Or a GRR reported above 100% (expansion leaked into the number, the one error the no-expansion ceiling settles against), or one-time revenue inflating the cohort base so the apparent churn understates. No authority-traceable filer's convention recovers the number.
+See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Classic errors touching GRR
 
