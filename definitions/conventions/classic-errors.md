@@ -6,7 +6,6 @@ contested: false
 gear: 1
 authority: working-consensus
 diverges_on: []
-filer_evidence: []
 ---
 
 # The five classic errors

@@ -6,7 +6,6 @@ contested: true
 gear: 2
 authority: origin-author
 diverges_on: [composition]
-filer_evidence: []
 ---
 
 # Burn Multiple
@@ -17,7 +16,7 @@ A capital-efficiency ratio, net burn divided by net new ARR (lower is better), w
 
 ## Why it diverges
 
-The burn multiple has no SEC-disclosed or standards-board definition; the only authority is the origin post, so it should be named as a convention. The ratio shape is fixed by the origin (net burn over net new ARR, deliberately inverted from Bessemer's Efficiency Score, which is net new ARR over net burn). The real divergence is on the composition axis: "net burn" itself is under-specified in the origin, so it must be defined explicitly (what cash outflows are netted against what inflows, and whether one-time items are in).
+The burn multiple has no codified standards-board definition; the only authority is the origin post, so it should be named as a convention. The ratio shape is fixed by the origin (net burn over net new ARR, deliberately inverted from Bessemer's Efficiency Score, which is net new ARR over net burn). The real divergence is on the composition axis: "net burn" itself is under-specified in the origin, so it must be defined explicitly (what cash outflows are netted against what inflows, and whether one-time items are in).
 
 ## Legitimate convention families
 

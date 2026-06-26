@@ -6,7 +6,6 @@ contested: true
 gear: 2
 authority: origin-author
 diverges_on: [basis]
-filer_evidence: []
 ---
 
 # SaaS Quick Ratio
@@ -17,7 +16,7 @@ A growth-efficiency ratio comparing recurring revenue gained to recurring revenu
 
 ## Why it diverges
 
-The SaaS quick ratio has no SEC-disclosed or standards-board definition. The only authority is the origin author, Mamoon Hamid, who coined it while at Social Capital, so it must be named as a convention. Within that origin definition the divergence is on the basis axis (MRR, the original form, vs an ARR restatement) and, because the ratio's four inputs are the movement-bridge terms, it inherits the bridge's contraction-vs-churn boundary: whatever moves a dollar between the Contraction and Churn buckets moves it within the denominator but does not change the ratio, while the New-vs-reactivation question can move the numerator. Hamid's ">= 4 is investable" rule of thumb is his hypothesis, not a standard; treat it as a reference and never assert the cutoff as settled.
+The SaaS quick ratio has no codified standards-board definition. The only authority is the origin author, Mamoon Hamid, who coined it while at Social Capital, so it must be named as a convention. Within that origin definition the divergence is on the basis axis (MRR, the original form, vs an ARR restatement) and, because the ratio's four inputs are the movement-bridge terms, it inherits the bridge's contraction-vs-churn boundary: whatever moves a dollar between the Contraction and Churn buckets moves it within the denominator but does not change the ratio, while the New-vs-reactivation question can move the numerator. Hamid's ">= 4 is investable" rule of thumb is his hypothesis, not a standard; treat it as a reference and never assert the cutoff as settled.
 
 ## Legitimate convention families
 

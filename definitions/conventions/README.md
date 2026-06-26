@@ -5,7 +5,6 @@ The per-metric operational layer of the standard: one file per metric on a fixed
 This library does **not** restate the authority. Following the cite-do-not-duplicate discipline, the canonical sources stay canonical and this library cites them:
 
 - **Standards-board + origin-author definitions:** the SaaS Metrics Standards Board codified consensus and the origin authors for coined metrics, recorded in [`../evidence/canonical-definitions.json`](../evidence/canonical-definitions.json) and frozen in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json).
-- **Verbatim filer citations (named 10-K quotes with SEC URLs):** inline in each convention's `## Citations` section on the metric page.
 
 What this library adds on top of those is the **operational layer**: the three-axis decomposition (composition, basis, timing), the defensible-read framing, and the classic-error mapping.
 
@@ -24,4 +23,4 @@ What this library adds on top of those is the **operational layer**: the three-a
 
 ## Evidence tiers
 
-Grounding strength varies by metric; each entry's `authority` field marks its tier. ARR, NRR, and GRR rest on the SaaS Metrics Standards Board codified definitions plus the verbatim, named filer citations (real 10-K quotes with SEC URLs) inline in each metric page's Citations section, both firm and classifier-independent; the rest rest on the SaaS Metrics Standards Board (codified) or the origin author (magic number, burn multiple, LTV:CAC). Read their divergence as documented convention variance (for example FCF vs EBITDA in the Rule of 40) and, for ARR/NRR/GRR, as the concrete divergence between named filers.
+Grounding strength varies by metric; each entry's `authority` field marks its tier. ARR, NRR, and GRR rest on the SaaS Metrics Standards Board codified definitions, firm and classifier-independent; the rest rest on the SaaS Metrics Standards Board (codified) or the origin author (magic number, burn multiple, LTV:CAC). Read their divergence as documented convention variance (for example FCF vs EBITDA in the Rule of 40, or the recurring-vs-contracted basis split for ARR/NRR/GRR), measured against the codified convention.

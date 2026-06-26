@@ -6,7 +6,6 @@ contested: true
 gear: 2
 authority: standards-board
 diverges_on: [composition, basis, timing]
-filer_evidence: []
 ---
 
 # Gross Revenue Retention (GRR)
@@ -25,13 +24,13 @@ GRR diverges on the same basis and timing axes as NRR (it is the same cohort mea
 |---|---|---|---|---|
 | Cohort method (standards-board preferred) | basis + timing | adjusted MRR or ARR from the period-end cohort over that cohort's value at period start | standards board (GRR) | the defensible default |
 | Formula method | composition | (beginning value - churned - down-sell) / beginning value | standards board (GRR) | equivalent when terms are clean; sensitive to the contraction/churn split |
-| GRR on the NRR basis | basis | whatever basis the filer used for NRR, with the expansion term zeroed | SEC filers disclosing GRR alongside NRR | matches the paired NRR; inherits its basis risk |
+| GRR on the NRR basis | basis | whatever basis was used for NRR, with the expansion term zeroed | common practice (GRR disclosed alongside NRR) | matches the paired NRR; inherits its basis risk |
 
 ## What the investor likely recomputes on
 
-The named filers below are late-stage and large. The standard treats them as a proxy for the convention an early-stage investor carries, on the reasoning that a seed or Series A investor judges a raise against the basis the public market has settled on. So the convention named here is read off the public record, and it is where a founder's number gets measured when no specific investor convention is on the table.
+The codified convention is the basis a founder's number gets measured against when no specific investor convention is on the table. It is the standard's default anchor.
 
-The record reads GRR on the same basis and period as NRR, as the floor underneath it. A reader who recomputes NRR on an ARR-basis cohort recomputes GRR the same way and compares the gap; a wide NRR-minus-GRR spread says expansion is carrying a leaky base. The basis is bounded by the paired NRR, not fixed by it. Name the convention against real numbers rather than assume one.
+The codified GRR reads on the same basis and period as NRR, as the floor underneath it. A reader who recomputes NRR on an ARR-basis cohort recomputes GRR the same way and compares the gap; a wide NRR-minus-GRR spread says expansion is carrying a leaky base. The basis is bounded by the paired NRR, not fixed by it. Name the convention against the codified one rather than assume it.
 
 ## The defensible read
 
@@ -47,13 +46,13 @@ Under either anchor, the aggressive move to avoid is reporting only NRR and omit
 The predicate for classifying a GRR spread:
 
 - **Defensible basis:** the standards-board cohort method on the same basis the founder used for NRR, so the pair is comparable. This is the defensible read.
-- **Convention gap (aggressive but legitimate):** the spread reproduces only under a basis or timing an authority-traceable filer actually uses for its paired retention, a GAAP-revenue or ACV basis, a monthly-average timing, or a contraction-versus-churn split that an SEC filer disclosing GRR alongside NRR adopts. Legitimate, but it inherits the NRR basis risk, so it is the labeled risk, not the defensible read.
-- **Defect gap:** no legitimate convention reproduces it. The timing-axis case is the shared point-in-time / timing test (see [the three axes](../divergence/axes.md)): here, the as-of cohort cannot be reconstructed because no retained point-in-time state or history exists to rebuild it. Or a GRR reported above 100% (expansion leaked into the number, the one error the no-expansion ceiling settles against), or one-time revenue inflating the cohort base so the apparent churn understates. No authority-traceable filer's convention recovers the number.
+- **Convention gap (aggressive but legitimate):** the spread reproduces only under a basis or timing an authority-traceable convention actually uses for its paired retention, a GAAP-revenue or ACV basis, a monthly-average timing, or a contraction-versus-churn split adopted where GRR is disclosed alongside NRR. Legitimate, but it inherits the NRR basis risk, so it is the labeled risk, not the defensible read.
+- **Defect gap:** no legitimate convention reproduces it. The timing-axis case is the shared point-in-time / timing test (see [the three axes](../divergence/axes.md)): here, the as-of cohort cannot be reconstructed because no retained point-in-time state or history exists to rebuild it. Or a GRR reported above 100% (expansion leaked into the number, the one error the no-expansion ceiling settles against), or one-time revenue inflating the cohort base so the apparent churn understates. No authority-traceable convention recovers the number.
 
 ## Canonical formula
 
 $$
-\text{GRR}=\frac{\text{BOP value}-\text{Contraction}-\text{Churn}}{\text{BOP value}}\le 100\%\quad(\text{existing customers only; no expansion term; ``value'' = ARR, revenue, or implied-MRR depending on the filer})
+\text{GRR}=\frac{\text{BOP value}-\text{Contraction}-\text{Churn}}{\text{BOP value}}\le 100\%\quad(\text{existing customers only; no expansion term; ``value'' = ARR, revenue, or implied-MRR depending on the basis})
 $$
 Primary source: the Standards Board codified GRR method, cohort method (preferred), "Adjusted MRR from the cohort of customers at the end of the period / MRR at the beginning of the measurement period," recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/gross-revenue-retention). The board also publishes the equivalent formula method, "((Beginning MRR - Churned MRR - Down-Sell MRR) / Beginning MRR) x 100". This convention carries its own basis and timing divergence (see the three axes section below); the codified method is the authority here.
 
@@ -73,7 +72,7 @@ Composition-closed, basis/timing-bounded. The composition axis closes to a zero 
 
 ## The three axes (per GRR)
 
-GRR diverges on the same axes as NRR, inheriting its basis and timing choice. Composition is existing-customer cohort only, contraction and churn in, all expansion out; the expansion exclusion is the settled part, and the unsettled sub-question is what counts as contraction (a downgrade within a retained account) versus churn (a lost account), which moves the two terms but not the total. Basis is recurring (ARR or MRR) vs GAAP-revenue vs ACV or contracted vs implied-monthly, and filers that disclose GRR almost always use the same basis they chose for NRR. Timing is point-in-time "as of period end" vs an average across the twelve months vs a year-over-year cohort, again inherited from the NRR choice.
+GRR diverges on the same axes as NRR, inheriting its basis and timing choice. Composition is existing-customer cohort only, contraction and churn in, all expansion out; the expansion exclusion is the settled part, and the unsettled sub-question is what counts as contraction (a downgrade within a retained account) versus churn (a lost account), which moves the two terms but not the total. Basis is recurring (ARR or MRR) vs GAAP-revenue vs ACV or contracted vs implied-monthly, and a disclosed GRR almost always uses the same basis chosen for NRR. Timing is point-in-time "as of period end" vs an average across the twelve months vs a year-over-year cohort, again inherited from the NRR choice.
 
 See [the three axes](../divergence/axes.md) for the shared model.
 
@@ -90,4 +89,4 @@ IN SCOPE (from the reported aggregates): the composition axis, confirm expansion
 ## Citations
 
 - Standards-board cohort method (preferred), "Adjusted MRR from the cohort of customers at the end of the period / MRR at the beginning of the measurement period," and formula method, "((Beginning MRR - Churned MRR - Down-Sell MRR) / Beginning MRR) x 100", and the no-expansion ceiling: the codified, snapshot-verified Gross Revenue Retention entry in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/gross-revenue-retention).
-- Filers that disclose GRR almost always use the same basis they chose for NRR; the NRR basis-and-timing divergence and its verbatim filer quotes are carried in [`nrr.md`](nrr.md).
+- A disclosed GRR almost always uses the same basis chosen for NRR; the NRR basis-and-timing divergence is carried in [`nrr.md`](nrr.md).

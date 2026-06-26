@@ -6,7 +6,6 @@ contested: true
 gear: 2
 authority: standards-board
 diverges_on: [composition, basis, timing]
-filer_evidence: []
 ---
 
 # Customer Acquisition Cost (CAC)
@@ -31,9 +30,9 @@ What is actually codified is the CAC ratio (S&M to win one dollar of new ARR), n
 
 ## What the investor likely recomputes on
 
-The named filers below are late-stage and large. The standard treats them as a proxy for the convention an early-stage investor carries, on the reasoning that a seed or Series A investor judges a raise against the basis the public market has settled on. So the convention named here is read off the public record, and it is where a founder's number gets measured when no specific investor convention is on the table.
+The applicable convention is the codified one: the standards-board CAC ratio and CAC payback methods. An investor recomputes a founder's number against that codified convention when no specific investor convention is on the table, and that is where the number gets measured.
 
-The record points to a fully-loaded, blended-or-new CAC ratio on new ARR, and CAC payback on gross-margin-adjusted revenue. The fully-loaded numerator and the gross-margin adjustment are settled; what varies is whether a given reader leans blended or new-customer. Name the numerator, denominator, and basis against real numbers rather than assume one.
+The codified methods point to a fully-loaded, blended-or-new CAC ratio on new ARR, and CAC payback on gross-margin-adjusted revenue. The fully-loaded numerator and the gross-margin adjustment are settled; what varies is whether a given reader leans blended or new-customer. Name the numerator, denominator, and basis against real numbers rather than assume one.
 
 ## The defensible read
 

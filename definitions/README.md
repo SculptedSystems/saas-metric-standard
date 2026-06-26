@@ -4,7 +4,7 @@ The neutral, single-source definitions at the core of The SaaS Metric Standard. 
 
 **Substantiation principle:** every definition ships with its cited primary authority and a public methodology. The taxonomy names one defensible answer per metric, the divergence map shows where the authorities differ, and the evidence layer carries the proof (each convention cites its primary authority in `evidence/canonical-verified.json`). Nothing rests on assertion.
 
-This standard codifies the cited authorities (the SaaS Metrics Standards Board, SEC 10-K filers, the originators of coined metrics), like a working group maintaining a spec. It does not issue the definitions itself; it records, cites, and reconciles them.
+This standard codifies the cited authorities (the SaaS Metrics Standards Board and the originators of coined metrics), like a working group maintaining a spec. It does not issue the definitions itself; it records, cites, and reconciles them.
 
 ## The layers (kept separate by design)
 
@@ -12,7 +12,7 @@ This standard codifies the cited authorities (the SaaS Metrics Standards Board, 
 |---|---|---|
 | **Taxonomy** | [`taxonomy/`](taxonomy/) | One opinionated, vendor-neutral answer per metric: how the standard defines it. The canonical record. |
 | **Divergence** | [`divergence/`](divergence/) | Where the authorities legitimately differ: the three axes and the point-in-time test. A map across external conventions. |
-| **Evidence** | [`evidence/`](evidence/) | The primary proof: the Standards Board and origin-author canonical definitions (snapshotted, hashed, verbatim-verified) plus the named-filer SEC citations. |
+| **Evidence** | [`evidence/`](evidence/) | The primary proof: the Standards Board and origin-author canonical definitions (snapshotted, hashed, verbatim-verified). |
 | **Conventions** | [`conventions/`](conventions/) | The operational, per-metric layer: the canonical formula with named inputs, the composition-closed / basis-timing-bounded reconciliation, and the defensible / aggressive-vs-defect classification test. Schema in `_schema.md`. |
 
 Citation is one-way and fixed: the **taxonomy stands alone**; **divergence cites taxonomy** and **evidence**; **conventions cite divergence**. Never the reverse, so "which is canonical" is never ambiguous.

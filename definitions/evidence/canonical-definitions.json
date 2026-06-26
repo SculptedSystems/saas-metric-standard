@@ -1,5 +1,5 @@
 {
-  "note": "Canonical (single-source-of-authority) metric definitions: the SaaS Metrics Standards Board codified consensus, and origin-author definitions for coined metrics. Unlike the SEC layer (which measures divergence across many filers), each entry here is ONE authoritative definition. canonical-pull.js freezes each source (snapshot + content hash + retrieval date) and verifies that verify_phrase still appears verbatim, so link rot or a silent edit is detected rather than silently trusted.",
+  "note": "Canonical (single-source-of-authority) metric definitions: the SaaS Metrics Standards Board codified consensus, and origin-author definitions for coined metrics. Each entry here is ONE authoritative definition. canonical-pull.js freezes each source (snapshot + content hash + retrieval date) and verifies that verify_phrase still appears verbatim, so link rot or a silent edit is detected rather than silently trusted.",
   "definitions": [
     {
       "metric": "Gross Revenue Retention",
@@ -92,7 +92,7 @@
       "source_url": "https://www.saasmetricsboard.com/annual-recurring-revenue",
       "definition": "Annual Recurring Revenue (ARR) is recurring revenue, as defined by your revenue recognition policy, calculated on an annualized basis.",
       "verify_phrase": "calculated on an annualized basis",
-      "note": "Codified-consensus ARR. The SEC layer measures how filers actually define ARR in practice; this is the Standards Board ideal."
+      "note": "Codified-consensus ARR: the Standards Board ideal."
     },
     {
       "metric": "Contracted Annual Recurring Revenue",
@@ -107,7 +107,7 @@
       "source_url": "https://www.saasmetricsboard.com/net-revenue-retention",
       "definition": "Net Revenue Retention (NRR), also known as Net Dollar Retention (NDR), measures the percentage of recurring revenue retained over a specific period.",
       "verify_phrase": "percentage of recurring revenue retained",
-      "note": "Codified-consensus NRR. The SEC layer is the empirical divergence evidence; this is the Standards Board ideal."
+      "note": "Codified-consensus NRR: the Standards Board ideal."
     }
   ],
   "coverage_note": "Standards Board publishes 10 live metric pages (full sitemap enumerated 2026-06-17); all 10 are now captured here. Their homepage also links /customer-acquisition-cost, which 404s (a dead link on their own site), so there is no standalone CAC definition to capture."

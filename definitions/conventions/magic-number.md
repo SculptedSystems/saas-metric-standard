@@ -6,7 +6,6 @@ contested: true
 gear: 2
 authority: origin-author
 diverges_on: [basis]
-filer_evidence: []
 ---
 
 # SaaS Magic Number
@@ -17,7 +16,7 @@ A sales-efficiency ratio: the annualized change in subscription revenue across t
 
 ## Why it diverges
 
-The magic number has no SEC-disclosed or standards-board definition. The only authority is the origin author, Scale VP, so it should be named as a convention, not a standard. Within that single origin definition, the live divergence is on the basis axis: whether the numerator is the change in GAAP subscription revenue (the origin form) or net new ARR (a common variant). The timing (which two quarters, and using the earlier quarter's S&M) is reasonably settled by the origin post.
+The magic number has no codified standards-board definition. The only authority is the origin author, Scale VP, so it should be named as a convention, not a standard. Within that single origin definition, the live divergence is on the basis axis: whether the numerator is the change in GAAP subscription revenue (the origin form) or net new ARR (a common variant). The timing (which two quarters, and using the earlier quarter's S&M) is reasonably settled by the origin post.
 
 ## Legitimate convention families
 
@@ -28,7 +27,7 @@ The magic number has no SEC-disclosed or standards-board definition. The only au
 
 ## What the investor likely recomputes on
 
-The named filers below are late-stage and large. The standard treats them as a proxy for the convention an early-stage investor carries, on the reasoning that a seed or Series A investor judges a raise against the basis the public market has settled on. So the convention named here is read off the public record, and it is where a founder's number gets measured when no specific investor convention is on the table.
+The applicable convention is the origin-author one: the Scale VP definition. An investor recomputes a founder's number against that origin convention when no specific investor convention is on the table, and that is where the number gets measured.
 
 A reader treats the magic number as a rough sales-efficiency signal (higher is more efficient; the origin's threshold tiers are an unsourced convention, not a standard, so do not assert a specific cutoff as settled) and is indifferent to small basis differences as long as they are stated, but discounts a number whose numerator and S&M period are not defined. The direction is settled but the exact read is not, since this metric has only an origin author behind it. Name the numerator basis and S&M period against real numbers rather than assume one.
 
@@ -46,7 +45,7 @@ Under either anchor, the aggressive move to avoid is presenting a self-defined m
 The predicate for classifying a magic-number spread:
 
 - **Defensible basis:** the origin (Scale VP) form, GAAP subscription-revenue change annualized over prior-quarter S&M, named as a convention rather than a standard. This is the defensible read.
-- **Convention gap (aggressive but legitimate):** the spread reproduces only under the common net-new-ARR numerator variant, which reads differently when revenue lags ARR. Legitimate as a stated convention, but it is not the origin form, so it is the labeled risk, not the defensible read. (No SEC filer authority exists to trace either form to; the authority is origin only.)
+- **Convention gap (aggressive but legitimate):** the spread reproduces only under the common net-new-ARR numerator variant, which reads differently when revenue lags ARR. Legitimate as a stated convention, but it is not the origin form, so it is the labeled risk, not the defensible read. (No codified authority exists to trace either form to; the authority is origin only.)
 - **Defect gap:** no legitimate convention reproduces it. For example, the metric presented as a codified standard, a benchmark cutoff asserted as authoritative, or a numerator and S&M period left undefined so neither the origin form nor the variant recovers the number.
 
 ## Canonical formula
@@ -54,7 +53,7 @@ The predicate for classifying a magic-number spread:
 $$
 \text{Magic \#}=\frac{\Delta\text{ subscription revenue (quarter)}\times 4}{\text{prior-quarter S\&M}}
 $$
-Primary source: the origin author, Scale Venture Partners, "Take the change in subscription revenue between two quarters, annualize it (multiply by four), and divide the result by the sales and marketing spend for the earlier of the two quarters," recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.scalevp.com/insights/magic-number-math/). There is no standards-board or SEC-disclosed definition; the origin author is the only authority, so it is named as a convention, not a standard. The net-new-ARR variant is the common alternative numerator (see the convention families above); the origin definition is the authority here.
+Primary source: the origin author, Scale Venture Partners, "Take the change in subscription revenue between two quarters, annualize it (multiply by four), and divide the result by the sales and marketing spend for the earlier of the two quarters," recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.scalevp.com/insights/magic-number-math/). There is no codified standards-board definition; the origin author is the only authority, so it is named as a convention, not a standard. The net-new-ARR variant is the common alternative numerator (see the convention families above); the origin definition is the authority here.
 
 Origin (Scale VP) method (the only defensible anchor): the quarter-over-quarter change in subscription revenue, annualized by multiplying by four, over the earlier of the two quarters' sales-and-marketing spend.
 
@@ -66,7 +65,7 @@ Origin (Scale VP) method (the only defensible anchor): the quarter-over-quarter 
 
 ## Reconciliation note
 
-Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm the ratio shape (annualized revenue change over prior-quarter S&M) and the prior-quarter S&M denominator, and that closes from the aggregates. Basis does not close. The numerator basis (GAAP subscription revenue versus net new ARR) needs raw quarterly financials, and the two read differently when revenue lags ARR, so it is reconciled bounded and qualitative: name the numerator basis the founder used against the origin GAAP-revenue form, and bound the direction and magnitude of the spread. Because this metric is origin-author tier with no codified or SEC authority, the spread is a convention range, not a defensible-versus-aggressive verdict; do not assert a benchmark cutoff as settled. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
+Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm the ratio shape (annualized revenue change over prior-quarter S&M) and the prior-quarter S&M denominator, and that closes from the aggregates. Basis does not close. The numerator basis (GAAP subscription revenue versus net new ARR) needs raw quarterly financials, and the two read differently when revenue lags ARR, so it is reconciled bounded and qualitative: name the numerator basis the founder used against the origin GAAP-revenue form, and bound the direction and magnitude of the spread. Because this metric is origin-author tier with no codified authority, the spread is a convention range, not a defensible-versus-aggressive verdict; do not assert a benchmark cutoff as settled. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
 
 ## The three axes (per Magic Number)
 

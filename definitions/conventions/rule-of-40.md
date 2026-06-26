@@ -6,7 +6,6 @@ contested: true
 gear: 2
 authority: standards-board
 diverges_on: [basis]
-filer_evidence: []
 ---
 
 # Rule of 40

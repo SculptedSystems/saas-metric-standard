@@ -12,7 +12,7 @@ The free-computable axis: what is or is not in the number. Which customers are i
 
 ## Basis
 
-What kind of value the number is built on: ARR vs GAAP revenue vs implied-monthly (implied-MRR) vs contracted (ACV or CARR). The same customer book reports a different figure under each basis. A recurring-revenue (ARR or MRR) basis, a trailing or calendar GAAP-revenue basis, an ACV or annualized basis, and an implied-monthly basis are each legitimate conventions a named public filer actually uses; the divergence between them is the basis axis.
+What kind of value the number is built on: ARR vs GAAP revenue vs implied-monthly (implied-MRR) vs contracted (ACV or CARR). The same customer book reports a different figure under each basis. A recurring-revenue (ARR or MRR) basis, a trailing or calendar GAAP-revenue basis, an ACV or annualized basis, and an implied-monthly basis are each legitimate conventions; the divergence between them is the basis axis.
 
 ## Timing
 

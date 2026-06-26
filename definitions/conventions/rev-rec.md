@@ -6,7 +6,6 @@ contested: false
 gear: 1
 authority: standards-board
 diverges_on: []
-filer_evidence: []
 ---
 
 # Revenue recognition

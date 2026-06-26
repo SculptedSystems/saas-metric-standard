@@ -6,7 +6,6 @@ contested: true
 gear: 2
 authority: standards-board
 diverges_on: [composition, basis]
-filer_evidence: [Zuora, Smartsheet, Thoughtworks]
 ---
 
 # Gross Margin
@@ -17,7 +16,7 @@ The share of revenue left after the cost of delivering the product (revenue minu
 
 ## Why it diverges
 
-Gross margin enters this library as a codified dependency, not a free-standing headline: the standards-board CAC Payback Period formula divides new CARR by "Subscription Gross Margin Percentage" to express payback in gross profit, so the payback number is only as defensible as the margin fed into it. The divergence is almost entirely on the composition axis: what counts as cost of revenue (COGS) versus operating expense. The standards board itself punts the boundary, telling companies to "refer to how Customer Success is allocated to Operating Expenses versus Cost of Goods Sold in your company," so the same revenue yields a different margin depending on where hosting, support, customer success, and professional services land. A second divergence, subscription gross margin versus a blended company-wide gross margin, runs through real SEC filers and materially changes the payback denominator (named-filer citations below).
+Gross margin enters this library as a codified dependency, not a free-standing headline: the standards-board CAC Payback Period formula divides new CARR by "Subscription Gross Margin Percentage" to express payback in gross profit, so the payback number is only as defensible as the margin fed into it. The divergence is almost entirely on the composition axis: what counts as cost of revenue (COGS) versus operating expense. The standards board itself punts the boundary, telling companies to "refer to how Customer Success is allocated to Operating Expenses versus Cost of Goods Sold in your company," so the same revenue yields a different margin depending on where hosting, support, customer success, and professional services land. A second divergence, subscription gross margin versus a blended company-wide gross margin, materially changes the payback denominator.
 
 ## Legitimate convention families
 
@@ -25,14 +24,14 @@ Gross margin enters this library as a codified dependency, not a free-standing h
 |---|---|---|---|---|
 | Subscription gross margin (codified payback input) | basis + composition | recurring subscription revenue minus subscription COGS (hosting, support), over subscription revenue | standards board (CAC payback "Subscription Gross Margin Percentage") | the defensible default for payback |
 | Customer-success-in-COGS | composition | subscription COGS that includes customer-success cost allocated to delivery | standards-board nuance (CS allocation deferred to the company) | lowers margin; raises payback months |
-| Blended company gross margin | basis | all revenue (subscription plus services) minus all COGS, over all revenue | SEC filers (subscription-vs-blended divergence; Zuora/Smartsheet vs Thoughtworks) | usually lower than subscription margin |
+| Blended company gross margin | basis | all revenue (subscription plus services) minus all COGS, over all revenue | common practice (subscription-vs-blended divergence) | usually lower than subscription margin |
 | Professional-services-excluded | composition | services revenue and its delivery cost stripped, leaving the recurring product margin | common practice | isolates the recurring margin the payback intends |
 
 ## What the investor likely recomputes on
 
-The named filers below are late-stage and large. The standard treats them as a proxy for the convention an early-stage investor carries, on the reasoning that a seed or Series A investor judges a raise against the basis the public market has settled on. So the convention named here is read off the public record, and it is where a founder's number gets measured when no specific investor convention is on the table.
+The codified convention is the basis a founder's number gets measured against when no specific investor convention is on the table. It is the standard's default anchor.
 
-A reader checking CAC payback recomputes on a subscription gross margin (recurring product only), skeptical of a blended margin or a thin COGS that parks hosting, support, or customer-success cost in OpEx to flatter the margin and shorten payback. The subscription basis is settled; the COGS-versus-OpEx line is bounded by the named filers, not fixed by them, since the board itself defers it. Name the margin basis and COGS composition against real numbers rather than assume one.
+A reader checking CAC payback recomputes on a subscription gross margin (recurring product only), skeptical of a blended margin or a thin COGS that parks hosting, support, or customer-success cost in OpEx to flatter the margin and shorten payback. The subscription basis is settled; the COGS-versus-OpEx line is bounded by the codified convention, not fixed by it, since the board itself defers the allocation to the company. Name the margin basis and COGS composition against the codified convention rather than assume one.
 
 ## The defensible read
 
@@ -48,7 +47,7 @@ Under either anchor, the aggressive move to avoid is feeding a blended company m
 The predicate for classifying a gross-margin spread:
 
 - **Defensible basis:** a subscription gross margin, recurring product revenue over its own COGS (hosting and support in), with the customer-success allocation named, on the standards-board payback dependency. This is the defensible read and the number that feeds CAC payback.
-- **Convention gap (aggressive but legitimate):** the spread reproduces only under a margin basis or COGS boundary an authority-traceable source actually uses, a customer-success cost included in COGS per the board's deferred allocation, or a blended company gross margin an SEC filer discloses (see the named-filer citations). Legitimate when named, but not the subscription margin the payback intends, so it is the labeled risk, not the defensible read.
+- **Convention gap (aggressive but legitimate):** the spread reproduces only under a margin basis or COGS boundary an authority-traceable source actually uses, a customer-success cost included in COGS per the board's deferred allocation, or a blended company gross margin in place of the subscription margin. Legitimate when named, but not the subscription margin the payback intends, so it is the labeled risk, not the defensible read.
 - **Defect gap:** no legitimate convention reproduces it. For example, hosting, support, or customer-success delivery cost pushed entirely into OpEx to inflate the margin and shorten payback, or a blended margin presented as a subscription margin without disclosure. No authority-traceable convention recovers the number.
 
 ## Canonical formula
@@ -90,9 +89,5 @@ IN SCOPE (from the reported aggregates and the stated method): naming whether th
 ## Citations
 
 - Standards-board codified dependency, "Gross Profit equals New ARR x Subscription Gross Margin," and the payback formula "Fully Loaded S&M Expenses / (CARR x Gross Margin %) x 12," plus the deferred COGS-versus-OpEx boundary ("refer to how Customer Success is allocated to Operating Expenses versus Cost of Goods Sold in your company"): the codified, snapshot-verified CAC Payback Period entry in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json), grounded in the in-repo cac-payback snapshot.
-- The SEC subscription-vs-blended gross-margin divergence, verbatim from named 10-K filers:
-  - **Zuora (ZUO)**, FY ended 2024-01-31, subscription-side COGS: "Cost of subscription revenue consists primarily of costs related to hosting our platform and providing customer support. These costs include third-party hosting fees, employee compensation costs associated with maintaining our cloud-based infrastructure, amortization expenses associated with capitalized internal-use software and purchased technology, allocated overhead, software and maintenance costs, and outside services associated with the delivery of our subscription services." [10-K](https://www.sec.gov/Archives/edgar/data/1423774/000142377424000079/zuo-20240131.htm)
-  - **Smartsheet (SMAR)**, FY ended 2024-01-31, subscription-side COGS: "Cost of subscription revenue primarily consists of expenses related to hosting our services and providing support, including employee-related costs, third-party hosting fees, software-related costs, amortization of capitalized software, amortization of acquisition-related intangibles, and payment processing fees." [10-K](https://www.sec.gov/Archives/edgar/data/1366561/000136656124000062/smar-20240131.htm)
-  - **Thoughtworks (TWKS)**, FY ended 2023-12-31, blended company-wide cost of revenue (no subscription split): "Cost of revenues consists primarily of personnel and related costs directly associated with professional services, including salaries, bonuses, fringe benefits, stock-based compensation, project related travel costs, and costs of contracted third-party vendors. Also included in cost of revenues is depreciation attributable to the portion of our property and equipment utilized in the delivery of services to our clients." [10-K](https://www.sec.gov/Archives/edgar/data/1866550/000186655024000022/twks-20231231.htm)
-  The subscription filers (Zuora, Smartsheet) isolate a hosting and infrastructure cost base, yielding a high subscription gross margin; Thoughtworks reports one blended cost-of-revenue line dominated by services-delivery personnel, a structurally lower, services-shaped margin. Feeding a blended margin into the CAC-payback denominator understates the months.
+- The subscription-vs-blended split is a basis divergence: a subscription gross margin isolates a hosting and infrastructure cost base, yielding a high margin, while a blended cost-of-revenue line dominated by services-delivery personnel yields a structurally lower, services-shaped margin. Feeding a blended margin into the CAC-payback denominator understates the months.
 - CAC payback, the consumer of this input: [`cac.md`](cac.md).

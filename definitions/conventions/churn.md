@@ -6,7 +6,6 @@ contested: true
 gear: 2
 authority: standards-board
 diverges_on: [composition, timing]
-filer_evidence: []
 ---
 
 # Churn and retention
@@ -31,9 +30,9 @@ Churn is really a small family of metrics, and the first failure is not picking 
 
 ## What the investor likely recomputes on
 
-The named filers below are late-stage and large. The standard treats them as a proxy for the convention an early-stage investor carries, on the reasoning that a seed or Series A investor judges a raise against the basis the public market has settled on. So the convention named here is read off the public record, and it is where a founder's number gets measured when no specific investor convention is on the table.
+The applicable convention is the codified one: the standards-board logo-retention method (churn = 1 - retention) and the GRR/NRR inverses. An investor recomputes a founder's number against that codified convention when no specific investor convention is on the table, and that is where the number gets measured.
 
-The record reads logo churn and gross revenue churn underneath any net retention number, on the same basis as the paired retention metric. A single headline "churn" figure that does not say logo-or-revenue and gross-or-net gets discounted. The family is settled; the basis is bounded by the paired retention metric, not fixed by it. Name the family, basis, and churn moment against real numbers rather than assume one.
+The codified read takes logo churn and gross revenue churn underneath any net retention number, on the same basis as the paired retention metric. A single headline "churn" figure that does not say logo-or-revenue and gross-or-net gets discounted. The family is settled; the basis is bounded by the paired retention metric, not fixed by it. Name the family, basis, and churn moment against real numbers rather than assume one.
 
 ## The defensible read
 

@@ -6,7 +6,6 @@ contested: true
 gear: 1
 authority: standards-board
 diverges_on: [basis]
-filer_evidence: [Backblaze]
 ---
 
 # Annual Recurring Revenue (ARR)
@@ -17,21 +16,21 @@ Recurring revenue expressed on an annualized basis, excluding one-time and servi
 
 ## Why it diverges
 
-ARR is contested mainly on the basis axis: an annualized run-rate (MRR times 12) and committed or contracted ARR (CARR) are both legitimate and produce different numbers for the same business. Composition is more settled than NRR: filers consistently strip one-time and services revenue. The divergence bites hardest for companies with annual contracts, invoiced enterprise deals, or a billing layer over the processor.
+ARR is contested mainly on the basis axis: an annualized run-rate (MRR times 12) and committed or contracted ARR (CARR) are both legitimate and produce different numbers for the same business. Composition is more settled than NRR: one-time and services revenue are consistently stripped. The divergence bites hardest for companies with annual contracts, invoiced enterprise deals, or a billing layer over the processor.
 
 ## Legitimate convention families
 
 | Family | Axis | Method (short) | Representative source | Direction vs defensible |
 |---|---|---|---|---|
-| Annualized run-rate (MRR x 12) | basis | current monthly recurring revenue times twelve | common filer practice | the usual default |
+| Annualized run-rate (MRR x 12) | basis | current monthly recurring revenue times twelve | common practice | the usual default |
 | Committed / contracted (CARR) | basis + timing | contracted annual recurring revenue, in production or not | standards board (CARR) | includes signed-not-live; usually higher |
 | Recurring-revenue annualized | basis | recurring revenue per the revenue-recognition policy, annualized | standards board (ARR) | ties ARR to recognized recurring revenue |
 
 ## What the investor likely recomputes on
 
-The named filers below are late-stage and large. The standard treats them as a proxy for the convention an early-stage investor carries, on the reasoning that a seed or Series A investor judges a raise against the basis the public market has settled on. So the convention named here is read off the public record, and it is where a founder's number gets measured when no specific investor convention is on the table.
+The codified convention is the basis a founder's number gets measured against when no specific investor convention is on the table. It is the standard's default anchor.
 
-The record points to an annualized run-rate on clean recurring revenue, with committed-but-not-live revenue held out rather than padding the number. The basis is settled; what varies is how strictly a given reader holds the clean-recurring line. Name the run-rate against real numbers rather than assume one.
+The codified ARR is an annualized run-rate (MRR x 12) on clean recurring revenue, with committed-but-not-live revenue held out (that belongs to the separate codified CARR metric) rather than padding the number. The basis is settled; what varies is how strictly a given reader holds the clean-recurring line. Name the run-rate against the codified convention rather than assume one.
 
 ## The defensible read
 
@@ -47,7 +46,7 @@ Under either anchor, the aggressive move to avoid is blending one-time, services
 The predicate for classifying an ARR spread:
 
 - **Defensible basis:** an annualized run-rate on clean recurring revenue, the standards-board MRR x 12 method. This is the defensible read.
-- **Convention gap (aggressive but legitimate):** the spread reproduces only under the committed or contracted sense an authority-traceable source actually uses, the standards-board CARR ("whether in production or not yet in production") or the KBCM survey's committed run-rate basis. Legitimate, but it is CARR, not ARR, so it is the labeled risk, not the defensible read.
+- **Convention gap (aggressive but legitimate):** the spread reproduces only under the committed or contracted sense an authority-traceable source actually uses, the standards-board CARR ("whether in production or not yet in production"). Legitimate, but it is CARR, not ARR, so it is the labeled risk, not the defensible read.
 - **Defect gap:** no legitimate convention reproduces it. For example, one-time or services revenue folded into the recurring base, an off-processor invoiced book double-counted through a billing layer over the processor, or an annual deal booked as a full month of MRR. No authority-traceable source's convention recovers the number.
 
 ## Canonical formula
@@ -55,7 +54,7 @@ The predicate for classifying an ARR spread:
 $$
 \text{ARR}=\text{MRR}\times 12\quad(\text{MRR}=\text{the most recent month's recurring revenue; one-time and services excluded})
 $$
-Primary source: the Standards Board codified definition, "Annual Recurring Revenue (ARR) is recurring revenue, as defined by your revenue recognition policy, calculated on an annualized basis," with formula "ARR = (MRR x 12)", recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/annual-recurring-revenue). The committed sense is the separate codified CARR metric, "contracted annual recurring revenue, whether in production or not yet in production" (https://www.saasmetricsboard.com/contracted-annual-recurring-revenue). The codified definitions are the authority here; the filer ARR phrasing is in the Citations section below.
+Primary source: the Standards Board codified definition, "Annual Recurring Revenue (ARR) is recurring revenue, as defined by your revenue recognition policy, calculated on an annualized basis," with formula "ARR = (MRR x 12)", recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/annual-recurring-revenue). The committed sense is the separate codified CARR metric, "contracted annual recurring revenue, whether in production or not yet in production" (https://www.saasmetricsboard.com/contracted-annual-recurring-revenue). The codified definitions are the authority here.
 
 Standards-board run-rate method (the defensible default): the most recent month's recurring revenue annualized, with one-time fees, professional services, and overage above committed minimums excluded by construction, and signed-not-yet-live revenue held out (that belongs to CARR).
 
@@ -86,6 +85,4 @@ IN SCOPE: the composition axis, confirm one-time and services are excluded, from
 ## Citations
 
 - Standards-board ARR ("recurring revenue, as defined by your revenue recognition policy, calculated on an annualized basis") and CARR ("contracted annual recurring revenue, whether in production or not yet in production"): the codified, snapshot-verified entries in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json).
-- Filer ARR phrasing, verbatim, showing the per-company annualized-value definition that excludes one-time/services:
-  - **Backblaze**, annualized-value ARR: "We define annual recurring revenue ('ARR') as the annualized value of all ... arrangements as of the end of a period." Public filers consistently exclude one-time/services.
 - The off-processor and billing-layer cases are the classic errors carried in [`classic-errors.md`](classic-errors.md).
