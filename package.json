@@ -1,7 +1,7 @@
 {
-  "name": "metric-conventions",
+  "name": "saas-metric-standard",
   "private": true,
-  "description": "Canonical Metrics Library: versioned, content-hashed B2B SaaS metric conventions.",
+  "description": "The SaaS Metric Standard: versioned, content-hashed B2B SaaS metric conventions.",
   "scripts": {
     "lock": "node --experimental-strip-types definitions/lock.mts",
     "typecheck": "tsc --noEmit"

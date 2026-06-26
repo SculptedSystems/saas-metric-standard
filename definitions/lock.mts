@@ -2,7 +2,7 @@
 //
 // Produces conventions-lock.json: a content hash per metric convention plus one
 // library hash, stamped with VERSION. This is what makes a citation resolvable:
-// "metric-conventions <id> v<version>" maps to a file + a content_sha256 at that
+// "saas-metric-standard <id> v<version>" maps to a file + a content_sha256 at that
 // version, and a consumer (e.g. the gap-report colophon) can stamp a real version
 // and hash instead of a placeholder. Same auditability discipline the evidence
 // layer applies to its sources (canonical-verified.json), applied to the library's
