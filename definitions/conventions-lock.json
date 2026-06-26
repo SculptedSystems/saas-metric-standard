@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "library_sha256": "01cec44312145961e39ec5189c0405a390669aff135f4abb8749ca14f198560f",
+  "library_sha256": "827d2ff823554c7f3fdeb3f00011aa182616b2bfbb277f54abb74d1b9dbe25a9",
   "count": 14,
   "conventions": [
     {
@@ -31,7 +31,7 @@
       "id": "gross-margin",
       "metric": "Gross Margin",
       "file": "conventions/gross-margin.md",
-      "content_sha256": "94a11b751b5f6ad2bfaca22ad1fd897bdcc589d4e11e505a6df961aa857a9074"
+      "content_sha256": "654940c565345e5f8ffe82fb3917572fc451198049934d4d3d20b65ffb013efe"
     },
     {
       "id": "grr",
