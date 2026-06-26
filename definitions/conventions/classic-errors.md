@@ -4,7 +4,8 @@ abbrev: errors
 aka: [the five named errors]
 contested: false
 gear: 1
-authority: cheatsheet
+authority: working-consensus
+diverges_on: []
 ---
 
 # The five classic errors

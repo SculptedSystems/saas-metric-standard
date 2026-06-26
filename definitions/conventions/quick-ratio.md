@@ -5,6 +5,7 @@ aka: [SaaS quick ratio, growth efficiency ratio]
 contested: true
 gear: 2
 authority: origin-author
+diverges_on: [basis]
 ---
 
 # SaaS Quick Ratio

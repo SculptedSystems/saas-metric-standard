@@ -5,6 +5,7 @@ aka: [subscription gross margin, gross margin percentage, GM%]
 contested: true
 gear: 2
 authority: standards-board
+diverges_on: [composition, basis]
 ---
 
 # Gross Margin
@@ -53,7 +54,7 @@ The predicate for classifying a gross-margin spread:
 
 $$\text{Gross Margin \%}=\frac{\text{Revenue}-\text{COGS}}{\text{Revenue}}\quad(\text{for CAC payback, the ``Subscription Gross Margin \%'': recurring subscription revenue and its COGS only})$$
 
-Primary source: the Standards Board codifies this as a required input to the CAC Payback Period, "Gross Profit equals New ARR x Subscription Gross Margin," with the payback formula "Fully Loaded S&M Expenses / (CARR x Gross Margin %) x 12," recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (CAC Payback Period entry, https://www.saasmetricsboard.com/cac-payback-period). The board does not codify a standalone gross-margin page; the authority is this codified dependency inside the payback standard. The board explicitly defers the COGS boundary to the company ("refer to how Customer Success is allocated to Operating Expenses versus Cost of Goods Sold in your company"), so the composition axis is contested by the standard's own wording. The cheatsheet renders the payback formula that consumes this input, but the codified payback dependency is the authority here, not the digest.
+Primary source: the Standards Board codifies this as a required input to the CAC Payback Period, "Gross Profit equals New ARR x Subscription Gross Margin," with the payback formula "Fully Loaded S&M Expenses / (CARR x Gross Margin %) x 12," recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (CAC Payback Period entry, https://www.saasmetricsboard.com/cac-payback-period). The board does not codify a standalone gross-margin page; the authority is this codified dependency inside the payback standard. The board explicitly defers the COGS boundary to the company ("refer to how Customer Success is allocated to Operating Expenses versus Cost of Goods Sold in your company"), so the composition axis is contested by the standard's own wording. The codified payback dependency is the authority here.
 
 Standards-board dependency method (the defensible default): recurring subscription revenue minus its own cost of revenue (hosting, support, and any customer-success cost allocated to delivery), over recurring subscription revenue, matched to the period of the new CARR the payback repays.
 
@@ -76,7 +77,7 @@ See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Classic errors touching gross margin
 
-- raw-revenue CAC payback: the related named error in `cac.md`, omitting the gross-margin adjustment entirely; here the failure is one step subtler, feeding an inflated or blended margin into the adjustment. See the CAC Payback section of the cheatsheet and `cac.md`.
+- raw-revenue CAC payback: the related named error in `cac.md`, omitting the gross-margin adjustment entirely; here the failure is one step subtler, feeding an inflated or blended margin into the adjustment. See `cac.md`.
 - parking delivery cost (hosting, support, customer success) in OpEx to flatter the margin, against the board's COGS-versus-OpEx guidance.
 - blending professional-services margin into a "subscription" gross margin, which usually overstates the recurring margin the payback intends.
 

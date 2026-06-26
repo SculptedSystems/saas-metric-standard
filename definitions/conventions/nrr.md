@@ -5,6 +5,7 @@ aka: [NDR, Net Dollar Retention]
 contested: true
 gear: 1
 authority: standards-board
+diverges_on: [composition, basis, timing]
 ---
 
 # Net Revenue Retention (NRR)
@@ -49,13 +50,13 @@ The predicate for classifying an NRR spread:
 
 - **Defensible basis:** a recurring-revenue (ARR or MRR) cohort on the standards-board method, exemplified by MariaDB. This is the defensible read.
 - **Convention gap (aggressive but legitimate):** the spread reproduces only under a basis or timing an authority-traceable filer actually uses in its own filing, a GAAP-revenue basis (Autodesk, Asana) or an ACV / annualized basis (Okta, Cloudflare), or a monthly-average timing (EverCommerce), or a segment-restricted cohort (Brightcove). Legitimate, but not the defensible read, so it is the labeled risk, not the lead number.
-- **Defect gap:** no legitimate convention reproduces it. The timing-axis case is the shared point-in-time / timing test (see the [Point-in-time / timing test](../divergence/cheatsheet.md#point-in-time--timing-test) in the cheatsheet): here, the as-of BoP cohort cannot be reconstructed because no retained point-in-time state or history exists to rebuild it. Or new-logo revenue is folded into the cohort (the one error the market has largely settled against). No authority-traceable filer's convention recovers the number.
+- **Defect gap:** no legitimate convention reproduces it. The timing-axis case is the shared point-in-time / timing test (see [the three axes](../divergence/axes.md)): here, the as-of BoP cohort cannot be reconstructed because no retained point-in-time state or history exists to rebuild it. Or new-logo revenue is folded into the cohort (the one error the market has largely settled against). No authority-traceable filer's convention recovers the number.
 
 ## Canonical formula
 
 $$\text{NRR}=\frac{\text{BOP value}+\text{Expansion}-\text{Contraction}-\text{Churn}}{\text{BOP value}}\quad(\text{existing customers only; ``value'' = ARR, revenue, or implied-MRR depending on the filer})$$
 
-Primary source: the Standards Board codified cohort method, "Net Revenue Retention (NRR), also known as Net Dollar Retention (NDR), measures the percentage of recurring revenue retained over a specific period," recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/net-revenue-retention). The cheatsheet renders this alongside the divergence digest, but the codified method is the authority here, not the digest.
+Primary source: the Standards Board codified cohort method, "Net Revenue Retention (NRR), also known as Net Dollar Retention (NDR), measures the percentage of recurring revenue retained over a specific period," recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/net-revenue-retention). The codified method is the authority here; the verbatim filer divergence is in the Citations section below.
 
 Standards-board cohort method (the defensible default): current value of the cohort of all customers as of 12 months prior to the period end, over that same cohort's value 12 months prior. New logos are excluded by construction.
 
@@ -89,5 +90,12 @@ IN SCOPE (from the ~12 reported aggregates), the recognition side: the compositi
 
 ## Citations
 
-- Standards-board cohort method and the MariaDB, SEMrush, Q2, BlackLine, EverCommerce, Brightcove verbatim quotes (each with its SEC URL): see the NRR section of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md).
+- Standards-board cohort method, "Net Revenue Retention (NRR), also known as Net Dollar Retention (NDR), measures the percentage of recurring revenue retained over a specific period": the codified, snapshot-verified Net Revenue Retention entry in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/net-revenue-retention).
+- The NRR basis-and-timing divergence, verbatim from named 10-K filers:
+  - **MariaDB**, *ARR-basis 12-month cohort*: "We calculate our dollar-based net retention rate as of a period end by starting with the ARR from the cohort of all subscription customers as of 12 months prior to such period end." ([10-K](https://www.sec.gov/Archives/edgar/data/1929589/000192958923000010/mrdb-20230930.htm))
+  - **EverCommerce**, *4-quarter / monthly average*: "We calculate our annualized net revenue retention rate based on the average of the annualized net revenue retention rate calculated for each month during the twelve-month period as of the most recent quarter end." ([10-K](https://www.sec.gov/Archives/edgar/data/1853145/000185314525000009/evcm-20241231.htm))
+  - **SEMrush**, *trailing-revenue basis, not ARR*: "...using (a) the revenue from our customers during the twelve month period ending one year prior ... as the denominator and (b) the revenue from those same customers during the twelve months ending as of the end of such period as the numerator." ([10-K](https://www.sec.gov/Archives/edgar/data/1831840/000162828025009448/semr-20241231.htm))
+  - **Q2 Holdings**, *calendar-revenue basis, excludes acquired customers*: "...the total revenues in a calendar year, excluding any revenues from acquired customers during such year, from customers who were implemented ... as of December 31 of the prior year, expressed as a percentage of the total revenues during the prior year from the same group of customers." ([10-K](https://www.sec.gov/Archives/edgar/data/1410384/000141038425000010/qtwo-20241231.htm))
+  - **Brightcove**, *segment-restricted cohort*: "...dividing: (a) the current annualized recurring revenue for premium customers that existed twelve months prior by (b) the annualized recurring revenue for all premium customers that existed twelve months prior." ([10-K](https://www.sec.gov/Archives/edgar/data/1313275/000095017024018770/bcov-20231231.htm))
+  - **BlackLine**, *implied-monthly basis*: "...the implied monthly subscription and support revenue at the end of a period for the base set of customers ... divided by the implied monthly subscription and support revenue one year prior ... for that same customer base." ([10-K](https://www.sec.gov/Archives/edgar/data/1666134/000166613425000003/bl-20241231.htm))
 - The divergence is evidenced by the named filers themselves: MariaDB reports on a recurring-revenue (ARR) basis, SEMrush on trailing GAAP revenue, Q2 on calendar revenue excluding acquired customers, BlackLine on implied-monthly, EverCommerce on a monthly average, Brightcove on a segment-restricted cohort. The robust claim is the divergence itself plus these verbatim examples.

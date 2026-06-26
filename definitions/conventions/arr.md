@@ -5,6 +5,7 @@ aka: [annualized recurring revenue]
 contested: true
 gear: 1
 authority: standards-board
+diverges_on: [basis]
 ---
 
 # Annual Recurring Revenue (ARR)
@@ -52,7 +53,7 @@ The predicate for classifying an ARR spread:
 
 $$\text{ARR}=\text{MRR}\times 12\quad(\text{MRR}=\text{the most recent month's recurring revenue; one-time and services excluded})$$
 
-Primary source: the Standards Board codified definition, "Annual Recurring Revenue (ARR) is recurring revenue, as defined by your revenue recognition policy, calculated on an annualized basis," with formula "ARR = (MRR x 12)", recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/annual-recurring-revenue). The committed sense is the separate codified CARR metric, "contracted annual recurring revenue, whether in production or not yet in production" (https://www.saasmetricsboard.com/contracted-annual-recurring-revenue). The cheatsheet renders these alongside the filer phrasings, but the codified definitions are the authority here, not the digest.
+Primary source: the Standards Board codified definition, "Annual Recurring Revenue (ARR) is recurring revenue, as defined by your revenue recognition policy, calculated on an annualized basis," with formula "ARR = (MRR x 12)", recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/annual-recurring-revenue). The committed sense is the separate codified CARR metric, "contracted annual recurring revenue, whether in production or not yet in production" (https://www.saasmetricsboard.com/contracted-annual-recurring-revenue). The codified definitions are the authority here; the filer ARR phrasing is in the Citations section below.
 
 Standards-board run-rate method (the defensible default): the most recent month's recurring revenue annualized, with one-time fees, professional services, and overage above committed minimums excluded by construction, and signed-not-yet-live revenue held out (that belongs to CARR).
 
@@ -83,4 +84,6 @@ IN SCOPE: the composition axis, confirm one-time and services are excluded, from
 ## Citations
 
 - Standards-board ARR ("recurring revenue, as defined by your revenue recognition policy, calculated on an annualized basis") and CARR ("contracted annual recurring revenue, whether in production or not yet in production"): the codified, snapshot-verified entries in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json).
-- Filer ARR phrasings and the off-processor / billing-layer cases: [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md).
+- Filer ARR phrasing, verbatim, showing the per-company annualized-value definition that excludes one-time/services:
+  - **Backblaze**, annualized-value ARR: "We define annual recurring revenue ('ARR') as the annualized value of all ... arrangements as of the end of a period." Public filers consistently exclude one-time/services.
+- The off-processor and billing-layer cases are the classic errors carried in [`classic-errors.md`](classic-errors.md).

@@ -5,6 +5,7 @@ aka: [GDR, Gross Dollar Retention]
 contested: true
 gear: 2
 authority: standards-board
+diverges_on: [composition, basis, timing]
 ---
 
 # Gross Revenue Retention (GRR)
@@ -46,13 +47,13 @@ The predicate for classifying a GRR spread:
 
 - **Defensible basis:** the standards-board cohort method on the same basis the founder used for NRR, so the pair is comparable. This is the defensible read.
 - **Convention gap (aggressive but legitimate):** the spread reproduces only under a basis or timing an authority-traceable filer actually uses for its paired retention, a GAAP-revenue or ACV basis, a monthly-average timing, or a contraction-versus-churn split that an SEC filer disclosing GRR alongside NRR adopts. Legitimate, but it inherits the NRR basis risk, so it is the labeled risk, not the defensible read.
-- **Defect gap:** no legitimate convention reproduces it. The timing-axis case is the shared point-in-time / timing test (see the [Point-in-time / timing test](../divergence/cheatsheet.md#point-in-time--timing-test) in the cheatsheet): here, the as-of cohort cannot be reconstructed because no retained point-in-time state or history exists to rebuild it. Or a GRR reported above 100% (expansion leaked into the number, the one error the no-expansion ceiling settles against), or one-time revenue inflating the cohort base so the apparent churn understates. No authority-traceable filer's convention recovers the number.
+- **Defect gap:** no legitimate convention reproduces it. The timing-axis case is the shared point-in-time / timing test (see [the three axes](../divergence/axes.md)): here, the as-of cohort cannot be reconstructed because no retained point-in-time state or history exists to rebuild it. Or a GRR reported above 100% (expansion leaked into the number, the one error the no-expansion ceiling settles against), or one-time revenue inflating the cohort base so the apparent churn understates. No authority-traceable filer's convention recovers the number.
 
 ## Canonical formula
 
 $$\text{GRR}=\frac{\text{BOP value}-\text{Contraction}-\text{Churn}}{\text{BOP value}}\le 100\%\quad(\text{existing customers only; no expansion term; ``value'' = ARR, revenue, or implied-MRR depending on the filer})$$
 
-Primary source: the Standards Board codified GRR method, cohort method (preferred), "Adjusted MRR from the cohort of customers at the end of the period / MRR at the beginning of the measurement period," recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/gross-revenue-retention). The board also publishes the equivalent formula method, "((Beginning MRR - Churned MRR - Down-Sell MRR) / Beginning MRR) x 100". The cheatsheet renders these alongside the paired-NRR filer practice, but the codified method is the authority here, not the digest.
+Primary source: the Standards Board codified GRR method, cohort method (preferred), "Adjusted MRR from the cohort of customers at the end of the period / MRR at the beginning of the measurement period," recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/gross-revenue-retention). The board also publishes the equivalent formula method, "((Beginning MRR - Churned MRR - Down-Sell MRR) / Beginning MRR) x 100". This convention carries its own basis and timing divergence (see the three axes section below); the codified method is the authority here.
 
 Standards-board cohort method (the defensible default): the period-end value of the cohort of existing customers as of the start, over that same cohort's value at the start, with all expansion zeroed. The ceiling at 100% holds by construction.
 
@@ -86,5 +87,5 @@ IN SCOPE (from the reported aggregates): the composition axis, confirm expansion
 
 ## Citations
 
-- Standards-board cohort method (preferred) and formula method, and the no-expansion ceiling: the codified, snapshot-verified Gross Revenue Retention entry in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json), rendered alongside in the GRR / GDR section of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md).
-- Filers disclosing GRR on their chosen NRR basis: see the GRR / GDR section of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md).
+- Standards-board cohort method (preferred), "Adjusted MRR from the cohort of customers at the end of the period / MRR at the beginning of the measurement period," and formula method, "((Beginning MRR - Churned MRR - Down-Sell MRR) / Beginning MRR) x 100", and the no-expansion ceiling: the codified, snapshot-verified Gross Revenue Retention entry in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/gross-revenue-retention).
+- Filers that disclose GRR almost always use the same basis they chose for NRR; the NRR basis-and-timing divergence and its verbatim filer quotes are carried in [`nrr.md`](nrr.md).

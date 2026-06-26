@@ -5,6 +5,7 @@ aka: [revenue states, ASC 606, Topic 606]
 contested: false
 gear: 1
 authority: standards-board
+diverges_on: []
 ---
 
 # Revenue recognition

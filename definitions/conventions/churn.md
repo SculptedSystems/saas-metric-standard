@@ -5,6 +5,7 @@ aka: [logo churn, customer churn, revenue churn, logo retention]
 contested: true
 gear: 2
 authority: standards-board
+diverges_on: [composition, timing]
 ---
 
 # Churn and retention
@@ -54,7 +55,7 @@ The predicate for classifying a churn spread:
 
 $$\text{Logo retention}=\frac{\text{customers at end who were customers at start}}{\text{active customers at start}}\qquad \text{logo churn}=1-\text{retention}\qquad \text{annual}=1-(1-\text{monthly})^{12}$$
 
-Primary source: the Standards Board codifies the count-based metric as logo retention, "# of customers at the end of the period who were customers at the beginning of the period / # of active customers at the beginning of the measurement period," recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/logo-retention); churn is one minus that retention. Gross and net revenue churn are the inverses of the codified GRR and NRR entries in the same file (1 - GRR and 1 - NRR). The cheatsheet renders these, but the codified retention definitions are the authority here, not the digest.
+Primary source: the Standards Board codifies the count-based metric as logo retention, "# of customers at the end of the period who were customers at the beginning of the period / # of active customers at the beginning of the measurement period," recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/logo-retention); churn is one minus that retention. Gross and net revenue churn are the inverses of the codified GRR and NRR entries in the same file (1 - GRR and 1 - NRR). The codified retention definitions are the authority here.
 
 Standards-board logo-retention method (the defensible count-based default): the count of start-of-period customers still active at period end over the count active at start; churn is one minus that. Annual churn compounds from monthly as 1 - (1 - monthly)^12, never monthly times twelve.
 
@@ -78,7 +79,7 @@ See [the three axes](../divergence/axes.md) for the shared model.
 ## Classic errors touching churn
 
 - **gross-vs-net churn confusion**: the central named error; reporting only net churn lets expansion mask gross and logo attrition. See `classic-errors.md`.
-- **the monthly-to-annual annualization trap**: deriving annual churn as monthly times twelve rather than 1 - (1 - monthly)^12, which overstates annual churn (and, if inverted into retention, understates it). Cross-reference `classic-errors.md` and the logo-retention section of the cheatsheet.
+- **the monthly-to-annual annualization trap**: deriving annual churn as monthly times twelve rather than 1 - (1 - monthly)^12, which overstates annual churn (and, if inverted into retention, understates it). Cross-reference `classic-errors.md`.
 - one-time-in-MRR inflating the revenue base and so understating the apparent revenue churn rate.
 
 ## Scope boundary
@@ -87,5 +88,5 @@ IN SCOPE (from the reported aggregates and the stated method): naming which chur
 
 ## Citations
 
-- Standards-board logo retention (churn = 1 - retention) and the compounded annualization, the gross/net revenue churn inverses, and the uncodified churn moment: the codified, snapshot-verified Logo Retention entry in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json), rendered alongside in the Logo / Customer Retention and Revenue churn sections of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md).
+- Standards-board logo retention, "# of customers at the end of the period who were customers at the beginning of the period / # of active customers at the beginning of the measurement period" (churn = 1 - retention), and the compounded annualization, the gross/net revenue churn inverses, and the uncodified churn moment: the codified, snapshot-verified Logo Retention entry in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/logo-retention).
 - GRR and NRR as the retention metrics churn inverts: see `grr.md` and `nrr.md`.

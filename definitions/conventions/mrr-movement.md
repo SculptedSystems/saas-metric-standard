@@ -5,6 +5,7 @@ aka: [revenue bridge, recurring-revenue waterfall, MRR walk, ARR walk]
 contested: true
 gear: 2
 authority: standards-board
+diverges_on: [composition]
 ---
 
 # MRR / ARR movement bridge (the waterfall)
@@ -52,6 +53,6 @@ IN SCOPE (from the founder's stated movement aggregates): naming the bridge term
 
 ## Citations
 
-- The Board-defined components (New Name ARR, Expansion CARR, Contraction / Down-Sell MRR, Churned MRR) and the NRR and GRR formula methods that sum them: see the New CAC Ratio (New Name ARR), Expansion CAC Ratio (Expansion CARR), and Gross Revenue Retention entries in [`../evidence/canonical-definitions.json`](../evidence/canonical-definitions.json), and the NRR and GRR formula methods in [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md).
+- The Board-defined components (New Name ARR, Expansion CARR, Contraction / Down-Sell MRR, Churned MRR) and the NRR and GRR formula methods that sum them: see the New CAC Ratio (New Name ARR), Expansion CAC Ratio (Expansion CARR), and Gross Revenue Retention entries in [`../evidence/canonical-definitions.json`](../evidence/canonical-definitions.json), and the NRR and GRR formula methods carried in [`nrr.md`](nrr.md) and [`grr.md`](grr.md).
 - The bridge identity itself is consensus arithmetic, not a codified standard: no authority publishes the summed "Beginning + New + Expansion - Contraction - Churn = Ending" formula; it is the accounting the Board components assume.
 - The retention metrics that decompose from the bridge: see `nrr.md`, `grr.md`, and `churn.md`.
