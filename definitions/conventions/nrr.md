@@ -15,11 +15,11 @@ The share of recurring revenue retained from an existing-customer cohort over tw
 
 ## Why it diverges
 
-NRR is the highest-divergence metric in the frame and the one the Review is built to win. Public filers split materially on all three axes: a recurring-revenue basis is only the plurality, and the divergence runs through recognizable peers (Autodesk, Asana on GAAP revenue; Okta, Cloudflare on ACV or annualized), not just obscure filers. The same customer book reports a different retention rate under each, and an investor recomputes against whichever the relevant peer set uses. The new-logo exclusion is the one near-settled point.
+NRR is the highest-divergence metric and the one the Review is built to win. Named public filers split materially on all three axes: a recurring-revenue basis is one legitimate convention among several, and the divergence runs through recognizable peers (Autodesk, Asana on GAAP revenue; Okta, Cloudflare on ACV or annualized; MariaDB on ARR), not just obscure filers. The same customer book reports a different retention rate under each, and an investor recomputes against whichever the relevant peer set uses. The new-logo exclusion is the one near-settled point.
 
 ## The three axes (per NRR)
 
-- **composition** (free-computable): existing-customer cohort only; expansion and contraction in, new logos out. The new-logo exclusion is near-universal among definers, so it is the settled part.
+- **composition** (free-computable): existing-customer cohort only; expansion and contraction in, new logos out. The new-logo exclusion is consistent across the named filers, so it is the settled part.
 - **basis**: recurring (ARR or MRR) vs GAAP-revenue (trailing-twelve-month or calendar) vs ACV or contracted vs implied-monthly.
 - **timing**: point-in-time "as of period end" vs an average across the twelve months vs a year-over-year cohort. Disclosed so inconsistently that two independent readings often cannot classify it the same way.
 
@@ -27,7 +27,7 @@ NRR is the highest-divergence metric in the frame and the one the Review is buil
 
 | Family | Axis | Method (short) | Representative filer | Direction vs defensible |
 |---|---|---|---|---|
-| ARR-basis 12-month cohort (plurality) | basis + timing | current ARR of the 12-month-prior cohort over that cohort's ARR 12 months prior | MariaDB | the defensible default |
+| ARR-basis 12-month cohort | basis + timing | current ARR of the 12-month-prior cohort over that cohort's ARR 12 months prior | MariaDB | the defensible default |
 | 4-quarter / monthly average | timing | average of the monthly annualized rate over the period | EverCommerce | smooths spikes; can read lower or higher |
 | trailing-revenue basis | basis | GAAP revenue of the same customers, trailing-twelve vs prior | SEMrush | revenue lag can understate a fast-expanding book |
 | calendar-revenue, excludes acquired | basis + composition | calendar-year revenue of the prior-year cohort, acquired customers stripped | Q2 Holdings | stripping acquired customers usually lowers it |
@@ -40,7 +40,7 @@ Hypothesis, not direct evidence: an ARR-basis, sometimes-averaged, sometimes-thr
 
 ## The defensible read
 
-Lead with the ARR-basis twelve-month cohort number (the plurality, and the standards-board cohort method). Footnote the range. The aggressive convention to avoid leading with is whichever inflates via composition (segment-restricting the cohort) or a flattering timing choice; that is always the labeled risk, never the headline. Principle: defensibility, not optimization, the number that survives an investor's recompute.
+Lead with the ARR-basis twelve-month cohort number (the standards-board cohort method, exemplified by MariaDB). Footnote the range. The aggressive convention to avoid leading with is whichever inflates via composition (segment-restricting the cohort) or a flattering timing choice; that is always the labeled risk, never the headline. Principle: defensibility, not optimization, the number that survives an investor's recompute.
 
 ## Classic errors touching NRR
 
@@ -53,11 +53,11 @@ FREE (from the ~12 reported aggregates): the composition axis, confirm new logos
 
 ## Citations (REFERENCE, not recall)
 
-- Standards-board cohort method and the MariaDB, SEMrush, Q2, BlackLine, EverCommerce, Brightcove verbatim quotes: see the NRR section of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md) and [`../evidence/sec-saas-metric-definitions.md`](../evidence/sec-saas-metric-definitions.md).
-- Distribution (suggestive, not firm; cross-vendor kappa 0.66): of the filers with a stated method, a recurring-revenue basis is the plurality (about 63%), the rest split across GAAP-revenue and ACV or other. The robust claim is the divergence itself plus the verbatim examples, not the percentage.
+- Standards-board cohort method and the MariaDB, SEMrush, Q2, BlackLine, EverCommerce, Brightcove verbatim quotes (each with its SEC URL): see the NRR section of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md).
+- The divergence is evidenced by the named filers themselves: MariaDB reports on a recurring-revenue (ARR) basis, SEMrush on trailing GAAP revenue, Q2 on calendar revenue excluding acquired customers, BlackLine on implied-monthly, EverCommerce on a monthly average, Brightcove on a segment-restricted cohort. The robust claim is the divergence itself plus these verbatim examples.
 
 ## Card-derivation notes
 
 - RECALL: the contested flag, the three axes, the convention-family names and which axis each sits on, the new-logo settled point, the gross-vs-net error, the free/paid boundary, the defensible default.
-- CONTRAST / REWORK card needed: "NRR is MRR-basis" must be reworked (it is only the plurality).
-- REFERENCE only: the specific filer quotes, the percentages, the per-founder spread arithmetic.
+- CONTRAST / REWORK card needed: "NRR is MRR-basis" must be reworked (it is one convention among several named filers).
+- REFERENCE only: the specific filer quotes, the per-founder spread arithmetic.

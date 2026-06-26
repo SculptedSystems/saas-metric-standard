@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "library_sha256": "34061be73ad675751a5411912680201d2f847fe317d0b8b9fbbfaba784799362",
+  "library_sha256": "c52f65ce81532f3e23a0cd113d111ecb2bf382d2f5c1fa699799ca86d4d19e81",
   "count": 13,
   "conventions": [
     {
@@ -31,7 +31,7 @@
       "id": "grr",
       "metric": "Gross Revenue Retention",
       "file": "conventions/grr.md",
-      "content_sha256": "03a3be5669f72af42575d6bd84d5e27d65993ffcfdf6f7813a2b69b8483bee56"
+      "content_sha256": "9005f02d185d2a82f1faad7bc7ced6fcb5c2bffd45e2e78210f68e41db1b90bd"
     },
     {
       "id": "ltv",
@@ -55,7 +55,7 @@
       "id": "nrr",
       "metric": "Net Revenue Retention",
       "file": "conventions/nrr.md",
-      "content_sha256": "05987e61cc7358dbe5eba29779d6c94b9adfb9a5bfe7fa112c27392f10faef82"
+      "content_sha256": "e8e0a9363e897041edcdc2ae30bba4dad4aafff56ba652df589124e69bbf28fd"
     },
     {
       "id": "quick-ratio",
@@ -79,7 +79,7 @@
       "id": "cheatsheet",
       "metric": "Divergence cheatsheet",
       "file": "divergence/cheatsheet.md",
-      "content_sha256": "b7746c7604c2beb68a7e35acae0b8a99c6a56c7a7c0c0248d6aeff52d83a446e"
+      "content_sha256": "f254ec88025137434738454629192ace6b18e925cc8f1f1dce79f5f38477429c"
     }
   ]
 }

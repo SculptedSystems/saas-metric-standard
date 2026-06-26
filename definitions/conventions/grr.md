@@ -52,7 +52,7 @@ FREE (from the reported aggregates): the composition axis, confirm expansion is 
 ## Citations (REFERENCE, not recall)
 
 - Standards-board cohort method (preferred) and formula method, and the no-expansion ceiling: see the GRR / GDR section of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md) and the Gross Revenue Retention entry in [`../evidence/canonical-definitions.json`](../evidence/canonical-definitions.json).
-- Filers disclosing GRR on their chosen NRR basis: [`../evidence/sec-saas-metric-definitions.md`](../evidence/sec-saas-metric-definitions.md).
+- Filers disclosing GRR on their chosen NRR basis: see the GRR / GDR section of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md).
 
 ## Card-derivation notes
 
