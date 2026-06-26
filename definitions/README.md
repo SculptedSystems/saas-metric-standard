@@ -2,7 +2,7 @@
 
 The neutral, single-source definitions at the core of The SaaS Metric Standard. This is the standard's substance (the definitions), not implementation.
 
-**Substantiation principle:** every definition ships with its cited primary authority and a public methodology. The codified `evidence/` layer carries the proof (each convention cites its primary authority in `evidence/canonical-verified.json`), the divergence map shows where the authorities differ along the three axes, and the conventions name one defensible read per metric against that authority. Nothing rests on assertion.
+**Substantiation principle:** every definition ships with its cited primary authority and a public methodology. The codified `evidence/` layer carries the proof (each convention cites its primary authority in `evidence/canonical-verified.json`), the divergence axes show where the authorities differ along the three axes, and the conventions name one defensible read per metric against that authority. Nothing rests on assertion.
 
 This standard codifies the cited authorities (the SaaS Metrics Standards Board and the originators of coined metrics), like a working group maintaining a spec. It does not issue the definitions itself; it records, cites, and reconciles them.
 

@@ -12,7 +12,7 @@
 // identical lock (git records when it changed).
 //
 // Run: npm run lock   (or: node --experimental-strip-types definitions/lock.mts)
-import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
@@ -47,18 +47,6 @@ const entries: ConventionEntry[] = metricFiles.map((f) => {
     content_sha256: sha256(raw),
   };
 });
-
-// The divergence cheatsheet carries the operational formulas, so it is part of
-// the versioned library and gets hashed too.
-const CHEAT = join(DEFS, "divergence", "cheatsheet.md");
-if (existsSync(CHEAT)) {
-  entries.push({
-    id: "cheatsheet",
-    metric: "Divergence cheatsheet",
-    file: "divergence/cheatsheet.md",
-    content_sha256: sha256(readFileSync(CHEAT, "utf8")),
-  });
-}
 
 // One library hash binds the version to every entry's hash: it changes iff the
 // version or any convention changes.

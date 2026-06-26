@@ -1,6 +1,6 @@
 # Metric-definition evidence
 
-The auditable evidence behind the conventions and the [divergence map](../divergence/). One firm, classifier-independent layer.
+The auditable evidence behind the conventions and the [divergence axes](../divergence/). One firm, classifier-independent layer.
 
 ## Canonical definitions (Standards Board + origin authors)
 

@@ -1,6 +1,6 @@
 # Operator context (quarantined Tier B, REFERENCE-only)
 
-Working-consensus, not divergence-authority. The firewall: every metric below is conversation fuel an advisor should be able to FIELD on a call so the operator is not caught flat, and nothing more. None of these is a defensible-number ruling or a held-cold Anki RECALL card. None traces to SEC filings, the SaaS Metrics Standards Board, an origin author, or ASC 606, so none is presented as authority. Each is deepened into a real `conventions/` entry only when founders are observed to actually lead with it; this stub is the placeholder until then.
+Working-consensus, not divergence-authority. The firewall: every metric below is conversation fuel an advisor should be able to FIELD on a call so the operator is not caught flat, and nothing more. None of these is a defensible-number ruling or a held-cold Anki RECALL card. None traces to the SaaS Metrics Standards Board, an origin author, or ASC 606, so none is presented as authority. Each is deepened into a real `conventions/` entry only when founders are observed to actually lead with it; this stub is the placeholder until then.
 
 For each: one line of what it is, plus its authority status. No depth.
 
