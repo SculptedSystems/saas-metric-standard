@@ -31,13 +31,20 @@ ARR is contested mainly on the basis axis: an annualized run-rate (MRR times 12)
 | Committed / contracted (CARR) | basis + timing | contracted annual recurring revenue, in production or not | standards board (CARR) | includes signed-not-live; usually higher |
 | Recurring-revenue annualized | basis | recurring revenue per the revenue-recognition policy, annualized | standards board (ARR) | ties ARR to recognized recurring revenue |
 
-## What the investor likely recomputes on
+## What the investor likely recomputes on (the documented SOURCE for the target)
+
+This is the standard-level SOURCE for the engagement `target` (DR-0047): a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
 
 Hypothesis: an annualized run-rate on clean recurring revenue, with a skeptical eye on anything that looks like committed-but-not-live revenue padding the number. Validate per founder via the debrief loop.
 
-## The defensible read
+## The defensible read (fallback default; anchor on the target when known)
 
-Lead with the run-rate on clean recurring revenue and disclose any committed or off-processor component separately rather than blending it in. If a founder is leading with CARR, name it as CARR, not ARR. The aggressive move to avoid is blending one-time, services, or signed-not-live revenue into the headline.
+"Defensible" is investor-relative (DR-0047): it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
+
+- **Fallback (the generic-defensible default, anchor when the target is unknown):** lead with the run-rate on clean recurring revenue and disclose any committed or off-processor component separately rather than blending it in. If a founder is leading with CARR, name it as CARR, not ARR. This is the codified default, the number to lead on when no investor or peer-set target is set.
+- **Target (anchor when known):** when the engagement's target convention is known (the investor's stated convention, or the peer-set-inferred one), anchor and lead on *that* number, and footnote the rest, including the generic fallback. The target is what the raise is judged against.
+
+Under either anchor, the aggressive move to avoid is blending one-time, services, or signed-not-live revenue into the headline. `defect_gap` is absolute and does not move with the target.
 
 ## Canonical formula
 

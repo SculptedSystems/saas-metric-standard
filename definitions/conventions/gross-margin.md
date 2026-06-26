@@ -32,13 +32,20 @@ Gross margin enters this library as a codified dependency, not a free-standing h
 | Blended company gross margin | basis | all revenue (subscription plus services) minus all COGS, over all revenue | SEC filers (subscription-vs-blended divergence) | usually lower than subscription margin; DEFERRED |
 | Professional-services-excluded | composition | services revenue and its delivery cost stripped, leaving the recurring product margin | common practice | isolates the recurring margin the payback intends |
 
-## What the investor likely recomputes on
+## What the investor likely recomputes on (the documented SOURCE for the target)
+
+This is the standard-level SOURCE for the engagement `target` (DR-0047): a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
 
 Hypothesis, not direct evidence: an investor checking CAC payback recomputes on a subscription gross margin (recurring product only) with a skeptical eye on a blended margin or a thin COGS that parks hosting, support, or customer-success cost in OpEx to flatter the margin and shorten payback. Validate per founder via the debrief loop.
 
-## The defensible read
+## The defensible read (fallback default; anchor on the target when known)
 
-Lead with the subscription gross margin, recurring product revenue over its own delivery cost, when the margin feeds CAC payback, and state what is in COGS (hosting and support in; the customer-success allocation named explicitly). The aggressive move to avoid is feeding a blended company margin, or a margin with hosting, support, or customer-success cost pushed into OpEx, into the payback denominator, which understates the months. Principle: defensibility, not optimization.
+"Defensible" is investor-relative (DR-0047): it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
+
+- **Fallback (the generic-defensible default, anchor when the target is unknown):** lead with the subscription gross margin, recurring product revenue over its own delivery cost, when the margin feeds CAC payback, and state what is in COGS (hosting and support in; the customer-success allocation named explicitly). This is the codified default, the read to lead on when no investor or peer-set target is set.
+- **Target (anchor when known):** when the engagement's target convention is known (the investor's stated convention, or the peer-set-inferred one), anchor and lead on *that* margin definition, and footnote the rest, including the generic fallback. The target is what the raise is judged against.
+
+Under either anchor, the aggressive move to avoid is feeding a blended company margin, or a margin with hosting, support, or customer-success cost pushed into OpEx, into the payback denominator, which understates the months. Principle: defensibility, not optimization. `defect_gap` is absolute and does not move with the target.
 
 ## Canonical formula
 

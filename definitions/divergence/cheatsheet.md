@@ -28,10 +28,10 @@ Four steps, in order:
 
 1. Name the metric the founder reported, and how they compute it.
 2. Compute it under each convention on this sheet, and show the founder the spread.
-3. Name the defensible number to lead with, and the aggressive convention to avoid. Lead defensible, footnote the range.
-4. Hand the founder the investor-ask template so they get the convention from the source.
+3. Name the defensible number to lead with, and the aggressive convention to avoid. Lead defensible, footnote the range. "Defensible" is investor-relative (DR-0047): it is the convention the raise is judged against, not the standard's default. Two tiers: a standard-level **fallback** (the generic-defensible default, the anchor when the target is unknown) and an engagement-level **target** (the investor's or peer-set's convention, the anchor when known). When the target is known, anchor and lead on it and footnote the fallback; until then, lead on the fallback.
+4. Hand the founder the investor-ask template so they get the convention from the source. This is what promotes a `peer_set_inferred` target to an `investor_stated` one.
 
-The principle is defensibility, not optimization. We never pick the highest number, only the one that survives the investor's recompute. The most aggressive convention is always the labeled risk.
+The principle is defensibility, not optimization. We never pick the highest number, only the one that survives the investor's recompute, and that warrant is exactly why the anchor is investor-relative: the target convention *is* the one the investor recomputes on, so it, not the standard's default, is what the founder's number must survive. The most aggressive convention is always the labeled risk. `defect_gap` stays absolute: it is a source defect that no target convention can move.
 
 The full on-call flow, deliverable scope, and the investor-ask template live in the [Raise Metrics Review Playbook](../../gtm/raise-metrics-review-playbook.md).
 

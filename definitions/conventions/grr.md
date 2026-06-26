@@ -31,13 +31,20 @@ GRR diverges on the same basis and timing axes as NRR (it is the same cohort mea
 | Formula method | composition | (beginning value - churned - down-sell) / beginning value | standards board (GRR) | equivalent when terms are clean; sensitive to the contraction/churn split |
 | GRR on the NRR basis | basis | whatever basis the filer used for NRR, with the expansion term zeroed | SEC filers disclosing GRR alongside NRR | matches the paired NRR; inherits its basis risk |
 
-## What the investor likely recomputes on
+## What the investor likely recomputes on (the documented SOURCE for the target)
+
+This is the standard-level SOURCE for the engagement `target` (DR-0047): a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
 
 Hypothesis, not direct evidence: the same basis and period as NRR, read as the floor underneath it. An investor who recomputes NRR on an ARR-basis cohort will recompute GRR the same way and compare the gap; a wide NRR-minus-GRR spread says expansion is carrying a leaky base. Validate per founder via the debrief loop.
 
-## The defensible read
+## The defensible read (fallback default; anchor on the target when known)
 
-Lead with GRR on the same basis you led with for NRR, so the pair is comparable, and state the no-expansion ceiling out loud. The aggressive move to avoid is reporting only NRR and omitting GRR, which lets expansion mask attrition; volunteering GRR is the credibility signal. Principle: defensibility, not optimization.
+"Defensible" is investor-relative (DR-0047): it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
+
+- **Fallback (the generic-defensible default, anchor when the target is unknown):** lead with GRR on the same basis you led with for NRR, so the pair is comparable, and state the no-expansion ceiling out loud. This is the codified default, the number to lead on when no investor or peer-set target is set.
+- **Target (anchor when known):** when the engagement's target convention is known (the investor's stated convention, or the peer-set-inferred one), anchor and lead GRR on the *same basis* as that target, and footnote the rest, including the generic fallback. The target is what the raise is judged against.
+
+Under either anchor, the aggressive move to avoid is reporting only NRR and omitting GRR, which lets expansion mask attrition; volunteering GRR is the credibility signal. Principle: defensibility, not optimization. `defect_gap` is absolute and does not move with the target.
 
 ## Canonical formula
 

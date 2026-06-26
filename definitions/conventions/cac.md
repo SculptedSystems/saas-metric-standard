@@ -33,13 +33,20 @@ What is actually codified is the CAC ratio (S&M to win one dollar of new ARR), n
 | CAC payback (gross-margin-adjusted) | basis + timing | fully-loaded S&M / (new CARR x gross margin %) x 12 | standards board (payback) | the codified payback; months to repay on gross profit |
 | Per-customer CAC | basis | S&M over new-customer count | common practice (no codified form) | sensitive to the new-customer count and acquisition lag |
 
-## What the investor likely recomputes on
+## What the investor likely recomputes on (the documented SOURCE for the target)
+
+This is the standard-level SOURCE for the engagement `target` (DR-0047): a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
 
 Hypothesis, not direct evidence: a fully-loaded, blended-or-new CAC ratio on new ARR, and CAC payback on gross-margin-adjusted revenue, with a skeptical eye on a paid-only numerator or a raw-revenue payback that flatters the months. Validate per founder via the debrief loop.
 
-## The defensible read
+## The defensible read (fallback default; anchor on the target when known)
 
-Lead with a fully-loaded CAC ratio and say which denominator (blended, new, or expansion). For payback, lead with the gross-margin-adjusted months, not raw revenue. The aggressive moves to avoid: a paid-only or ad-spend-only numerator that understates true CAC, an expansion-inclusive denominator presented as new-customer efficiency, and a raw-revenue payback (divide it by gross margin: at ~75% GM, a "9 month" payback is really about 12). Principle: defensibility, not optimization.
+"Defensible" is investor-relative (DR-0047): it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
+
+- **Fallback (the generic-defensible default, anchor when the target is unknown):** lead with a fully-loaded CAC ratio and say which denominator (blended, new, or expansion); for payback, lead with the gross-margin-adjusted months, not raw revenue. This is the codified default, the number to lead on when no investor or peer-set target is set.
+- **Target (anchor when known):** when the engagement's target convention is known (the investor's stated convention, or the peer-set-inferred one), anchor and lead on *that* number, and footnote the rest, including the generic fallback. The target is what the raise is judged against.
+
+Under either anchor, the aggressive moves to avoid: a paid-only or ad-spend-only numerator that understates true CAC, an expansion-inclusive denominator presented as new-customer efficiency, and a raw-revenue payback (divide it by gross margin: at ~75% GM, a "9 month" payback is really about 12). Principle: defensibility, not optimization. `defect_gap` is absolute and does not move with the target.
 
 ## Canonical formula
 

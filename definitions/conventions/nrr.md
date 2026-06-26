@@ -34,13 +34,20 @@ NRR is the highest-divergence metric and the one the Review is built to win. Nam
 | implied-monthly basis | basis | implied monthly subscription revenue end vs one year prior | BlackLine | similar to MRR; depends on revenue smoothing |
 | segment-restricted cohort | composition | only a healthy segment (for example "premium") in the cohort | Brightcove | restricting to a healthy segment usually raises it |
 
-## What the investor likely recomputes on
+## What the investor likely recomputes on (the documented SOURCE for the target)
+
+This is the standard-level SOURCE for the engagement `target` (DR-0047): a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
 
 Hypothesis, not direct evidence: an ARR-basis, sometimes-averaged, sometimes-thresholded cohort convention. The SEC filers are large and late-stage, a proxy for the seed or Series A investor, not the investor themselves. The specific basis, timing, and cohort sophistication is to be validated against real call data (the debrief loop), not asserted.
 
-## The defensible read
+## The defensible read (fallback default; anchor on the target when known)
 
-Lead with the ARR-basis twelve-month cohort number (the standards-board cohort method, exemplified by MariaDB). Footnote the range. The aggressive convention to avoid leading with is whichever inflates via composition (segment-restricting the cohort) or a flattering timing choice; that is always the labeled risk, never the headline. Principle: defensibility, not optimization, the number that survives an investor's recompute.
+"Defensible" is investor-relative (DR-0047): it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
+
+- **Fallback (the generic-defensible default, anchor when the target is unknown):** lead with the ARR-basis twelve-month cohort number (the standards-board cohort method, exemplified by MariaDB). Footnote the range. This is the codified default, the number to lead on when no investor or peer-set target is set.
+- **Target (anchor when known):** when the engagement's target convention is known (the investor's stated convention, or the peer-set-inferred one), anchor and lead on *that* number, and footnote the rest, including the generic fallback. The target is what the raise is judged against.
+
+Under either anchor, the aggressive convention to avoid leading with is whichever inflates via composition (segment-restricting the cohort) or a flattering timing choice; that is always the labeled risk, never the headline. Principle: defensibility, not optimization, the number that survives an investor's recompute. `defect_gap` is absolute and does not move with the target.
 
 ## Canonical formula
 

@@ -1,13 +1,13 @@
 {
   "version": "0.1.0",
-  "library_sha256": "ef8a65ed5297d143e2d991579a6333e0f09c4740024e2fe43544f3164ce06531",
+  "library_sha256": "ee06a192d21c075aca403c0020fdf549b24d7c27953e09b138cbeac8c5f175df",
   "count": 14,
   "conventions": [
     {
       "id": "arr",
       "metric": "Annual Recurring Revenue",
       "file": "conventions/arr.md",
-      "content_sha256": "87211ec68bd7762cedd8e89c631b64330356ac7faf9c18bb09e59a62fc0837cd"
+      "content_sha256": "a3cbd98a5f98a9da00959ad3279a2bd49240e9ce394a8f146efa0922da845a1b"
     },
     {
       "id": "burn-multiple",
@@ -19,25 +19,25 @@
       "id": "cac",
       "metric": "Customer Acquisition Cost",
       "file": "conventions/cac.md",
-      "content_sha256": "8c4847b761b8589b09a89c39eeea3d2fd43c2f5bdf6bcd2f5abaac187c281df8"
+      "content_sha256": "eaee3acba336135c6060531d06b4aedf32a7984085e34a18a459d84aa568b45e"
     },
     {
       "id": "churn",
       "metric": "Churn and retention",
       "file": "conventions/churn.md",
-      "content_sha256": "645da822a1c835f6a96f6726c931e6f8bb8685f96cbf0291285a33d7044f08ea"
+      "content_sha256": "d501ed8fde5c14e09d08201b0c203410ba57176207866c89d2222f3a5f6bbe1c"
     },
     {
       "id": "gross-margin",
       "metric": "Gross Margin",
       "file": "conventions/gross-margin.md",
-      "content_sha256": "e6f376ce786726097791c8658f8b915b18afc0ac8519b71e50e6385d526f2d5b"
+      "content_sha256": "d9409ed5225336451a1d1ef3e7ac1d2f8af0a8aa66fd25990b240b1507f1b8da"
     },
     {
       "id": "grr",
       "metric": "Gross Revenue Retention",
       "file": "conventions/grr.md",
-      "content_sha256": "1f975b62d009e4b90cabbd0edaffd15984c8de789555e301ebefabe0f139ea21"
+      "content_sha256": "3ad7f86ebe0106d38ee25b968f255a80e20c69167a2c71fee24bc713d5786708"
     },
     {
       "id": "ltv",
@@ -49,7 +49,7 @@
       "id": "magic-number",
       "metric": "SaaS Magic Number",
       "file": "conventions/magic-number.md",
-      "content_sha256": "95beb749d68689dd841f74352ddbd126741fc71ad5adc5c2022c2dfe50a5e4b2"
+      "content_sha256": "fb90b27f3a62e2b8f9dd8e70d2d5dea5a1c9e4df946c2b990a4c9e6172f563c4"
     },
     {
       "id": "mrr-movement",
@@ -61,7 +61,7 @@
       "id": "nrr",
       "metric": "Net Revenue Retention",
       "file": "conventions/nrr.md",
-      "content_sha256": "f38dfb0bd957f16571975fc7fef166209e2c44b7fbfe419e799b65301edcc11b"
+      "content_sha256": "f8d8f5785ae149d0e98809f0594f5b5ee67ed1b4cff9c3608988e06ecc154141"
     },
     {
       "id": "quick-ratio",
@@ -85,7 +85,7 @@
       "id": "cheatsheet",
       "metric": "Divergence cheatsheet",
       "file": "divergence/cheatsheet.md",
-      "content_sha256": "603d5be1dcf09586694f38cf0ea05a1d10114000d440ecfb62e89bbb94730cfd"
+      "content_sha256": "45645b336205e99c397fac38a05cdbab83a127b812380e97b467cb2fcf24d438"
     }
   ]
 }

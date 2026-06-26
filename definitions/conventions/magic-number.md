@@ -30,13 +30,20 @@ The magic number has no SEC-disclosed or standards-board definition. The only au
 | GAAP-revenue numerator (origin) | basis | (change in subscription revenue across two quarters x 4) / prior-quarter S&M | origin, Scale VP | the origin-author default |
 | Net-new-ARR numerator (variant) | basis | (net new ARR for the quarter, annualized) / prior-quarter S&M | common practice | reads differently when revenue lags ARR |
 
-## What the investor likely recomputes on
+## What the investor likely recomputes on (the documented SOURCE for the target)
+
+This is the standard-level SOURCE for the engagement `target` (DR-0047): a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
 
 Hypothesis, not direct evidence: an investor treats the magic number as a rough sales-efficiency signal (higher is more efficient; the origin's threshold tiers are an unsourced convention, not a standard, so do not assert a specific cutoff cold) and is indifferent to small basis differences as long as they are stated, but will discount a number whose numerator and S&M period are not defined. Validate per founder via the debrief loop.
 
-## The defensible read
+## The defensible read (fallback default; anchor on the target when known)
 
-Name it as a convention with a Scale VP origin, state the numerator (GAAP subscription revenue vs net new ARR), and confirm the prior-quarter S&M denominator. The aggressive move to avoid is presenting a self-defined magic number as if it were a standard. Principle: defensibility, not optimization.
+"Defensible" is investor-relative (DR-0047): it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
+
+- **Fallback (the generic-defensible default, anchor when the target is unknown):** name it as a convention with a Scale VP origin, state the numerator (GAAP subscription revenue vs net new ARR), and confirm the prior-quarter S&M denominator. This is the codified default, the read to lead on when no investor or peer-set target is set.
+- **Target (anchor when known):** when the engagement's target convention is known (the investor's stated convention, or the peer-set-inferred one), anchor and lead on *that* numerator and period, and footnote the rest, including the generic fallback. The target is what the raise is judged against.
+
+Under either anchor, the aggressive move to avoid is presenting a self-defined magic number as if it were a standard. Principle: defensibility, not optimization. `defect_gap` is absolute and does not move with the target.
 
 ## Canonical formula
 

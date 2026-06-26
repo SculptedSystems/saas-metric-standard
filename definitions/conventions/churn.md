@@ -33,13 +33,20 @@ Churn is really a small family of metrics, and the first failure is not picking 
 | Compounded annualization | timing | annual = 1 - (1 - monthly)^12 | standards-board convention | the correct derivation |
 | Linear annualization (monthly x 12) | timing | monthly churn times twelve | common founder shortcut | overstates annual churn; the annualization trap |
 
-## What the investor likely recomputes on
+## What the investor likely recomputes on (the documented SOURCE for the target)
+
+This is the standard-level SOURCE for the engagement `target` (DR-0047): a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
 
 Hypothesis, not direct evidence: an investor reads logo churn and gross revenue churn underneath any net retention number, on the same basis as the paired retention metric, and is skeptical of a single headline "churn" figure that does not say logo-or-revenue and gross-or-net. Validate per founder via the debrief loop.
 
-## The defensible read
+## The defensible read (fallback default; anchor on the target when known)
 
-State which churn you mean (logo or revenue, gross or net) before quoting a number, and annualize monthly churn by compounding, not by multiplying by twelve. The aggressive move to avoid is leading with net revenue churn alone, which expansion can drive near zero or negative while gross attrition is real. Define the churn moment explicitly, since no authority does. Principle: defensibility, not optimization.
+"Defensible" is investor-relative (DR-0047): it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
+
+- **Fallback (the generic-defensible default, anchor when the target is unknown):** state which churn you mean (logo or revenue, gross or net) before quoting a number, and annualize monthly churn by compounding, not by multiplying by twelve. This is the codified default, the read to lead on when no investor or peer-set target is set.
+- **Target (anchor when known):** when the engagement's target convention is known (the investor's stated convention, or the peer-set-inferred one), anchor and lead on the *same basis* as that target's paired retention metric, and footnote the rest, including the generic fallback. The target is what the raise is judged against.
+
+Under either anchor, the aggressive move to avoid is leading with net revenue churn alone, which expansion can drive near zero or negative while gross attrition is real. Define the churn moment explicitly, since no authority does. Principle: defensibility, not optimization. `defect_gap` is absolute and does not move with the target.
 
 ## Canonical formula
 
