@@ -23,7 +23,7 @@ What this library adds on top of those is the **fluency layer**: the three-axis 
 - `nrr.md`, `arr.md`: the Gear-1 lead metrics.
 - `classic-errors.md`: the five named classic errors.
 - `rev-rec.md`: revenue recognition (the four money-states, deferred revenue, the GAAP boundary, and the ASC 606 recognition model), backed by the Big-4-grounded [ASC 606 substrate](../evidence/rev-rec-substrate.md).
-- The build-phase metrics, now written: `grr.md`, `churn.md`, `cac.md` (CAC, the CAC ratio, and CAC payback), `rule-of-40.md`, `magic-number.md`, `burn-multiple.md`, `ltv.md` (LTV and LTV:CAC), `mrr-movement.md` (the MRR/ARR movement bridge that NRR, GRR, and churn decompose from), `quick-ratio.md` (the SaaS quick ratio).
+- The build-phase metrics, now written: `grr.md`, `churn.md`, `cac.md` (CAC, the CAC ratio, and CAC payback), `gross-margin.md` (the codified Subscription Gross Margin % dependency the CAC-payback formula divides by), `rule-of-40.md`, `magic-number.md`, `burn-multiple.md`, `ltv.md` (LTV and LTV:CAC), `mrr-movement.md` (the MRR/ARR movement bridge that NRR, GRR, and churn decompose from), `quick-ratio.md` (the SaaS quick ratio).
 - Quarantined working-consensus crib list (sibling to this directory, REFERENCE-only, never a Map verdict): [`../operator-context.md`](../operator-context.md).
 
 ## Evidence tiers

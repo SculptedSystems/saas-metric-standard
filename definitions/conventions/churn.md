@@ -41,6 +41,33 @@ Hypothesis, not direct evidence: an investor reads logo churn and gross revenue 
 
 State which churn you mean (logo or revenue, gross or net) before quoting a number, and annualize monthly churn by compounding, not by multiplying by twelve. The aggressive move to avoid is leading with net revenue churn alone, which expansion can drive near zero or negative while gross attrition is real. Define the churn moment explicitly, since no authority does. Principle: defensibility, not optimization.
 
+## Canonical formula
+
+$$\text{Logo retention}=\frac{\text{customers at end who were customers at start}}{\text{active customers at start}}\qquad \text{logo churn}=1-\text{retention}\qquad \text{annual}=1-(1-\text{monthly})^{12}$$
+
+Primary source: the Standards Board codifies the count-based metric as logo retention, "# of customers at the end of the period who were customers at the beginning of the period / # of active customers at the beginning of the measurement period," recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/logo-retention); churn is one minus that retention. Gross and net revenue churn are the inverses of the codified GRR and NRR entries in the same file (1 - GRR and 1 - NRR). The cheatsheet renders these, but the codified retention definitions are the authority here, not the digest.
+
+Standards-board logo-retention method (the defensible count-based default): the count of start-of-period customers still active at period end over the count active at start; churn is one minus that. Annual churn compounds from monthly as 1 - (1 - monthly)^12, never monthly times twelve.
+
+| Input | Source-system class | Timing-offset |
+|---|---|---|
+| Active customer count at start (the denominator) | CRM / billing | as of the beginning of the measurement period |
+| Retained customer count (start cohort still active at end) | CRM / billing | start cohort, evaluated as of period end |
+| Churn moment (cancel, access-ends, renewal date, or failed payment) | billing events | uncodified; must be defined per founder |
+| Period and annualization basis | data warehouse | monthly base compounded to annual; not linearly scaled |
+
+## Reconciliation note
+
+Composition-closed, basis/timing-bounded (DR-0046). The composition axis closes to a zero residual: from the reported aggregates we can confirm which churn family the number is in (logo versus revenue, gross versus net) and that churn equals one minus the paired retention, and that closes free. Basis and timing do not close. The revenue basis (ARR versus MRR versus revenue, inherited from the retention metric), the period and the monthly-to-annual derivation, and the uncodified churn moment interact non-additively (a basis reclassification and a churn-moment change are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the family, basis, and churn moment the founder used against the defensible logo-retention method with compounded annualization, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is the Engine's work (the paid working papers), not specified in this standard.
+
+## Aggressive-vs-defect test
+
+The predicate for classifying a churn spread (DR-0046):
+
+- **Defensible basis:** the standards-board logo-retention method (churn = 1 - retention) with monthly churn compounded to annual, and revenue churn read as 1 - GRR underneath any net figure. This is the number to lead with.
+- **Convention gap (aggressive but legitimate):** the spread reproduces only under net revenue churn (1 - NRR), which an authority-traceable retention basis legitimately nets expansion into and which can read near zero or negative, or under a revenue basis or churn moment the paired retention metric legitimately adopts. Legitimate, but net-only hides gross and logo attrition, so it is the labeled risk, never the headline.
+- **Defect gap:** no legitimate convention reproduces it. For example, annual churn derived as monthly times twelve rather than compounded (the annualization trap), or one-time revenue inflating the base so the apparent revenue churn understates. No authority-traceable convention recovers the number.
+
 ## Classic errors touching churn
 
 - **gross-vs-net churn confusion**: the central named error; reporting only net churn lets expansion mask gross and logo attrition. See `classic-errors.md`.
@@ -53,7 +80,7 @@ FREE (from the reported aggregates and the stated method): naming which churn fa
 
 ## Citations (REFERENCE, not recall)
 
-- Standards-board logo retention (churn = 1 - retention) and the compounded annualization, the gross/net revenue churn inverses, and the uncodified churn moment: see the Logo / Customer Retention and Revenue churn sections of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md) and the Logo Retention entry in [`../evidence/canonical-definitions.json`](../evidence/canonical-definitions.json).
+- Standards-board logo retention (churn = 1 - retention) and the compounded annualization, the gross/net revenue churn inverses, and the uncodified churn moment: the codified, snapshot-verified Logo Retention entry in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json), rendered alongside in the Logo / Customer Retention and Revenue churn sections of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md).
 - GRR and NRR as the retention metrics churn inverts: see `grr.md` and `nrr.md`.
 
 ## Card-derivation notes

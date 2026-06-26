@@ -4,7 +4,7 @@ abbrev: NRR
 aka: [NDR, Net Dollar Retention]
 contested: true
 gear: 1
-authority: cheatsheet
+authority: standards-board
 ---
 
 # Net Revenue Retention (NRR)
@@ -42,6 +42,35 @@ Hypothesis, not direct evidence: an ARR-basis, sometimes-averaged, sometimes-thr
 
 Lead with the ARR-basis twelve-month cohort number (the standards-board cohort method, exemplified by MariaDB). Footnote the range. The aggressive convention to avoid leading with is whichever inflates via composition (segment-restricting the cohort) or a flattering timing choice; that is always the labeled risk, never the headline. Principle: defensibility, not optimization, the number that survives an investor's recompute.
 
+## Canonical formula
+
+$$\text{NRR}=\frac{\text{BOP value}+\text{Expansion}-\text{Contraction}-\text{Churn}}{\text{BOP value}}\quad(\text{existing customers only; ``value'' = ARR, revenue, or implied-MRR depending on the filer})$$
+
+Primary source: the Standards Board codified cohort method, "Net Revenue Retention (NRR), also known as Net Dollar Retention (NDR), measures the percentage of recurring revenue retained over a specific period," recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/net-revenue-retention). The cheatsheet renders this alongside the divergence digest, but the codified method is the authority here, not the digest.
+
+Standards-board cohort method (the defensible default): current value of the cohort of all customers as of 12 months prior to the period end, over that same cohort's value 12 months prior. New logos are excluded by construction.
+
+| Input | Source-system class | Timing-offset |
+|---|---|---|
+| BOP value (the cohort denominator) | billing / data warehouse (recurring-revenue book) | as of 12 months prior to the period end |
+| Cohort membership (existing customers only) | CRM / billing | fixed at 12 months prior; held constant across the window |
+| Expansion | billing | over the trailing 12-month window |
+| Contraction | billing | over the trailing 12-month window |
+| Churn | billing | over the trailing 12-month window |
+| Numerator (current value of the same cohort) | billing / data warehouse | as of period end |
+
+## Reconciliation note
+
+Composition-closed, basis/timing-bounded (DR-0046). The composition axis closes to a zero residual: from the reported aggregates we can confirm the cohort is existing-customers-only with new logos out and expansion and contraction handled, and that closes free. Basis and timing do not close. They interact non-additively (an ARR basis read point-in-time and a GAAP-revenue basis read as a trailing-twelve average are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the convention the founder used against the defensible ARR-basis cohort, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is the Engine's work (the paid working papers), not specified in this standard.
+
+## Aggressive-vs-defect test
+
+The predicate for classifying an NRR spread (DR-0046):
+
+- **Defensible basis:** a recurring-revenue (ARR or MRR) cohort on the standards-board method, exemplified by MariaDB. This is the number to lead with.
+- **Convention gap (aggressive but legitimate):** the spread reproduces only under a basis or timing an authority-traceable filer actually uses in its own filing, a GAAP-revenue basis (Autodesk, Asana) or an ACV / annualized basis (Okta, Cloudflare), or a monthly-average timing (EverCommerce), or a segment-restricted cohort (Brightcove). Legitimate, but not the defensible read, so it is the labeled risk, never the headline.
+- **Defect gap:** no legitimate convention reproduces it. For example, there is no retained point-in-time state to rebuild the as-of cohort, so the cohort cannot be reconstructed at all, or new-logo revenue is folded into the cohort (the one error the market has largely settled against). No authority-traceable filer's convention recovers the number.
+
 ## Classic errors touching NRR
 
 - **gross-vs-net churn confusion**: reporting only net retention lets expansion mask gross and logo attrition; investors triangulate GRR and logo retention underneath (GRR is at most 100% by construction). See `classic-errors.md`.
@@ -49,7 +78,7 @@ Lead with the ARR-basis twelve-month cohort number (the standards-board cohort m
 
 ## Free / paid boundary
 
-FREE (from the ~12 reported aggregates): the composition axis, confirm new logos are excluded and expansion and contraction are handled. NAMED BUT NOT COMPUTED (the paid Cast): basis and timing, because they require raw customer-level data. Stating this boundary out loud is the authority move (DR-0026).
+FREE (from the ~12 reported aggregates), the recognition side: the composition axis, confirm new logos are excluded and expansion and contraction are handled. NAMED BUT NOT COMPUTED (the paid Cast): basis and timing, because they require raw customer-level data. The per-axis reconstruction from the client's raw source systems is the Engine's work (the paid working papers), not specified in this standard. Stating this boundary out loud is the authority move (DR-0026).
 
 ## Citations (REFERENCE, not recall)
 

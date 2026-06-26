@@ -39,6 +39,34 @@ Hypothesis, not direct evidence: the same basis and period as NRR, read as the f
 
 Lead with GRR on the same basis you led with for NRR, so the pair is comparable, and state the no-expansion ceiling out loud. The aggressive move to avoid is reporting only NRR and omitting GRR, which lets expansion mask attrition; volunteering GRR is the credibility signal. Principle: defensibility, not optimization.
 
+## Canonical formula
+
+$$\text{GRR}=\frac{\text{BOP value}-\text{Contraction}-\text{Churn}}{\text{BOP value}}\le 100\%\quad(\text{existing customers only; no expansion term; ``value'' = ARR, revenue, or implied-MRR depending on the filer})$$
+
+Primary source: the Standards Board codified GRR method, cohort method (preferred), "Adjusted MRR from the cohort of customers at the end of the period / MRR at the beginning of the measurement period," recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/gross-revenue-retention). The board also publishes the equivalent formula method, "((Beginning MRR - Churned MRR - Down-Sell MRR) / Beginning MRR) x 100". The cheatsheet renders these alongside the paired-NRR filer practice, but the codified method is the authority here, not the digest.
+
+Standards-board cohort method (the defensible default): the period-end value of the cohort of existing customers as of the start, over that same cohort's value at the start, with all expansion zeroed. The ceiling at 100% holds by construction.
+
+| Input | Source-system class | Timing-offset |
+|---|---|---|
+| BOP value (the cohort denominator) | billing / data warehouse (recurring-revenue book) | as of the beginning of the measurement period |
+| Cohort membership (existing customers only) | CRM / billing | fixed at period start; held constant across the window |
+| Contraction (down-sell) | billing | over the trailing 12-month window |
+| Churn | billing | over the trailing 12-month window |
+| Numerator (period-end value of the same cohort, expansion excluded) | billing / data warehouse | as of period end |
+
+## Reconciliation note
+
+Composition-closed, basis/timing-bounded (DR-0046). The composition axis closes to a zero residual: from the reported aggregates we can confirm expansion is excluded and the 100% ceiling holds, and that closes free. Basis and timing do not close. They interact non-additively (an ARR-basis cohort read point-in-time and a GAAP-revenue basis read as a trailing-twelve average are not a sum of separable adjustments), and the contraction-versus-churn split moves the two terms within a fixed total, so they are reconciled bounded and qualitative: name the convention the founder used against the defensible cohort method on the NRR basis, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is the Engine's work (the paid working papers), not specified in this standard.
+
+## Aggressive-vs-defect test
+
+The predicate for classifying a GRR spread (DR-0046):
+
+- **Defensible basis:** the standards-board cohort method on the same basis the founder led with for NRR, so the pair is comparable. This is the number to lead with.
+- **Convention gap (aggressive but legitimate):** the spread reproduces only under a basis or timing an authority-traceable filer actually uses for its paired retention, a GAAP-revenue or ACV basis, a monthly-average timing, or a contraction-versus-churn split that an SEC filer disclosing GRR alongside NRR adopts. Legitimate, but it inherits the NRR basis risk, so it is the labeled risk, never the headline.
+- **Defect gap:** no legitimate convention reproduces it. For example, a GRR reported above 100% (expansion leaked into the number, the one error the no-expansion ceiling settles against), or one-time revenue inflating the cohort base so the apparent churn understates. No authority-traceable filer's convention recovers the number.
+
 ## Classic errors touching GRR
 
 - **gross-vs-net churn confusion**: the central one. Reporting only net retention hides the gross picture; GRR is the metric that surfaces it. See `classic-errors.md`.
@@ -51,7 +79,7 @@ FREE (from the reported aggregates): the composition axis, confirm expansion is 
 
 ## Citations (REFERENCE, not recall)
 
-- Standards-board cohort method (preferred) and formula method, and the no-expansion ceiling: see the GRR / GDR section of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md) and the Gross Revenue Retention entry in [`../evidence/canonical-definitions.json`](../evidence/canonical-definitions.json).
+- Standards-board cohort method (preferred) and formula method, and the no-expansion ceiling: the codified, snapshot-verified Gross Revenue Retention entry in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json), rendered alongside in the GRR / GDR section of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md).
 - Filers disclosing GRR on their chosen NRR basis: see the GRR / GDR section of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md).
 
 ## Card-derivation notes

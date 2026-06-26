@@ -41,6 +41,38 @@ Hypothesis, not direct evidence: a fully-loaded, blended-or-new CAC ratio on new
 
 Lead with a fully-loaded CAC ratio and say which denominator (blended, new, or expansion). For payback, lead with the gross-margin-adjusted months, not raw revenue. The aggressive moves to avoid: a paid-only or ad-spend-only numerator that understates true CAC, an expansion-inclusive denominator presented as new-customer efficiency, and a raw-revenue payback (divide it by gross margin: at ~75% GM, a "9 month" payback is really about 12). Principle: defensibility, not optimization.
 
+## Canonical formula
+
+Two codified forms share one S&M numerator: the CAC ratio (spend per dollar of new CARR) and CAC payback (months, gross-margin-adjusted).
+
+$$\text{CAC Ratio}=\frac{\text{fully-loaded S\&M (CQ-1)}}{\text{New CARR}+\text{Expansion CARR}}\quad(\text{blended; new-customer and expansion variants restrict the denominator})$$
+
+$$\text{CAC Payback (months)}=\frac{\text{fully-loaded S\&M}}{\text{New CARR}\times\text{Subscription Gross Margin \%}}\times 12$$
+
+Primary source: the Standards Board codified ratio and payback methods, "Fully Loaded Sales and Marketing Expenses (CQ-1) / New CARR + Expansion CARR" (blended), "...allocated to Customer Acquisition / New Name ARR" (new), "...allocated to Expansion / Expansion CARR" (expansion), and CAC payback "the number of months it takes for the gross profits from new customer ARR to pay back the sales and marketing expenses ... Fully Loaded S&M Expenses / (CARR x Gross Margin %) x 12," all recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/blended-cac-ratio, https://www.saasmetricsboard.com/new-cac-ratio, https://www.saasmetricsboard.com/expansion-cac-ratio, https://www.saasmetricsboard.com/cac-payback-period). The board has no standalone per-customer "cost" page (it 404s); the codified authority is the ratio and the payback, not a cost per customer. The gross-margin input to payback is the codified "Subscription Gross Margin Percentage" dependency, carried in [`gross-margin.md`](gross-margin.md). The cheatsheet and KBCM survey render these alongside, but the codified methods are the authority here, not the digest.
+
+Standards-board method (the defensible default): fully-loaded S&M, lagged by the sales cycle (CQ-1 against current-quarter new CARR), over new (and, for blended, expansion) CARR for the ratio; for payback, the same numerator over gross-margin-adjusted new CARR, times twelve, expressed in months.
+
+| Input | Source-system class | Timing-offset |
+|---|---|---|
+| Fully-loaded S&M (the shared numerator) | GL / income statement | the period preceding new CARR by the sales-cycle length (CQ-1 for a ~90-day cycle) |
+| New CARR (new-customer denominator) | CRM / billing | the current period the spend acquired |
+| Expansion CARR (blended denominator adds this) | CRM / billing | the current period |
+| Subscription Gross Margin % (payback only) | income statement / accounting; see [`gross-margin.md`](gross-margin.md) | the period of the new CARR being repaid |
+| New-customer count (per-customer CAC only; uncodified) | CRM / billing | current period, lagged by the acquisition cycle |
+
+## Reconciliation note
+
+Composition-closed, basis/timing-bounded (DR-0046). The composition axis closes to a zero residual: from the reported aggregates and the stated method we can confirm which numerator and denominator the founder used (blended versus new versus expansion, fully-loaded versus paid-only, ratio versus gross-margin-adjusted payback), and that closes free. Basis and timing do not close. The fully-loaded S&M reconstruction, the new-versus-expansion spend allocation, the sales-cycle lag, and (for payback) the gross-margin adjustment interact non-additively (re-burdening commissions, reallocating customer-success cost, and applying a gross margin are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the numerator, denominator, lag, and margin the founder used against the defensible fully-loaded standards-board method, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is the Engine's work (the paid working papers), not specified in this standard.
+
+## Aggressive-vs-defect test
+
+The predicate for classifying a CAC-ratio or CAC-payback spread (DR-0046):
+
+- **Defensible basis:** a fully-loaded CAC ratio with the denominator named (blended, new, or expansion) on the standards-board method, and CAC payback on gross-margin-adjusted new CARR in months. This is the number to lead with.
+- **Convention gap (aggressive but legitimate):** the spread reproduces only under a denominator or split an authority-traceable source actually uses, an expansion-inclusive blended ratio presented where new-customer efficiency was implied, or the standards-board nuance of including customer-success cost only where it is allocated to acquisition, or the KBCM survey's split definitions. Legitimate when named, but not the read implied, so it is the labeled risk, never the headline.
+- **Defect gap:** no legitimate convention reproduces it. For example, a paid-only or ad-spend-only numerator against the fully-loaded consensus, a raw-revenue payback that omits the gross-margin adjustment (at ~75% GM a "9 month" payback is really about 12), or the CAC-ratio / LTV:CAC term collision running the opposite direction. No authority-traceable source's convention recovers the number.
+
 ## Classic errors touching CAC
 
 - raw-revenue CAC payback instead of gross-margin-adjusted: the named common error here; it understates payback months. See the CAC Payback section of the cheatsheet.
@@ -53,7 +85,8 @@ FREE (from the reported aggregates and the stated method): naming the numerator 
 
 ## Citations (REFERENCE, not recall)
 
-- Standards-board blended / new / expansion CAC ratios and the gross-margin-adjusted CAC payback formula, plus the KBCM cross-check and the term-collision warning: see the CAC Ratio and CAC Payback sections of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md) and the Blended/New/Expansion CAC Ratio and CAC Payback Period entries in [`../evidence/canonical-definitions.json`](../evidence/canonical-definitions.json).
+- Standards-board blended / new / expansion CAC ratios and the gross-margin-adjusted CAC payback formula: the codified, snapshot-verified Blended / New / Expansion CAC Ratio and CAC Payback Period entries in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json), rendered alongside the KBCM cross-check and the term-collision warning in the CAC Ratio and CAC Payback sections of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md).
+- The Subscription Gross Margin % input to CAC payback is the codified dependency carried in [`gross-margin.md`](gross-margin.md).
 - Note (per the cheatsheet coverage note): the standards board has no standalone "customer acquisition cost" page (the link 404s); the codified authority is the ratio, not a per-customer cost.
 
 ## Card-derivation notes

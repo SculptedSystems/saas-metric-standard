@@ -38,6 +38,32 @@ Hypothesis, not direct evidence: an investor treats the magic number as a rough 
 
 Name it as a convention with a Scale VP origin, state the numerator (GAAP subscription revenue vs net new ARR), and confirm the prior-quarter S&M denominator. The aggressive move to avoid is presenting a self-defined magic number as if it were a standard. Principle: defensibility, not optimization.
 
+## Canonical formula
+
+$$\text{Magic \#}=\frac{\Delta\text{ subscription revenue (quarter)}\times 4}{\text{prior-quarter S\&M}}$$
+
+Primary source: the origin author, Scale Venture Partners, "Take the change in subscription revenue between two quarters, annualize it (multiply by four), and divide the result by the sales and marketing spend for the earlier of the two quarters," recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.scalevp.com/insights/magic-number-math/). There is no standards-board or SEC-disclosed definition; the origin author is the only authority, so on a call it is named as a convention, not a standard. The cheatsheet renders the origin form alongside the net-new-ARR variant, but the origin definition is the authority here, not the digest.
+
+Origin (Scale VP) method (the only defensible anchor): the quarter-over-quarter change in subscription revenue, annualized by multiplying by four, over the earlier of the two quarters' sales-and-marketing spend.
+
+| Input | Source-system class | Timing-offset |
+|---|---|---|
+| Subscription revenue change (the numerator, annualized x 4) | GL / data warehouse | across two consecutive quarters; current minus prior |
+| Sales-and-marketing spend (the denominator) | GL / income statement | the earlier of the two quarters (prior quarter) |
+| Numerator basis (GAAP subscription revenue, origin; or net new ARR, the variant) | GL / billing | the divergence axis; stated, not assumed |
+
+## Reconciliation note
+
+Composition-closed, basis/timing-bounded (DR-0046). The composition axis closes to a zero residual: from the reported aggregates we can confirm the ratio shape (annualized revenue change over prior-quarter S&M) and the prior-quarter S&M denominator, and that closes free. Basis does not close. The numerator basis (GAAP subscription revenue versus net new ARR) needs raw quarterly financials, and the two read differently when revenue lags ARR, so it is reconciled bounded and qualitative: name the numerator basis the founder used against the origin GAAP-revenue form, and bound the direction and magnitude of the spread. Because this metric is origin-author tier with no codified or SEC authority, the spread is a convention range, not a defensible-versus-aggressive verdict; do not assert a benchmark cutoff cold. The per-axis reconstruction of that spread from the client's raw source systems is the Engine's work (the paid working papers), not specified in this standard.
+
+## Aggressive-vs-defect test
+
+The predicate for classifying a magic-number spread (DR-0046):
+
+- **Defensible basis:** the origin (Scale VP) form, GAAP subscription-revenue change annualized over prior-quarter S&M, named on the call as a convention rather than a standard. This is the number to lead with.
+- **Convention gap (aggressive but legitimate):** the spread reproduces only under the common net-new-ARR numerator variant, which reads differently when revenue lags ARR. Legitimate as a stated convention, but it is not the origin form, so it is the labeled risk, never the headline. (No SEC filer authority exists to trace either form to; the authority is origin only.)
+- **Defect gap:** no legitimate convention reproduces it. For example, the metric presented as a codified standard, a benchmark cutoff asserted as authoritative, or a numerator and S&M period left undefined so neither the origin form nor the variant recovers the number.
+
 ## Classic errors touching Magic Number
 
 No entry in `classic-errors.md` maps directly. The live error is treating an uncodified convention as a standard, or quoting the number without stating the numerator basis and the S&M period.
@@ -48,7 +74,7 @@ FREE (from the reported aggregates and the stated method): naming the numerator 
 
 ## Citations (REFERENCE, not recall)
 
-- Origin definition and the net-new-ARR variant, plus the "no enforced or codified definition" framing: see the SaaS Magic Number section of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md) and the SaaS Magic Number entry in [`../evidence/canonical-definitions.json`](../evidence/canonical-definitions.json).
+- Origin (Scale VP) definition and the net-new-ARR variant, plus the "no enforced or codified definition" framing: the origin, snapshot-verified SaaS Magic Number entry in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json), rendered alongside in the SaaS Magic Number section of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md).
 
 ## Card-derivation notes
 
