@@ -1,10 +1,10 @@
 # The SaaS Metric Standard: definitions
 
-The neutral, single-source definitions at the core of The SaaS Metric Standard. This is the standard's substance (the product definition), not implementation. Per [DR-0017](../../../decisions/0017-metric-definitions-single-source-of-truth.md) and [DR-0021](../../../decisions/0021-strategy-is-the-single-source-of-direction.md).
+The neutral, single-source definitions at the core of The SaaS Metric Standard. This is the standard's substance (the definitions), not implementation.
 
 **Substantiation principle:** every definition ships with its cited primary authority and a public methodology. The taxonomy names one defensible answer per metric, the divergence map shows where the authorities differ, and the evidence layer carries the proof (each convention cites its primary authority in `evidence/canonical-verified.json`). Nothing rests on assertion.
 
-Sculpted Systems is the steward that codifies the cited authorities (the SaaS Metrics Standards Board, SEC 10-K filers, the originators of coined metrics), like a working group maintaining a spec. It does not issue the definitions. The standard's emitted output is a Diligence-Grade, defensible verdict on a metric; that verdict is the product, never part of the standard's name.
+This standard codifies the cited authorities (the SaaS Metrics Standards Board, SEC 10-K filers, the originators of coined metrics), like a working group maintaining a spec. It does not issue the definitions itself; it records, cites, and reconciles them.
 
 ## Three layers (kept separate by design)
 
@@ -18,21 +18,10 @@ Citation is one-way and fixed: the **taxonomy stands alone** (it does not depend
 
 ## Drift contract: one definition, referenced not copied
 
-Every metric has exactly one canonical definition. Downstream consumers cite it; they never restate it. This extends the repo's annotations-as-pointers / no-duplication discipline (DR-0021) to the definitions.
+Every metric has exactly one canonical definition. Downstream consumers cite it; they never restate it. This extends the no-duplication discipline (cite, do not copy) to the definitions.
 
-**Consumers** (today, by reference, not import):
+Consumers reference the taxonomy rather than copying it, and each documents which taxonomy *version* it implements; nothing imports these files as a build artifact.
 
-- `saas-data-stack` (the dbt models implement the taxonomy).
-- `divmap` (the rung-0 renderer compiles conventions from it; planned).
+## Structure now, records later
 
-Each consumer documents which taxonomy *version* it implements; nothing imports these files as a build artifact.
-
-## Structure now, records later (per DR-0017)
-
-This directory establishes the **structure** (the three layers) now, so the eventual versioned library of The SaaS Metric Standard extracts as a clean lift. It is deliberately **doc-only today**: no per-metric structured records, no `equation_latex`/golden-fixtures/SQL, no semver machinery. DR-0017 says build the library only when the first paid Metrics Cast pulls it through; populating the library schema now would be the premature-DRY trap that DR's own falsifier names.
-
-When the extraction trigger fires (the first paid Cast plus enough overlap between divmap and the dbt models to justify a shared artifact), lift this directory into the standalone semver'd `saas-metric-standard` repo; consumers swap their path reference for a pinned versioned dependency. The internal paths stay stable so citations do not churn.
-
-## Provenance
-
-The taxonomy was moved here from `saas-data-stack/docs/taxonomy/`; the cheatsheet from `gtm/`; the SEC dataset and scripts from `research/`. Each left a pointer at its old home.
+This directory establishes the **structure** (the three layers) now, so a future versioned library extracts as a clean lift. It is deliberately **doc-only today**: no per-metric structured records, no `equation_latex`/golden-fixtures/SQL, no semver machinery. Populating the library schema before there is a consumer that pulls it through would be a premature-DRY trap.

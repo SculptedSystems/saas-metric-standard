@@ -35,13 +35,13 @@ What is actually codified is the CAC ratio (S&M to win one dollar of new ARR), n
 
 ## What the investor likely recomputes on (the documented SOURCE for the target)
 
-This is the standard-level SOURCE for the engagement `target` (DR-0047): a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
+This is the standard-level SOURCE for the engagement `target`: a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
 
 Hypothesis, not direct evidence: a fully-loaded, blended-or-new CAC ratio on new ARR, and CAC payback on gross-margin-adjusted revenue, with a skeptical eye on a paid-only numerator or a raw-revenue payback that flatters the months. Validate per founder via the debrief loop.
 
 ## The defensible read (fallback default; anchor on the target when known)
 
-"Defensible" is investor-relative (DR-0047): it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
+"Defensible" is investor-relative: it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
 
 - **Fallback (the generic-defensible default, anchor when the target is unknown):** lead with a fully-loaded CAC ratio and say which denominator (blended, new, or expansion); for payback, lead with the gross-margin-adjusted months, not raw revenue. This is the codified default, the number to lead on when no investor or peer-set target is set.
 - **Target (anchor when known):** when the engagement's target convention is known (the investor's stated convention, or the peer-set-inferred one), anchor and lead on *that* number, and footnote the rest, including the generic fallback. The target is what the raise is judged against.
@@ -70,11 +70,11 @@ Standards-board method (the defensible default): fully-loaded S&M, lagged by the
 
 ## Reconciliation note
 
-Composition-closed, basis/timing-bounded (DR-0046). The composition axis closes to a zero residual: from the reported aggregates and the stated method we can confirm which numerator and denominator the founder used (blended versus new versus expansion, fully-loaded versus paid-only, ratio versus gross-margin-adjusted payback), and that closes free. Basis and timing do not close. The fully-loaded S&M reconstruction, the new-versus-expansion spend allocation, the sales-cycle lag, and (for payback) the gross-margin adjustment interact non-additively (re-burdening commissions, reallocating customer-success cost, and applying a gross margin are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the numerator, denominator, lag, and margin the founder used against the defensible fully-loaded standards-board method, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is the Engine's work (the paid working papers), not specified in this standard.
+Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates and the stated method we can confirm which numerator and denominator the founder used (blended versus new versus expansion, fully-loaded versus paid-only, ratio versus gross-margin-adjusted payback), and that closes from the aggregates. Basis and timing do not close. The fully-loaded S&M reconstruction, the new-versus-expansion spend allocation, the sales-cycle lag, and (for payback) the gross-margin adjustment interact non-additively (re-burdening commissions, reallocating customer-success cost, and applying a gross margin are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the numerator, denominator, lag, and margin the founder used against the defensible fully-loaded standards-board method, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard.
 
 ## Aggressive-vs-defect test
 
-The predicate for classifying a CAC-ratio or CAC-payback spread (DR-0046):
+The predicate for classifying a CAC-ratio or CAC-payback spread:
 
 - **Defensible basis:** a fully-loaded CAC ratio with the denominator named (blended, new, or expansion) on the standards-board method, and CAC payback on gross-margin-adjusted new CARR in months. This is the number to lead with.
 - **Convention gap (aggressive but legitimate):** the spread reproduces only under a denominator or split an authority-traceable source actually uses, an expansion-inclusive blended ratio presented where new-customer efficiency was implied, or the standards-board nuance of including customer-success cost only where it is allocated to acquisition, or the KBCM survey's split definitions. Legitimate when named, but not the read implied, so it is the labeled risk, never the headline.
@@ -86,9 +86,9 @@ The predicate for classifying a CAC-ratio or CAC-payback spread (DR-0046):
 - paid-only or ad-spend-only S&M in the numerator, against the fully-loaded consensus, which understates CAC.
 - the CAC-ratio / LTV-CAC term collision: confusing spend-per-dollar-of-ARR with the LTV:CAC ratio, which runs the opposite direction.
 
-## Free / paid boundary
+## Scope boundary
 
-FREE (from the reported aggregates and the stated method): naming the numerator and denominator the founder used, catching a paid-only numerator, and catching a raw-revenue payback. NAMED BUT NOT COMPUTED (the paid Cast): reconstructing fully-loaded S&M, allocating spend across new vs expansion, and resolving the new-customer count and acquisition lag from source systems (DR-0018). Stating the boundary is the authority move (DR-0026).
+IN SCOPE (from the reported aggregates and the stated method): naming the numerator and denominator the founder used, catching a paid-only numerator, and catching a raw-revenue payback. OUT OF SCOPE (named but not computed): reconstructing fully-loaded S&M, allocating spend across new vs expansion, and resolving the new-customer count and acquisition lag from raw source systems. Stating this boundary out loud is the authority move.
 
 ## Citations (REFERENCE, not recall)
 
@@ -98,7 +98,7 @@ FREE (from the reported aggregates and the stated method): naming the numerator 
 
 ## Card-derivation notes
 
-- RECALL: the contested flag, that the codified form is the ratio (not a per-customer cost), the three ratio splits (blended/new/expansion), fully-loaded as consensus, payback as gross-margin-adjusted, the raw-revenue payback error and its direction, the LTV/CAC term collision, the free/paid boundary.
+- RECALL: the contested flag, that the codified form is the ratio (not a per-customer cost), the three ratio splits (blended/new/expansion), fully-loaded as consensus, payback as gross-margin-adjusted, the raw-revenue payback error and its direction, the LTV/CAC term collision, the scope boundary.
 - CONTRAST card needed: CAC ratio (S&M per dollar of ARR) vs LTV:CAC (opposite direction); blended vs new-customer vs expansion ratio.
 - REWORK card needed: "CAC payback = S&M / monthly revenue" must be reworked (gross-margin-adjust the denominator).
 - REFERENCE only: the exact standards-board and KBCM wording, per-founder S&M allocation and counts.

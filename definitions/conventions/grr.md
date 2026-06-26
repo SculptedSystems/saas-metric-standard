@@ -33,13 +33,13 @@ GRR diverges on the same basis and timing axes as NRR (it is the same cohort mea
 
 ## What the investor likely recomputes on (the documented SOURCE for the target)
 
-This is the standard-level SOURCE for the engagement `target` (DR-0047): a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
+This is the standard-level SOURCE for the engagement `target`: a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
 
 Hypothesis, not direct evidence: the same basis and period as NRR, read as the floor underneath it. An investor who recomputes NRR on an ARR-basis cohort will recompute GRR the same way and compare the gap; a wide NRR-minus-GRR spread says expansion is carrying a leaky base. Validate per founder via the debrief loop.
 
 ## The defensible read (fallback default; anchor on the target when known)
 
-"Defensible" is investor-relative (DR-0047): it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
+"Defensible" is investor-relative: it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
 
 - **Fallback (the generic-defensible default, anchor when the target is unknown):** lead with GRR on the same basis you led with for NRR, so the pair is comparable, and state the no-expansion ceiling out loud. This is the codified default, the number to lead on when no investor or peer-set target is set.
 - **Target (anchor when known):** when the engagement's target convention is known (the investor's stated convention, or the peer-set-inferred one), anchor and lead GRR on the *same basis* as that target, and footnote the rest, including the generic fallback. The target is what the raise is judged against.
@@ -64,11 +64,11 @@ Standards-board cohort method (the defensible default): the period-end value of 
 
 ## Reconciliation note
 
-Composition-closed, basis/timing-bounded (DR-0046). The composition axis closes to a zero residual: from the reported aggregates we can confirm expansion is excluded and the 100% ceiling holds, and that closes free. Basis and timing do not close. They interact non-additively (an ARR-basis cohort read point-in-time and a GAAP-revenue basis read as a trailing-twelve average are not a sum of separable adjustments), and the contraction-versus-churn split moves the two terms within a fixed total, so they are reconciled bounded and qualitative: name the convention the founder used against the defensible cohort method on the NRR basis, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is the Engine's work (the paid working papers), not specified in this standard.
+Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm expansion is excluded and the 100% ceiling holds, and that closes from the aggregates. Basis and timing do not close. They interact non-additively (an ARR-basis cohort read point-in-time and a GAAP-revenue basis read as a trailing-twelve average are not a sum of separable adjustments), and the contraction-versus-churn split moves the two terms within a fixed total, so they are reconciled bounded and qualitative: name the convention the founder used against the defensible cohort method on the NRR basis, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard.
 
 ## Aggressive-vs-defect test
 
-The predicate for classifying a GRR spread (DR-0046):
+The predicate for classifying a GRR spread:
 
 - **Defensible basis:** the standards-board cohort method on the same basis the founder led with for NRR, so the pair is comparable. This is the number to lead with.
 - **Convention gap (aggressive but legitimate):** the spread reproduces only under a basis or timing an authority-traceable filer actually uses for its paired retention, a GAAP-revenue or ACV basis, a monthly-average timing, or a contraction-versus-churn split that an SEC filer disclosing GRR alongside NRR adopts. Legitimate, but it inherits the NRR basis risk, so it is the labeled risk, never the headline.
@@ -80,9 +80,9 @@ The predicate for classifying a GRR spread (DR-0046):
 - a GRR above 100%: a definitional error (expansion leaked into the number), and a useful tell that the founder has not separated expansion from retention.
 - one-time-in-MRR inflating the cohort base, which understates the apparent churn rate.
 
-## Free / paid boundary
+## Scope boundary
 
-FREE (from the reported aggregates): the composition axis, confirm expansion is excluded and the ceiling holds, and flag a missing GRR alongside a reported NRR. NAMED BUT NOT COMPUTED (the paid Cast): the basis and timing, and the contraction-vs-churn split, which need customer-level data. Stating the boundary is the authority move (DR-0026).
+IN SCOPE (from the reported aggregates): the composition axis, confirm expansion is excluded and the ceiling holds, and flag a missing GRR alongside a reported NRR. OUT OF SCOPE (named but not computed): the basis and timing, and the contraction-vs-churn split, which need customer-level data. Stating this boundary out loud is the authority move.
 
 ## Citations (REFERENCE, not recall)
 
@@ -91,7 +91,7 @@ FREE (from the reported aggregates): the composition axis, confirm expansion is 
 
 ## Card-derivation notes
 
-- RECALL: the contested flag, the no-expansion ceiling (GRR at most 100%), the three axes, the cohort-vs-formula families, the contraction-vs-churn sub-question, the gross-vs-net error, the free/paid boundary.
+- RECALL: the contested flag, the no-expansion ceiling (GRR at most 100%), the three axes, the cohort-vs-formula families, the contraction-vs-churn sub-question, the gross-vs-net error, the scope boundary.
 - CONTRAST card needed: GRR vs NRR (same cohort, expansion in vs out; the NRR-minus-GRR gap as the expansion-dependence read).
 - REWORK card needed: "GRR can exceed 100%" must be reworked (it is bounded at 100% when expansion is correctly excluded; a higher value signals expansion leakage or an FX artifact).
 - REFERENCE only: the exact standards-board wording, per-founder basis and split.

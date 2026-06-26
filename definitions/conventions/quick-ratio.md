@@ -43,9 +43,9 @@ Name it as a convention with a Mamoon Hamid / Social Capital origin, state the f
 - No entry in `classic-errors.md` maps directly. The live errors are treating an uncodified convention as a standard, asserting the >= 4 cutoff cold, and inheriting the **gross-vs-net churn** confusion through a mis-split denominator (folding contraction into churn or vice versa).
 - **one-time-in-MRR** inflating the New or Expansion numerator, which flatters the ratio. See `classic-errors.md`.
 
-## Free / paid boundary
+## Scope boundary
 
-FREE (from the founder's stated movement aggregates and the stated method): naming the four terms and the basis, computing the ratio from the stated New, Expansion, Churned, and Contraction figures, and flagging that the metric is a convention and the >= 4 cutoff a hypothesis. NAMED BUT NOT COMPUTED (the paid Cast): the true contraction-vs-churn split inside the denominator and the reactivation classification in the numerator, which need customer-level deltas (the recognize-vs-recompute line per the README). Stating the boundary is the authority move (DR-0026).
+IN SCOPE (from the founder's stated movement aggregates and the stated method): naming the four terms and the basis, computing the ratio from the stated New, Expansion, Churned, and Contraction figures, and flagging that the metric is a convention and the >= 4 cutoff a hypothesis. OUT OF SCOPE (named but not computed): the true contraction-vs-churn split inside the denominator and the reactivation classification in the numerator, which need customer-level deltas (the recognize-vs-reconstruct line per the README). Stating this boundary out loud is the authority move.
 
 ## Citations (REFERENCE, not recall)
 

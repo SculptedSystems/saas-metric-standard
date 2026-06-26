@@ -11,7 +11,7 @@ authority: standards-board
 
 ## One-liner
 
-Recurring revenue expressed on an annualized basis, excluding one-time and services revenue. The backup lead metric when NRR is not the founder's headline.
+Recurring revenue expressed on an annualized basis, excluding one-time and services revenue. The backup lead metric when NRR is not the headline.
 
 ## Why it diverges
 
@@ -33,13 +33,13 @@ ARR is contested mainly on the basis axis: an annualized run-rate (MRR times 12)
 
 ## What the investor likely recomputes on (the documented SOURCE for the target)
 
-This is the standard-level SOURCE for the engagement `target` (DR-0047): a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
+This is the standard-level SOURCE for the engagement `target`: a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
 
 Hypothesis: an annualized run-rate on clean recurring revenue, with a skeptical eye on anything that looks like committed-but-not-live revenue padding the number. Validate per founder via the debrief loop.
 
 ## The defensible read (fallback default; anchor on the target when known)
 
-"Defensible" is investor-relative (DR-0047): it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
+"Defensible" is investor-relative: it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
 
 - **Fallback (the generic-defensible default, anchor when the target is unknown):** lead with the run-rate on clean recurring revenue and disclose any committed or off-processor component separately rather than blending it in. If a founder is leading with CARR, name it as CARR, not ARR. This is the codified default, the number to lead on when no investor or peer-set target is set.
 - **Target (anchor when known):** when the engagement's target convention is known (the investor's stated convention, or the peer-set-inferred one), anchor and lead on *that* number, and footnote the rest, including the generic fallback. The target is what the raise is judged against.
@@ -62,11 +62,11 @@ Standards-board run-rate method (the defensible default): the most recent month'
 
 ## Reconciliation note
 
-Composition-closed, basis/timing-bounded (DR-0046). The composition axis closes to a zero residual: from the reported aggregates we can confirm one-time and services are stripped and the base is recurring only, and that closes free. Basis and timing do not close. Run-rate versus committed (CARR) and the off-processor or billing-layer corrections interact non-additively (an off-processor reconciliation and a run-rate-vs-committed reclassification are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the sense the founder used against the defensible clean run-rate, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is the Engine's work (the paid working papers), not specified in this standard.
+Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm one-time and services are stripped and the base is recurring only, and that closes from the aggregates. Basis and timing do not close. Run-rate versus committed (CARR) and the off-processor or billing-layer corrections interact non-additively (an off-processor reconciliation and a run-rate-vs-committed reclassification are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the sense the founder used against the defensible clean run-rate, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard.
 
 ## Aggressive-vs-defect test
 
-The predicate for classifying an ARR spread (DR-0046):
+The predicate for classifying an ARR spread:
 
 - **Defensible basis:** an annualized run-rate on clean recurring revenue, the standards-board MRR x 12 method. This is the number to lead with.
 - **Convention gap (aggressive but legitimate):** the spread reproduces only under the committed or contracted sense an authority-traceable source actually uses, the standards-board CARR ("whether in production or not yet in production") or the KBCM survey's committed run-rate basis. Legitimate, but it is CARR, not ARR, so it is the labeled risk, never the headline.
@@ -76,17 +76,17 @@ The predicate for classifying an ARR spread (DR-0046):
 
 All from `classic-errors.md`: annual-as-monthly (a single annual deal counted as one month of MRR), one-time-in-MRR, off-processor ARR (invoiced enterprise revenue the processor never sees, understates ARR), and billing-layer double-count (a billing layer over Stripe counts the same revenue twice, inflates ARR).
 
-## Free / paid boundary
+## Scope boundary
 
-FREE: the composition axis, confirm one-time and services are excluded, from the aggregates. NAMED BUT NOT COMPUTED (the Cast): reconciling off-processor revenue, de-duplicating a billing layer, and resolving run-rate vs committed from raw sources. These are source-system corrections, the Engine's domain (DR-0018).
+IN SCOPE: the composition axis, confirm one-time and services are excluded, from the aggregates. OUT OF SCOPE (named but not computed): reconciling off-processor revenue, de-duplicating a billing layer, and resolving run-rate vs committed from raw sources. These are source-system corrections, out of scope for this standard.
 
 ## Citations (REFERENCE, not recall)
 
 - Standards-board ARR ("recurring revenue, as defined by your revenue recognition policy, calculated on an annualized basis") and CARR ("contracted annual recurring revenue, whether in production or not yet in production"): the codified, snapshot-verified entries in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json).
-- Filer ARR phrasings and the off-processor / billing-layer cases: [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md) and the offering doc source-coverage notes.
+- Filer ARR phrasings and the off-processor / billing-layer cases: [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md).
 
 ## Card-derivation notes
 
-- RECALL: the contested flag, the run-rate vs committed senses, the one-time/services exclusion, the four classic errors and their direction, the free/paid boundary.
+- RECALL: the contested flag, the run-rate vs committed senses, the one-time/services exclusion, the four classic errors and their direction, the scope boundary.
 - CONTRAST / REWORK card needed: "ARR = MRR x 12" must be reworked (run-rate is one sense; CARR is the other).
 - REFERENCE only: the exact standards-board wording, per-founder reconciliation.

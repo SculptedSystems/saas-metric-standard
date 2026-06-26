@@ -400,6 +400,4 @@ Writing the definitions down is step one. The harder part is the plumbing. These
 
 I learned this the expensive way at Agora. There was no shared place to track what each team was building, and no data dictionary that Systems Operations actually used. So the validation rules in Salesforce went unenforced, and every report started with hours of cleaning data that should never have been dirty. The fix was not a fancier dashboard. It was a written dictionary, enforced validation at the point of entry, and pipelines that turned those rules into checks, so the cleaning stopped being a monthly tax. The definitions were not the whole problem. The pipes were. A metric is only as trustworthy as the path the data took to get there.
 
-That is the work I do. I help Seed and Series A teams define their metrics and build the pipelines and dashboards so every number traces back to one source.
-
-If any of the arguments in this document sound like your team, I offer a free 30-minute metrics review. We find where your definitions break and sketch what a fix looks like, so you leave with a short list of actions whether or not we ever work together. Reach me at <quinn@quinnherden.com>.
+The definitions are step one; the pipelines that enforce them are the harder, more durable half. A metric is only as trustworthy as the path the data took to get there.

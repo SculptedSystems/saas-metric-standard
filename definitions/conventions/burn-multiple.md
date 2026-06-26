@@ -43,13 +43,13 @@ Name it as a convention with a Craft Ventures origin, define net burn explicitly
 
 No entry in `classic-errors.md` maps directly. The live errors are treating an uncodified convention as a standard, quoting it with an undefined net burn, and confusing its direction with the Bessemer Efficiency Score (which runs the opposite way).
 
-## Free / paid boundary
+## Scope boundary
 
-FREE (from the reported aggregates and the stated method): flagging that the metric is a convention, naming the net-burn definition the founder used, and catching the direction confusion with the Efficiency Score. NAMED BUT NOT COMPUTED (the paid Cast): reconstructing net burn and net new ARR from source financials. Stating the boundary is the authority move (DR-0026).
+IN SCOPE (from the reported aggregates and the stated method): flagging that the metric is a convention, naming the net-burn definition the founder used, and catching the direction confusion with the Efficiency Score. OUT OF SCOPE (named but not computed): reconstructing net burn and net new ARR from source financials. Stating this boundary out loud is the authority move.
 
 ## Citations (REFERENCE, not recall)
 
-- Origin definition (net burn / net new ARR), the Bessemer inverse, the under-specified net burn, and the five-tier benchmark: see the Burn Multiple section of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md) and the Burn Multiple entry in [`../evidence/canonical-definitions.json`](../evidence/canonical-definitions.json). Benchmark thresholds live in the origin post saved under `education/research/downloads/`.
+- Origin definition (net burn / net new ARR), the Bessemer inverse, the under-specified net burn, and the five-tier benchmark: see the Burn Multiple section of [`../divergence/cheatsheet.md`](../divergence/cheatsheet.md) and the Burn Multiple entry in [`../evidence/canonical-definitions.json`](../evidence/canonical-definitions.json). Benchmark thresholds live in the origin post.
 
 ## Card-derivation notes
 

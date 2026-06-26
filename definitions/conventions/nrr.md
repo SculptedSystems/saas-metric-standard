@@ -15,7 +15,7 @@ The share of recurring revenue retained from an existing-customer cohort over tw
 
 ## Why it diverges
 
-NRR is the highest-divergence metric and the one the Review is built to win. Named public filers split materially on all three axes: a recurring-revenue basis is one legitimate convention among several, and the divergence runs through recognizable peers (Autodesk, Asana on GAAP revenue; Okta, Cloudflare on ACV or annualized; MariaDB on ARR), not just obscure filers. The same customer book reports a different retention rate under each, and an investor recomputes against whichever the relevant peer set uses. The new-logo exclusion is the one near-settled point.
+NRR is the highest-divergence metric. Named public filers split materially on all three axes: a recurring-revenue basis is one legitimate convention among several, and the divergence runs through recognizable peers (Autodesk, Asana on GAAP revenue; Okta, Cloudflare on ACV or annualized; MariaDB on ARR), not just obscure filers. The same customer book reports a different retention rate under each, and an investor recomputes against whichever the relevant peer set uses. The new-logo exclusion is the one near-settled point.
 
 ## The three axes (per NRR)
 
@@ -36,13 +36,13 @@ NRR is the highest-divergence metric and the one the Review is built to win. Nam
 
 ## What the investor likely recomputes on (the documented SOURCE for the target)
 
-This is the standard-level SOURCE for the engagement `target` (DR-0047): a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
+This is the standard-level SOURCE for the engagement `target`: a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
 
 Hypothesis, not direct evidence: an ARR-basis, sometimes-averaged, sometimes-thresholded cohort convention. The SEC filers are large and late-stage, a proxy for the seed or Series A investor, not the investor themselves. The specific basis, timing, and cohort sophistication is to be validated against real call data (the debrief loop), not asserted.
 
 ## The defensible read (fallback default; anchor on the target when known)
 
-"Defensible" is investor-relative (DR-0047): it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
+"Defensible" is investor-relative: it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
 
 - **Fallback (the generic-defensible default, anchor when the target is unknown):** lead with the ARR-basis twelve-month cohort number (the standards-board cohort method, exemplified by MariaDB). Footnote the range. This is the codified default, the number to lead on when no investor or peer-set target is set.
 - **Target (anchor when known):** when the engagement's target convention is known (the investor's stated convention, or the peer-set-inferred one), anchor and lead on *that* number, and footnote the rest, including the generic fallback. The target is what the raise is judged against.
@@ -68,11 +68,11 @@ Standards-board cohort method (the defensible default): current value of the coh
 
 ## Reconciliation note
 
-Composition-closed, basis/timing-bounded (DR-0046). The composition axis closes to a zero residual: from the reported aggregates we can confirm the cohort is existing-customers-only with new logos out and expansion and contraction handled, and that closes free. Basis and timing do not close. They interact non-additively (an ARR basis read point-in-time and a GAAP-revenue basis read as a trailing-twelve average are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the convention the founder used against the defensible ARR-basis cohort, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is the Engine's work (the paid working papers), not specified in this standard.
+Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm the cohort is existing-customers-only with new logos out and expansion and contraction handled, and that closes from the aggregates. Basis and timing do not close. They interact non-additively (an ARR basis read point-in-time and a GAAP-revenue basis read as a trailing-twelve average are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the convention the founder used against the defensible ARR-basis cohort, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard.
 
 ## Aggressive-vs-defect test
 
-The predicate for classifying an NRR spread (DR-0046):
+The predicate for classifying an NRR spread:
 
 - **Defensible basis:** a recurring-revenue (ARR or MRR) cohort on the standards-board method, exemplified by MariaDB. This is the number to lead with.
 - **Convention gap (aggressive but legitimate):** the spread reproduces only under a basis or timing an authority-traceable filer actually uses in its own filing, a GAAP-revenue basis (Autodesk, Asana) or an ACV / annualized basis (Okta, Cloudflare), or a monthly-average timing (EverCommerce), or a segment-restricted cohort (Brightcove). Legitimate, but not the defensible read, so it is the labeled risk, never the headline.
@@ -83,9 +83,9 @@ The predicate for classifying an NRR spread (DR-0046):
 - **gross-vs-net churn confusion**: reporting only net retention lets expansion mask gross and logo attrition; investors triangulate GRR and logo retention underneath (GRR is at most 100% by construction). See `classic-errors.md`.
 - folding new-logo revenue into the cohort: the one error the market has largely settled against, so a useful tell if seen.
 
-## Free / paid boundary
+## Scope boundary
 
-FREE (from the ~12 reported aggregates), the recognition side: the composition axis, confirm new logos are excluded and expansion and contraction are handled. NAMED BUT NOT COMPUTED (the paid Cast): basis and timing, because they require raw customer-level data. The per-axis reconstruction from the client's raw source systems is the Engine's work (the paid working papers), not specified in this standard. Stating this boundary out loud is the authority move (DR-0026).
+IN SCOPE (from the ~12 reported aggregates), the recognition side: the composition axis, confirm new logos are excluded and expansion and contraction are handled. OUT OF SCOPE (named but not computed): basis and timing, because they require raw customer-level data. The per-axis reconstruction from the client's raw source systems is out of scope for this standard. Stating this boundary out loud is the authority move.
 
 ## Citations (REFERENCE, not recall)
 
@@ -94,6 +94,6 @@ FREE (from the ~12 reported aggregates), the recognition side: the composition a
 
 ## Card-derivation notes
 
-- RECALL: the contested flag, the three axes, the convention-family names and which axis each sits on, the new-logo settled point, the gross-vs-net error, the free/paid boundary, the defensible default.
+- RECALL: the contested flag, the three axes, the convention-family names and which axis each sits on, the new-logo settled point, the gross-vs-net error, the scope boundary, the defensible default.
 - CONTRAST / REWORK card needed: "NRR is MRR-basis" must be reworked (it is one convention among several named filers).
 - REFERENCE only: the specific filer quotes, the per-founder spread arithmetic.

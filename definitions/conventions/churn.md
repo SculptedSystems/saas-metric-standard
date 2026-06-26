@@ -35,13 +35,13 @@ Churn is really a small family of metrics, and the first failure is not picking 
 
 ## What the investor likely recomputes on (the documented SOURCE for the target)
 
-This is the standard-level SOURCE for the engagement `target` (DR-0047): a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
+This is the standard-level SOURCE for the engagement `target`: a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
 
 Hypothesis, not direct evidence: an investor reads logo churn and gross revenue churn underneath any net retention number, on the same basis as the paired retention metric, and is skeptical of a single headline "churn" figure that does not say logo-or-revenue and gross-or-net. Validate per founder via the debrief loop.
 
 ## The defensible read (fallback default; anchor on the target when known)
 
-"Defensible" is investor-relative (DR-0047): it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
+"Defensible" is investor-relative: it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
 
 - **Fallback (the generic-defensible default, anchor when the target is unknown):** state which churn you mean (logo or revenue, gross or net) before quoting a number, and annualize monthly churn by compounding, not by multiplying by twelve. This is the codified default, the read to lead on when no investor or peer-set target is set.
 - **Target (anchor when known):** when the engagement's target convention is known (the investor's stated convention, or the peer-set-inferred one), anchor and lead on the *same basis* as that target's paired retention metric, and footnote the rest, including the generic fallback. The target is what the raise is judged against.
@@ -65,11 +65,11 @@ Standards-board logo-retention method (the defensible count-based default): the 
 
 ## Reconciliation note
 
-Composition-closed, basis/timing-bounded (DR-0046). The composition axis closes to a zero residual: from the reported aggregates we can confirm which churn family the number is in (logo versus revenue, gross versus net) and that churn equals one minus the paired retention, and that closes free. Basis and timing do not close. The revenue basis (ARR versus MRR versus revenue, inherited from the retention metric), the period and the monthly-to-annual derivation, and the uncodified churn moment interact non-additively (a basis reclassification and a churn-moment change are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the family, basis, and churn moment the founder used against the defensible logo-retention method with compounded annualization, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is the Engine's work (the paid working papers), not specified in this standard.
+Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm which churn family the number is in (logo versus revenue, gross versus net) and that churn equals one minus the paired retention, and that closes from the aggregates. Basis and timing do not close. The revenue basis (ARR versus MRR versus revenue, inherited from the retention metric), the period and the monthly-to-annual derivation, and the uncodified churn moment interact non-additively (a basis reclassification and a churn-moment change are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the family, basis, and churn moment the founder used against the defensible logo-retention method with compounded annualization, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard.
 
 ## Aggressive-vs-defect test
 
-The predicate for classifying a churn spread (DR-0046):
+The predicate for classifying a churn spread:
 
 - **Defensible basis:** the standards-board logo-retention method (churn = 1 - retention) with monthly churn compounded to annual, and revenue churn read as 1 - GRR underneath any net figure. This is the number to lead with.
 - **Convention gap (aggressive but legitimate):** the spread reproduces only under net revenue churn (1 - NRR), which an authority-traceable retention basis legitimately nets expansion into and which can read near zero or negative, or under a revenue basis or churn moment the paired retention metric legitimately adopts. Legitimate, but net-only hides gross and logo attrition, so it is the labeled risk, never the headline.
@@ -81,9 +81,9 @@ The predicate for classifying a churn spread (DR-0046):
 - **the monthly-to-annual annualization trap**: deriving annual churn as monthly times twelve rather than 1 - (1 - monthly)^12, which overstates annual churn (and, if inverted into retention, understates it). Cross-reference `classic-errors.md` and the logo-retention section of the cheatsheet.
 - one-time-in-MRR inflating the revenue base and so understating the apparent revenue churn rate.
 
-## Free / paid boundary
+## Scope boundary
 
-FREE (from the reported aggregates and the stated method): naming which churn family the founder is in, catching a net-only report, and catching the linear-annualization trap from the stated method. NAMED BUT NOT COMPUTED (the paid Cast): the churn moment resolved against billing events, and the per-cohort revenue churn from customer-level data. Stating the boundary is the authority move (DR-0026).
+IN SCOPE (from the reported aggregates and the stated method): naming which churn family the founder is in, catching a net-only report, and catching the linear-annualization trap from the stated method. OUT OF SCOPE (named but not computed): the churn moment resolved against billing events, and the per-cohort revenue churn from customer-level data. Stating this boundary out loud is the authority move.
 
 ## Citations (REFERENCE, not recall)
 
@@ -92,7 +92,7 @@ FREE (from the reported aggregates and the stated method): naming which churn fa
 
 ## Card-derivation notes
 
-- RECALL: the contested flag, churn = 1 - retention, logo vs revenue and gross vs net as distinct metrics, gross churn at least zero vs net churn possibly negative, the compounded annualization formula, the uncodified churn moment, the gross-vs-net error, the annualization trap, the free/paid boundary.
+- RECALL: the contested flag, churn = 1 - retention, logo vs revenue and gross vs net as distinct metrics, gross churn at least zero vs net churn possibly negative, the compounded annualization formula, the uncodified churn moment, the gross-vs-net error, the annualization trap, the scope boundary.
 - CONTRAST card needed: logo churn vs revenue churn (count vs dollar weighting); gross vs net revenue churn (expansion out vs in).
 - REWORK card needed: "annual churn = monthly churn x 12" must be reworked (compound it).
 - REFERENCE only: the exact standards-board wording, per-founder churn moment and cohort figures.

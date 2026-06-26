@@ -12,7 +12,7 @@ Real, named 10-K definitions with SEC URLs (for example MariaDB's NRR, Backblaze
 
 ## What is not here (archived)
 
-The SEC empirical-divergence pipeline, an LLM-classified corpus of ~321 filers measuring the *distribution* of conventions, was moved to the private `metric-conventions-research` repo (2026-06). Its reliability rested on LLM classification at only moderate cross-vendor agreement (Cohen's kappa 0.66 on the basis axis, lower on finer axes), which is not firm enough to be a credibility pillar of the standard. The standard leads with the two firm layers above. The archive repo holds the pipeline and the path to promoting the distribution back into the standard (a human-coded validation pass clearing the 0.70 bar).
+An SEC empirical-divergence pipeline, an LLM-classified corpus of ~321 filers measuring the *distribution* of conventions, was set aside (2026-06). Its reliability rested on LLM classification at only moderate cross-vendor agreement (Cohen's kappa 0.66 on the basis axis, lower on finer axes), which is not firm enough to be a credibility pillar of the standard. The standard leads with the two firm layers above. The distribution can be promoted back into the standard once a human-coded validation pass clears the 0.70 bar.
 
 ## Also here
 

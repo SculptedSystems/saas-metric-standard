@@ -45,9 +45,9 @@ Name LTV and LTV:CAC as conventions (popularizer, Skok), state the churn input a
 - a revenue-based rather than gross-margin-adjusted LTV, which overstates value.
 - an LTV built on net (expansion-flattered) or understated churn, which inflates the implied lifetime.
 
-## Free / paid boundary
+## Scope boundary
 
-FREE (from the reported aggregates and the stated method): naming LTV and the 3x rule as conventions, confirming the gross-margin adjustment, and surfacing the churn and discount assumptions in the stated method. NAMED BUT NOT COMPUTED (the paid Cast): reconstructing ARPA, the churn input, and a discounted lifetime from customer-level data. Stating the boundary is the authority move (DR-0026).
+IN SCOPE (from the reported aggregates and the stated method): naming LTV and the 3x rule as conventions, confirming the gross-margin adjustment, and surfacing the churn and discount assumptions in the stated method. OUT OF SCOPE (named but not computed): reconstructing ARPA, the churn input, and a discounted lifetime from customer-level data. Stating this boundary out loud is the authority move.
 
 ## Citations (REFERENCE, not recall)
 

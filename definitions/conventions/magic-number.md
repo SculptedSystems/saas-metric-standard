@@ -32,13 +32,13 @@ The magic number has no SEC-disclosed or standards-board definition. The only au
 
 ## What the investor likely recomputes on (the documented SOURCE for the target)
 
-This is the standard-level SOURCE for the engagement `target` (DR-0047): a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
+This is the standard-level SOURCE for the engagement `target`: a hypothesis about the investor's convention, not a per-engagement value. The engagement sets the actual target (`investor_stated` from the founder's investor-ask, or `peer_set_inferred` from this field); until then this is the documented default source for a `peer_set_inferred` target, to be confirmed via the debrief loop.
 
 Hypothesis, not direct evidence: an investor treats the magic number as a rough sales-efficiency signal (higher is more efficient; the origin's threshold tiers are an unsourced convention, not a standard, so do not assert a specific cutoff cold) and is indifferent to small basis differences as long as they are stated, but will discount a number whose numerator and S&M period are not defined. Validate per founder via the debrief loop.
 
 ## The defensible read (fallback default; anchor on the target when known)
 
-"Defensible" is investor-relative (DR-0047): it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
+"Defensible" is investor-relative: it is the convention the founder's raise will be judged against, not the standard's default. Two tiers:
 
 - **Fallback (the generic-defensible default, anchor when the target is unknown):** name it as a convention with a Scale VP origin, state the numerator (GAAP subscription revenue vs net new ARR), and confirm the prior-quarter S&M denominator. This is the codified default, the read to lead on when no investor or peer-set target is set.
 - **Target (anchor when known):** when the engagement's target convention is known (the investor's stated convention, or the peer-set-inferred one), anchor and lead on *that* numerator and period, and footnote the rest, including the generic fallback. The target is what the raise is judged against.
@@ -61,11 +61,11 @@ Origin (Scale VP) method (the only defensible anchor): the quarter-over-quarter 
 
 ## Reconciliation note
 
-Composition-closed, basis/timing-bounded (DR-0046). The composition axis closes to a zero residual: from the reported aggregates we can confirm the ratio shape (annualized revenue change over prior-quarter S&M) and the prior-quarter S&M denominator, and that closes free. Basis does not close. The numerator basis (GAAP subscription revenue versus net new ARR) needs raw quarterly financials, and the two read differently when revenue lags ARR, so it is reconciled bounded and qualitative: name the numerator basis the founder used against the origin GAAP-revenue form, and bound the direction and magnitude of the spread. Because this metric is origin-author tier with no codified or SEC authority, the spread is a convention range, not a defensible-versus-aggressive verdict; do not assert a benchmark cutoff cold. The per-axis reconstruction of that spread from the client's raw source systems is the Engine's work (the paid working papers), not specified in this standard.
+Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm the ratio shape (annualized revenue change over prior-quarter S&M) and the prior-quarter S&M denominator, and that closes from the aggregates. Basis does not close. The numerator basis (GAAP subscription revenue versus net new ARR) needs raw quarterly financials, and the two read differently when revenue lags ARR, so it is reconciled bounded and qualitative: name the numerator basis the founder used against the origin GAAP-revenue form, and bound the direction and magnitude of the spread. Because this metric is origin-author tier with no codified or SEC authority, the spread is a convention range, not a defensible-versus-aggressive verdict; do not assert a benchmark cutoff cold. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard.
 
 ## Aggressive-vs-defect test
 
-The predicate for classifying a magic-number spread (DR-0046):
+The predicate for classifying a magic-number spread:
 
 - **Defensible basis:** the origin (Scale VP) form, GAAP subscription-revenue change annualized over prior-quarter S&M, named on the call as a convention rather than a standard. This is the number to lead with.
 - **Convention gap (aggressive but legitimate):** the spread reproduces only under the common net-new-ARR numerator variant, which reads differently when revenue lags ARR. Legitimate as a stated convention, but it is not the origin form, so it is the labeled risk, never the headline. (No SEC filer authority exists to trace either form to; the authority is origin only.)
@@ -75,9 +75,9 @@ The predicate for classifying a magic-number spread (DR-0046):
 
 No entry in `classic-errors.md` maps directly. The live error is treating an uncodified convention as a standard, or quoting the number without stating the numerator basis and the S&M period.
 
-## Free / paid boundary
+## Scope boundary
 
-FREE (from the reported aggregates and the stated method): naming the numerator basis and the S&M period, and flagging that the metric is a convention, not a standard. NAMED BUT NOT COMPUTED (the paid Cast): reconstructing quarterly subscription-revenue change or net new ARR and the matched S&M from source financials. Stating the boundary is the authority move (DR-0026).
+IN SCOPE (from the reported aggregates and the stated method): naming the numerator basis and the S&M period, and flagging that the metric is a convention, not a standard. OUT OF SCOPE (named but not computed): reconstructing quarterly subscription-revenue change or net new ARR and the matched S&M from source financials. Stating this boundary out loud is the authority move.
 
 ## Citations (REFERENCE, not recall)
 

@@ -1,0 +1,37 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Lock integrity (committed lock matches content)
+        run: |
+          node --experimental-strip-types definitions/lock.mts
+          git diff --exit-code definitions/conventions-lock.json
+      - name: VERSION matches the lock
+        run: |
+          v_file="$(cat definitions/VERSION)"
+          v_lock="$(node -e 'process.stdout.write(require("./definitions/conventions-lock.json").version)')"
+          test "$v_file" = "$v_lock" || { echo "VERSION ($v_file) != lock.version ($v_lock)"; exit 1; }
+
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Internal markdown links and heading anchors
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --offline --include-fragments --no-progress "definitions/**/*.md" "README.md"
+          fail: true

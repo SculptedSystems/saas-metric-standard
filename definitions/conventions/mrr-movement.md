@@ -46,9 +46,9 @@ Lead with the four-term bridge on the same basis as the paired NRR and GRR, and 
 - **one-time-in-MRR**: a setup or services fee booked into New or Expansion inflates the bridge and every retention metric read from it. See `classic-errors.md`.
 - a deep down-sell booked as contraction rather than churn (or vice versa): moves the Contraction and Churn terms without changing the total, but changes GRR and the contraction-vs-churn read.
 
-## Free / paid boundary
+## Scope boundary
 
-FREE (from the founder's stated movement aggregates): naming the bridge terms, confirming the four-term identity reconciles, and reading NRR and GRR off the stated New, Expansion, Contraction, and Churn figures. The bridge is computable from the founder's stated movement aggregates. NAMED BUT NOT COMPUTED (the paid Cast): the true contraction-vs-churn split, the reactivation classification, and logo-vs-revenue movement, all of which need customer-level deltas, not the aggregates (the recognize-vs-recompute line per the README). Stating the boundary is the authority move (DR-0026).
+IN SCOPE (from the founder's stated movement aggregates): naming the bridge terms, confirming the four-term identity reconciles, and reading NRR and GRR off the stated New, Expansion, Contraction, and Churn figures. The bridge is computable from the founder's stated movement aggregates. OUT OF SCOPE (named but not computed): the true contraction-vs-churn split, the reactivation classification, and logo-vs-revenue movement, all of which need customer-level deltas, not the aggregates (the recognize-vs-reconstruct line per the README). Stating this boundary out loud is the authority move.
 
 ## Citations (REFERENCE, not recall)
 
@@ -58,7 +58,7 @@ FREE (from the founder's stated movement aggregates): naming the bridge terms, c
 
 ## Card-derivation notes
 
-- RECALL: the contested flag, the four-term identity (Beginning + New + Expansion - Contraction - Churn = Ending), that the components are Board-defined but the summed bridge is consensus arithmetic, that NRR and GRR read off the same bridge (NRR keeps Expansion, GRR drops it), the contraction-vs-churn boundary as the live divergence, reactivation as the open fifth-term question, logo-vs-revenue as two bridges, the free/paid boundary.
+- RECALL: the contested flag, the four-term identity (Beginning + New + Expansion - Contraction - Churn = Ending), that the components are Board-defined but the summed bridge is consensus arithmetic, that NRR and GRR read off the same bridge (NRR keeps Expansion, GRR drops it), the contraction-vs-churn boundary as the live divergence, reactivation as the open fifth-term question, logo-vs-revenue as two bridges, the scope boundary.
 - CONTRAST card needed: NRR vs GRR as two reads off one bridge (expansion in vs out); revenue bridge vs logo bridge.
 - REWORK card needed: "the movement bridge is a standards-board formula" must be reworked (the components are Board-defined; the summed identity is consensus arithmetic).
 - REFERENCE only: the exact Board component wording, the per-founder bucket figures and split.

@@ -28,9 +28,9 @@ Unlike the divergence axes (where multiple conventions are legitimate), these ar
 - ARR and MRR: annual-as-monthly, one-time-in-MRR, off-processor, billing-layer double-count.
 - NRR and retention: gross-vs-net churn, plus one-time-in-MRR inflating the base.
 
-## The free / paid line for these
+## The scope line for these
 
-The first two (annual-as-monthly, one-time-in-MRR) and gross-vs-net are largely composition: visible from the founder's stated method and the aggregates, so they are in scope for the free Review as findings. The last two (off-processor, billing-layer double-count) are source-system facts that the free pass can name but not resolve; reconciling them is the Cast and Engine (DR-0018). This is the "that is a sources question, not a definitions question" deflection in concrete form.
+The first two (annual-as-monthly, one-time-in-MRR) and gross-vs-net are largely composition: visible from the founder's stated method and the aggregates, so they are in scope as findings. The last two (off-processor, billing-layer double-count) are source-system facts that can be named but not resolved from the aggregates; reconciling them needs the per-axis reconstruction from raw source systems, which is out of scope for this standard. This is the "that is a sources question, not a definitions question" deflection in concrete form.
 
 ## Card-derivation notes
 

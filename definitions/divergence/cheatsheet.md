@@ -4,7 +4,7 @@
 
 A per-metric map of how each core SaaS metric is *actually defined* by the sources with a real claim to authority. It shows where those definitions diverge. It asserts nothing of its own.
 
-For each metric you get four things: the primary-filing or codified definition, the spread across sources, the definition the founder's investor likely recomputes on, and where the founder's number lands. (Per [DR-0013](../../../../decisions/0013-authenticity-recalibration-conversations-first.md): the integrity-safe authority anchor for the free Raise Metrics Review. It is also the convention source for the rendered, forwardable Divergence Map, per [DR-0016](../../../../decisions/0016-forwardable-divergence-map.md).)
+For each metric you get four things: the primary-filing or codified definition, the spread across sources, the definition the founder's investor likely recomputes on, and where the founder's number lands.
 
 ## Authority basis (read first)
 
@@ -28,16 +28,14 @@ Four steps, in order:
 
 1. Name the metric the founder reported, and how they compute it.
 2. Compute it under each convention on this sheet, and show the founder the spread.
-3. Name the defensible number to lead with, and the aggressive convention to avoid. Lead defensible, footnote the range. "Defensible" is investor-relative (DR-0047): it is the convention the raise is judged against, not the standard's default. Two tiers: a standard-level **fallback** (the generic-defensible default, the anchor when the target is unknown) and an engagement-level **target** (the investor's or peer-set's convention, the anchor when known). When the target is known, anchor and lead on it and footnote the fallback; until then, lead on the fallback.
+3. Name the defensible number to lead with, and the aggressive convention to avoid. Lead defensible, footnote the range. "Defensible" is investor-relative: it is the convention the raise is judged against, not the standard's default. Two tiers: a standard-level **fallback** (the generic-defensible default, the anchor when the target is unknown) and an engagement-level **target** (the investor's or peer-set's convention, the anchor when known). When the target is known, anchor and lead on it and footnote the fallback; until then, lead on the fallback.
 4. Hand the founder the investor-ask template so they get the convention from the source. This is what promotes a `peer_set_inferred` target to an `investor_stated` one.
 
 The principle is defensibility, not optimization. We never pick the highest number, only the one that survives the investor's recompute, and that warrant is exactly why the anchor is investor-relative: the target convention *is* the one the investor recomputes on, so it, not the standard's default, is what the founder's number must survive. The most aggressive convention is always the labeled risk. `defect_gap` stays absolute: it is a source defect that no target convention can move.
 
-The full on-call flow, deliverable scope, and the investor-ask template live in the [Raise Metrics Review Playbook](../../gtm/raise-metrics-review-playbook.md).
+## Relation to the taxonomy
 
-## Relation to our taxonomy
-
-This is the *external* map, where sources disagree. The B2B SaaS Metrics Taxonomy (`saas-data-stack/docs/taxonomy/b2b-saas-metrics.md`) is *our* opinionated single answer. The two are kept separate by design. This sheet is internal and cites the taxonomy one-way.
+This is the *external* map, where sources disagree. The [B2B SaaS Metrics Taxonomy](../taxonomy/b2b-saas-metrics.md) is the opinionated single answer. The two are kept separate by design. This sheet cites the taxonomy one-way.
 
 ---
 
@@ -48,7 +46,7 @@ Diverges on: annualized run-rate vs committed/contracted; whether one-time/servi
 $$\text{ARR}=\text{MRR}\times 12 \quad(\text{annualized run-rate})\qquad\text{vs}\qquad \text{ARR}=\text{committed / contracted recurring run-rate}$$
 
 - **Standards Board:** "Annual Recurring Revenue (ARR) is recurring revenue, as defined by your revenue recognition policy, calculated on an annualized basis." Formula: "ARR = (MRR x 12)" (MRR = most recent monthly recurring revenue). [src](https://www.saasmetricsboard.com/annual-recurring-revenue)
-- **KBCM survey (benchmark, secondary):** "ARR is defined as committed annual recurring revenue run-rate." (2022 Private SaaS Survey, p.2, in `education/research/downloads/`). Note this is the *committed/CARR* sense, not pure run-rate.
+- **KBCM survey (benchmark, secondary):** "ARR is defined as committed annual recurring revenue run-rate." (2022 KeyBanc Private SaaS Survey, p.2). Note this is the *committed/CARR* sense, not pure run-rate.
 - **SEC filers:** define ARR per company. Backblaze, for example: "We define annual recurring revenue ('ARR') as the annualized value of all ... arrangements as of the end of a period." Public filers consistently exclude one-time/services.
 
 Most likely to mismatch an investor: reporting MRR×12 run-rate when the investor expects committed/contracted ARR, or strips one-time/services creep.
@@ -69,7 +67,7 @@ Not separately codified. The Standards Board has no MRR page, and public filers 
 
 The highest-divergence metric, and the one this sheet is built to win. Recognizable public filers measure it on different bases, in their own filings. Autodesk, Asana, DigitalOcean and Bentley report on a GAAP-revenue basis; Okta, Cloudflare and ZoomInfo on an ACV or annualized basis; MariaDB on a recurring-revenue (ARR) basis. The time-anchor convention (point-in-time vs an average vs year-over-year) is disclosed so inconsistently across these filers that two independent readings of the same disclosure often cannot classify it the same way. That inconsistency is itself part of the divergence. The verbatim quotes, with SEC URLs, are below.
 
-Diverges across the three axes (DR-0026):
+Diverges across the three axes:
 
 1. Composition: cohort membership and restriction (only customers above $X, only a product segment, excluding acquired customers), and what counts in the value.
 2. Basis: ARR vs trailing-revenue vs calendar-revenue vs implied-monthly.
@@ -101,7 +99,7 @@ The test is the **as-of reconstruction requirement**: can the metric's state be 
 
 The **defect criterion**: no retained point-in-time state, and no history from which it can be reconstructed, means the metric cannot be reconstructed as-of. That is a `defect_gap`, a source defect, not a convention choice. It is not that the founder picked an aggressive but legitimate timing; it is that no legitimate timing convention can recover the number, because the underlying state to compute any of them was never retained. Contrast a convention gap, where the state exists and a different but authority-traceable timing convention (a monthly average, a year-over-year framing) reproduces the spread.
 
-This is the load-bearing line between an aggressive-but-legitimate timing choice and a source defect. The conventions reference this test from their aggressive-vs-defect sections; the gap-report deliverable's `defect_gap` status and the Engine's reconstruction apply the same rule.
+This is the load-bearing line between an aggressive-but-legitimate timing choice and a source defect. The conventions reference this test from their aggressive-vs-defect sections; the `defect_gap` classification and the per-axis source reconstruction apply the same rule.
 
 ---
 
@@ -149,7 +147,7 @@ Diverges on: blended vs new-customer vs expansion; fully-loaded vs ad-only; whet
 $$\text{CAC Ratio}=\frac{\text{fully-loaded S\&M (prior period)}}{\text{new ARR / CARR}}\qquad(\text{blended, new-customer, or expansion variants})$$
 
 - **Standards Board**, Blended: "Fully Loaded Sales and Marketing Expenses (CQ-1) / New CARR + Expansion CARR" ([src](https://www.saasmetricsboard.com/blended-cac-ratio)); New: "...allocated to Customer Acquisition / New Name ARR" ([src](https://www.saasmetricsboard.com/new-cac-ratio)); Expansion: "...allocated to Expansion / Expansion CARR" ([src](https://www.saasmetricsboard.com/expansion-cac-ratio)).
-- **KBCM survey (secondary):** Blended CAC Ratio = "Fully-loaded S&M spend to acquire $1 of new ARR across all customers"; New Customer CAC Ratio = "...$1 of new ARR from a new customer"; Existing Customer CAC Ratio = "...$1 of ARR from upsells and expansions." (2022 survey p.3, `education/research/downloads/`).
+- **KBCM survey (secondary):** Blended CAC Ratio = "Fully-loaded S&M spend to acquire $1 of new ARR across all customers"; New Customer CAC Ratio = "...$1 of new ARR from a new customer"; Existing Customer CAC Ratio = "...$1 of ARR from upsells and expansions." (2022 KeyBanc Private SaaS Survey, p.3).
 
 Term-collision warning: some sources use "CAC Ratio" to mean LTV/CAC, which runs the opposite direction. Always state which.
 
@@ -190,7 +188,7 @@ $$\text{Magic \#}=\frac{\Delta\text{ subscription revenue (quarter)}\times 4}{\t
 ### Burn Multiple, origin: David Sacks / Craft Ventures
 
 $$\text{Burn Multiple}=\frac{\text{Net Burn}}{\text{Net New ARR}}\quad(\text{lower better; inverse of Bessemer's Efficiency Score}=\tfrac{\text{Net New ARR}}{\text{Net Burn}})$$
-"Burn Multiple = Net Burn / Net New ARR"; "I prefer to flip the numerator and denominator" (vs Bessemer). ([Craft Ventures](https://medium.com/craft-ventures/the-burn-multiple-51a7e43cb200)) "Net burn" itself is under-specified, so define it on the call. The 5-tier benchmark thresholds are in the origin post, saved in `education/research/downloads/`.
+"Burn Multiple = Net Burn / Net New ARR"; "I prefer to flip the numerator and denominator" (vs Bessemer). ([Craft Ventures](https://medium.com/craft-ventures/the-burn-multiple-51a7e43cb200)) "Net burn" itself is under-specified, so define it on the call. The 5-tier benchmark thresholds are in the origin post.
 
 ### LTV and LTV:CAC, origin/popularizer: David Skok
 
@@ -201,8 +199,8 @@ No SEC or Standards-Board definition exists. Skok popularized the gross-margin-a
 
 ## Sources & provenance
 
-- **SEC filings citations** (primary): verbatim, quote-verified metric definitions from named public filers' 10-Ks (MariaDB, Backblaze, SEMrush, Q2 Holdings, Brightcove, BlackLine, EverCommerce, Autodesk, Asana, DigitalOcean, Bentley, Okta, Cloudflare, ZoomInfo, and others), each cited inline above to its `sec.gov/Archives/...` primary filing. See also the [authority discovery memo](../../research/2026-06-16-saas-metrics-authority-discovery.md).
+- **SEC filings citations** (primary): verbatim, quote-verified metric definitions from named public filers' 10-Ks (MariaDB, Backblaze, SEMrush, Q2 Holdings, Brightcove, BlackLine, EverCommerce, Autodesk, Asana, DigitalOcean, Bentley, Okta, Cloudflare, ZoomInfo, and others), each cited inline above to its `sec.gov/Archives/...` primary filing.
 - **SaaS Metrics Standards Board** (codified consensus) and **origin authors** (coined metrics: Scale VP magic number, Craft Ventures/Sacks burn multiple, Feld Rule of 40, Skok LTV:CAC): captured in [`../evidence/canonical-definitions.json`](../evidence/canonical-definitions.json) and frozen against link rot in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (each source page snapshotted with a content hash, retrieval date, and a verbatim phrase re-verified against the live page). Regenerate via `../evidence/canonical-pull.js`.
-- **KBCM Private SaaS Survey** (benchmark, secondary cross-check): `education/research/downloads/2022_kbcm_saas_survey_10-20-22_vF.pdf`.
+- **KBCM Private SaaS Survey** (benchmark, secondary cross-check): KeyBanc Capital Markets 2022 Private SaaS Company Survey.
 
 *SEC definitions verified verbatim from primary filings; Standards Board and origin-author definitions snapshotted and verbatim-verified against their source pages (see `canonical-verified.json` for per-source dates and hashes). Prominence-based VC and tooling sources are deliberately excluded as authorities.*

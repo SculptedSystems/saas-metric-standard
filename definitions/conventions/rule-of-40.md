@@ -44,9 +44,9 @@ State the profitability basis when you quote the number: "Rule of 40 on FCF marg
 
 No entry in `classic-errors.md` maps cleanly here; the live error is presenting the profitability basis as settled. Quoting "Rule of 40 = 42%" without naming the profit measure is the tell, since FCF and EBITDA margins can differ materially for the same company.
 
-## Free / paid boundary
+## Scope boundary
 
-FREE (from the reported aggregates and the stated method): naming which profitability basis the founder used and flagging an unstated one. NAMED BUT NOT COMPUTED (the paid Cast): reconstructing FCF margin (cash from operations minus capex over average ARR) or EBITDA margin from source financials. Stating the boundary is the authority move (DR-0026).
+IN SCOPE (from the reported aggregates and the stated method): naming which profitability basis the founder used and flagging an unstated one. OUT OF SCOPE (named but not computed): reconstructing FCF margin (cash from operations minus capex over average ARR) or EBITDA margin from source financials. Stating this boundary out loud is the authority move.
 
 ## Citations (REFERENCE, not recall)
 

@@ -9,7 +9,7 @@ authority: standards-board
 
 # Revenue recognition
 
-The revenue-recognition fluency to hold a Review call: place a founder's number among the money-states, recognize which ASC 606 issue is in play, and defer the actual reconstruction to the Cast. Revenue recognition is the one item in the library backed by an enforced standard (US GAAP, FASB Topic 606; Subtopic 340-40 for contract costs), not a convention. The operator-relevant model is extracted in [rev-rec-substrate.md](../evidence/rev-rec-substrate.md) from the KPMG Big-4 handbook; this entry is the teaching layer.
+The revenue-recognition fluency to place a founder's number among the money-states, recognize which ASC 606 issue is in play, and defer the actual reconstruction to raw source systems. Revenue recognition is the one item in the library backed by an enforced standard (US GAAP, FASB Topic 606; Subtopic 340-40 for contract costs), not a convention. The operator-relevant model is extracted in [rev-rec-substrate.md](../evidence/rev-rec-substrate.md) from the KPMG Big-4 handbook; this entry is the teaching layer.
 
 ## The four money-states
 
@@ -35,7 +35,7 @@ Contracted comes first, but after that the states do **not** follow a fixed orde
 
 ## The recognition model (ASC 606), enough to name the issue
 
-The five-step model (identify the contract, identify the performance obligations, determine the price, allocate by stand-alone selling price, recognize as obligations are satisfied) produces the recognized line. On a Review you do not run it; you recognize which lever is moving the founder's number. The high-frequency ones:
+The five-step model (identify the contract, identify the performance obligations, determine the price, allocate by stand-alone selling price, recognize as obligations are satisfied) produces the recognized line. You do not run it live; you recognize which lever is moving the founder's number. The high-frequency ones:
 
 - **License vs SaaS sets the timing.** A software license (customer can take possession and self-host) recognizes at a point in time; hosted SaaS recognizes ratably over the term. Same product, different timing.
 - **Setup and implementation fees** are usually not a separate obligation, so they recognize over the term, not upfront. Booking them as immediate revenue overstates recognized revenue.
@@ -51,11 +51,11 @@ Depth, page citations, and contract-cost (commission) capitalization: [rev-rec-s
 
 ## The honest deflection
 
-Name the issue, then defer the computation. "That is a sources question, not a definitions question, which is what the Cast reconstructs." You can name that, say, setup fees should recognize ratably, or that SaaS usage is variable consideration; reconstructing the actual recognition schedule and deferred-revenue balance from a founder's raw data is the Cast and Engine, not a call you make live.
+Name the issue, then defer the computation. "That is a sources question, not a definitions question." You can name that, say, setup fees should recognize ratably, or that SaaS usage is variable consideration; reconstructing the actual recognition schedule and deferred-revenue balance from a founder's raw data is out of scope for this standard, not a call you make live.
 
-## Free / paid boundary
+## Scope boundary
 
-FREE: placing the number among the four states, naming the GAAP vs non-GAAP boundary, and naming which ASC 606 issue is in play. NAMED BUT NOT COMPUTED: the actual recognition-schedule or deferred-revenue reconstruction from raw data (the Cast).
+IN SCOPE: placing the number among the four states, naming the GAAP vs non-GAAP boundary, and naming which ASC 606 issue is in play. OUT OF SCOPE (named but not computed): the actual recognition-schedule or deferred-revenue reconstruction from raw data.
 
 ## Card-derivation notes
 
