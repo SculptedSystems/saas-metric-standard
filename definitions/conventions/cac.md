@@ -55,10 +55,12 @@ The predicate for classifying a CAC-ratio or CAC-payback spread:
 
 Two codified forms share one S&M numerator: the CAC ratio (spend per dollar of new CARR) and CAC payback (months, gross-margin-adjusted).
 
-$$\text{CAC Ratio}=\frac{\text{fully-loaded S\&M (CQ-1)}}{\text{New CARR}+\text{Expansion CARR}}\quad(\text{blended; new-customer and expansion variants restrict the denominator})$$
-
-$$\text{CAC Payback (months)}=\frac{\text{fully-loaded S\&M}}{\text{New CARR}\times\text{Subscription Gross Margin \%}}\times 12$$
-
+$$
+\text{CAC Ratio}=\frac{\text{fully-loaded S\&M (CQ-1)}}{\text{New CARR}+\text{Expansion CARR}}\quad(\text{blended; new-customer and expansion variants restrict the denominator})
+$$
+$$
+\text{CAC Payback (months)}=\frac{\text{fully-loaded S\&M}}{\text{New CARR}\times\text{Subscription Gross Margin \%}}\times 12
+$$
 Primary source: the Standards Board codified ratio and payback methods, "Fully Loaded Sales and Marketing Expenses (CQ-1) / New CARR + Expansion CARR" (blended), "...allocated to Customer Acquisition / New Name ARR" (new), "...allocated to Expansion / Expansion CARR" (expansion), and CAC payback "the number of months it takes for the gross profits from new customer ARR to pay back the sales and marketing expenses ... Fully Loaded S&M Expenses / (CARR x Gross Margin %) x 12," all recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/blended-cac-ratio, https://www.saasmetricsboard.com/new-cac-ratio, https://www.saasmetricsboard.com/expansion-cac-ratio, https://www.saasmetricsboard.com/cac-payback-period). The board has no standalone per-customer "cost" page (it 404s); the codified authority is the ratio and the payback, not a cost per customer. The gross-margin input to payback is the codified "Subscription Gross Margin Percentage" dependency, carried in [`gross-margin.md`](gross-margin.md). The codified methods are the authority here.
 
 Standards-board method (the defensible default): fully-loaded S&M, lagged by the sales cycle (CQ-1 against current-quarter new CARR), over new (and, for blended, expansion) CARR for the ratio; for payback, the same numerator over gross-margin-adjusted new CARR, times twelve, expressed in months.

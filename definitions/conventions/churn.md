@@ -53,8 +53,9 @@ The predicate for classifying a churn spread:
 
 ## Canonical formula
 
-$$\text{Logo retention}=\frac{\text{customers at end who were customers at start}}{\text{active customers at start}}\qquad \text{logo churn}=1-\text{retention}\qquad \text{annual}=1-(1-\text{monthly})^{12}$$
-
+$$
+\text{Logo retention}=\frac{\text{customers at end who were customers at start}}{\text{active customers at start}}\qquad \text{logo churn}=1-\text{retention}\qquad \text{annual}=1-(1-\text{monthly})^{12}
+$$
 Primary source: the Standards Board codifies the count-based metric as logo retention, "# of customers at the end of the period who were customers at the beginning of the period / # of active customers at the beginning of the measurement period," recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/logo-retention); churn is one minus that retention. Gross and net revenue churn are the inverses of the codified GRR and NRR entries in the same file (1 - GRR and 1 - NRR). The codified retention definitions are the authority here.
 
 Standards-board logo-retention method (the defensible count-based default): the count of start-of-period customers still active at period end over the count active at start; churn is one minus that. Annual churn compounds from monthly as 1 - (1 - monthly)^12, never monthly times twelve.

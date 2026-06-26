@@ -50,8 +50,9 @@ The predicate for classifying a magic-number spread:
 
 ## Canonical formula
 
-$$\text{Magic \#}=\frac{\Delta\text{ subscription revenue (quarter)}\times 4}{\text{prior-quarter S\&M}}$$
-
+$$
+\text{Magic \#}=\frac{\Delta\text{ subscription revenue (quarter)}\times 4}{\text{prior-quarter S\&M}}
+$$
 Primary source: the origin author, Scale Venture Partners, "Take the change in subscription revenue between two quarters, annualize it (multiply by four), and divide the result by the sales and marketing spend for the earlier of the two quarters," recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.scalevp.com/insights/magic-number-math/). There is no standards-board or SEC-disclosed definition; the origin author is the only authority, so it is named as a convention, not a standard. The net-new-ARR variant is the common alternative numerator (see the convention families above); the origin definition is the authority here.
 
 Origin (Scale VP) method (the only defensible anchor): the quarter-over-quarter change in subscription revenue, annualized by multiplying by four, over the earlier of the two quarters' sales-and-marketing spend.

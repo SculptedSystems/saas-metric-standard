@@ -1,13 +1,13 @@
 {
   "version": "0.1.0",
-  "library_sha256": "4b230b7e451d2583cad0937511f1b6d8de6faa2f0513ea44deb4dfea089824f1",
+  "library_sha256": "3f4f07de7a253d8896eea5921261f159da1fc70cd0fbf3032953f135a46b69d7",
   "count": 13,
   "conventions": [
     {
       "id": "arr",
       "metric": "Annual Recurring Revenue",
       "file": "conventions/arr.md",
-      "content_sha256": "083ee7dc4a516eb03e44abc465b4d289b2e7da4bcb20a852439fc2c3c960f0f8"
+      "content_sha256": "5fe210a6e16db9e050c9a00c8590c33ee57594ed06b84a657b16d6dcd25b5900"
     },
     {
       "id": "burn-multiple",
@@ -19,25 +19,25 @@
       "id": "cac",
       "metric": "Customer Acquisition Cost",
       "file": "conventions/cac.md",
-      "content_sha256": "fa4105778d0ecf0d7546abcffcc93c94ce0290929fa76618c0862d9b4ac2e8ab"
+      "content_sha256": "a256924193b3a040bde5d4902d803420522b3ae566fc5abf8863934049a56e36"
     },
     {
       "id": "churn",
       "metric": "Churn and retention",
       "file": "conventions/churn.md",
-      "content_sha256": "8625bb678f758dd206419e000913a349f44625292ef5ddabae683cf29328424b"
+      "content_sha256": "874df02e87138a4dbfa4b877043de96327f3fec48062883730a89fd5a338456d"
     },
     {
       "id": "gross-margin",
       "metric": "Gross Margin",
       "file": "conventions/gross-margin.md",
-      "content_sha256": "13027063c7a8db80dabba8a3e5f852eaea09ab4dd6e4b42467ad2f860efcda01"
+      "content_sha256": "874ac343b5efd1b470cf3aaf514588689d525b7d8e216f4d16449fd92e27c671"
     },
     {
       "id": "grr",
       "metric": "Gross Revenue Retention",
       "file": "conventions/grr.md",
-      "content_sha256": "c7b8d2a49c6fe323d89557844e0f7798de88164101794be8a6038ed572f76ac4"
+      "content_sha256": "2b8dfaaacd9160b95eb6270559d51af26fda582505e6984b366b330d54270a76"
     },
     {
       "id": "ltv",
@@ -49,7 +49,7 @@
       "id": "magic-number",
       "metric": "SaaS Magic Number",
       "file": "conventions/magic-number.md",
-      "content_sha256": "925a9234347b76c9afd887e135f4c5820aa425f8ece332ef438b16bf00a3ae51"
+      "content_sha256": "f79dfc492d659d55799494e38836a7b55d05211d2ce033d1ac9d70e43f3706d5"
     },
     {
       "id": "mrr-movement",
@@ -61,7 +61,7 @@
       "id": "nrr",
       "metric": "Net Revenue Retention",
       "file": "conventions/nrr.md",
-      "content_sha256": "0c70c81b4f6f9f7eaa88d40f2859b0a21b3900cb0029931440681e45991e8cdb"
+      "content_sha256": "075cc4e1ed63520b64fadfbb4f3a010d28e1da5268d8b05d9d94ebff421ae154"
     },
     {
       "id": "quick-ratio",
