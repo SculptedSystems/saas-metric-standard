@@ -35,7 +35,7 @@ Churn is really a small family of metrics, and the first failure is not picking 
 
 ## What the investor likely recomputes on
 
-The named filers below are late-stage and large. The standard treats them as a proxy for the convention an early-stage investor carries, on the reasoning that a seed or Series A investor judges a raise against the basis the public market has settled on. So the convention named here is read off the public record, not asserted, and it is where a founder's number gets measured when no specific investor convention is on the table.
+The named filers below are late-stage and large. The standard treats them as a proxy for the convention an early-stage investor carries, on the reasoning that a seed or Series A investor judges a raise against the basis the public market has settled on. So the convention named here is read off the public record, and it is where a founder's number gets measured when no specific investor convention is on the table.
 
 The record reads logo churn and gross revenue churn underneath any net retention number, on the same basis as the paired retention metric. A single headline "churn" figure that does not say logo-or-revenue and gross-or-net gets discounted. The family is settled; the basis is bounded by the paired retention metric, not fixed by it. Name the family, basis, and churn moment against real numbers rather than assume one.
 
@@ -43,10 +43,10 @@ The record reads logo churn and gross revenue churn underneath any net retention
 
 "Defensible" is relative to the investor. It is the convention the raise gets judged against, which is not always the standard's default. So the read has two tiers.
 
-- **The standard's default (use when no specific investor convention is known):** state which churn you mean (logo or revenue, gross or net) before quoting a number, and annualize monthly churn by compounding, not by multiplying by twelve. This is the codified read, the number to lead on by default.
+- **The standard's default (use when no specific investor convention is known):** the churn family stated (logo or revenue, gross or net) before any number, with monthly churn annualized by compounding, not by multiplying by twelve. This is the codified read, the defensible default.
 - **The investor's convention (use it when you know it):** when a specific investor's convention is known, lead on the *same basis* as that convention's paired retention metric and footnote the rest, including the default above. That convention is what the raise is measured against.
 
-Under either anchor, the aggressive move to avoid is leading with net revenue churn alone, which expansion can drive near zero or negative while gross attrition is real. Define the churn moment explicitly, since no authority does. Principle: defensibility, not optimization. `defect_gap` is absolute and does not move with the convention you anchor on.
+Under either anchor, the aggressive move to avoid is leading with net revenue churn alone, which expansion can drive near zero or negative while gross attrition is real. The churn moment must be defined explicitly, since no authority does. Principle: defensibility, not optimization. A defect classification is absolute and does not move with the convention anchored on.
 
 ## Canonical formula
 
@@ -65,14 +65,14 @@ Standards-board logo-retention method (the defensible count-based default): the 
 
 ## Reconciliation note
 
-Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm which churn family the number is in (logo versus revenue, gross versus net) and that churn equals one minus the paired retention, and that closes from the aggregates. Basis and timing do not close. The revenue basis (ARR versus MRR versus revenue, inherited from the retention metric), the period and the monthly-to-annual derivation, and the uncodified churn moment interact non-additively (a basis reclassification and a churn-moment change are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the family, basis, and churn moment the founder used against the defensible logo-retention method with compounded annualization, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard.
+Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm which churn family the number is in (logo versus revenue, gross versus net) and that churn equals one minus the paired retention, and that closes from the aggregates. Basis and timing do not close. The revenue basis (ARR versus MRR versus revenue, inherited from the retention metric), the period and the monthly-to-annual derivation, and the uncodified churn moment interact non-additively (a basis reclassification and a churn-moment change are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the family, basis, and churn moment the founder used against the defensible logo-retention method with compounded annualization, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
 
 ## Aggressive-vs-defect test
 
 The predicate for classifying a churn spread:
 
-- **Defensible basis:** the standards-board logo-retention method (churn = 1 - retention) with monthly churn compounded to annual, and revenue churn read as 1 - GRR underneath any net figure. This is the number to lead with.
-- **Convention gap (aggressive but legitimate):** the spread reproduces only under net revenue churn (1 - NRR), which an authority-traceable retention basis legitimately nets expansion into and which can read near zero or negative, or under a revenue basis or churn moment the paired retention metric legitimately adopts. Legitimate, but net-only hides gross and logo attrition, so it is the labeled risk, never the headline.
+- **Defensible basis:** the standards-board logo-retention method (churn = 1 - retention) with monthly churn compounded to annual, and revenue churn read as 1 - GRR underneath any net figure. This is the defensible read.
+- **Convention gap (aggressive but legitimate):** the spread reproduces only under net revenue churn (1 - NRR), which an authority-traceable retention basis legitimately nets expansion into and which can read near zero or negative, or under a revenue basis or churn moment the paired retention metric legitimately adopts. Legitimate, but net-only hides gross and logo attrition, so it is the labeled risk, not the defensible read.
 - **Defect gap:** no legitimate convention reproduces it. For example, annual churn derived as monthly times twelve rather than compounded (the annualization trap), or one-time revenue inflating the base so the apparent revenue churn understates. No authority-traceable convention recovers the number.
 
 ## Classic errors touching churn
@@ -83,7 +83,7 @@ The predicate for classifying a churn spread:
 
 ## Scope boundary
 
-IN SCOPE (from the reported aggregates and the stated method): naming which churn family the founder is in, catching a net-only report, and catching the linear-annualization trap from the stated method. OUT OF SCOPE (named but not computed): the churn moment resolved against billing events, and the per-cohort revenue churn from customer-level data. Stating this boundary out loud is the authority move.
+IN SCOPE (from the reported aggregates and the stated method): naming which churn family the founder is in, catching a net-only report, and catching the linear-annualization trap from the stated method. OUT OF SCOPE (named but not computed): the churn moment resolved against billing events, and the per-cohort revenue churn from customer-level data. The per-axis reconstruction from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
 
 ## Citations
 

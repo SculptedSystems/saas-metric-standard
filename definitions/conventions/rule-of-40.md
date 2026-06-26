@@ -34,11 +34,11 @@ The 40% threshold and the growth-plus-profit shape are the settled part. The div
 
 ## What the investor likely recomputes on
 
-Most readers land near the standards-board FCF-margin form, but a meaningful set still use EBITDA margin (Feld's preference and a common growth-equity convention). The growth-plus-profit shape is settled; the profitability basis is bounded by these two conventions, not fixed by them. The robust move is to treat the profitability basis as unsettled and name which, rather than assert FCF. Name the basis against real numbers rather than assume one.
+Most readers land near the standards-board FCF-margin form, but a meaningful set still use EBITDA margin (Feld's preference and a common growth-equity convention). The growth-plus-profit shape is settled; the profitability basis is bounded by these two conventions, not fixed by them. The profitability basis is unsettled, so the defensible read names which basis is used rather than asserting FCF. Name the basis against real numbers rather than assume one.
 
 ## The defensible read
 
-State the profitability basis when you quote the number: "Rule of 40 on FCF margin" or "on EBITDA margin," never a bare "Rule of 40." Lead with FCF margin as the codified default and footnote the EBITDA reading. The aggressive move to avoid is silently picking whichever profit measure is most flattering for the company. Principle: defensibility, not optimization.
+The profitability basis is stated with the number: "Rule of 40 on FCF margin" or "on EBITDA margin," never a bare "Rule of 40." FCF margin is the codified default; the EBITDA reading is the footnote. The aggressive move to avoid is silently picking whichever profit measure is most flattering for the company. Principle: defensibility, not optimization.
 
 ## Classic errors touching Rule of 40
 
@@ -46,7 +46,7 @@ No entry in `classic-errors.md` maps cleanly here; the live error is presenting 
 
 ## Scope boundary
 
-IN SCOPE (from the reported aggregates and the stated method): naming which profitability basis the founder used and flagging an unstated one. OUT OF SCOPE (named but not computed): reconstructing FCF margin (cash from operations minus capex over average ARR) or EBITDA margin from source financials. Stating this boundary out loud is the authority move.
+IN SCOPE (from the reported aggregates and the stated method): naming which profitability basis the founder used and flagging an unstated one. OUT OF SCOPE (named but not computed): reconstructing FCF margin (cash from operations minus capex over average ARR) or EBITDA margin from source financials. The per-axis reconstruction from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
 
 ## Citations
 

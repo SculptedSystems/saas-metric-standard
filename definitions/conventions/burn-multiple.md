@@ -45,7 +45,7 @@ No entry in `classic-errors.md` maps directly. The live errors are treating an u
 
 ## Scope boundary
 
-IN SCOPE (from the reported aggregates and the stated method): flagging that the metric is a convention, naming the net-burn definition the founder used, and catching the direction confusion with the Efficiency Score. OUT OF SCOPE (named but not computed): reconstructing net burn and net new ARR from source financials. Stating this boundary out loud is the authority move.
+IN SCOPE (from the reported aggregates and the stated method): flagging that the metric is a convention, naming the net-burn definition the founder used, and catching the direction confusion with the Efficiency Score. OUT OF SCOPE (named but not computed): reconstructing net burn and net new ARR from source financials. The per-axis reconstruction from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
 
 ## Citations
 

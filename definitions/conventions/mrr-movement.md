@@ -48,7 +48,7 @@ Lead with the four-term bridge on the same basis as the paired NRR and GRR, and 
 
 ## Scope boundary
 
-IN SCOPE (from the founder's stated movement aggregates): naming the bridge terms, confirming the four-term identity reconciles, and reading NRR and GRR off the stated New, Expansion, Contraction, and Churn figures. The bridge is computable from the founder's stated movement aggregates. OUT OF SCOPE (named but not computed): the true contraction-vs-churn split, the reactivation classification, and logo-vs-revenue movement, all of which need customer-level deltas, not the aggregates (the recognize-vs-reconstruct line per the README). Stating this boundary out loud is the authority move.
+IN SCOPE (from the founder's stated movement aggregates): naming the bridge terms, confirming the four-term identity reconciles, and reading NRR and GRR off the stated New, Expansion, Contraction, and Churn figures. The bridge is computable from the founder's stated movement aggregates. OUT OF SCOPE (named but not computed): the true contraction-vs-churn split, the reactivation classification, and logo-vs-revenue movement, all of which need customer-level deltas, not the aggregates (the recognize-vs-reconstruct line per the README). The per-axis reconstruction from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
 
 ## Citations
 

@@ -11,7 +11,7 @@ authority: standards-board
 
 ## One-liner
 
-Recurring revenue expressed on an annualized basis, excluding one-time and services revenue. The backup lead metric when NRR is not the headline.
+Recurring revenue expressed on an annualized basis, excluding one-time and services revenue. The backup lead metric when NRR is not the focus.
 
 ## Why it diverges
 
@@ -33,7 +33,7 @@ ARR is contested mainly on the basis axis: an annualized run-rate (MRR times 12)
 
 ## What the investor likely recomputes on
 
-The named filers below are late-stage and large. The standard treats them as a proxy for the convention an early-stage investor carries, on the reasoning that a seed or Series A investor judges a raise against the basis the public market has settled on. So the convention named here is read off the public record, not asserted, and it is where a founder's number gets measured when no specific investor convention is on the table.
+The named filers below are late-stage and large. The standard treats them as a proxy for the convention an early-stage investor carries, on the reasoning that a seed or Series A investor judges a raise against the basis the public market has settled on. So the convention named here is read off the public record, and it is where a founder's number gets measured when no specific investor convention is on the table.
 
 The record points to an annualized run-rate on clean recurring revenue, with committed-but-not-live revenue held out rather than padding the number. The basis is settled; what varies is how strictly a given reader holds the clean-recurring line. Name the run-rate against real numbers rather than assume one.
 
@@ -41,10 +41,10 @@ The record points to an annualized run-rate on clean recurring revenue, with com
 
 "Defensible" is relative to the investor. It is the convention the raise gets judged against, which is not always the standard's default. So the read has two tiers.
 
-- **The standard's default (use when no specific investor convention is known):** lead with the run-rate on clean recurring revenue and disclose any committed or off-processor component separately rather than blending it in. If a founder is leading with CARR, name it as CARR, not ARR. This is the codified read, the number to lead on by default.
-- **The investor's convention (use it when you know it):** when a specific investor's convention is known, lead on *that* number and footnote the rest, including the default above. That convention is what the raise is measured against.
+- **The standard's default (use when no specific investor convention is known):** the run-rate on clean recurring revenue, with any committed or off-processor component disclosed separately rather than blended in. A founder's CARR is named as CARR, not ARR. This is the codified read, the defensible default.
+- **The investor's convention (use it when you know it):** when a specific investor's convention is known, that number governs, and the rest, including the default above, is footnoted. That convention is what the raise is measured against.
 
-Under either anchor, the aggressive move to avoid is blending one-time, services, or signed-not-live revenue into the headline. `defect_gap` is absolute and does not move with the convention you anchor on.
+Under either anchor, the aggressive move to avoid is blending one-time, services, or signed-not-live revenue into the reported number. A defect classification is absolute and does not move with the convention anchored on.
 
 ## Canonical formula
 
@@ -62,14 +62,14 @@ Standards-board run-rate method (the defensible default): the most recent month'
 
 ## Reconciliation note
 
-Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm one-time and services are stripped and the base is recurring only, and that closes from the aggregates. Basis and timing do not close. Run-rate versus committed (CARR) and the off-processor or billing-layer corrections interact non-additively (an off-processor reconciliation and a run-rate-vs-committed reclassification are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the sense the founder used against the defensible clean run-rate, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard.
+Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm one-time and services are stripped and the base is recurring only, and that closes from the aggregates. Basis and timing do not close. Run-rate versus committed (CARR) and the off-processor or billing-layer corrections interact non-additively (an off-processor reconciliation and a run-rate-vs-committed reclassification are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the sense the founder used against the defensible clean run-rate, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
 
 ## Aggressive-vs-defect test
 
 The predicate for classifying an ARR spread:
 
-- **Defensible basis:** an annualized run-rate on clean recurring revenue, the standards-board MRR x 12 method. This is the number to lead with.
-- **Convention gap (aggressive but legitimate):** the spread reproduces only under the committed or contracted sense an authority-traceable source actually uses, the standards-board CARR ("whether in production or not yet in production") or the KBCM survey's committed run-rate basis. Legitimate, but it is CARR, not ARR, so it is the labeled risk, never the headline.
+- **Defensible basis:** an annualized run-rate on clean recurring revenue, the standards-board MRR x 12 method. This is the defensible read.
+- **Convention gap (aggressive but legitimate):** the spread reproduces only under the committed or contracted sense an authority-traceable source actually uses, the standards-board CARR ("whether in production or not yet in production") or the KBCM survey's committed run-rate basis. Legitimate, but it is CARR, not ARR, so it is the labeled risk, not the defensible read.
 - **Defect gap:** no legitimate convention reproduces it. For example, one-time or services revenue folded into the recurring base, an off-processor invoiced book double-counted through a billing layer over the processor, or an annual deal booked as a full month of MRR. No authority-traceable source's convention recovers the number.
 
 ## Classic errors touching ARR
@@ -78,7 +78,7 @@ All from `classic-errors.md`: annual-as-monthly (a single annual deal counted as
 
 ## Scope boundary
 
-IN SCOPE: the composition axis, confirm one-time and services are excluded, from the aggregates. OUT OF SCOPE (named but not computed): reconciling off-processor revenue, de-duplicating a billing layer, and resolving run-rate vs committed from raw sources. These are source-system corrections, out of scope for this standard.
+IN SCOPE: the composition axis, confirm one-time and services are excluded, from the aggregates. OUT OF SCOPE (named but not computed): reconciling off-processor revenue, de-duplicating a billing layer, and resolving run-rate vs committed from raw sources. The per-axis reconstruction from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
 
 ## Citations
 

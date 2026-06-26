@@ -13,7 +13,7 @@ What this library adds on top of those is the **operational layer**: the three-a
 ## How to use it
 
 - **The aim is divergence-recognition.** Given a stated method, name the axis it diverges on and the defensible convention an investor recomputes against. Do not present any contested convention as settled.
-- **The scope boundary is recognize-vs-reconstruct.** From the reported aggregates the metric can be computed and named (including a stated expansion, contraction, and churn split), but that split cannot be verified. Verifying composition from raw sources, and computing the basis and timing conventions that aggregates cannot, requires the per-axis reconstruction from raw source systems, which is out of scope for this standard. So composition is what the aggregates let you compute and name, basis and timing need raw data, and even the stated composition is verified only against raw sources.
+- **The scope boundary is recognize-vs-reconstruct.** From the reported aggregates the metric can be computed and named (including a stated expansion, contraction, and churn split), but that split cannot be verified. Verifying composition from raw sources, and computing the basis and timing conventions that aggregates cannot, requires the per-axis reconstruction from raw source systems, which is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform. So composition is what the aggregates compute and name, basis and timing need raw data, and even the stated composition is verified only against raw sources.
 
 ## Files
 

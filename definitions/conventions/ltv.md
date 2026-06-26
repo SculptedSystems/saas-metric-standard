@@ -47,7 +47,7 @@ Name LTV and LTV:CAC as conventions (popularizer, Skok), state the churn input a
 
 ## Scope boundary
 
-IN SCOPE (from the reported aggregates and the stated method): naming LTV and the 3x rule as conventions, confirming the gross-margin adjustment, and surfacing the churn and discount assumptions in the stated method. OUT OF SCOPE (named but not computed): reconstructing ARPA, the churn input, and a discounted lifetime from customer-level data. Stating this boundary out loud is the authority move.
+IN SCOPE (from the reported aggregates and the stated method): naming LTV and the 3x rule as conventions, confirming the gross-margin adjustment, and surfacing the churn and discount assumptions in the stated method. OUT OF SCOPE (named but not computed): reconstructing ARPA, the churn input, and a discounted lifetime from customer-level data. The per-axis reconstruction from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
 
 ## Citations
 

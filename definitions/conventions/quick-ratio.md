@@ -45,7 +45,7 @@ Name it as a convention with a Mamoon Hamid / Social Capital origin, state the f
 
 ## Scope boundary
 
-IN SCOPE (from the founder's stated movement aggregates and the stated method): naming the four terms and the basis, computing the ratio from the stated New, Expansion, Churned, and Contraction figures, and flagging that the metric is a convention and the >= 4 cutoff a hypothesis. OUT OF SCOPE (named but not computed): the true contraction-vs-churn split inside the denominator and the reactivation classification in the numerator, which need customer-level deltas (the recognize-vs-reconstruct line per the README). Stating this boundary out loud is the authority move.
+IN SCOPE (from the founder's stated movement aggregates and the stated method): naming the four terms and the basis, computing the ratio from the stated New, Expansion, Churned, and Contraction figures, and flagging that the metric is a convention and the >= 4 cutoff a hypothesis. OUT OF SCOPE (named but not computed): the true contraction-vs-churn split inside the denominator and the reactivation classification in the numerator, which need customer-level deltas (the recognize-vs-reconstruct line per the README). The per-axis reconstruction from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
 
 ## Citations
 

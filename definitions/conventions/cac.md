@@ -35,7 +35,7 @@ What is actually codified is the CAC ratio (S&M to win one dollar of new ARR), n
 
 ## What the investor likely recomputes on
 
-The named filers below are late-stage and large. The standard treats them as a proxy for the convention an early-stage investor carries, on the reasoning that a seed or Series A investor judges a raise against the basis the public market has settled on. So the convention named here is read off the public record, not asserted, and it is where a founder's number gets measured when no specific investor convention is on the table.
+The named filers below are late-stage and large. The standard treats them as a proxy for the convention an early-stage investor carries, on the reasoning that a seed or Series A investor judges a raise against the basis the public market has settled on. So the convention named here is read off the public record, and it is where a founder's number gets measured when no specific investor convention is on the table.
 
 The record points to a fully-loaded, blended-or-new CAC ratio on new ARR, and CAC payback on gross-margin-adjusted revenue. The fully-loaded numerator and the gross-margin adjustment are settled; what varies is whether a given reader leans blended or new-customer. Name the numerator, denominator, and basis against real numbers rather than assume one.
 
@@ -43,10 +43,10 @@ The record points to a fully-loaded, blended-or-new CAC ratio on new ARR, and CA
 
 "Defensible" is relative to the investor. It is the convention the raise gets judged against, which is not always the standard's default. So the read has two tiers.
 
-- **The standard's default (use when no specific investor convention is known):** lead with a fully-loaded CAC ratio and say which denominator (blended, new, or expansion); for payback, lead with the gross-margin-adjusted months, not raw revenue. This is the codified read, the number to lead on by default.
-- **The investor's convention (use it when you know it):** when a specific investor's convention is known, lead on *that* number and footnote the rest, including the default above. That convention is what the raise is measured against.
+- **The standard's default (use when no specific investor convention is known):** a fully-loaded CAC ratio with the denominator named (blended, new, or expansion); for payback, the gross-margin-adjusted months, not raw revenue. This is the codified read, the defensible default.
+- **The investor's convention (use it when you know it):** when a specific investor's convention is known, that number governs, and the rest, including the default above, is footnoted. That convention is what the raise is measured against.
 
-Under either anchor, the aggressive moves to avoid: a paid-only or ad-spend-only numerator that understates true CAC, an expansion-inclusive denominator presented as new-customer efficiency, and a raw-revenue payback (divide it by gross margin: at ~75% GM, a "9 month" payback is really about 12). Principle: defensibility, not optimization. `defect_gap` is absolute and does not move with the convention you anchor on.
+Under either anchor, the aggressive moves to avoid: a paid-only or ad-spend-only numerator that understates true CAC, an expansion-inclusive denominator presented as new-customer efficiency, and a raw-revenue payback (divide it by gross margin: at ~75% GM, a "9 month" payback is really about 12). Principle: defensibility, not optimization. A defect classification is absolute and does not move with the convention anchored on.
 
 ## Canonical formula
 
@@ -70,14 +70,14 @@ Standards-board method (the defensible default): fully-loaded S&M, lagged by the
 
 ## Reconciliation note
 
-Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates and the stated method we can confirm which numerator and denominator the founder used (blended versus new versus expansion, fully-loaded versus paid-only, ratio versus gross-margin-adjusted payback), and that closes from the aggregates. Basis and timing do not close. The fully-loaded S&M reconstruction, the new-versus-expansion spend allocation, the sales-cycle lag, and (for payback) the gross-margin adjustment interact non-additively (re-burdening commissions, reallocating customer-success cost, and applying a gross margin are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the numerator, denominator, lag, and margin the founder used against the defensible fully-loaded standards-board method, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard.
+Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates and the stated method we can confirm which numerator and denominator the founder used (blended versus new versus expansion, fully-loaded versus paid-only, ratio versus gross-margin-adjusted payback), and that closes from the aggregates. Basis and timing do not close. The fully-loaded S&M reconstruction, the new-versus-expansion spend allocation, the sales-cycle lag, and (for payback) the gross-margin adjustment interact non-additively (re-burdening commissions, reallocating customer-success cost, and applying a gross margin are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the numerator, denominator, lag, and margin the founder used against the defensible fully-loaded standards-board method, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
 
 ## Aggressive-vs-defect test
 
 The predicate for classifying a CAC-ratio or CAC-payback spread:
 
-- **Defensible basis:** a fully-loaded CAC ratio with the denominator named (blended, new, or expansion) on the standards-board method, and CAC payback on gross-margin-adjusted new CARR in months. This is the number to lead with.
-- **Convention gap (aggressive but legitimate):** the spread reproduces only under a denominator or split an authority-traceable source actually uses, an expansion-inclusive blended ratio presented where new-customer efficiency was implied, or the standards-board nuance of including customer-success cost only where it is allocated to acquisition, or the KBCM survey's split definitions. Legitimate when named, but not the read implied, so it is the labeled risk, never the headline.
+- **Defensible basis:** a fully-loaded CAC ratio with the denominator named (blended, new, or expansion) on the standards-board method, and CAC payback on gross-margin-adjusted new CARR in months. This is the defensible read.
+- **Convention gap (aggressive but legitimate):** the spread reproduces only under a denominator or split an authority-traceable source actually uses, an expansion-inclusive blended ratio presented where new-customer efficiency was implied, or the standards-board nuance of including customer-success cost only where it is allocated to acquisition, or the KBCM survey's split definitions. Legitimate when named, but not the read implied, so it is the labeled risk, not the defensible read.
 - **Defect gap:** no legitimate convention reproduces it. For example, a paid-only or ad-spend-only numerator against the fully-loaded consensus, a raw-revenue payback that omits the gross-margin adjustment (at ~75% GM a "9 month" payback is really about 12), or the CAC-ratio / LTV:CAC term collision running the opposite direction. No authority-traceable source's convention recovers the number.
 
 ## Classic errors touching CAC
@@ -88,7 +88,7 @@ The predicate for classifying a CAC-ratio or CAC-payback spread:
 
 ## Scope boundary
 
-IN SCOPE (from the reported aggregates and the stated method): naming the numerator and denominator the founder used, catching a paid-only numerator, and catching a raw-revenue payback. OUT OF SCOPE (named but not computed): reconstructing fully-loaded S&M, allocating spend across new vs expansion, and resolving the new-customer count and acquisition lag from raw source systems. Stating this boundary out loud is the authority move.
+IN SCOPE (from the reported aggregates and the stated method): naming the numerator and denominator the founder used, catching a paid-only numerator, and catching a raw-revenue payback. OUT OF SCOPE (named but not computed): reconstructing fully-loaded S&M, allocating spend across new vs expansion, and resolving the new-customer count and acquisition lag from raw source systems. The per-axis reconstruction from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
 
 ## Citations
 

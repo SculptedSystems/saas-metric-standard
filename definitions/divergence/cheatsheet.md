@@ -4,7 +4,7 @@
 
 A per-metric map of how each core SaaS metric is *actually defined* by the sources with a real claim to authority. It shows where those definitions diverge. It asserts nothing of its own.
 
-For each metric you get four things: the primary-filing or codified definition, the spread across sources, the definition the founder's investor likely recomputes on, and where the founder's number lands.
+Each metric carries four things: the primary-filing or codified definition, the spread across sources, the definition the founder's investor likely recomputes on, and where the founder's number lands.
 
 ## Authority basis (read first)
 
@@ -28,10 +28,10 @@ Four steps, in order:
 
 1. Name the metric the founder reported, and how they compute it.
 2. Compute it under each convention on this sheet, and show the founder the spread.
-3. Name the defensible number to lead with, and the aggressive convention to avoid. Lead defensible, footnote the range. "Defensible" is investor-relative: it is the convention the raise is judged against, not the standard's default. Two tiers: a standard-level **fallback** (the generic-defensible default, the anchor when the target is unknown) and an engagement-level **target** (the investor's or peer-set's convention, the anchor when known). When the target is known, anchor and lead on it and footnote the fallback; until then, lead on the fallback.
+3. Name the defensible number and the aggressive convention. The defensible number is the lead; the range is the footnote. "Defensible" is investor-relative: it is the convention the raise is judged against, not the standard's default. Two tiers: a standard-level **fallback** (the generic-defensible default, the anchor when the target is unknown) and an engagement-level **target** (the investor's or peer-set's convention, the anchor when known). When the target is known, it is the anchor and the fallback is the footnote; until then, the fallback is the anchor.
 4. Hand the founder the investor-ask template so they get the convention from the source. This is what promotes a `peer_set_inferred` target to an `investor_stated` one.
 
-The principle is defensibility, not optimization. We never pick the highest number, only the one that survives the investor's recompute, and that warrant is exactly why the anchor is investor-relative: the target convention *is* the one the investor recomputes on, so it, not the standard's default, is what the founder's number must survive. The most aggressive convention is always the labeled risk. `defect_gap` stays absolute: it is a source defect that no target convention can move.
+The principle is defensibility, not optimization. The defensible number is not the highest one, only the one that survives the investor's recompute, and that warrant is exactly why the anchor is investor-relative: the target convention *is* the one the investor recomputes on, so it, not the standard's default, is what the founder's number must survive. The most aggressive convention is always the labeled risk. A defect classification stays absolute: it is a source defect that no target convention can move.
 
 ## Relation to the taxonomy
 
@@ -65,7 +65,7 @@ Not separately codified. The Standards Board has no MRR page, and public filers 
 
 ## NRR / NDR (Net Revenue / Dollar Retention)
 
-The highest-divergence metric, and the one this sheet is built to win. Recognizable public filers measure it on different bases, in their own filings. Autodesk, Asana, DigitalOcean and Bentley report on a GAAP-revenue basis; Okta, Cloudflare and ZoomInfo on an ACV or annualized basis; MariaDB on a recurring-revenue (ARR) basis. The time-anchor convention (point-in-time vs an average vs year-over-year) is disclosed so inconsistently across these filers that two independent readings of the same disclosure often cannot classify it the same way. That inconsistency is itself part of the divergence. The verbatim quotes, with SEC URLs, are below.
+The highest-divergence metric on this sheet. Recognizable public filers measure it on different bases, in their own filings. Autodesk, Asana, DigitalOcean and Bentley report on a GAAP-revenue basis; Okta, Cloudflare and ZoomInfo on an ACV or annualized basis; MariaDB on a recurring-revenue (ARR) basis. The time-anchor convention (point-in-time vs an average vs year-over-year) is disclosed so inconsistently across these filers that two independent readings of the same disclosure often cannot classify it the same way. That inconsistency is itself part of the divergence. The verbatim quotes, with SEC URLs, are below.
 
 Diverges across the three axes:
 

@@ -34,7 +34,7 @@ Gross margin enters this library as a codified dependency, not a free-standing h
 
 ## What the investor likely recomputes on
 
-The named filers below are late-stage and large. The standard treats them as a proxy for the convention an early-stage investor carries, on the reasoning that a seed or Series A investor judges a raise against the basis the public market has settled on. So the convention named here is read off the public record, not asserted, and it is where a founder's number gets measured when no specific investor convention is on the table.
+The named filers below are late-stage and large. The standard treats them as a proxy for the convention an early-stage investor carries, on the reasoning that a seed or Series A investor judges a raise against the basis the public market has settled on. So the convention named here is read off the public record, and it is where a founder's number gets measured when no specific investor convention is on the table.
 
 A reader checking CAC payback recomputes on a subscription gross margin (recurring product only), skeptical of a blended margin or a thin COGS that parks hosting, support, or customer-success cost in OpEx to flatter the margin and shorten payback. The subscription basis is settled; the COGS-versus-OpEx line is bounded by the named filers, not fixed by them, since the board itself defers it. Name the margin basis and COGS composition against real numbers rather than assume one.
 
@@ -42,10 +42,10 @@ A reader checking CAC payback recomputes on a subscription gross margin (recurri
 
 "Defensible" is relative to the investor. It is the convention the raise gets judged against, which is not always the standard's default. So the read has two tiers.
 
-- **The standard's default (use when no specific investor convention is known):** lead with the subscription gross margin, recurring product revenue over its own delivery cost, when the margin feeds CAC payback, and state what is in COGS (hosting and support in; the customer-success allocation named explicitly). This is the codified read, the number to lead on by default.
-- **The investor's convention (use it when you know it):** when a specific investor's convention is known, lead on *that* margin definition and footnote the rest, including the default above. That convention is what the raise is measured against.
+- **The standard's default (use when no specific investor convention is known):** the subscription gross margin, recurring product revenue over its own delivery cost, when the margin feeds CAC payback, with what is in COGS stated (hosting and support in; the customer-success allocation named explicitly). This is the codified read, the defensible default.
+- **The investor's convention (use it when you know it):** when a specific investor's convention is known, that margin definition governs, and the rest, including the default above, is footnoted. That convention is what the raise is measured against.
 
-Under either anchor, the aggressive move to avoid is feeding a blended company margin, or a margin with hosting, support, or customer-success cost pushed into OpEx, into the payback denominator, which understates the months. Principle: defensibility, not optimization. `defect_gap` is absolute and does not move with the convention you anchor on.
+Under either anchor, the aggressive move to avoid is feeding a blended company margin, or a margin with hosting, support, or customer-success cost pushed into OpEx, into the payback denominator, which understates the months. Principle: defensibility, not optimization. A defect classification is absolute and does not move with the convention anchored on.
 
 ## Canonical formula
 
@@ -64,14 +64,14 @@ Standards-board dependency method (the defensible default): recurring subscripti
 
 ## Reconciliation note
 
-Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm whether the margin is subscription or blended and which broad cost lines sit in COGS versus OpEx, and that closes from the aggregates. Basis and timing do not close. The subscription-versus-blended basis and the COGS-versus-OpEx allocation of hosting, support, and customer-success cost interact non-additively (reclassifying customer-success cost and stripping services margin are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the margin basis and COGS composition the founder used against the defensible subscription gross margin, and bound the direction and magnitude of the spread and its knock-on effect on CAC-payback months. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard.
+Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm whether the margin is subscription or blended and which broad cost lines sit in COGS versus OpEx, and that closes from the aggregates. Basis and timing do not close. The subscription-versus-blended basis and the COGS-versus-OpEx allocation of hosting, support, and customer-success cost interact non-additively (reclassifying customer-success cost and stripping services margin are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the margin basis and COGS composition the founder used against the defensible subscription gross margin, and bound the direction and magnitude of the spread and its knock-on effect on CAC-payback months. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
 
 ## Aggressive-vs-defect test
 
 The predicate for classifying a gross-margin spread:
 
-- **Defensible basis:** a subscription gross margin, recurring product revenue over its own COGS (hosting and support in), with the customer-success allocation named, on the standards-board payback dependency. This is the number to feed CAC payback and to lead with.
-- **Convention gap (aggressive but legitimate):** the spread reproduces only under a margin basis or COGS boundary an authority-traceable source actually uses, a customer-success cost included in COGS per the board's deferred allocation, or a blended company gross margin an SEC filer discloses (see the named-filer citations). Legitimate when named, but not the subscription margin the payback intends, so it is the labeled risk, never the headline.
+- **Defensible basis:** a subscription gross margin, recurring product revenue over its own COGS (hosting and support in), with the customer-success allocation named, on the standards-board payback dependency. This is the defensible read and the number that feeds CAC payback.
+- **Convention gap (aggressive but legitimate):** the spread reproduces only under a margin basis or COGS boundary an authority-traceable source actually uses, a customer-success cost included in COGS per the board's deferred allocation, or a blended company gross margin an SEC filer discloses (see the named-filer citations). Legitimate when named, but not the subscription margin the payback intends, so it is the labeled risk, not the defensible read.
 - **Defect gap:** no legitimate convention reproduces it. For example, hosting, support, or customer-success delivery cost pushed entirely into OpEx to inflate the margin and shorten payback, or a blended margin presented as a subscription margin without disclosure. No authority-traceable convention recovers the number.
 
 ## Classic errors touching gross margin
@@ -82,7 +82,7 @@ The predicate for classifying a gross-margin spread:
 
 ## Scope boundary
 
-IN SCOPE (from the reported aggregates and the stated method): naming whether the margin is subscription or blended, and which broad cost lines the founder places in COGS versus OpEx. OUT OF SCOPE (named but not computed): reconstructing subscription COGS, allocating customer-success and support cost across delivery versus OpEx, and stripping services margin from raw financials. Stating this boundary out loud is the authority move.
+IN SCOPE (from the reported aggregates and the stated method): naming whether the margin is subscription or blended, and which broad cost lines the founder places in COGS versus OpEx. OUT OF SCOPE (named but not computed): reconstructing subscription COGS, allocating customer-success and support cost across delivery versus OpEx, and stripping services margin from raw financials. The per-axis reconstruction from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
 
 ## Citations
 
