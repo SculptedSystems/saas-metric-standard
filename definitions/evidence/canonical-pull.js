@@ -5,8 +5,8 @@
 // snapshot (durability against link rot), records a content hash and retrieval
 // date, and verifies that the entry's verify_phrase still appears verbatim in
 // the page. A page that dies, moves, or is silently edited is FLAGGED rather
-// than trusted -- the same auditability discipline as the SEC layer, applied to
-// the single-canonical-source layers.
+// than trusted; every canonical source is held to the same auditability
+// discipline.
 //
 // Run: node canonical-pull.js   (needs network egress to the source domains)
 const fs = require("fs");
@@ -15,7 +15,7 @@ const crypto = require("crypto");
 
 const DIR = __dirname;
 const SNAP_DIR = path.join(DIR, "snapshots");
-const UA = process.env.SEC_UA || "SculptedSystems research contact@sculptedsystems.com";
+const UA = process.env.CANONICAL_UA || "SculptedSystems research contact@sculpted.io";
 const SLEEP = (ms) => new Promise((r) => setTimeout(r, ms));
 fs.mkdirSync(SNAP_DIR, { recursive: true });
 
@@ -42,7 +42,7 @@ function htmlToText(h) {
     .replace(/&rsquo;|&lsquo;/gi, "'").replace(/&ldquo;|&rdquo;/gi, '"').replace(/&mdash;|&ndash;/gi, "-")
     .replace(/&[a-z]+;/gi, " ").replace(/\s+/g, " ").trim();
 }
-// same folding as the SEC quote verifier: tolerate punctuation/whitespace drift, not fabrication
+// fold punctuation and whitespace drift (not fabrication) when matching the verify phrase
 function norm(s) {
   return (s || "").replace(/[‘’‚‛]/g, "'").replace(/[“”„‟]/g, '"').replace(/[–—−]/g, "-").replace(/\s+/g, " ").trim().toLowerCase();
 }
