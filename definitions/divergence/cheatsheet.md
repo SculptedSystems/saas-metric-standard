@@ -1,4 +1,4 @@
-# Definition Divergence Cheatsheet (B2B SaaS metrics)
+# Definition divergence (B2B SaaS metrics)
 
 ## What this is
 
@@ -8,7 +8,7 @@ Each metric carries four things: the primary-filing or codified definition, the 
 
 ## Authority basis (read first)
 
-There is no formal standards body for SaaS operating metrics. There is no GAAP/FASB equivalent. ARR, NRR, and the rest are non-GAAP "key business metrics." GAAP/ASC 606 governs only recognized revenue. So this sheet does not treat VC blog posts or tooling vendors as authorities.
+There is no GAAP/FASB equivalent for SaaS operating metrics, and no body that can enforce a definition. ARR, NRR, and the rest are non-GAAP "key business metrics"; GAAP/ASC 606 governs only recognized revenue. The nearest thing to a standard is a voluntary coalition (the SaaS Metrics Standards Board, below), not an enforced one. So this map does not treat VC blog posts or tooling vendors as authorities.
 
 It anchors three layers, in priority order:
 
@@ -16,26 +16,13 @@ It anchors three layers, in priority order:
 2. **SaaS Metrics Standards Board** (saasmetricsboard.com). A voluntary industry coalition's *codified consensus formula*. No enforcement power, but the only deliberate standardization. Used where it publishes a metric.
 3. **Origin author.** For a metric coined by one person (magic number, burn multiple, the LTV:CAC 3x convention), the inventor is the authority. This is authorship, not prominence.
 
-What this sheet deliberately excludes as authorities: a16z, Bessemer, ICONIQ, and the like. They are prominent, not primary-filing evidence or codified. KeyBanc's KBCM survey is a benchmark survey with stated definitions. It appears only as a secondary cross-check, never as a top authority.
+What this map deliberately excludes as authorities: a16z, Bessemer, ICONIQ, and the like. They are prominent, not primary-filing evidence or codified. KeyBanc's KBCM survey is a benchmark survey with stated definitions. It appears only as a secondary cross-check, never as a top authority.
 
-**A proxy, stated honestly.** The SEC-filer layer is public-company evidence (large, late-stage filers), used as a *proxy* for the conventions a seed or Series A investor recomputes on, not direct evidence of it. An early-stage investor may recompute on simpler conventions than a public filer discloses. Read this sheet as "how the comparison set defines these metrics," and treat the specific basis, timing, and cohort sophistication as a hypothesis to validate against real call data (which fund named which convention), not an established fact about a given founder's investor.
-
-## How to use it on a call
-
-We do not guess which definition the investor uses. We compute the founder's one raise-critical metric under each legitimate convention here, show the spread, and name the number that survives a recompute. Then we hand the founder a short message to get the exact convention from the investor themselves.
-
-Four steps, in order:
-
-1. Name the metric the founder reported, and how they compute it.
-2. Compute it under each convention on this sheet, and show the founder the spread.
-3. Name the defensible number and the aggressive convention. The defensible number is the lead; the range is the footnote. "Defensible" is investor-relative: it is the convention the raise is judged against, not the standard's default. Two tiers: a standard-level **fallback** (the generic-defensible default, the anchor when the target is unknown) and an engagement-level **target** (the investor's or peer-set's convention, the anchor when known). When the target is known, it is the anchor and the fallback is the footnote; until then, the fallback is the anchor.
-4. Hand the founder the investor-ask template so they get the convention from the source. This is what promotes a `peer_set_inferred` target to an `investor_stated` one.
-
-The principle is defensibility, not optimization. The defensible number is not the highest one, only the one that survives the investor's recompute, and that warrant is exactly why the anchor is investor-relative: the target convention *is* the one the investor recomputes on, so it, not the standard's default, is what the founder's number must survive. The most aggressive convention is always the labeled risk. A defect classification stays absolute: it is a source defect that no target convention can move.
+**A proxy, stated honestly.** The SEC-filer layer is public-company evidence (large, late-stage filers), used as a *proxy* for the conventions a seed or Series A investor recomputes on, not direct evidence of it. An early-stage investor may recompute on simpler conventions than a public filer discloses. Read this map as how the comparison set defines these metrics; the specific basis, timing, and cohort sophistication vary by filer and are not an established fact about a given investor's convention.
 
 ## Relation to the taxonomy
 
-This is the *external* map, where sources disagree. The [B2B SaaS Metrics Taxonomy](../taxonomy/b2b-saas-metrics.md) is the opinionated single answer. The two are kept separate by design. This sheet cites the taxonomy one-way.
+This is the *external* map, where sources disagree. The [B2B SaaS Metrics Taxonomy](../taxonomy/b2b-saas-metrics.md) is the opinionated single answer. The two are kept separate by design. This map cites the taxonomy one-way.
 
 ---
 
@@ -65,7 +52,7 @@ Not separately codified. The Standards Board has no MRR page, and public filers 
 
 ## NRR / NDR (Net Revenue / Dollar Retention)
 
-The highest-divergence metric on this sheet. Recognizable public filers measure it on different bases, in their own filings. Autodesk, Asana, DigitalOcean and Bentley report on a GAAP-revenue basis; Okta, Cloudflare and ZoomInfo on an ACV or annualized basis; MariaDB on a recurring-revenue (ARR) basis. The time-anchor convention (point-in-time vs an average vs year-over-year) is disclosed so inconsistently across these filers that two independent readings of the same disclosure often cannot classify it the same way. That inconsistency is itself part of the divergence. The verbatim quotes, with SEC URLs, are below.
+The highest-divergence metric on this map. Recognizable public filers measure it on different bases, in their own filings. Autodesk, Asana, DigitalOcean and Bentley report on a GAAP-revenue basis; Okta, Cloudflare and ZoomInfo on an ACV or annualized basis; MariaDB on a recurring-revenue (ARR) basis. The time-anchor convention (point-in-time vs an average vs year-over-year) is disclosed so inconsistently across these filers that two independent readings of the same disclosure often cannot classify it the same way. That inconsistency is itself part of the divergence. The verbatim quotes, with SEC URLs, are below.
 
 Diverges across the three axes:
 
@@ -178,7 +165,7 @@ $$\text{growth \%}+\text{profit margin \%}\ge 40\qquad(\text{profit}=\text{FCF m
 
 ## Metrics with no enforced or codified definition
 
-These have no SEC-disclosed or Standards-Board definition. The only authority is the origin author. Flag this on a call: they are conventions, not standards.
+These have no SEC-disclosed or Standards-Board definition. The only authority is the origin author; these are conventions, not standards.
 
 ### SaaS Magic Number, origin: Scale VP
 
@@ -188,7 +175,7 @@ $$\text{Magic \#}=\frac{\Delta\text{ subscription revenue (quarter)}\times 4}{\t
 ### Burn Multiple, origin: David Sacks / Craft Ventures
 
 $$\text{Burn Multiple}=\frac{\text{Net Burn}}{\text{Net New ARR}}\quad(\text{lower better; inverse of Bessemer's Efficiency Score}=\tfrac{\text{Net New ARR}}{\text{Net Burn}})$$
-"Burn Multiple = Net Burn / Net New ARR"; "I prefer to flip the numerator and denominator" (vs Bessemer). ([Craft Ventures](https://medium.com/craft-ventures/the-burn-multiple-51a7e43cb200)) "Net burn" itself is under-specified, so define it on the call. The 5-tier benchmark thresholds are in the origin post.
+"Burn Multiple = Net Burn / Net New ARR"; "I prefer to flip the numerator and denominator" (vs Bessemer). ([Craft Ventures](https://medium.com/craft-ventures/the-burn-multiple-51a7e43cb200)) "Net burn" itself is under-specified, so it must be defined explicitly. The 5-tier benchmark thresholds are in the origin post.
 
 ### LTV and LTV:CAC, origin/popularizer: David Skok
 
