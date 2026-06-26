@@ -11,7 +11,7 @@ This standard codifies the cited authorities (the SaaS Metrics Standards Board, 
 | Layer | Dir | Role |
 |---|---|---|
 | **Taxonomy** | [`taxonomy/`](taxonomy/) | One opinionated, vendor-neutral answer per metric: how the standard defines it. The canonical record. |
-| **Divergence** | [`divergence/`](divergence/) | Where the authorities legitimately differ (the cheatsheet): the named conventions, the three axes, the point-in-time test. A map across external conventions. |
+| **Divergence** | [`divergence/`](divergence/) | Where the authorities legitimately differ: the three axes and the point-in-time test. A map across external conventions. |
 | **Evidence** | [`evidence/`](evidence/) | The primary proof: the Standards Board and origin-author canonical definitions (snapshotted, hashed, verbatim-verified) plus the named-filer SEC citations. |
 | **Conventions** | [`conventions/`](conventions/) | The operational, per-metric layer: the canonical formula with named inputs, the composition-closed / basis-timing-bounded reconciliation, and the defensible / aggressive-vs-defect classification test. Schema in `_schema.md`. |
 

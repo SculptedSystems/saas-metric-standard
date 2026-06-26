@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
-  "library_sha256": "1e4e5693f896c6644ba616c987550c4874c1c592a71118ea3c45e975e6b50219",
-  "count": 14,
+  "library_sha256": "4b230b7e451d2583cad0937511f1b6d8de6faa2f0513ea44deb4dfea089824f1",
+  "count": 13,
   "conventions": [
     {
       "id": "arr",
@@ -80,12 +80,6 @@
       "metric": "Rule of 40",
       "file": "conventions/rule-of-40.md",
       "content_sha256": "01cd1d2508f8ee5c95a2be1eb0076185f68e93595c9a4db9b8059732df083e3a"
-    },
-    {
-      "id": "cheatsheet",
-      "metric": "Divergence cheatsheet",
-      "file": "divergence/cheatsheet.md",
-      "content_sha256": "4a90b5053cd209b01fd914e6f60dbed3aa639873b494669c96467f439dabedd2"
     }
   ]
 }

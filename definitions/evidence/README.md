@@ -1,6 +1,6 @@
 # Metric-definition evidence
 
-The auditable evidence behind the conventions and the [divergence cheatsheet](../divergence/cheatsheet.md). Two firm, classifier-independent layers.
+The auditable evidence behind the conventions and the [divergence map](../divergence/). Two firm, classifier-independent layers.
 
 ## 1. Canonical definitions (Standards Board + origin authors)
 
@@ -8,7 +8,7 @@ The auditable evidence behind the conventions and the [divergence cheatsheet](..
 
 ## 2. Verbatim filer citations
 
-Real, named 10-K definitions with SEC URLs (for example MariaDB's NRR, Backblaze's ARR, Autodesk and Okta on different bases), cited in the cheatsheet as concrete proof that public filers diverge. These are classifier-independent: the verbatim quote is the evidence, no model is in the loop.
+Real, named 10-K definitions with SEC URLs (for example MariaDB's NRR, Backblaze's ARR, Autodesk and Okta on different bases), cited inline in each convention's Citations section as concrete proof that public filers diverge. These are classifier-independent: the verbatim quote is the evidence, no model is in the loop.
 
 ## What is not here (archived)
 
