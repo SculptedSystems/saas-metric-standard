@@ -19,9 +19,9 @@ The 40% threshold and the growth-plus-profit shape are the settled part. The div
 
 ## The three axes (per Rule of 40)
 
-- **composition** (free-computable): the two-term sum (growth plus profit margin) and the 40% threshold. Settled.
-- **basis**: the profitability measure, FCF margin (standards board) vs EBITDA margin (Feld's preference) vs operating income vs net income (Feld flagged all as candidates). This is the contested axis. The growth basis (ARR growth vs GAAP revenue growth) is a secondary, lesser divergence.
-- **timing**: annual growth and annual margin over a trailing or current period, with FCF margin normalized over average ARR in the standards-board calc.
+Rule of 40 diverges on basis. Composition is settled: the two-term sum (growth plus profit margin) and the 40% threshold. Basis is the contested axis, the profitability measure, FCF margin (standards board) vs EBITDA margin (Feld's preference) vs operating income vs net income (Feld flagged all as candidates); the growth basis (ARR growth vs GAAP revenue growth) is a secondary, lesser divergence. Timing is annual growth and annual margin over a trailing or current period, with FCF margin normalized over average ARR in the standards-board calc.
+
+See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Legitimate convention families
 

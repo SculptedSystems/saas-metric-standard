@@ -19,9 +19,9 @@ The burn multiple has no SEC-disclosed or standards-board definition; the only a
 
 ## The three axes (per Burn Multiple)
 
-- **composition** (free-computable): the ratio shape (net burn over net new ARR, lower better) is settled, but the definition of net burn is not, and that is the live divergence.
-- **basis**: net new ARR in the denominator (the origin uses ARR, not GAAP revenue). The numerator is a cash measure (net burn), so the metric mixes a cash basis over an ARR basis by design.
-- **timing**: per-period (typically quarterly or annual) net burn against the net new ARR added in the same period.
+Burn Multiple diverges on composition, specifically the definition of net burn. The ratio shape (net burn over net new ARR, lower better) is settled, but net burn is not, and that is the live divergence. On basis, the denominator is net new ARR (the origin uses ARR, not GAAP revenue) while the numerator is a cash measure, so the metric mixes a cash basis over an ARR basis by design. Timing is per-period (typically quarterly or annual) net burn against the net new ARR added in the same period.
+
+See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Legitimate convention families
 

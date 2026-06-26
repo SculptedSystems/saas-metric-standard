@@ -19,9 +19,9 @@ Gross margin enters this library as a codified dependency, not a free-standing h
 
 ## The three axes (per gross margin)
 
-- **composition** (free-computable): what is in COGS. Hosting and infrastructure, customer support, customer success, and professional-services delivery cost are each in-or-out by judgment, and the standards board explicitly defers the COGS-versus-OpEx line to the company. This is the contested axis.
-- **basis**: subscription gross margin (recurring product only, the codified payback input) vs a blended gross margin (all revenue, including lower-margin services). The codified CAC-payback dependency is the subscription margin, not the blended one.
-- **timing**: the period the margin is measured over (trailing month, quarter, or twelve months), matched to the new CARR being repaid in the payback calculation.
+Gross margin diverges mostly on composition, with a secondary basis split. Composition is the contested axis: what is in COGS. Hosting and infrastructure, customer support, customer success, and professional-services delivery cost are each in-or-out by judgment, and the standards board explicitly defers the COGS-versus-OpEx line to the company. Basis is the subscription gross margin (recurring product only, the codified payback input) vs a blended gross margin (all revenue, including lower-margin services); the codified CAC-payback dependency is the subscription margin, not the blended one. Timing matches the margin period (trailing month, quarter, or twelve months) to the new CARR being repaid.
+
+See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Legitimate convention families
 

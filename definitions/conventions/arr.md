@@ -19,9 +19,9 @@ ARR is contested mainly on the basis axis: an annualized run-rate (MRR times 12)
 
 ## The three axes (per ARR)
 
-- **composition** (free-computable): recurring only; one-time fees, setup, services, and overage excluded. More settled than for NRR.
-- **basis**: annualized run-rate (current MRR times 12) vs committed or contracted (CARR, whether or not yet in production). The standards board codifies CARR as a distinct metric.
-- **timing**: point-in-time run-rate (as of period end) vs a contracted view that includes signed-not-yet-live revenue.
+ARR diverges mainly on basis. Composition is comparatively settled: recurring only, with one-time fees, setup, services, and overage excluded (more settled than for NRR). Basis is the live axis, annualized run-rate (current MRR times 12) vs committed or contracted (CARR, whether or not yet in production), and the standards board codifies CARR as a distinct metric. Timing follows from basis: a point-in-time run-rate as of period end vs a contracted view that includes signed-not-yet-live revenue.
+
+See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Legitimate convention families
 

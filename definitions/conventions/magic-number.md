@@ -19,9 +19,9 @@ The magic number has no SEC-disclosed or standards-board definition. The only au
 
 ## The three axes (per Magic Number)
 
-- **composition** (free-computable): the ratio shape, change in the revenue measure (annualized) over prior-quarter S&M. Settled by the origin.
-- **basis**: GAAP subscription revenue change (origin) vs net new ARR (the common variant). This is the divergence axis.
-- **timing**: the quarter-over-quarter change annualized by multiplying by four, divided by the earlier of the two quarters' S&M. Settled by the origin post.
+Magic Number diverges on basis. Composition is settled by the origin: the ratio shape, change in the revenue measure (annualized) over prior-quarter S&M. Basis is the divergence axis, GAAP subscription revenue change (origin) vs net new ARR (the common variant). Timing is settled by the origin post: the quarter-over-quarter change annualized by multiplying by four, divided by the earlier of the two quarters' S&M.
+
+See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Legitimate convention families
 

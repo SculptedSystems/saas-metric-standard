@@ -19,9 +19,9 @@ GRR diverges on the same basis and timing axes as NRR (it is the same cohort mea
 
 ## The three axes (per GRR)
 
-- **composition** (free-computable): existing-customer cohort only; contraction and churn in, all expansion out. The expansion exclusion is the settled part. The unsettled sub-question is what counts as contraction (a downgrade within a retained account) versus churn (a lost account), which moves the two terms but not the total.
-- **basis**: recurring (ARR or MRR) vs GAAP-revenue vs ACV or contracted vs implied-monthly. Filers that disclose GRR almost always use the same basis they chose for NRR.
-- **timing**: point-in-time "as of period end" vs an average across the twelve months vs a year-over-year cohort, again inherited from the NRR choice.
+GRR diverges on the same axes as NRR, inheriting its basis and timing choice. Composition is existing-customer cohort only, contraction and churn in, all expansion out; the expansion exclusion is the settled part, and the unsettled sub-question is what counts as contraction (a downgrade within a retained account) versus churn (a lost account), which moves the two terms but not the total. Basis is recurring (ARR or MRR) vs GAAP-revenue vs ACV or contracted vs implied-monthly, and filers that disclose GRR almost always use the same basis they chose for NRR. Timing is point-in-time "as of period end" vs an average across the twelve months vs a year-over-year cohort, again inherited from the NRR choice.
+
+See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Legitimate convention families
 

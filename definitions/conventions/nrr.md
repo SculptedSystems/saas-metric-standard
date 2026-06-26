@@ -19,9 +19,9 @@ NRR is the highest-divergence metric. Named public filers split materially on al
 
 ## The three axes (per NRR)
 
-- **composition** (free-computable): existing-customer cohort only; expansion and contraction in, new logos out. The new-logo exclusion is consistent across the named filers, so it is the settled part.
-- **basis**: recurring (ARR or MRR) vs GAAP-revenue (trailing-twelve-month or calendar) vs ACV or contracted vs implied-monthly.
-- **timing**: point-in-time "as of period end" vs an average across the twelve months vs a year-over-year cohort. Disclosed so inconsistently that two independent readings often cannot classify it the same way.
+NRR diverges on all three axes, the only metric in the library to do so materially. Composition is the settled part: existing-customer cohort only, expansion and contraction in, new logos out, with the new-logo exclusion consistent across the named filers. Basis splits widest, recurring (ARR or MRR) vs GAAP-revenue (trailing-twelve-month or calendar) vs ACV or contracted vs implied-monthly. Timing is disclosed so inconsistently across filers that two independent readings often cannot classify it the same way.
+
+See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Legitimate convention families
 

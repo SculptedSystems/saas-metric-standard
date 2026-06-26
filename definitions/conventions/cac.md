@@ -19,9 +19,9 @@ What is actually codified is the CAC ratio (S&M to win one dollar of new ARR), n
 
 ## The three axes (per CAC)
 
-- **composition** (free-computable): the S&M numerator (blended vs new-customer-allocated vs expansion-allocated; fully-loaded vs ad-spend-only; customer-success cost in or out) and the denominator (new-customer ARR vs expansion ARR vs both). The standards-board and KBCM consensus is fully-loaded S&M.
-- **basis**: per-customer cost vs the per-dollar-of-new-ARR ratio vs gross-margin-adjusted payback. CAC payback is codified as gross-margin-adjusted: divide by gross-margin-adjusted new ARR or MRR, not raw revenue.
-- **timing**: the S&M period leads the ARR it acquired (the standards board uses prior-period, CQ-1, S&M against current new CARR), reflecting the acquisition time-lag between spend and the customer it wins.
+CAC diverges on all three axes. Composition covers the S&M numerator (blended vs new-customer-allocated vs expansion-allocated; fully-loaded vs ad-spend-only; customer-success cost in or out) and the denominator (new-customer ARR vs expansion ARR vs both); the standards-board and KBCM consensus is fully-loaded S&M. Basis is per-customer cost vs the per-dollar-of-new-ARR ratio vs gross-margin-adjusted payback, and CAC payback is codified as gross-margin-adjusted: divide by gross-margin-adjusted new ARR or MRR, not raw revenue. Timing reflects the acquisition lag: the S&M period leads the ARR it acquired (the standards board uses prior-period, CQ-1, S&M against current new CARR).
+
+See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Legitimate convention families
 

@@ -19,9 +19,9 @@ There is no codified LTV or LTV:CAC definition; Skok popularized the gross-margi
 
 ## The three axes (per LTV / LTV:CAC)
 
-- **composition** (free-computable): the gross-margin adjustment (LTV is gross-profit, not revenue, based), and that the ratio compares LTV to CAC. The popularized form folds gross margin in.
-- **basis**: the churn rate used (which churn, on which basis) and whether a discount rate is applied. The popularized formula uses monthly churn and a simple one-over-churn lifetime with no discounting; both are contestable inputs and the main source of divergence.
-- **timing**: the lifetime horizon implied by one over churn (an infinite-geometric expected life) vs a finite-horizon or discounted-cash-flow view.
+LTV diverges mainly on basis. Composition is comparatively settled: the gross-margin adjustment (LTV is gross-profit, not revenue, based), and the ratio comparing LTV to CAC, with the popularized form folding gross margin in. Basis is the live axis, the churn rate used (which churn, on which basis) and whether a discount rate is applied; the popularized formula uses monthly churn and a simple one-over-churn lifetime with no discounting, both contestable inputs and the main source of divergence. Timing is the lifetime horizon implied by one over churn (an infinite-geometric expected life) vs a finite-horizon or discounted-cash-flow view.
+
+See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Legitimate convention families
 

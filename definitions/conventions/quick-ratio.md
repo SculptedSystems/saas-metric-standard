@@ -19,9 +19,9 @@ The SaaS quick ratio has no SEC-disclosed or standards-board definition. The onl
 
 ## The three axes (per the quick ratio)
 
-- **composition** (free-computable): the ratio shape, recurring revenue gained (New + Expansion) over recurring revenue lost (Churned + Contraction), the four movement-bridge terms. The shape is settled by the origin. The unsettled sub-question is inherited from the bridge: the contraction-vs-churn boundary (which only redistributes within the denominator) and whether reactivation belongs in the New term of the numerator.
-- **basis**: MRR (the origin form) vs an ARR restatement. This is the divergence axis; the same recurring-basis question as NRR and GRR, here applied to the four movement terms.
-- **timing**: the period the four terms are summed over (typically a quarter or a month), inherited from whatever period the movement bridge is run on.
+The quick ratio diverges on basis. Composition is settled by the origin: the ratio shape, recurring revenue gained (New + Expansion) over recurring revenue lost (Churned + Contraction), the four movement-bridge terms. Its one unsettled sub-question is inherited from the bridge, the contraction-vs-churn boundary (which only redistributes within the denominator) and whether reactivation belongs in the New term of the numerator. Basis is the divergence axis, MRR (the origin form) vs an ARR restatement, the same recurring-basis question as NRR and GRR applied to the four movement terms. Timing is the period the four terms are summed over (typically a quarter or a month), inherited from whatever period the movement bridge is run on.
+
+See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Legitimate convention families
 

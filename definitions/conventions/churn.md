@@ -19,9 +19,9 @@ Churn is really a small family of metrics, and the first failure is not picking 
 
 ## The three axes (per churn)
 
-- **composition** (free-computable): logo vs revenue, and gross vs net. Logo churn counts lost accounts regardless of size; revenue churn weights by dollars. Gross revenue churn (= 1 - GRR) excludes expansion and is at least zero; net revenue churn (= 1 - NRR) nets expansion in and can go below zero ("negative churn"). These are distinct metrics, not variants of one.
-- **basis**: for revenue churn, the same ARR vs MRR vs revenue basis as NRR and GRR, inherited from the retention metric it inverts.
-- **timing**: the period (monthly vs annual) and the monthly-to-annual derivation, plus the churn moment, when a customer is counted as churned (cancellation, access-ends, renewal date, or failed payment). The moment is uncodified and must be defined.
+Churn diverges on composition and timing. Composition is logo vs revenue, and gross vs net: logo churn counts lost accounts regardless of size; revenue churn weights by dollars. Gross revenue churn (= 1 - GRR) excludes expansion and is at least zero; net revenue churn (= 1 - NRR) nets expansion in and can go below zero ("negative churn"). These are distinct metrics, not variants of one. Basis, for revenue churn, is the same ARR vs MRR vs revenue choice as NRR and GRR, inherited from the retention metric it inverts. Timing is the period (monthly vs annual) and the monthly-to-annual derivation, plus the churn moment, when a customer is counted as churned (cancellation, access-ends, renewal date, or failed payment); the moment is uncodified and must be defined.
+
+See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Legitimate convention families
 
