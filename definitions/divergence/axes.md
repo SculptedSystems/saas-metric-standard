@@ -8,7 +8,7 @@ B2B SaaS metric definitions diverge along three axes: composition, basis, and ti
 
 ## Composition
 
-The free-computable axis: what is or is not in the number. Which customers are in the cohort, which revenue components count (recurring only, or one-time, services, and overage folded in), which cost lines sit inside the figure, and which movement buckets are included. Composition is the axis that closes from the reported aggregates, so it is the axis the standard can confirm without raw customer-level data.
+The free-computable axis: what is or is not in the number. Which customers are in the cohort, which revenue components count (recurring only, or one-time, services, and overage folded in), which cost lines sit inside the figure, and which movement buckets are included. Composition is the axis that closes from the reported aggregates, so it is the axis the reference can confirm without raw customer-level data.
 
 ## Basis
 
