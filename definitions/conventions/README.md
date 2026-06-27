@@ -1,17 +1,17 @@
 # Conventions library
 
-The per-metric operational layer of the standard: one file per metric on a fixed schema (`_schema.md`), giving the canonical formula, the reconciliation, and the defensible / aggressive / defect classification.
+The per-metric operational layer of the reference: one file per metric on a fixed schema (`_schema.md`), giving the canonical formula, the reconciliation, and the defensible / aggressive / defect classification.
 
 This library does **not** restate the authority. Following the cite-do-not-duplicate discipline, the canonical sources stay canonical and this library cites them:
 
-- **Standards-board + origin-author definitions:** the SaaS Metrics Standards Board codified consensus and the origin authors for coined metrics, recorded in [the canonical definitions](../evidence/canonical-definitions.json) and frozen in [the standard's verified evidence set](../evidence/canonical-verified.json).
+- **Standards-board + origin-author definitions:** the SaaS Metrics Standards Board codified consensus and the origin authors for coined metrics, recorded in [the canonical definitions](../evidence/canonical-definitions.json) and frozen in [the reference's verified evidence set](../evidence/canonical-verified.json).
 
 What this library adds on top of those is the **operational layer**: the three-axis decomposition (composition, basis, timing), the defensible-read framing, and the classic-error mapping.
 
 ## How to use it
 
 - **The aim is divergence-recognition.** Given a stated method, name the axis it diverges on and the defensible convention an investor recomputes against. Do not present any contested convention as settled.
-- **The scope boundary is recognize-vs-reconstruct.** From the reported aggregates the metric can be computed and named (including a stated expansion, contraction, and churn split), but that split cannot be verified. Verifying composition from raw sources, and computing the basis and timing conventions that aggregates cannot, requires the per-axis reconstruction from raw source systems, which is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform. So composition is what the aggregates compute and name, basis and timing need raw data, and even the stated composition is verified only against raw sources.
+- **The scope boundary is recognize-vs-reconstruct.** From the reported aggregates the metric can be computed and named (including a stated expansion, contraction, and churn split), but that split cannot be verified. Verifying composition from raw sources, and computing the basis and timing conventions that aggregates cannot, requires the per-axis reconstruction from raw source systems, which is out of scope for this reference. Reconstructing it from raw source systems is a separate, multi-week effort the reference does not perform. So composition is what the aggregates compute and name, basis and timing need raw data, and even the stated composition is verified only against raw sources.
 
 ## Files
 

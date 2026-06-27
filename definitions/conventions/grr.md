@@ -28,15 +28,15 @@ GRR diverges on the same basis and timing axes as NRR (it is the same cohort mea
 
 ## What the investor likely recomputes on
 
-The codified convention is the basis a founder's number gets measured against when no specific investor convention is on the table. It is the standard's default anchor.
+The codified convention is the basis a founder's number gets measured against when no specific investor convention is on the table. It is the reference's default anchor.
 
 The codified GRR reads on the same basis and period as NRR, as the floor underneath it. A reader who recomputes NRR on an ARR-basis cohort recomputes GRR the same way and compares the gap; a wide NRR-minus-GRR spread says expansion is carrying a leaky base. The basis is bounded by the paired NRR, not fixed by it. Name the convention against the codified one rather than assume it.
 
 ## The defensible read
 
-"Defensible" is relative to the investor. It is the convention the raise gets judged against, which is not always the standard's default. So the read has two tiers.
+"Defensible" is relative to the investor. It is the convention the raise gets judged against, which is not always the reference's default. So the read has two tiers.
 
-- **The standard's default (use when no specific investor convention is known):** GRR on the same basis used for NRR, so the pair is comparable, with the no-expansion ceiling stated. This is the codified read, the defensible default.
+- **The reference's default (use when no specific investor convention is known):** GRR on the same basis used for NRR, so the pair is comparable, with the no-expansion ceiling stated. This is the codified read, the defensible default.
 - **The investor's convention (use it when you know it):** when a specific investor's convention is known, lead GRR on the *same basis* as that convention and footnote the rest, including the default above. That convention is what the raise is measured against.
 
 Under either anchor, the aggressive move to avoid is reporting only NRR and omitting GRR, which lets expansion mask attrition; volunteering GRR is the credibility signal. Principle: defensibility, not optimization. A defect classification is absolute and does not move with the convention anchored on.
@@ -54,7 +54,7 @@ The predicate for classifying a GRR spread:
 $$
 \text{GRR}=\frac{\text{BOP value}-\text{Contraction}-\text{Churn}}{\text{BOP value}}\le 100\%\quad(\text{existing customers only; no expansion term; ``value'' = ARR, revenue, or implied-MRR depending on the basis})
 $$
-Primary source: the Standards Board codified GRR method, cohort method (preferred), "Adjusted MRR from the cohort of customers at the end of the period / MRR at the beginning of the measurement period," recorded in [the standard's verified evidence set](../evidence/canonical-verified.json), sourced from the SaaS Metrics Standards Board's [gross revenue retention](https://www.saasmetricsboard.com/gross-revenue-retention) page. The board also publishes the equivalent formula method, "((Beginning MRR - Churned MRR - Down-Sell MRR) / Beginning MRR) x 100". This convention carries its own basis and timing divergence (see the three axes section below); the codified method is the authority here.
+Primary source: the Standards Board codified GRR method, cohort method (preferred), "Adjusted MRR from the cohort of customers at the end of the period / MRR at the beginning of the measurement period," recorded in [the reference's verified evidence set](../evidence/canonical-verified.json), sourced from the SaaS Metrics Standards Board's [gross revenue retention](https://www.saasmetricsboard.com/gross-revenue-retention) page. The board also publishes the equivalent formula method, "((Beginning MRR - Churned MRR - Down-Sell MRR) / Beginning MRR) x 100". This convention carries its own basis and timing divergence (see the three axes section below); the codified method is the authority here.
 
 Standards-board cohort method (the defensible default): the period-end value of the cohort of existing customers as of the start, over that same cohort's value at the start, with all expansion zeroed. The ceiling at 100% holds by construction.
 
@@ -68,7 +68,7 @@ Standards-board cohort method (the defensible default): the period-end value of 
 
 ## Reconciliation note
 
-Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm expansion is excluded and the 100% ceiling holds, and that closes from the aggregates. Basis and timing do not close. They interact non-additively (an ARR-basis cohort read point-in-time and a GAAP-revenue basis read as a trailing-twelve average are not a sum of separable adjustments), and the contraction-versus-churn split moves the two terms within a fixed total, so they are reconciled bounded and qualitative: name the convention the founder used against the defensible cohort method on the NRR basis, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
+Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm expansion is excluded and the 100% ceiling holds, and that closes from the aggregates. Basis and timing do not close. They interact non-additively (an ARR-basis cohort read point-in-time and a GAAP-revenue basis read as a trailing-twelve average are not a sum of separable adjustments), and the contraction-versus-churn split moves the two terms within a fixed total, so they are reconciled bounded and qualitative: name the convention the founder used against the defensible cohort method on the NRR basis, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this reference. Reconstructing it from raw source systems is a separate, multi-week effort the reference does not perform.
 
 ## The three axes (per GRR)
 
@@ -84,9 +84,9 @@ See [the three axes](../divergence/axes.md) for the shared model.
 
 ## Scope boundary
 
-IN SCOPE (from the reported aggregates): the composition axis, confirm expansion is excluded and the ceiling holds, and flag a missing GRR alongside a reported NRR. OUT OF SCOPE (named but not computed): the basis and timing, and the contraction-vs-churn split, which need customer-level data. The per-axis reconstruction from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
+IN SCOPE (from the reported aggregates): the composition axis, confirm expansion is excluded and the ceiling holds, and flag a missing GRR alongside a reported NRR. OUT OF SCOPE (named but not computed): the basis and timing, and the contraction-vs-churn split, which need customer-level data. The per-axis reconstruction from the client's raw source systems is out of scope for this reference. Reconstructing it from raw source systems is a separate, multi-week effort the reference does not perform.
 
 ## Citations
 
-- Standards-board cohort method (preferred), "Adjusted MRR from the cohort of customers at the end of the period / MRR at the beginning of the measurement period," and formula method, "((Beginning MRR - Churned MRR - Down-Sell MRR) / Beginning MRR) x 100", and the no-expansion ceiling: the codified, snapshot-verified Gross Revenue Retention entry in [the standard's verified evidence set](../evidence/canonical-verified.json), sourced from the SaaS Metrics Standards Board's [gross revenue retention](https://www.saasmetricsboard.com/gross-revenue-retention) page.
+- Standards-board cohort method (preferred), "Adjusted MRR from the cohort of customers at the end of the period / MRR at the beginning of the measurement period," and formula method, "((Beginning MRR - Churned MRR - Down-Sell MRR) / Beginning MRR) x 100", and the no-expansion ceiling: the codified, snapshot-verified Gross Revenue Retention entry in [the reference's verified evidence set](../evidence/canonical-verified.json), sourced from the SaaS Metrics Standards Board's [gross revenue retention](https://www.saasmetricsboard.com/gross-revenue-retention) page.
 - A disclosed GRR almost always uses the same basis chosen for NRR; the NRR basis-and-timing divergence is carried in [`nrr.md`](nrr.md).

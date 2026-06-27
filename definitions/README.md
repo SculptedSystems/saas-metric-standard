@@ -1,10 +1,10 @@
-# The SaaS Metric Standard: definitions
+# Sculpted's SaaS Metrics Reference: definitions
 
-The neutral, single-source definitions at the core of The SaaS Metric Standard. This is the standard's substance (the definitions), not implementation.
+The neutral, single-source definitions at the core of Sculpted's SaaS Metrics Reference. This is the reference's substance (the definitions), not implementation.
 
 **Substantiation principle:** every definition ships with its cited primary authority and a public methodology. The codified `evidence/` layer carries the proof (each convention cites its primary authority in `evidence/canonical-verified.json`), the divergence axes show where the authorities differ along the three axes, and the conventions name one defensible read per metric against that authority. Nothing rests on assertion.
 
-This standard codifies the cited authorities (the SaaS Metrics Standards Board and the originators of coined metrics), like a working group maintaining a spec. It does not issue the definitions itself; it records, cites, and reconciles them.
+This reference codifies the cited authorities (the SaaS Metrics Standards Board and the originators of coined metrics), like a working group maintaining a spec. It does not issue the definitions itself; it records, cites, and reconciles them.
 
 ## The layers (kept separate by design)
 
@@ -20,7 +20,7 @@ Citation is one-way and fixed: the codified **`evidence/` definitions are canoni
 
 Every metric has exactly one canonical definition. Downstream consumers cite it; they never restate it. This extends the no-duplication discipline (cite, do not copy) to the definitions.
 
-Consumers reference the codified definition rather than copying it, and each documents which standard *version* it implements; nothing imports these files as a build artifact.
+Consumers reference the codified definition rather than copying it, and each documents which reference *version* it implements; nothing imports these files as a build artifact.
 
 ## Versioning
 

@@ -47,7 +47,7 @@ No entry in `classic-errors.md` maps cleanly here; the live error is presenting 
 
 ## Scope boundary
 
-IN SCOPE (from the reported aggregates and the stated method): naming which profitability basis the founder used and flagging an unstated one. OUT OF SCOPE (named but not computed): reconstructing FCF margin (cash from operations minus capex over average ARR) or EBITDA margin from source financials. The per-axis reconstruction from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
+IN SCOPE (from the reported aggregates and the stated method): naming which profitability basis the founder used and flagging an unstated one. OUT OF SCOPE (named but not computed): reconstructing FCF margin (cash from operations minus capex over average ARR) or EBITDA margin from source financials. The per-axis reconstruction from the client's raw source systems is out of scope for this reference. Reconstructing it from raw source systems is a separate, multi-week effort the reference does not perform.
 
 ## Citations
 

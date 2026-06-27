@@ -56,8 +56,8 @@ Depth, page citations, and contract-cost (commission) capitalization: [rev-rec-s
 
 ## The honest deflection
 
-The issue is named, the computation deferred. "That is a sources question, not a definitions question." The standard can name that, say, setup fees should recognize ratably, or that SaaS usage is variable consideration. Reconstructing the actual recognition schedule and deferred-revenue balance from a founder's raw data is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
+The issue is named, the computation deferred. "That is a sources question, not a definitions question." The reference can name that, say, setup fees should recognize ratably, or that SaaS usage is variable consideration. Reconstructing the actual recognition schedule and deferred-revenue balance from a founder's raw data is out of scope for this reference. Reconstructing it from raw source systems is a separate, multi-week effort the reference does not perform.
 
 ## Scope boundary
 
-IN SCOPE: placing the number among the four states, naming the GAAP vs non-GAAP boundary, and naming which ASC 606 issue is in play. OUT OF SCOPE (named but not computed): the actual recognition-schedule or deferred-revenue reconstruction from raw data. The per-axis reconstruction from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
+IN SCOPE: placing the number among the four states, naming the GAAP vs non-GAAP boundary, and naming which ASC 606 issue is in play. OUT OF SCOPE (named but not computed): the actual recognition-schedule or deferred-revenue reconstruction from raw data. The per-axis reconstruction from the client's raw source systems is out of scope for this reference. Reconstructing it from raw source systems is a separate, multi-week effort the reference does not perform.

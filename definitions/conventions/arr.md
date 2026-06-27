@@ -28,15 +28,15 @@ ARR is contested mainly on the basis axis: an annualized run-rate (MRR times 12)
 
 ## What the investor likely recomputes on
 
-The codified convention is the basis a founder's number gets measured against when no specific investor convention is on the table. It is the standard's default anchor.
+The codified convention is the basis a founder's number gets measured against when no specific investor convention is on the table. It is the reference's default anchor.
 
 The codified ARR is an annualized run-rate (MRR x 12) on clean recurring revenue, with committed-but-not-live revenue held out (that belongs to the separate codified CARR metric) rather than padding the number. The basis is settled; what varies is how strictly a given reader holds the clean-recurring line. Name the run-rate against the codified convention rather than assume one.
 
 ## The defensible read
 
-"Defensible" is relative to the investor. It is the convention the raise gets judged against, which is not always the standard's default. So the read has two tiers.
+"Defensible" is relative to the investor. It is the convention the raise gets judged against, which is not always the reference's default. So the read has two tiers.
 
-- **The standard's default (use when no specific investor convention is known):** the run-rate on clean recurring revenue, with any committed or off-processor component disclosed separately rather than blended in. A founder's CARR is named as CARR, not ARR. This is the codified read, the defensible default.
+- **The reference's default (use when no specific investor convention is known):** the run-rate on clean recurring revenue, with any committed or off-processor component disclosed separately rather than blended in. A founder's CARR is named as CARR, not ARR. This is the codified read, the defensible default.
 - **The investor's convention (use it when you know it):** when a specific investor's convention is known, that number governs, and the rest, including the default above, is footnoted. That convention is what the raise is measured against.
 
 Under either anchor, the aggressive move to avoid is blending one-time, services, or signed-not-live revenue into the reported number. A defect classification is absolute and does not move with the convention anchored on.
@@ -54,7 +54,7 @@ The predicate for classifying an ARR spread:
 $$
 \text{ARR}=\text{MRR}\times 12\quad(\text{MRR}=\text{the most recent month's recurring revenue; one-time and services excluded})
 $$
-Primary source: the Standards Board codified definition, "Annual Recurring Revenue (ARR) is recurring revenue, as defined by your revenue recognition policy, calculated on an annualized basis," with formula "ARR = (MRR x 12)", recorded in [the standard's verified evidence set](../evidence/canonical-verified.json), sourced from the SaaS Metrics Standards Board's [annual recurring revenue](https://www.saasmetricsboard.com/annual-recurring-revenue) page. The committed sense is the separate codified CARR metric, "contracted annual recurring revenue, whether in production or not yet in production," from the board's [contracted annual recurring revenue](https://www.saasmetricsboard.com/contracted-annual-recurring-revenue) page. The codified definitions are the authority here.
+Primary source: the Standards Board codified definition, "Annual Recurring Revenue (ARR) is recurring revenue, as defined by your revenue recognition policy, calculated on an annualized basis," with formula "ARR = (MRR x 12)", recorded in [the reference's verified evidence set](../evidence/canonical-verified.json), sourced from the SaaS Metrics Standards Board's [annual recurring revenue](https://www.saasmetricsboard.com/annual-recurring-revenue) page. The committed sense is the separate codified CARR metric, "contracted annual recurring revenue, whether in production or not yet in production," from the board's [contracted annual recurring revenue](https://www.saasmetricsboard.com/contracted-annual-recurring-revenue) page. The codified definitions are the authority here.
 
 Standards-board run-rate method (the defensible default): the most recent month's recurring revenue annualized, with one-time fees, professional services, and overage above committed minimums excluded by construction, and signed-not-yet-live revenue held out (that belongs to CARR).
 
@@ -66,7 +66,7 @@ Standards-board run-rate method (the defensible default): the most recent month'
 
 ## Reconciliation note
 
-Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm one-time and services are stripped and the base is recurring only, and that closes from the aggregates. Basis and timing do not close. Run-rate versus committed (CARR) and the off-processor or billing-layer corrections interact non-additively (an off-processor reconciliation and a run-rate-vs-committed reclassification are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the sense the founder used against the defensible clean run-rate, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
+Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm one-time and services are stripped and the base is recurring only, and that closes from the aggregates. Basis and timing do not close. Run-rate versus committed (CARR) and the off-processor or billing-layer corrections interact non-additively (an off-processor reconciliation and a run-rate-vs-committed reclassification are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the sense the founder used against the defensible clean run-rate, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this reference. Reconstructing it from raw source systems is a separate, multi-week effort the reference does not perform.
 
 ## The three axes (per ARR)
 
@@ -80,9 +80,9 @@ All from `classic-errors.md`: annual-as-monthly (a single annual deal counted as
 
 ## Scope boundary
 
-IN SCOPE: the composition axis, confirm one-time and services are excluded, from the aggregates. OUT OF SCOPE (named but not computed): reconciling off-processor revenue, de-duplicating a billing layer, and resolving run-rate vs committed from raw sources. The per-axis reconstruction from the client's raw source systems is out of scope for this standard. Reconstructing it from raw source systems is a separate, multi-week effort the standard does not perform.
+IN SCOPE: the composition axis, confirm one-time and services are excluded, from the aggregates. OUT OF SCOPE (named but not computed): reconciling off-processor revenue, de-duplicating a billing layer, and resolving run-rate vs committed from raw sources. The per-axis reconstruction from the client's raw source systems is out of scope for this reference. Reconstructing it from raw source systems is a separate, multi-week effort the reference does not perform.
 
 ## Citations
 
-- Standards-board ARR ("recurring revenue, as defined by your revenue recognition policy, calculated on an annualized basis") and CARR ("contracted annual recurring revenue, whether in production or not yet in production"): the codified, snapshot-verified entries in [the standard's verified evidence set](../evidence/canonical-verified.json).
+- Standards-board ARR ("recurring revenue, as defined by your revenue recognition policy, calculated on an annualized basis") and CARR ("contracted annual recurring revenue, whether in production or not yet in production"): the codified, snapshot-verified entries in [the reference's verified evidence set](../evidence/canonical-verified.json).
 - The off-processor and billing-layer cases are the classic errors carried in [`classic-errors.md`](classic-errors.md).
