@@ -35,7 +35,7 @@ Most readers land near the standards-board FCF-margin form, but a meaningful set
 
 The profitability basis is stated with the number: "Rule of 40 on FCF margin" or "on EBITDA margin," never a bare "Rule of 40." FCF margin is the codified default; the EBITDA reading is the footnote. The aggressive move to avoid is silently picking whichever profit measure is most flattering for the company. Principle: defensibility, not optimization.
 
-## The three axes (per Rule of 40)
+## The three axes
 
 Rule of 40 diverges on basis. Composition is settled: the two-term sum (growth plus profit margin) and the 40% threshold. Basis is the contested axis, the profitability measure, FCF margin (standards board) vs EBITDA margin (Feld's preference) vs operating income vs net income (Feld flagged all as candidates); the growth basis (ARR growth vs GAAP revenue growth) is a secondary, lesser divergence. Timing is annual growth and annual margin over a trailing or current period, with FCF margin normalized over average ARR in the standards-board calc.
 

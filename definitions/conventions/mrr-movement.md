@@ -35,7 +35,7 @@ A reader recomputes the four-term revenue bridge on the same recurring-revenue b
 
 Lead with the four-term bridge on the same basis as the paired NRR and GRR, and state the contraction-vs-churn rule and the reactivation treatment out loud rather than letting them sit inside an aggregate. The aggressive move to avoid is a bridge that folds reactivation or one-time revenue into Expansion, or that books a deep downgrade as contraction rather than churn, both of which flatter retention read off the bridge. Principle: defensibility, not optimization.
 
-## The three axes (per the movement bridge)
+## The three axes
 
 The movement bridge diverges mainly on composition: the five-or-six movement buckets and what falls in each. New (new-logo recurring revenue), Expansion (upsell or cross-sell within retained accounts), Contraction or Down-Sell (a downgrade within a retained account), Churn (a fully lost account). The unsettled sub-questions: the contraction-vs-churn boundary (when a downgrade becomes a loss); whether reactivation (a previously churned account returning) is a distinct term or counted as New; and logo movement vs revenue movement, which are separate bridges. The settled part is that New, Expansion, Contraction, and Churn are the four Board-defined terms and that they sum to the net change. Basis is ARR vs MRR vs implied-monthly, the same recurring-vs-other question as NRR and GRR, inherited by whichever retention metric reads off the bridge. Timing is the period of the bridge (monthly walk vs quarterly vs annual cohort) and whether the terms are point-in-time deltas or averaged, again inherited by the retention metric built on it.
 

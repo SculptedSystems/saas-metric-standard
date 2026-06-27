@@ -74,7 +74,7 @@ Standards-board cohort method (the defensible default): current value of the coh
 
 Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm the cohort is existing-customers-only with new logos out and expansion and contraction handled, and that closes from the aggregates. Basis and timing do not close. They interact non-additively (an ARR basis read point-in-time and a GAAP-revenue basis read as a trailing-twelve average are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the convention the founder used against the defensible ARR-basis cohort, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this reference. Reconstructing it from raw source systems is a separate, multi-week effort the reference does not perform.
 
-## The three axes (per NRR)
+## The three axes
 
 NRR diverges on all three axes, the only metric in the library to do so materially. Composition is the settled part: existing-customer cohort only, expansion and contraction in, new logos out, with the new-logo exclusion consistent across conventions. Basis splits widest, recurring (ARR or MRR) vs GAAP-revenue (trailing-twelve-month or calendar) vs ACV or contracted vs implied-monthly. Timing is reported so inconsistently that two independent readings often cannot classify it the same way.
 

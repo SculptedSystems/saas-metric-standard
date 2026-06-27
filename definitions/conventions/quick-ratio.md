@@ -33,7 +33,7 @@ A reader takes the quick ratio as a rough growth-efficiency signal (higher means
 
 Name it as a convention with a Mamoon Hamid / Social Capital origin, state the four movement-bridge terms and the basis (MRR or ARR), and report the ratio without leaning on a benchmark cutoff. The aggressive move to avoid is presenting the quick ratio as a standard, or quoting Hamid's ">= 4" as if it were a codified threshold rather than his hypothesis (the same discipline as the magic-number and burn-multiple benchmarks). Principle: defensibility, not optimization.
 
-## The three axes (per the quick ratio)
+## The three axes
 
 The quick ratio diverges on basis. Composition is settled by the origin: the ratio shape, recurring revenue gained (New + Expansion) over recurring revenue lost (Churned + Contraction), the four movement-bridge terms. Its one unsettled sub-question is inherited from the bridge, the contraction-vs-churn boundary (which only redistributes within the denominator) and whether reactivation belongs in the New term of the numerator. Basis is the divergence axis, MRR (the origin form) vs an ARR restatement, the same recurring-basis question as NRR and GRR applied to the four movement terms. Timing is the period the four terms are summed over (typically a quarter or a month), inherited from whatever period the movement bridge is run on.
 

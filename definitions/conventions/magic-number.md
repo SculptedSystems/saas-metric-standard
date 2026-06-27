@@ -67,7 +67,7 @@ Origin (Scale VP) method (the only defensible anchor): the quarter-over-quarter 
 
 Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm the ratio shape (annualized revenue change over prior-quarter S&M) and the prior-quarter S&M denominator, and that closes from the aggregates. Basis does not close. The numerator basis (GAAP subscription revenue versus net new ARR) needs raw quarterly financials, and the two read differently when revenue lags ARR, so it is reconciled bounded and qualitative: name the numerator basis the founder used against the origin GAAP-revenue form, and bound the direction and magnitude of the spread. Because this metric is origin-author tier with no codified authority, the spread is a convention range, not a defensible-versus-aggressive verdict; do not assert a benchmark cutoff as settled. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this reference. Reconstructing it from raw source systems is a separate, multi-week effort the reference does not perform.
 
-## The three axes (per Magic Number)
+## The three axes
 
 Magic Number diverges on basis. Composition is settled by the origin: the ratio shape, change in the revenue measure (annualized) over prior-quarter S&M. Basis is the divergence axis, GAAP subscription revenue change (origin) vs net new ARR (the common variant). Timing is settled by the origin post: the quarter-over-quarter change annualized by multiplying by four, divided by the earlier of the two quarters' S&M.
 

@@ -4,7 +4,7 @@ title: The three axes
 
 # The three axes
 
-B2B SaaS metric definitions diverge along three axes: composition, basis, and timing. Naming which axis a given number diverges on is how this standard classifies that number. Every per-metric divergence in the conventions library is described against this shared model, and each metric's own "three axes" section names which axis or axes drive its divergence and carries the metric-specific detail.
+B2B SaaS metric definitions diverge along three axes: composition, basis, and timing. Naming which axis a given number diverges on is how this reference classifies that number. Every per-metric divergence in the conventions library is described against this shared model, and each metric's own "three axes" section names which axis or axes drive its divergence and carries the metric-specific detail.
 
 ## Composition
 

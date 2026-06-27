@@ -68,7 +68,7 @@ Standards-board run-rate method (the defensible default): the most recent month'
 
 Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm one-time and services are stripped and the base is recurring only, and that closes from the aggregates. Basis and timing do not close. Run-rate versus committed (CARR) and the off-processor or billing-layer corrections interact non-additively (an off-processor reconciliation and a run-rate-vs-committed reclassification are not a sum of separable adjustments), so they are reconciled bounded and qualitative: name the sense the founder used against the defensible clean run-rate, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this reference. Reconstructing it from raw source systems is a separate, multi-week effort the reference does not perform.
 
-## The three axes (per ARR)
+## The three axes
 
 ARR diverges mainly on basis. Composition is comparatively settled: recurring only, with one-time fees, setup, services, and overage excluded (more settled than for NRR). Basis is the live axis, annualized run-rate (current MRR times 12) vs committed or contracted (CARR, whether or not yet in production), and the standards board codifies CARR as a distinct metric. Timing follows from basis: a point-in-time run-rate as of period end vs a contracted view that includes signed-not-yet-live revenue.
 

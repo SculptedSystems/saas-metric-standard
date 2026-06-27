@@ -34,7 +34,7 @@ A reader takes the burn multiple as a capital-efficiency tier (the origin post g
 
 Name it as a convention with a Craft Ventures origin, define net burn explicitly before quoting the ratio, and state that lower is better and that it is the inverse of Bessemer's Efficiency Score (so the direction is not confused). The aggressive move to avoid is a flattering, undefined net-burn numerator. Principle: defensibility, not optimization.
 
-## The three axes (per Burn Multiple)
+## The three axes
 
 Burn Multiple diverges on composition, specifically the definition of net burn. The ratio shape (net burn over net new ARR, lower better) is settled, but net burn is not, and that is the live divergence. On basis, the denominator is net new ARR (the origin uses ARR, not GAAP revenue) while the numerator is a cash measure, so the metric mixes a cash basis over an ARR basis by design. Timing is per-period (typically quarterly or annual) net burn against the net new ARR added in the same period.
 

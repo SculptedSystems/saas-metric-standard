@@ -70,7 +70,7 @@ Standards-board cohort method (the defensible default): the period-end value of 
 
 Composition-closed, basis/timing-bounded. The composition axis closes to a zero residual: from the reported aggregates we can confirm expansion is excluded and the 100% ceiling holds, and that closes from the aggregates. Basis and timing do not close. They interact non-additively (an ARR-basis cohort read point-in-time and a GAAP-revenue basis read as a trailing-twelve average are not a sum of separable adjustments), and the contraction-versus-churn split moves the two terms within a fixed total, so they are reconciled bounded and qualitative: name the convention the founder used against the defensible cohort method on the NRR basis, and bound the direction and magnitude of the spread. The per-axis reconstruction of that spread from the client's raw source systems is out of scope for this reference. Reconstructing it from raw source systems is a separate, multi-week effort the reference does not perform.
 
-## The three axes (per GRR)
+## The three axes
 
 GRR diverges on the same axes as NRR, inheriting its basis and timing choice. Composition is existing-customer cohort only, contraction and churn in, all expansion out; the expansion exclusion is the settled part, and the unsettled sub-question is what counts as contraction (a downgrade within a retained account) versus churn (a lost account), which moves the two terms but not the total. Basis is recurring (ARR or MRR) vs GAAP-revenue vs ACV or contracted vs implied-monthly, and a disclosed GRR almost always uses the same basis chosen for NRR. Timing is point-in-time "as of period end" vs an average across the twelve months vs a year-over-year cohort, again inherited from the NRR choice.
 
