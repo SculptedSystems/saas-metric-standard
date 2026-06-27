@@ -52,5 +52,5 @@ IN SCOPE (from the reported aggregates and the stated method): naming LTV and th
 
 ## Citations
 
-- Popularized LTV formula, the "greater than 3x" rule of thumb, the no-codified-standards-board status, and the baked-in assumptions (gross-margin-adjusted, one-over-churn lifetime, no discount): the LTV and LTV:CAC entry in [`../evidence/canonical-definitions.json`](../evidence/canonical-definitions.json), citing Skok's forEntrepreneurs coverage (https://www.forentrepreneurs.com/saas-metrics-2/), including the note that Skok is the popularizer, not the originator.
+- Popularized LTV formula, the "greater than 3x" rule of thumb, the no-codified-standards-board status, and the baked-in assumptions (gross-margin-adjusted, one-over-churn lifetime, no discount): the LTV and LTV:CAC entry in [the canonical definitions](../evidence/canonical-definitions.json), citing Skok's [forEntrepreneurs coverage](https://www.forentrepreneurs.com/saas-metrics-2/), including the note that Skok is the popularizer, not the originator.
 - The CAC side of the ratio and the term-collision warning: see `cac.md`.

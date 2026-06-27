@@ -54,7 +54,7 @@ The predicate for classifying a GRR spread:
 $$
 \text{GRR}=\frac{\text{BOP value}-\text{Contraction}-\text{Churn}}{\text{BOP value}}\le 100\%\quad(\text{existing customers only; no expansion term; ``value'' = ARR, revenue, or implied-MRR depending on the basis})
 $$
-Primary source: the Standards Board codified GRR method, cohort method (preferred), "Adjusted MRR from the cohort of customers at the end of the period / MRR at the beginning of the measurement period," recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/gross-revenue-retention). The board also publishes the equivalent formula method, "((Beginning MRR - Churned MRR - Down-Sell MRR) / Beginning MRR) x 100". This convention carries its own basis and timing divergence (see the three axes section below); the codified method is the authority here.
+Primary source: the Standards Board codified GRR method, cohort method (preferred), "Adjusted MRR from the cohort of customers at the end of the period / MRR at the beginning of the measurement period," recorded in [the standard's verified evidence set](../evidence/canonical-verified.json), sourced from the SaaS Metrics Standards Board's [gross revenue retention](https://www.saasmetricsboard.com/gross-revenue-retention) page. The board also publishes the equivalent formula method, "((Beginning MRR - Churned MRR - Down-Sell MRR) / Beginning MRR) x 100". This convention carries its own basis and timing divergence (see the three axes section below); the codified method is the authority here.
 
 Standards-board cohort method (the defensible default): the period-end value of the cohort of existing customers as of the start, over that same cohort's value at the start, with all expansion zeroed. The ceiling at 100% holds by construction.
 
@@ -88,5 +88,5 @@ IN SCOPE (from the reported aggregates): the composition axis, confirm expansion
 
 ## Citations
 
-- Standards-board cohort method (preferred), "Adjusted MRR from the cohort of customers at the end of the period / MRR at the beginning of the measurement period," and formula method, "((Beginning MRR - Churned MRR - Down-Sell MRR) / Beginning MRR) x 100", and the no-expansion ceiling: the codified, snapshot-verified Gross Revenue Retention entry in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/gross-revenue-retention).
+- Standards-board cohort method (preferred), "Adjusted MRR from the cohort of customers at the end of the period / MRR at the beginning of the measurement period," and formula method, "((Beginning MRR - Churned MRR - Down-Sell MRR) / Beginning MRR) x 100", and the no-expansion ceiling: the codified, snapshot-verified Gross Revenue Retention entry in [the standard's verified evidence set](../evidence/canonical-verified.json), sourced from the SaaS Metrics Standards Board's [gross revenue retention](https://www.saasmetricsboard.com/gross-revenue-retention) page.
 - A disclosed GRR almost always uses the same basis chosen for NRR; the NRR basis-and-timing divergence is carried in [`nrr.md`](nrr.md).

@@ -50,4 +50,4 @@ IN SCOPE (from the reported aggregates and the stated method): flagging that the
 
 ## Citations
 
-- Origin definition (net burn / net new ARR), the Bessemer inverse, the under-specified net burn, and the five-tier benchmark: the Burn Multiple entry in [`../evidence/canonical-definitions.json`](../evidence/canonical-definitions.json), citing the Craft Ventures origin post (https://medium.com/craft-ventures/the-burn-multiple-51a7e43cb200). Benchmark thresholds live in the origin post.
+- Origin definition (net burn / net new ARR), the Bessemer inverse, the under-specified net burn, and the five-tier benchmark: the Burn Multiple entry in [the canonical definitions](../evidence/canonical-definitions.json), citing the Craft Ventures [origin post](https://medium.com/craft-ventures/the-burn-multiple-51a7e43cb200). Benchmark thresholds live in the origin post.

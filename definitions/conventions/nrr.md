@@ -57,7 +57,7 @@ The predicate for classifying an NRR spread:
 $$
 \text{NRR}=\frac{\text{BOP value}+\text{Expansion}-\text{Contraction}-\text{Churn}}{\text{BOP value}}\quad(\text{existing customers only; ``value'' = ARR, revenue, or implied-MRR depending on the basis})
 $$
-Primary source: the Standards Board codified cohort method, "Net Revenue Retention (NRR), also known as Net Dollar Retention (NDR), measures the percentage of recurring revenue retained over a specific period," recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/net-revenue-retention). The codified method is the authority here.
+Primary source: the Standards Board codified cohort method, "Net Revenue Retention (NRR), also known as Net Dollar Retention (NDR), measures the percentage of recurring revenue retained over a specific period," recorded in [the standard's verified evidence set](../evidence/canonical-verified.json), sourced from the SaaS Metrics Standards Board's [net revenue retention](https://www.saasmetricsboard.com/net-revenue-retention) page. The codified method is the authority here.
 
 Standards-board cohort method (the defensible default): current value of the cohort of all customers as of 12 months prior to the period end, over that same cohort's value 12 months prior. New logos are excluded by construction.
 
@@ -91,5 +91,5 @@ IN SCOPE (from the ~12 reported aggregates), the recognition side: the compositi
 
 ## Citations
 
-- Standards-board cohort method, "Net Revenue Retention (NRR), also known as Net Dollar Retention (NDR), measures the percentage of recurring revenue retained over a specific period": the codified, snapshot-verified Net Revenue Retention entry in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/net-revenue-retention).
+- Standards-board cohort method, "Net Revenue Retention (NRR), also known as Net Dollar Retention (NDR), measures the percentage of recurring revenue retained over a specific period": the codified, snapshot-verified Net Revenue Retention entry in [the standard's verified evidence set](../evidence/canonical-verified.json), sourced from the SaaS Metrics Standards Board's [net revenue retention](https://www.saasmetricsboard.com/net-revenue-retention) page.
 - The NRR basis-and-timing divergence runs across legitimate conventions: a recurring-revenue (ARR) cohort, a trailing GAAP-revenue basis, a calendar-revenue basis excluding acquired customers, an implied-monthly basis, a monthly-average timing, and a segment-restricted cohort. Each reports a different retention rate on the same customer book. The codified recurring-revenue cohort method is the defensible default; the rest are the labeled convention risk.

@@ -51,4 +51,4 @@ IN SCOPE (from the reported aggregates and the stated method): naming which prof
 
 ## Citations
 
-- Standards-board calc #1 (ARR growth + FCF margin) and calc #2 (GAAP revenue growth + FCF margin), and Feld's 2015 post (he popularized the rule; the true originator is unattributed) with its EBITDA preference and explicit ambiguity flag: the Rule of 40 entries in [`../evidence/canonical-definitions.json`](../evidence/canonical-definitions.json), citing the standards-board page (https://www.saasmetricsboard.com/rule-of-40) and Feld's post (https://feld.com/archives/2015/02/rule-40-healthy-saas-company/).
+- Standards-board calc #1 (ARR growth + FCF margin) and calc #2 (GAAP revenue growth + FCF margin), and Feld's 2015 post (he popularized the rule; the true originator is unattributed) with its EBITDA preference and explicit ambiguity flag: the Rule of 40 entries in [the canonical definitions](../evidence/canonical-definitions.json), citing the SaaS Metrics Standards Board's [rule of 40](https://www.saasmetricsboard.com/rule-of-40) page and [Feld's 2015 post](https://feld.com/archives/2015/02/rule-40-healthy-saas-company/).

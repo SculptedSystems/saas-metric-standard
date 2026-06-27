@@ -4,7 +4,7 @@ The per-metric operational layer of the standard: one file per metric on a fixed
 
 This library does **not** restate the authority. Following the cite-do-not-duplicate discipline, the canonical sources stay canonical and this library cites them:
 
-- **Standards-board + origin-author definitions:** the SaaS Metrics Standards Board codified consensus and the origin authors for coined metrics, recorded in [`../evidence/canonical-definitions.json`](../evidence/canonical-definitions.json) and frozen in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json).
+- **Standards-board + origin-author definitions:** the SaaS Metrics Standards Board codified consensus and the origin authors for coined metrics, recorded in [the canonical definitions](../evidence/canonical-definitions.json) and frozen in [the standard's verified evidence set](../evidence/canonical-verified.json).
 
 What this library adds on top of those is the **operational layer**: the three-axis decomposition (composition, basis, timing), the defensible-read framing, and the classic-error mapping.
 

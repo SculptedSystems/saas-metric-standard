@@ -54,7 +54,7 @@ The predicate for classifying an ARR spread:
 $$
 \text{ARR}=\text{MRR}\times 12\quad(\text{MRR}=\text{the most recent month's recurring revenue; one-time and services excluded})
 $$
-Primary source: the Standards Board codified definition, "Annual Recurring Revenue (ARR) is recurring revenue, as defined by your revenue recognition policy, calculated on an annualized basis," with formula "ARR = (MRR x 12)", recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/annual-recurring-revenue). The committed sense is the separate codified CARR metric, "contracted annual recurring revenue, whether in production or not yet in production" (https://www.saasmetricsboard.com/contracted-annual-recurring-revenue). The codified definitions are the authority here.
+Primary source: the Standards Board codified definition, "Annual Recurring Revenue (ARR) is recurring revenue, as defined by your revenue recognition policy, calculated on an annualized basis," with formula "ARR = (MRR x 12)", recorded in [the standard's verified evidence set](../evidence/canonical-verified.json), sourced from the SaaS Metrics Standards Board's [annual recurring revenue](https://www.saasmetricsboard.com/annual-recurring-revenue) page. The committed sense is the separate codified CARR metric, "contracted annual recurring revenue, whether in production or not yet in production," from the board's [contracted annual recurring revenue](https://www.saasmetricsboard.com/contracted-annual-recurring-revenue) page. The codified definitions are the authority here.
 
 Standards-board run-rate method (the defensible default): the most recent month's recurring revenue annualized, with one-time fees, professional services, and overage above committed minimums excluded by construction, and signed-not-yet-live revenue held out (that belongs to CARR).
 
@@ -84,5 +84,5 @@ IN SCOPE: the composition axis, confirm one-time and services are excluded, from
 
 ## Citations
 
-- Standards-board ARR ("recurring revenue, as defined by your revenue recognition policy, calculated on an annualized basis") and CARR ("contracted annual recurring revenue, whether in production or not yet in production"): the codified, snapshot-verified entries in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json).
+- Standards-board ARR ("recurring revenue, as defined by your revenue recognition policy, calculated on an annualized basis") and CARR ("contracted annual recurring revenue, whether in production or not yet in production"): the codified, snapshot-verified entries in [the standard's verified evidence set](../evidence/canonical-verified.json).
 - The off-processor and billing-layer cases are the classic errors carried in [`classic-errors.md`](classic-errors.md).

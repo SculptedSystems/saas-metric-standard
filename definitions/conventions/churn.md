@@ -56,7 +56,7 @@ The predicate for classifying a churn spread:
 $$
 \text{Logo retention}=\frac{\text{customers at end who were customers at start}}{\text{active customers at start}}\qquad \text{logo churn}=1-\text{retention}\qquad \text{annual}=1-(1-\text{monthly})^{12}
 $$
-Primary source: the Standards Board codifies the count-based metric as logo retention, "# of customers at the end of the period who were customers at the beginning of the period / # of active customers at the beginning of the measurement period," recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/logo-retention); churn is one minus that retention. Gross and net revenue churn are the inverses of the codified GRR and NRR entries in the same file (1 - GRR and 1 - NRR). The codified retention definitions are the authority here.
+Primary source: the Standards Board codifies the count-based metric as logo retention, "# of customers at the end of the period who were customers at the beginning of the period / # of active customers at the beginning of the measurement period," recorded in [the standard's verified evidence set](../evidence/canonical-verified.json), sourced from the SaaS Metrics Standards Board's [logo retention](https://www.saasmetricsboard.com/logo-retention) page; churn is one minus that retention. Gross and net revenue churn are the inverses of the codified GRR and NRR entries in the same evidence set (1 - GRR and 1 - NRR). The codified retention definitions are the authority here.
 
 Standards-board logo-retention method (the defensible count-based default): the count of start-of-period customers still active at period end over the count active at start; churn is one minus that. Annual churn compounds from monthly as 1 - (1 - monthly)^12, never monthly times twelve.
 
@@ -89,5 +89,5 @@ IN SCOPE (from the reported aggregates and the stated method): naming which chur
 
 ## Citations
 
-- Standards-board logo retention, "# of customers at the end of the period who were customers at the beginning of the period / # of active customers at the beginning of the measurement period" (churn = 1 - retention), and the compounded annualization, the gross/net revenue churn inverses, and the uncodified churn moment: the codified, snapshot-verified Logo Retention entry in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.saasmetricsboard.com/logo-retention).
+- Standards-board logo retention, "# of customers at the end of the period who were customers at the beginning of the period / # of active customers at the beginning of the measurement period" (churn = 1 - retention), and the compounded annualization, the gross/net revenue churn inverses, and the uncodified churn moment: the codified, snapshot-verified Logo Retention entry in [the standard's verified evidence set](../evidence/canonical-verified.json), sourced from the SaaS Metrics Standards Board's [logo retention](https://www.saasmetricsboard.com/logo-retention) page.
 - GRR and NRR as the retention metrics churn inverts: see `grr.md` and `nrr.md`.

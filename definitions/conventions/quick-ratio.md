@@ -51,5 +51,5 @@ IN SCOPE (from the founder's stated movement aggregates and the stated method): 
 ## Citations
 
 - Origin attribution (Mamoon Hamid, Social Capital) and the formula: forEntrepreneurs and SaaStr coverage attributing the metric to Hamid. Cite as origin-author. This attribution rests on secondary coverage and is not yet frozen in `canonical-definitions.json` like the other coined metrics (magic number, burn multiple); harden via `canonical-pull.js` when a primary Hamid/Social Capital source is pinned.
-- The four inputs as the movement-bridge terms: see `mrr-movement.md`; the Board-defined components behind them in [`../evidence/canonical-definitions.json`](../evidence/canonical-definitions.json).
+- The four inputs as the movement-bridge terms: see the [MRR movement convention](mrr-movement.md); the Board-defined components behind them in [the canonical definitions](../evidence/canonical-definitions.json).
 - Hamid's ">= 4 is investable" is his hypothesis, kept reference-only, never asserted as a standard (the same discipline as the magic-number and burn-multiple benchmarks).

@@ -53,7 +53,7 @@ The predicate for classifying a magic-number spread:
 $$
 \text{Magic \#}=\frac{\Delta\text{ subscription revenue (quarter)}\times 4}{\text{prior-quarter S\&M}}
 $$
-Primary source: the origin author, Scale Venture Partners, "Take the change in subscription revenue between two quarters, annualize it (multiply by four), and divide the result by the sales and marketing spend for the earlier of the two quarters," recorded in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.scalevp.com/insights/magic-number-math/). There is no codified standards-board definition; the origin author is the only authority, so it is named as a convention, not a standard. The net-new-ARR variant is the common alternative numerator (see the convention families above); the origin definition is the authority here.
+Primary source: the origin author, Scale Venture Partners, "Take the change in subscription revenue between two quarters, annualize it (multiply by four), and divide the result by the sales and marketing spend for the earlier of the two quarters," recorded in [the standard's verified evidence set](../evidence/canonical-verified.json), sourced from Scale Venture Partners' [magic number math](https://www.scalevp.com/insights/magic-number-math/) write-up. There is no codified standards-board definition; the origin author is the only authority, so it is named as a convention, not a standard. The net-new-ARR variant is the common alternative numerator (see the convention families above); the origin definition is the authority here.
 
 Origin (Scale VP) method (the only defensible anchor): the quarter-over-quarter change in subscription revenue, annualized by multiplying by four, over the earlier of the two quarters' sales-and-marketing spend.
 
@@ -83,4 +83,4 @@ IN SCOPE (from the reported aggregates and the stated method): naming the numera
 
 ## Citations
 
-- Origin (Scale VP) definition and the net-new-ARR variant, plus the "no enforced or codified definition" framing: the origin, snapshot-verified SaaS Magic Number entry in [`../evidence/canonical-verified.json`](../evidence/canonical-verified.json) (https://www.scalevp.com/insights/magic-number-math/).
+- Origin (Scale VP) definition and the net-new-ARR variant, plus the "no enforced or codified definition" framing: the origin, snapshot-verified SaaS Magic Number entry in [the standard's verified evidence set](../evidence/canonical-verified.json), sourced from Scale Venture Partners' [magic number math](https://www.scalevp.com/insights/magic-number-math/) write-up.
