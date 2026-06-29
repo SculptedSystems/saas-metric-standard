@@ -1,0 +1,65 @@
+Sculpted's SaaS Metrics Reference: License
+==========================================
+
+This repository contains two kinds of material under two licenses, plus
+third-party quoted material that remains under its own terms. For binding
+terms, consult the canonical license texts linked below. This summary is
+provided in good faith and may be refined by Sculpted Systems LLC.
+
+
+1. Reference content: Creative Commons Attribution 4.0 (CC BY 4.0)
+------------------------------------------------------------------
+
+The reference content (the conventions in `definitions/conventions/`, the
+divergence axes in `definitions/divergence/`, the taxonomy, and the prose
+documentation that Sculpted Systems authored) is licensed under the Creative
+Commons Attribution 4.0 International License.
+
+You may share and adapt this material for any purpose, including commercially,
+provided you give appropriate credit, link to the license, and indicate if
+changes were made. Suggested citation:
+
+  Sculpted's SaaS Metrics Reference, by Sculpted Systems LLC, version X.Y.Z,
+  https://sculpted.io/reference
+
+Full text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+
+2. Build and verification tooling: MIT
+--------------------------------------
+
+The tooling (for example `definitions/lock.mts`, `definitions/evidence/canonical-pull.js`,
+and other scripts) is licensed under the MIT License.
+
+Copyright (c) 2026 Sculpted Systems LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+3. Third-party material
+-----------------------
+
+This reference cites and quotes primary definitional authorities, including the
+SaaS Metrics Standards Board and the origin authors of coined metrics. Those
+verbatim quotations, and any captured source snapshots under
+`definitions/evidence/`, remain the property of their respective authors and are
+reproduced here for reference and attribution. The CC BY 4.0 license in section 1
+covers Sculpted Systems' own contribution (the codification, structure,
+reconciliation, and classification), not the underlying quoted material, which is
+governed by its own terms.

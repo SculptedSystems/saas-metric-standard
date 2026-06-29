@@ -1,10 +1,11 @@
 {
-  "name": "saas-metric-standard",
+  "name": "saas-metrics-reference",
   "private": true,
-  "description": "The SaaS Metric Standard: versioned, content-hashed B2B SaaS metric conventions.",
+  "description": "Sculpted's SaaS Metrics Reference: versioned, content-hashed, citeable B2B SaaS metric definitions.",
   "scripts": {
     "lock": "node --experimental-strip-types definitions/lock.mts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "verify-publish": "bash scripts/verify-publish.sh"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

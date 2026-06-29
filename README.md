@@ -1,9 +1,73 @@
 # Sculpted's SaaS Metrics Reference
 
+[![version](https://img.shields.io/badge/version-1.0.0-blue)](definitions/VERSION)
+[![license](https://img.shields.io/badge/content-CC%20BY%204.0-green)](LICENSE)
+[![tooling](https://img.shields.io/badge/tooling-MIT-green)](LICENSE)
+[![maintained by](https://img.shields.io/badge/maintained%20by-Sculpted%20Systems-555)](https://sculpted.io)
+[![CI](https://img.shields.io/badge/CI-ci.yml-informational)](.github/workflows/ci.yml)
+
 A neutral, cite-able reference for how B2B software metrics are defined: the per-metric conventions and the three divergence axes, each metric resting on its codified definitional authority.
 
-Every definition ships with its cited primary authority and a public methodology. The authority is the SaaS Metrics Standards Board codified formula, or the origin author for coined metrics. Sculpted Systems is the steward that codifies those cited authorities, like a working group maintaining a spec; it does not issue the definitions.
+The reference is published at [sculpted.io/reference](https://sculpted.io/reference). This repository is its source.
 
-For each metric, the reference classifies a reported value: defensible (it reproduces under a named convention), an aggressive but legitimate convention, or a defect (no legitimate convention reproduces it).
+## Who it is for
 
-The detailed structure (the conventions, the divergence axes, the drift contract, the codified evidence) lives in [`definitions/`](definitions/).
+B2B SaaS founders and finance owners facing a raise, a sale, or diligence, where a metric's exact definition is contested and the number has to survive an investor's recompute. It also serves anyone defining SaaS metrics who needs one cited, authority-anchored read per metric rather than a folk formula.
+
+The reference classifies a reported value for each metric: defensible (it reproduces under a named convention), an aggressive but legitimate convention, or a defect (no legitimate convention reproduces it).
+
+## The four layers
+
+The definitions are organized into four layers, kept separate by design. The full structure lives in [`definitions/`](definitions/).
+
+| Layer | Role |
+|---|---|
+| **Taxonomy** | The scope and membership of the reference: which metrics are in, and on what grounds. |
+| **Divergence** | Where the authorities legitimately differ, mapped along three axes: **composition** (what is in the cohort), **basis** (recurring vs GAAP vs contracted value), and **timing** (the period and point-in-time rules). |
+| **Evidence** | The cited authorities themselves: the codified definitions, snapshotted, hashed, and verbatim-verified in [`definitions/evidence/`](definitions/evidence/). |
+| **Conventions** | The operational, per-metric layer: one file per metric on a fixed schema, giving the canonical formula, the reconciliation, and the defensible / aggressive / defect classification. See [`definitions/conventions/`](definitions/conventions/). |
+
+Citation flows one way and is fixed: the evidence definitions are canonical, the conventions cite the evidence and the divergence axes, never the reverse. "Which is canonical" is never ambiguous.
+
+## The substantiation principle
+
+Every definition ships with its cited primary authority and a public methodology. The reference cites, it does not duplicate. The canonical source stays canonical and each convention points to it; nothing is restated or invented. Nothing rests on assertion.
+
+## The authority tiers
+
+A definition is anchored to one of two authorities:
+
+- The **SaaS Metrics Standards Board** codified consensus, for metrics with a published standard.
+- The **origin author**, for coined metrics (for example the magic number, the burn multiple, LTV:CAC).
+
+A third tier, **working-consensus**, marks definitions with no standards-board or origin authority. Entries at that tier never receive a defensible-number verdict.
+
+## The membership rule
+
+A metric is in scope only if it is **both** raise-critical **and** authority-anchored. Raise-critical means the number materially affects a raise, a sale, or diligence. Authority-anchored means a codified standards-board definition or a named origin author exists to cite. A metric that fails either test is out of scope, regardless of how common it is.
+
+## How to cite a definition
+
+Cite a definition by metric name, reference version, and the convention's `content_sha256` from [`conventions-lock.json`](definitions/conventions-lock.json). The hash resolves the cited definition to exact bytes.
+
+```
+Net Revenue Retention (NRR), Sculpted SaaS Metrics Reference v1.0.0,
+content_sha256 d56a44eb71027d6448851060b40e43954f3f98ef2dcc3c2d745de0694864e883
+```
+
+## How to consume it
+
+Pin a **version** and a **hash**. Read the convention you need, record the reference version (`VERSION`) and the metric's `content_sha256`, and reference the codified definition rather than copying it. Each consumer documents which reference version it implements. Nothing imports these files as a build artifact.
+
+## Versioning and the lock
+
+The library is content-versioned. `VERSION` carries the semver and `conventions-lock.json` records a `content_sha256` per convention plus a rolled-up `library_sha256`, regenerated by `lock.mts`. CI verifies the committed lock matches the content. The lock detects **that** content changed; the semver policy maps the **kind** of change to the version bump. See [VERSIONING.md](VERSIONING.md) for the policy.
+
+## More
+
+- [VERSIONING.md](VERSIONING.md): the semver and lock policy.
+- [CONTRIBUTING.md](CONTRIBUTING.md): how a definition is added or changed.
+- [LICENSE](LICENSE): content under CC BY 4.0, build tooling (`lock.mts` and related) under MIT.
+- [sculpted.io/reference](https://sculpted.io/reference): the published reference.
+
+Maintained by Sculpted Systems, the steward that codifies the cited authorities like a working group maintaining a spec. It does not issue the definitions.
