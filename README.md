@@ -16,13 +16,12 @@ B2B SaaS founders and finance owners facing a raise, a sale, or diligence, where
 
 The reference classifies a reported value for each metric: defensible (it reproduces under a named convention), an aggressive but legitimate convention, or a defect (no legitimate convention reproduces it).
 
-## The four layers
+## The three layers
 
-The definitions are organized into four layers, kept separate by design. The full structure lives in [`definitions/`](definitions/).
+The definitions are organized into three layers, kept separate by design. The full structure lives in [`definitions/`](definitions/). Scope and membership, which metrics are in and on what grounds, is set by the membership rule below.
 
 | Layer | Role |
 |---|---|
-| **Taxonomy** | The scope and membership of the reference: which metrics are in, and on what grounds. |
 | **Divergence** | Where the authorities legitimately differ, mapped along three axes: **composition** (what is in the cohort), **basis** (recurring vs GAAP vs contracted value), and **timing** (the period and point-in-time rules). |
 | **Evidence** | The cited authorities themselves: the codified definitions, snapshotted, hashed, and verbatim-verified in [`definitions/evidence/`](definitions/evidence/). |
 | **Conventions** | The operational, per-metric layer: one file per metric on a fixed schema, giving the canonical formula, the reconciliation, and the defensible / aggressive / defect classification. See [`definitions/conventions/`](definitions/conventions/). |
